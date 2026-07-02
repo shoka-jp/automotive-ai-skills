@@ -1,0 +1,42 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temp files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Node (if tooling is added later)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# Python (if tooling is added later)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build/preview output
+dist/
+build/
+_site/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Backup files
+*.bak
+*.orig
