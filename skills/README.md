@@ -1,6 +1,6 @@
 # Skills Index
 
-Each skill is a self-contained folder with a `README.md` describing what it does, what it can help with, example prompts, a recommended workflow, and honest limitations.
+Each skill is a self-contained folder with a `README.md` describing what it does, what it can help with, example prompts, a recommended workflow, and honest limitations. Every skill also has a Japanese version (`README.ja.md`) in the same folder.
 
 | Skill | Best for | Audience |
 |---|---|---|

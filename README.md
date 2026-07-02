@@ -48,6 +48,8 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 
 Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#which-skill-do-i-need).
 
+🇯🇵 **All skills are also available in Japanese** — open the `README.ja.md` in each skill folder, or start from the [Japanese README](./README.ja.md). Japan-specific guides (shaken inspection checklist, market notes) live in [`docs/ja/`](./docs/ja/).
+
 ## Installation
 
 No installation is required — these skills are prompt frameworks, not software.
@@ -96,7 +98,8 @@ automotive-ai-skills/
 │   ├── getting-started.md    # New-user walkthrough
 │   ├── skill-authoring-guide.md  # How to write a new skill
 │   ├── safety-disclaimer.md  # Full safety and liability notes
-│   └── faq.md                # Frequently asked questions
+│   ├── faq.md                # Frequently asked questions
+│   └── ja/                   # Japan-specific guides (shaken checklist, market notes)
 ├── examples/
 │   ├── README.md
 │   ├── obd2-p0420-diagnosis.md       # Full example conversation
@@ -128,8 +131,9 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [ ] **Classic Car Restorer** skill (points ignition, carburetors, rust assessment, parts sourcing)
 - [ ] **Fleet Manager** skill (multi-vehicle scheduling, cost tracking, downtime planning)
 - [ ] **Tire & Wheel Advisor** skill (deeper sizing, seasonal strategy, TPMS)
+- [x] Translated skill content — Japanese versions of all 8 skills (`README.ja.md` in each skill folder)
 - [ ] Structured skill definitions (YAML frontmatter) for direct agent-framework consumption
-- [ ] Translated skill content (Japanese first, tracking `README.ja.md`)
+- [ ] Japanese translations of example conversations
 - [ ] Community-contributed model-specific known-issue databases
 - [ ] Example integrations: Claude Project templates and system-prompt bundles
 

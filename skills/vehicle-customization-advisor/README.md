@@ -1,5 +1,7 @@
 # Vehicle Customization Advisor
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill for planning vehicle modifications — performance, suspension, wheels and tires, audio, lighting, and aesthetics — with attention to compatibility, build order, budget, and legality.
 
 ## Description

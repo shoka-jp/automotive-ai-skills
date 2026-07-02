@@ -1,5 +1,7 @@
 # OBD-II Diagnostic Assistant
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill for interpreting OBD-II diagnostic trouble codes (DTCs), freeze frame data, and live sensor readings — turning scanner output into a structured diagnostic plan.
 
 ## Description

@@ -1,5 +1,7 @@
 # Motorcycle Mechanic
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill for motorcycle maintenance, diagnosis, and repair — covering chain and sprocket service, carburetor and EFI systems, valve adjustments, tire and suspension setup, and seasonal storage.
 
 ## Description

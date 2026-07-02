@@ -1,5 +1,7 @@
 # EV Assistant
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill for electric vehicle ownership — charging strategy, battery health, range management, EV-specific maintenance, home charging setup, and buying guidance for new and used EVs.
 
 ## Description

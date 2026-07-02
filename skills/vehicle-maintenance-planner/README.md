@@ -1,5 +1,7 @@
 # Vehicle Maintenance Planner
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill that builds and manages preventive maintenance schedules tailored to your specific vehicle, mileage, climate, and driving pattern.
 
 ## Description

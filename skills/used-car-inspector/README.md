@@ -1,5 +1,7 @@
 # Used Car Inspector
 
+**English** | [日本語](./README.ja.md)
+
 An AI skill that guides you through evaluating a used vehicle before purchase — inspection checklists, red-flag detection, model-specific known issues, and price negotiation support.
 
 ## Description

@@ -1,5 +1,7 @@
 # Mechanic Assistant
 
+**English** | [日本語](./README.ja.md)
+
 A general-purpose AI skill that supports professional mechanics and serious DIYers through repair jobs — from initial symptom assessment to torque specs, procedure walkthroughs, and post-repair verification.
 
 ## Description

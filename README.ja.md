@@ -34,16 +34,23 @@
 
 ## スキル一覧
 
+すべてのスキルに日本語版があります（下表のリンクは日本語版です。各ページから英語版に切り替えられます）。
+
 | スキル | 内容 |
 |---|---|
-| 🔧 [Mechanic Assistant（整備士アシスタント）](./skills/mechanic-assistant/) | 修理手順、トルク値、工具、システム解説 |
-| 🔌 [OBD-II Diagnostic Assistant（OBD-II診断）](./skills/obd2-diagnostic-assistant/) | 故障コード、フリーズフレーム、ライブデータの解釈 |
-| 📅 [Vehicle Maintenance Planner（整備計画）](./skills/vehicle-maintenance-planner/) | 車両に合わせた予防整備スケジュールと費用計画 |
-| 🔍 [Used Car Inspector(中古車チェック)](./skills/used-car-inspector/) | 購入前チェックリスト、注意サイン、価格交渉支援 |
-| 🩺 [Vehicle Troubleshooting（症状別トラブルシュート）](./skills/vehicle-troubleshooting/) | 異音・漏れ・振動・警告灯からの原因絞り込み |
-| 🏁 [Vehicle Customization Advisor（カスタム相談）](./skills/vehicle-customization-advisor/) | 改造計画、フィッティング計算、施工順序、法規面の注意 |
-| ⚡ [EV Assistant（EVアシスタント）](./skills/ev-assistant/) | 充電戦略、バッテリー健全性、航続距離、EV特有の整備 |
-| 🏍️ [Motorcycle Mechanic（バイク整備）](./skills/motorcycle-mechanic/) | 二輪の整備・診断、キャブ/FI、バルブ、サスセッティング |
+| 🔧 [Mechanic Assistant（整備士アシスタント）](./skills/mechanic-assistant/README.ja.md) | 修理手順、トルク値、工具、システム解説 |
+| 🔌 [OBD-II Diagnostic Assistant（OBD-II診断）](./skills/obd2-diagnostic-assistant/README.ja.md) | 故障コード、フリーズフレーム、ライブデータの解釈 |
+| 📅 [Vehicle Maintenance Planner（整備計画）](./skills/vehicle-maintenance-planner/README.ja.md) | 車両に合わせた予防整備スケジュールと費用計画 |
+| 🔍 [Used Car Inspector（中古車チェック）](./skills/used-car-inspector/README.ja.md) | 購入前チェックリスト、注意サイン、価格交渉支援 |
+| 🩺 [Vehicle Troubleshooting（症状別トラブルシュート）](./skills/vehicle-troubleshooting/README.ja.md) | 異音・漏れ・振動・警告灯からの原因絞り込み |
+| 🏁 [Vehicle Customization Advisor（カスタム相談）](./skills/vehicle-customization-advisor/README.ja.md) | 改造計画、フィッティング計算、施工順序、車検・法規面の注意 |
+| ⚡ [EV Assistant（EVアシスタント）](./skills/ev-assistant/README.ja.md) | 充電戦略、バッテリー健全性、航続距離、EV特有の整備 |
+| 🏍️ [Motorcycle Mechanic（バイク整備）](./skills/motorcycle-mechanic/README.ja.md) | 二輪の整備・診断、キャブ/FI、バルブ、サスセッティング |
+
+## 日本のユーザー向けコンテンツ
+
+- 📗 [日本のユーザー向けガイド](./docs/ja/japan-guide.md) — 米国向け記述の読み替え表、軽自動車・国内中古車市場での使い方、用語対訳
+- ✅ [車検前セルフチェックリスト](./docs/ja/shaken-checklist.md) — 車検（継続検査）前の点検項目と、AIスキルとの組み合わせ方
 
 ## インストール
 
@@ -82,8 +89,9 @@ automotive-ai-skills/
 ├── CHANGELOG.md              # 変更履歴
 ├── SECURITY.md               # セキュリティポリシー
 ├── docs/                     # ガイド・FAQ・免責事項
+│   └── ja/                   # 日本向け: 車検チェックリスト、日本ユーザーガイド
 ├── examples/                 # 会話例
-└── skills/                   # 8つのスキル（各フォルダにREADME.md）
+└── skills/                   # 8つのスキル（各フォルダに README.md と README.ja.md）
 ```
 
 ## ロードマップ
@@ -92,8 +100,9 @@ automotive-ai-skills/
 - [ ] 旧車レストアスキル（ポイント点火、キャブレター、錆診断）
 - [ ] フリート管理スキル（複数車両のスケジュール・コスト管理）
 - [ ] タイヤ＆ホイールアドバイザースキル
+- [x] スキル本文の日本語翻訳（全8スキル完了）
 - [ ] エージェントフレームワーク向けの構造化スキル定義（YAMLフロントマター）
-- [ ] スキル本文の日本語翻訳
+- [ ] 会話例（examples/）の日本語翻訳
 - [ ] コミュニティによる車種別既知問題データベース
 
 ## コントリビューション
