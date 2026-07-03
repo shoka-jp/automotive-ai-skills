@@ -16,6 +16,8 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 | [Classic Car Restorer](./classic-car-restorer/) | Points, carburetors, rust, parts sourcing, restoration strategy | Classic owners & restorers |
 | [Fleet Manager](./fleet-manager/) | Multi-vehicle scheduling, cost tracking, downtime planning | Businesses & multi-car households |
 | [Tire & Wheel Advisor](./tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS | Anyone buying tires or wheels |
+| [Commercial Vehicle & Truck Assistant](./commercial-vehicle-assistant/) | Air brakes, pre-trip inspection, load securing, weight awareness | Owner-operators & work-vehicle drivers |
+| [Body & Paint Assistant](./body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits | Owners, detailers, used-car buyers |
 
 ## Which skill do I need?
 
@@ -30,6 +32,8 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 - **"It's a classic — points, carbs, rust"** → Classic Car Restorer
 - **"I manage several vehicles"** → Fleet Manager
 - **"Tires, wheels, sizing, TPMS"** → Tire & Wheel Advisor
+- **"It's a truck / work vehicle"** → Commercial Vehicle & Truck Assistant
+- **"Dents, scratches, rust, paint"** → Body & Paint Assistant
 
 Skills are designed to hand off to each other — Troubleshooting narrows the cause, Mechanic Assistant executes the fix, Maintenance Planner prevents the next failure.
 

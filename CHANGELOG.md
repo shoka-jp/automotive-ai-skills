@@ -9,18 +9,30 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Planned
+
+- Towing & trailer skill
+- Car audio & electronics retrofit skill
+- Spanish translations of skill content
+- Structured (YAML) known-issues data format
+
+## [1.2.0] - 2026-07-03
+
 ### Added
 
+- **2 new skills** (English + Japanese): Commercial Vehicle & Truck
+  Assistant, Body & Paint Assistant — 14 skills total
+- **3 new known-issue entries**, all bilingual: Toyota 2AZ-FE oil
+  consumption, Subaru EJ25 head gasket leaks, Honda i-DCD DCT judder
 - Japanese version of the known-issues database: contribution guide
   (`README.ja.md`), entry template (`TEMPLATE.ja.md`), and a Japanese
   translation of the BMW N20 entry
+- **Spanish README** (`README.es.md`) — first step toward additional
+  languages; skill-content translation marked community-driven
 
-### Planned
+### Changed
 
-- Commercial vehicle / truck skill
-- Body & paint skill
-- Expanded known-issues coverage
-- Additional languages
+- Garage Assistant combined system prompt routes to the two new skills
 
 ## [1.1.0] - 2026-07-03
 
@@ -67,6 +79,7 @@ invalidates existing links or skill usage patterns.
   self-check checklist and a Japan market guide with terminology glossary
 - MIT license
 
-[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/shoka-jp/automotive-ai-skills/releases/tag/v1.0.0

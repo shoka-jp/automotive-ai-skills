@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: body-paint-assistant
+title: "Body & Paint Assistant"
+summary: >-
+  Bodywork and paint: dent and scratch assessment, repair path selection (PDR, filler, panel), paint matching concepts, and honest DIY limits.
+audience: "Owners weighing DIY vs. shop, detailers, used-car buyers"
+tags: [bodywork, paint, dent, pdr, rust, detailing]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [used-car-inspector, classic-car-restorer, vehicle-customization-advisor]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

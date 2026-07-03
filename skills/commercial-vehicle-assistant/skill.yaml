@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: commercial-vehicle-assistant
+title: "Commercial Vehicle & Truck Assistant"
+summary: >-
+  Trucks, vans, and commercial vehicles: air brakes, pre-trip inspections, load securing, weight compliance awareness, and working-vehicle maintenance.
+audience: "Owner-operators, small transport businesses, tradespeople, drivers"
+tags: [truck, commercial, air-brakes, load-securing, pre-trip]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [diesel-specialist, fleet-manager, tire-wheel-advisor]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

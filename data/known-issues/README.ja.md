@@ -30,6 +30,9 @@
 
 | エントリ | 対象車両 | 深刻度 |
 |---|---|---|
-| [bmw-n20-timing-chain.md](./bmw-n20-timing-chain.md)([日本語版](./bmw-n20-timing-chain.ja.md)) | BMW N20/N26 2.0ターボ(〜2015年頃生産) | 致命的 |
+| [BMW N20 タイミングチェーン](./bmw-n20-timing-chain.ja.md)([EN](./bmw-n20-timing-chain.md)) | BMW N20/N26 2.0ターボ(〜2015年頃生産) | 致命的 |
+| [トヨタ 2AZ-FE オイル消費](./toyota-2az-fe-oil-consumption.ja.md)([EN](./toyota-2az-fe-oil-consumption.md)) | 2AZ-FE 2.4L(〜2006〜2011年頃) | 重大 |
+| [スバル EJ25 ヘッドガスケット](./subaru-ej25-head-gasket.ja.md)([EN](./subaru-ej25-head-gasket.md)) | SOHC EJ25(〜1999〜2011年頃) | 重大 |
+| [ホンダ i-DCD ジャダー](./honda-idcd-dct-judder.ja.md)([EN](./honda-idcd-dct-judder.md)) | i-DCD搭載ハイブリッド(2013〜2015年中心) | 重大 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*

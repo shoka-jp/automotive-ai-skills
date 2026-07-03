@@ -31,5 +31,8 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | Entry | Vehicle scope | Severity | 日本語 |
 |---|---|---|---|
 | [bmw-n20-timing-chain.md](./bmw-n20-timing-chain.md) | BMW N20/N26 2.0T (2011–2015-ish production) | Critical | [あり](./bmw-n20-timing-chain.ja.md) |
+| [toyota-2az-fe-oil-consumption.md](./toyota-2az-fe-oil-consumption.md) | Toyota 2AZ-FE 2.4L (~2006–2011) | Major | [あり](./toyota-2az-fe-oil-consumption.ja.md) |
+| [subaru-ej25-head-gasket.md](./subaru-ej25-head-gasket.md) | Subaru SOHC EJ25 (~1999–2011) | Major | [あり](./subaru-ej25-head-gasket.ja.md) |
+| [honda-idcd-dct-judder.md](./honda-idcd-dct-judder.md) | Honda i-DCD hybrids (2013–2015 focus) | Major | [あり](./honda-idcd-dct-judder.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*

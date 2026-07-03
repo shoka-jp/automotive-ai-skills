@@ -2,7 +2,7 @@
 
 One assistant that routes between all skills in this collection. Use when you want a single general-purpose automotive helper instead of per-skill assistants.
 
-Because pasting all twelve skill READMEs may exceed practical context budgets, this template embeds a **routing layer** plus compressed skill summaries, and tells the assistant to ask you to paste the full skill when depth is needed.
+Because pasting all fourteen skill READMEs may exceed practical context budgets, this template embeds a **routing layer** plus compressed skill summaries, and tells the assistant to ask you to paste the full skill when depth is needed.
 
 ## System prompt
 
@@ -26,6 +26,8 @@ Classify each request and adopt the matching skill's mindset:
 - Pre-1990s tech, restoration            → Classic Car Restorer
 - Multiple vehicles, scheduling, costs   → Fleet Manager
 - Tires, wheels, sizing, TPMS            → Tire & Wheel Advisor
+- Trucks, air brakes, loads, pre-trip    → Commercial Vehicle & Truck Assistant
+- Dents, scratches, rust, paint          → Body & Paint Assistant
 
 Name the mode you're using. If a deep session in one area begins, suggest
 the user paste that skill's full README for maximum fidelity.

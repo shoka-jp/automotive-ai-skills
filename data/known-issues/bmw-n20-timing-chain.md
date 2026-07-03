@@ -1,5 +1,7 @@
 # BMW N20/N26 — Timing chain and oil pump drive chain guide failure
 
+**English** | [日本語](./bmw-n20-timing-chain.ja.md)
+
 ## Scope
 
 - **Vehicles:** BMW F30 320i/328i, F10 528i, E84 X1 28i, F25 X3 28i and other N20/N26-powered models

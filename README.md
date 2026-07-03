@@ -7,7 +7,7 @@
 
 An open-source collection of **AI skills for automotive diagnostics, maintenance, repair, customization, and vehicle ownership** — for beginners and experienced mechanics alike.
 
-**English** | [日本語](./README.ja.md)
+**English** | [日本語](./README.ja.md) | [Español](./README.es.md)
 
 ---
 
@@ -25,7 +25,7 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 
 ## Features
 
-- 🔧 **12 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, and motorcycles
+- 🔧 **14 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, trucks, bodywork, and motorcycles
 - 📋 **Structured workflows** that gather the right vehicle context before advising
 - ⚠️ **Safety-first design** — every skill states its limitations and defers safety-critical work appropriately
 - 🧩 **Composable** — skills hand off to each other (troubleshoot → diagnose → repair → maintain)
@@ -49,6 +49,8 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 | 🕰️ [Classic Car Restorer](./skills/classic-car-restorer/) | Points ignition, carburetors, rust assessment, parts sourcing |
 | 🚛 [Fleet Manager](./skills/fleet-manager/) | Multi-vehicle scheduling, cost tracking, downtime planning |
 | 🛞 [Tire & Wheel Advisor](./skills/tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS |
+| 🚚 [Commercial Vehicle & Truck Assistant](./skills/commercial-vehicle-assistant/) | Air brakes, pre-trip inspections, load securing, weight awareness |
+| 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits |
 
 Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#which-skill-do-i-need).
 
@@ -125,7 +127,9 @@ automotive-ai-skills/
     ├── diesel-specialist/
     ├── classic-car-restorer/
     ├── fleet-manager/
-    └── tire-wheel-advisor/
+    ├── tire-wheel-advisor/
+    ├── commercial-vehicle-assistant/
+    └── body-paint-assistant/
 ```
 
 ## Example Conversations
@@ -147,10 +151,14 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Japanese translations of example conversations
 - [x] Community known-issue database — structure, template, and first entry in [`data/known-issues/`](./data/known-issues/); **entries wanted!**
 - [x] Example integrations: Claude Project template and combined system prompt in [`integrations/`](./integrations/)
-- [ ] Commercial vehicle / truck skill (air brakes, tachographs, load securing)
-- [ ] Body & paint skill (dent assessment, paint matching, DIY correction limits)
-- [ ] Expanded known-issues coverage across popular platforms (community-driven)
-- [ ] Skill content in additional languages
+- [x] Commercial Vehicle & Truck Assistant skill (air brakes, pre-trip inspection, load securing)
+- [x] Body & Paint Assistant skill (dent assessment, paint matching, DIY correction limits)
+- [x] Known-issues coverage expanded — 4 platforms seeded (BMW N20, Toyota 2AZ-FE, Subaru EJ25, Honda i-DCD), all bilingual; **community entries wanted, ongoing**
+- [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
+- [ ] Towing & trailer skill (hitches, wiring, sway control, loading)
+- [ ] Car audio & electronics retrofit skill (head units, wiring, CAN integration awareness)
+- [ ] Spanish translations of skill content (contributors welcome)
+- [ ] Structured known-issues data format (YAML) for programmatic consumption
 
 Have an idea? [Open an issue](../../issues) with the `enhancement` label.
 
