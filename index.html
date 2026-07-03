@@ -1,0 +1,229 @@
+---
+layout: null
+title: Automotive AI Skills — AI skills for car diagnostics, maintenance & repair
+description: >-
+  16 open-source AI skills for automotive diagnostics, maintenance, repair,
+  customization, EVs, and motorcycles. Works with Claude, ChatGPT, or any LLM.
+  English · 日本語 · Español. 自動車の故障診断・整備・車検をAIで支援。
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+</head>
+<body>
+  <header class="shell-header">
+    <div class="bar">
+      <a class="wordmark" href="{{ '/' | relative_url }}"><span class="tick">▮</span> Automotive AI Skills</a>
+      <nav class="shell-nav" aria-label="Site">
+        <a href="#skills">Skills</a>
+        <a href="{{ '/docs/getting-started.html' | relative_url }}">Docs</a>
+        <a href="{{ '/data/known-issues/' | relative_url }}">Known issues</a>
+        <a href="{{ '/examples/' | relative_url }}">Examples</a>
+        <a href="https://github.com/shoka-jp/automotive-ai-skills">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="landing">
+    <section class="hero">
+      <p class="eyebrow">Open-source prompt frameworks · Service manual for the AI era</p>
+      <h1>Automotive<span class="line2">AI Skills</span></h1>
+      <p class="lede">
+        Sixteen structured skills that turn Claude, ChatGPT, or any capable LLM into a
+        disciplined garage partner — diagnostics, maintenance, used-car buying, EVs,
+        motorcycles, and more. Each skill defines what to ask, what context to give,
+        and exactly where to stop trusting the machine.
+      </p>
+      <p class="lang-row">
+        <a href="{{ '/README.ja.html' | relative_url }}">日本語版 →</a>
+        <a href="{{ '/README.es.html' | relative_url }}">Español →</a>
+      </p>
+      <div class="spec-plate" role="table" aria-label="Project specifications">
+        <table>
+          <tr>
+            <td><span class="k">Skills</span><span class="v">16</span></td>
+            <td><span class="k">Languages</span><span class="v">EN · JA · ES</span></td>
+            <td><span class="k">License</span><span class="v">MIT</span></td>
+            <td><span class="k">Install</span><span class="v orange">NONE</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#skills">Browse the skill index</a>
+        <a class="btn btn-ghost" href="https://github.com/shoka-jp/automotive-ai-skills">View on GitHub</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="caution">
+    <p class="inner"><span class="tag">⚠ Caution</span>AI-recalled specs are estimates — verify torque values and capacities against factory documentation. Brakes, steering, SRS, fuel, and EV high-voltage work belong to professionals. <a href="{{ '/docs/safety-disclaimer.html' | relative_url }}">Full safety disclaimer</a></p>
+  </div>
+
+  <div class="landing">
+    <section id="how">
+      <div class="sec-head"><h2>Operating procedure</h2><span class="count">3 steps</span></div>
+      <div class="steps">
+        <div class="step">
+          <span class="no">STEP 1</span>
+          <h3>Pick a skill</h3>
+          <p>Warning light → OBD-II. Strange noise → Troubleshooting. Known repair → Mechanic Assistant. The index below routes you.</p>
+        </div>
+        <div class="step">
+          <span class="no">STEP 2</span>
+          <h3>Give the vehicle context</h3>
+          <p>Year, make, model, engine, mileage, conditions. Each skill tells you exactly what to gather — that context is what separates generic answers from useful ones.</p>
+        </div>
+        <div class="step">
+          <span class="no">STEP 3</span>
+          <h3>Iterate, then verify</h3>
+          <p>Run the cheapest discriminating test, report back, narrow down. Confirm the diagnosis before buying parts, and check specs against the factory manual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="sec-head"><h2>Skill index</h2><span class="count">SEC 01–16 · EN/JA all · ES core</span></div>
+      <div class="skill-grid">
+        <a class="skill-card" href="{{ '/skills/mechanic-assistant/' | relative_url }}">
+          <span class="sec">SEC 01 · 🔧</span><h3>Mechanic Assistant</h3>
+          <p>Repair procedures, torque spec guidance, tools, system explanations.</p>
+          <span class="langs">EN · JA · ES</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/obd2-diagnostic-assistant/' | relative_url }}">
+          <span class="sec">SEC 02 · 🔌</span><h3>OBD-II Diagnostics</h3>
+          <p>Trouble codes, freeze frame, live data — fix the fault, not the code.</p>
+          <span class="langs">EN · JA · ES</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/vehicle-maintenance-planner/' | relative_url }}">
+          <span class="sec">SEC 03 · 📅</span><h3>Maintenance Planner</h3>
+          <p>Personalized schedules, severe-service adjustments, catch-up plans.</p>
+          <span class="langs">EN · JA · ES</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/used-car-inspector/' | relative_url }}">
+          <span class="sec">SEC 04 · 🔍</span><h3>Used Car Inspector</h3>
+          <p>Model-specific checklists, red flags, negotiation math.</p>
+          <span class="langs">EN · JA · ES</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/vehicle-troubleshooting/' | relative_url }}">
+          <span class="sec">SEC 05 · 🩺</span><h3>Troubleshooting</h3>
+          <p>Symptom-first diagnosis: noises, vibrations, smells, leaks, lights.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/vehicle-customization-advisor/' | relative_url }}">
+          <span class="sec">SEC 06 · 🏁</span><h3>Customization Advisor</h3>
+          <p>Build plans, fitment math, correct mod order, legality flags.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/ev-assistant/' | relative_url }}">
+          <span class="sec">SEC 07 · ⚡</span><h3>EV Assistant</h3>
+          <p>Charging strategy, battery health, range, EV-specific maintenance.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/motorcycle-mechanic/' | relative_url }}">
+          <span class="sec">SEC 08 · 🏍️</span><h3>Motorcycle Mechanic</h3>
+          <p>Chains, carbs and EFI, valve clearances, suspension setup.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/diesel-specialist/' | relative_url }}">
+          <span class="sec">SEC 09 · 🛢️</span><h3>Diesel Specialist</h3>
+          <p>Common rail, DPF/EGR/SCR aftertreatment, glow plugs, turbos.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/classic-car-restorer/' | relative_url }}">
+          <span class="sec">SEC 10 · 🕰️</span><h3>Classic Car Restorer</h3>
+          <p>Points, carburetors, rust judgment, obsolete parts sourcing.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/fleet-manager/' | relative_url }}">
+          <span class="sec">SEC 11 · 🚛</span><h3>Fleet Manager</h3>
+          <p>Staggered scheduling, cost-per-km tracking, repair-vs-replace.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/tire-wheel-advisor/' | relative_url }}">
+          <span class="sec">SEC 12 · 🛞</span><h3>Tire &amp; Wheel Advisor</h3>
+          <p>Sizing math, fitment, seasonal strategy, wear-pattern diagnosis.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/commercial-vehicle-assistant/' | relative_url }}">
+          <span class="sec">SEC 13 · 🚚</span><h3>Commercial &amp; Truck</h3>
+          <p>Air brakes, pre-trip inspection, load securing, weight awareness.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/body-paint-assistant/' | relative_url }}">
+          <span class="sec">SEC 14 · 🎨</span><h3>Body &amp; Paint</h3>
+          <p>Dent and scratch assessment, repair paths, honest DIY limits.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/towing-trailer-advisor/' | relative_url }}">
+          <span class="sec">SEC 15 · 🪝</span><h3>Towing &amp; Trailer</h3>
+          <p>Hitches, tongue weight, trailer wiring and brakes, sway prevention.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/car-audio-electronics/' | relative_url }}">
+          <span class="sec">SEC 16 · 🔊</span><h3>Car Audio &amp; Electronics</h3>
+          <p>Head units, amps, dash cams, 12V wiring discipline, CAN limits.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="sec-head"><h2>Reference library</h2></div>
+      <div class="res-grid">
+        <div class="res-block">
+          <h3>Known-issue bulletins</h3>
+          <ul>
+            <li><a href="{{ '/data/known-issues/bmw-n20-timing-chain.html' | relative_url }}">BMW N20 timing chain guides</a> <span>— critical</span></li>
+            <li><a href="{{ '/data/known-issues/toyota-2az-fe-oil-consumption.html' | relative_url }}">Toyota 2AZ-FE oil consumption</a> <span>— major</span></li>
+            <li><a href="{{ '/data/known-issues/subaru-ej25-head-gasket.html' | relative_url }}">Subaru EJ25 head gaskets</a> <span>— major</span></li>
+            <li><a href="{{ '/data/known-issues/honda-idcd-dct-judder.html' | relative_url }}">Honda i-DCD DCT judder</a> <span>— major · JP focus</span></li>
+            <li><a href="{{ '/data/known-issues/' | relative_url }}">Full database + contribution template →</a></li>
+          </ul>
+        </div>
+        <div class="res-block">
+          <h3>日本のユーザー向け</h3>
+          <ul>
+            <li><a href="{{ '/docs/ja/shaken-checklist.html' | relative_url }}">車検前セルフチェックリスト</a></li>
+            <li><a href="{{ '/docs/ja/japan-guide.html' | relative_url }}">日本のユーザー向けガイド(用語対訳・軽自動車)</a></li>
+            <li><a href="{{ '/README.ja.html' | relative_url }}">日本語README(全スキル日本語対応)→</a></li>
+          </ul>
+        </div>
+        <div class="res-block">
+          <h3>Worked examples</h3>
+          <ul>
+            <li><a href="{{ '/examples/obd2-p0420-diagnosis.html' | relative_url }}">P0420: an $11 gasket, not a $1,200 cat</a></li>
+            <li><a href="{{ '/examples/used-car-inspection.html' | relative_url }}">Used BMW inspection → negotiation</a></li>
+            <li><a href="{{ '/examples/maintenance-catchup-plan.html' | relative_url }}">No-records maintenance catch-up</a></li>
+          </ul>
+        </div>
+        <div class="res-block">
+          <h3>Build with it</h3>
+          <ul>
+            <li><a href="{{ '/integrations/claude-project-template.html' | relative_url }}">Claude Project template</a> <span>— one-skill assistant</span></li>
+            <li><a href="{{ '/integrations/garage-assistant-system-prompt.html' | relative_url }}">Garage Assistant system prompt</a> <span>— all 16 routed</span></li>
+            <li><a href="{{ '/docs/skill-authoring-guide.html' | relative_url }}">Skill authoring guide</a> <span>— contribute a skill</span></li>
+            <li><a href="{{ '/llms.txt' | relative_url }}">llms.txt</a> <span>— for AI crawlers</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="shell-footer">
+    <div class="bar">
+      <span>MIT License © 2026 Sho Kamakura</span>
+      <a href="{{ '/docs/safety-disclaimer.html' | relative_url }}">Safety disclaimer</a>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contributing</a>
+      <a href="https://github.com/shoka-jp/automotive-ai-skills">github.com/shoka-jp/automotive-ai-skills</a>
+    </div>
+  </footer>
+</body>
+</html>
