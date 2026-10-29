@@ -83,9 +83,7 @@ All 16 skills install as native skills (`SKILL.md` in each skill folder) and tri
 
 These skills are the *knowledge* layer. The companion [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) MCP server is the *tool* layer — it lets the AI read real trouble codes, live data, and freeze frames from your car through a cheap ELM327 adapter (a mock vehicle is included, so no hardware is needed to try it):
 
-```bash
-claude mcp add obd2 -- npx -y obd2-mcp
-```
+[Build from source and try the mock vehicle](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md)
 
 ### Everything else
 
