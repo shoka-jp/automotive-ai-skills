@@ -334,15 +334,15 @@ defaults:
   - scope:
       path: README.ja.md
     values:
-      title: 自動車の診断・整備を支援する16のAIスキル
-      description: 故障診断、整備計画、中古車選び、EV、バイクを支援するオープンソースのプロンプト集。全16スキルに日本語版と利用上の限界を収録。
+      title: 自動車の診断・整備を支援する20のAIスキル
+      description: 故障診断、整備計画、中古車選び、EV、バイクを支援するオープンソースのプロンプト集。全20スキルに日本語版と利用上の限界を収録。
       lang: ja
       locale: ja_JP
   - scope:
       path: README.es.md
     values:
       title: Habilidades de IA para diagnóstico y mantenimiento de vehículos
-      description: 16 guías de trabajo con IA para diagnóstico, mantenimiento y compra de vehículos. Cuatro
+      description: 20 guías de trabajo con IA para diagnóstico, mantenimiento y compra de vehículos. Cuatro
         habilidades en español, ejemplos y límites de uso. Código abierto, licencia MIT.
       lang: es
       locale: es_ES
@@ -367,7 +367,7 @@ defaults:
     values:
       title: Choose an automotive AI skill
       description: Find the right prompt framework for a warning light, maintenance plan, used-car inspection,
-        EV, motorcycle or repair task. Browse all 16 skills.
+        EV, motorcycle or repair task. Browse all 20 skills.
       lang: en
       locale: en_US
   - scope:
@@ -378,6 +378,67 @@ defaults:
         guides and contribution documentation.
       lang: en
       locale: en_US
+
+  - scope:
+      path: skills/service-intake-assistant/README.md
+    values:
+      title: Service Intake Assistant
+      description: Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions,
+        and a technician handoff.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/service-intake-assistant/README.ja.md
+    values:
+      title: Service Intake Assistant（整備受付）
+      description: 症状の聞き取り、申告と確認結果の区別、整備士への申し送り
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/repair-estimate-reviewer/README.md
+    values:
+      title: Repair Estimate Reviewer
+      description: Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and
+        questions to resolve before authorization.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/repair-estimate-reviewer/README.ja.md
+    values:
+      title: Repair Estimate Reviewer（修理見積もりレビュー）
+      description: 修理見積もりの作業範囲・根拠・計算・確認事項を比較
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/used-car-listing-assistant/README.md
+    values:
+      title: Used Car Listing Assistant
+      description: Draft used-vehicle listings from documented specifications, condition disclosures, and
+        an explicit price breakdown without unsupported claims.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/used-car-listing-assistant/README.ja.md
+    values:
+      title: Used Car Listing Assistant（中古車販売説明）
+      description: 裏付けのある仕様・状態・価格内訳から中古車の掲載原稿を作成
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/vehicle-recall-checker/README.md
+    values:
+      title: Vehicle Recall Checker
+      description: Guide official recall lookups, separate model-level notices from vehicle applicability,
+        and document completion evidence or unknown status.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/vehicle-recall-checker/README.ja.md
+    values:
+      title: Vehicle Recall Checker（リコール確認）
+      description: 公式照会先、個別車両への適用、改修済みの根拠と未確認事項を整理
+      lang: ja
+      locale: ja_JP
 
 # LICENSE is intentionally not excluded: README badges link to ./LICENSE,
 # so it must be published (served as plain text) to avoid a 404.

@@ -1,0 +1,20 @@
+schema_version: 1
+name: service-intake-assistant
+title: Service Intake Assistant
+summary: Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and
+  a technician handoff.
+audience: Service advisors, shops, fleet coordinators, and owners
+tags:
+- service-advisor
+- intake
+- customer-communication
+- workshop
+languages:
+  en: README.md
+  ja: README.ja.md
+related:
+- vehicle-troubleshooting
+- repair-estimate-reviewer
+- fleet-manager
+safety_notes: Verify vehicle-specific information against current primary sources and factory documentation.
+  Defer safety-critical hands-on work to qualified professionals. See docs/safety-disclaimer.md.

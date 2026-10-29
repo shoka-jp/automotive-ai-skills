@@ -73,4 +73,4 @@ Open an issue first with the skill's scope and audience, then follow the [Skill 
 
 ### Why English first?
 
-English is the shared contribution language. All 16 skills also have Japanese READMEs; four core skills have Spanish translations. See the [skills index](../skills/README.md) for coverage. Translation corrections and the remaining Spanish translations are welcome.
+English is the shared contribution language. All 20 skills also have Japanese READMEs; four core skills have Spanish translations. See the [skills index](../skills/README.md) for coverage. Translation corrections and the remaining Spanish translations are welcome.

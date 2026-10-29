@@ -16,7 +16,11 @@ Japan-specific guides (market notes, shaken inspection checklist) live in [`docs
 
 ## See also
 
-- [Skills index](../skills/README.md) — all 16 skills with a selection guide
+- [Skills index](../skills/README.md) — all 20 skills with a selection guide
 - [Examples](../examples/README.md) — full worked sessions showing the skills in use
 - [Known-issue database](../data/known-issues/README.md) — community-contributed vehicle-specific known issues
 - [Integrations](../integrations/README.md) — using the skills with Claude Projects, Claude Code, and custom system prompts
+
+## Service and sales sources / 整備・販売の確認資料
+
+- [Vehicle service and sales verification sources](./vehicle-service-sources.md) — official recall lookups, repair-estimate guidance, and Japanese used-car advertising references (EN/JA).

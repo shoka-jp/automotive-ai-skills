@@ -10,6 +10,6 @@
 ## あわせて読む
 
 - [日本語README](../../README.ja.md) — リポジトリ全体の日本語での紹介
-- [スキル一覧](../../skills/README.md)(英語)— 全16スキル。各スキルフォルダに日本語版 `README.ja.md` があります
+- [スキル一覧](../../skills/README.md)(英語)— 全20スキル。各スキルフォルダに日本語版 `README.ja.md` があります
 - [既知問題データベース(日本語ガイド)](../../data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法
 - [英語ドキュメント](../README.md) — Getting Started、FAQ、安全免責事項など

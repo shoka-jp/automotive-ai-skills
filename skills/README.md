@@ -20,6 +20,10 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 | [Body & Paint Assistant](./body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits | Owners, detailers, used-car buyers |
 | [Towing & Trailer Advisor](./towing-trailer-advisor/) | Hitches, tongue weight, trailer wiring/brakes, sway prevention | First-time towers, boat & camper owners |
 | [Car Audio & Electronics Assistant](./car-audio-electronics/) | Head units, amps, dash cams, 12V wiring discipline, CAN limits | Audio DIYers, dash cam installers |
+| [Service Intake Assistant](./service-intake-assistant/) | Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and a technician handoff. | Service advisors, shops, fleet coordinators, and owners |
+| [Repair Estimate Reviewer](./repair-estimate-reviewer/) | Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions to resolve before authorization. | Owners, service advisors, used-car businesses, and fleet purchasers |
+| [Used Car Listing Assistant](./used-car-listing-assistant/) | Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit price breakdown without unsupported claims. | Independent dealers, sales staff, and private sellers |
+| [Vehicle Recall Checker](./vehicle-recall-checker/) | Guide official recall lookups, separate model-level notices from vehicle applicability, and document completion evidence or unknown status. | Owners, used-car buyers and sellers, service advisors, and fleets |
 
 ## Which skill do I need?
 
@@ -38,6 +42,11 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 - **"Dents, scratches, rust, paint"** → Body & Paint Assistant
 - **"I'm towing something"** → Towing & Trailer Advisor
 - **"Stereo, dash cam, 12V wiring"** → Car Audio & Electronics Assistant
+
+- **"I need to explain a symptom to the workshop"** → Service Intake Assistant
+- **"Help me compare these repair estimates"** → Repair Estimate Reviewer
+- **"Help me write an accurate listing for this car"** → Used Car Listing Assistant
+- **"Does this recall apply, and has it been completed?"** → Vehicle Recall Checker
 
 Skills are designed to hand off to each other — Troubleshooting narrows the cause, Mechanic Assistant executes the fix, Maintenance Planner prevents the next failure.
 

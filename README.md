@@ -27,7 +27,7 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 
 ## Features
 
-- 🔧 **16 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, trucks, bodywork, towing, car audio, and motorcycles
+- 🔧 **20 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, trucks, bodywork, towing, car audio, motorcycles, service intake, estimates, listings, and recalls
 - 📋 **Structured workflows** that gather the right vehicle context before advising
 - ⚠️ **Safety-first design** — every skill states its limitations and defers safety-critical work appropriately
 - 🧩 **Composable** — skills hand off to each other (troubleshoot → diagnose → repair → maintain)
@@ -55,6 +55,10 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 | 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits |
 | 🪝 [Towing & Trailer Advisor](./skills/towing-trailer-advisor/) | Hitches, tongue weight, trailer wiring and brakes, sway prevention |
 | 🔊 [Car Audio & Electronics Assistant](./skills/car-audio-electronics/) | Head units, amps, dash cams, 12V wiring discipline, CAN-bus limits |
+| 📝 [Service Intake Assistant](./skills/service-intake-assistant/) | Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and a technician handoff. |
+| 🧾 [Repair Estimate Reviewer](./skills/repair-estimate-reviewer/) | Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions to resolve before authorization. |
+| 🏷️ [Used Car Listing Assistant](./skills/used-car-listing-assistant/) | Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit price breakdown without unsupported claims. |
+| 📣 [Vehicle Recall Checker](./skills/vehicle-recall-checker/) | Guide official recall lookups, separate model-level notices from vehicle applicability, and document completion evidence or unknown status. |
 
 Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#which-skill-do-i-need).
 
@@ -75,7 +79,7 @@ The repository is a Claude Code plugin marketplace. Inside Claude Code:
 /plugin install automotive-ai-skills@automotive-ai-skills
 ```
 
-All 16 skills install as native skills (`SKILL.md` in each skill folder) and trigger automatically when you ask automotive questions.
+All 20 skills install as native skills (`SKILL.md` in each skill folder) and trigger automatically when you ask automotive questions.
 
 ### OpenAI Codex
 
@@ -137,7 +141,7 @@ automotive-ai-skills/
 │   ├── used-car-inspection.md        (+ .ja.md)
 │   └── maintenance-catchup-plan.md   (+ .ja.md)
 ├── integrations/             # Claude Project template, combined system prompt
-└── skills/                   # 16 skills; each folder has README.md,
+└── skills/                   # 20 skills; each folder has README.md,
     ├── README.md             #   README.ja.md, SKILL.md, and skill.yaml
     ├── mechanic-assistant/
     ├── obd2-diagnostic-assistant/
@@ -154,7 +158,11 @@ automotive-ai-skills/
     ├── commercial-vehicle-assistant/
     ├── body-paint-assistant/
     ├── towing-trailer-advisor/
-    └── car-audio-electronics/
+    ├── car-audio-electronics/
+    ├── service-intake-assistant/
+    ├── repair-estimate-reviewer/
+    ├── used-car-listing-assistant/
+    └── vehicle-recall-checker/
 ```
 
 ## Example Conversations
@@ -182,7 +190,7 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
 - [x] Towing & Trailer Advisor skill (hitches, tongue weight, wiring, sway)
 - [x] Car Audio & Electronics Assistant skill (head units, 12V discipline, CAN awareness)
-- [x] Spanish skill translations started — 4 core skills done (Mechanic, OBD-II, Maintenance Planner, Used Car Inspector); **remaining 12 welcome from contributors**
+- [x] Spanish skill translations started — 4 core skills done (Mechanic, OBD-II, Maintenance Planner, Used Car Inspector); **remaining 16 welcome from contributors**
 - [x] Structured known-issues data format — [`data/known-issues/index.yaml`](./data/known-issues/index.yaml)
 - [ ] Complete Spanish coverage of all skills
 - [ ] Motorhome/RV habitation systems skill (water, gas, leisure batteries, solar)

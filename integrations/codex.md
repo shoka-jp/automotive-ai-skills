@@ -34,7 +34,7 @@ mkdir -p ~/.codex/prompts
 cp skills/obd2-diagnostic-assistant/README.md ~/.codex/prompts/obd2.md
 ```
 
-Install all 16 at once:
+Install all 20 at once:
 
 ```bash
 # bash — from the repo root

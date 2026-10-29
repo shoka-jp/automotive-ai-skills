@@ -4,7 +4,7 @@ This file is read automatically by OpenAI Codex and other AGENTS.md-aware coding
 
 ## Using the skills
 
-This repository contains 16 automotive advisory skills. When the user asks an automotive question, adopt the matching skill by reading its `README.md` and following its recommended workflow and limitations:
+This repository contains 20 automotive advisory skills. When the user asks an automotive question, adopt the matching skill by reading its `README.md` and following its recommended workflow and limitations:
 
 | When the user asks about… | Read and follow |
 |---|---|
@@ -24,6 +24,10 @@ This repository contains 16 automotive advisory skills. When the user asks an au
 | Dents, scratches, rust bubbles, paint | `skills/body-paint-assistant/README.md` |
 | Towing, hitches, trailers | `skills/towing-trailer-advisor/README.md` |
 | Car stereo, dash cams, 12V wiring | `skills/car-audio-electronics/README.md` |
+| Service intake, customer concerns, technician handoff | `skills/service-intake-assistant/README.md` |
+| Written repair estimates, scope and cost comparisons | `skills/repair-estimate-reviewer/README.md` |
+| Selling a used vehicle, listing claims and disclosures | `skills/used-car-listing-assistant/README.md` |
+| Recall applicability, official lookup and completion records | `skills/vehicle-recall-checker/README.md` |
 
 Japanese versions exist as `README.ja.md` in each skill folder — reply in the language the user writes in. Model-specific known issues live in `data/known-issues/` (machine-readable index: `index.yaml`).
 

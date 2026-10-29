@@ -26,7 +26,7 @@
 
 ## 特徴
 
-- 🔧 診断・修理・整備・購入・カスタム・EV・ディーゼル・旧車・フリート・タイヤ・トラック・板金塗装・牽引・オーディオ・バイクをカバーする**16のスキル**
+- 🔧 診断・修理・整備・購入・カスタム・EV・ディーゼル・旧車・フリート・タイヤ・トラック・板金塗装・牽引・オーディオ・バイク・整備受付・見積もり・販売説明・リコール確認をカバーする**20のスキル**
 - 📋 助言の前に適切な車両情報を集める**構造化ワークフロー**
 - ⚠️ **安全第一の設計** — 全スキルが限界を明記し、安全に関わる作業は専門家に委ねる方針
 - 🧩 **スキル間の連携** — トラブルシュート → 診断 → 修理 → 予防整備へと引き継ぎ可能
@@ -56,6 +56,10 @@
 | 🎨 [Body & Paint Assistant（板金・塗装）](./skills/body-paint-assistant/README.ja.md) | へこみ・傷の評価、修理方法の選択、色合わせ、DIYの限界 |
 | 🪝 [Towing & Trailer Advisor（牽引・トレーラー）](./skills/towing-trailer-advisor/README.ja.md) | ヒッチ、垂直荷重、トレーラー配線とブレーキ、蛇行予防 |
 | 🔊 [Car Audio & Electronics Assistant（オーディオ・電装）](./skills/car-audio-electronics/README.ja.md) | ヘッドユニット、アンプ、ドラレコ、12V配線の規律、CANの限界 |
+| 📝 [Service Intake Assistant（整備受付）](./skills/service-intake-assistant/README.ja.md) | 症状の聞き取り、申告と確認結果の区別、整備士への申し送り |
+| 🧾 [Repair Estimate Reviewer（修理見積もりレビュー）](./skills/repair-estimate-reviewer/README.ja.md) | 修理見積もりの作業範囲・根拠・計算・確認事項を比較 |
+| 🏷️ [Used Car Listing Assistant（中古車販売説明）](./skills/used-car-listing-assistant/README.ja.md) | 裏付けのある仕様・状態・価格内訳から中古車の掲載原稿を作成 |
+| 📣 [Vehicle Recall Checker（リコール確認）](./skills/vehicle-recall-checker/README.ja.md) | 公式照会先、個別車両への適用、改修済みの根拠と未確認事項を整理 |
 
 ## 日本のユーザー向けコンテンツ
 
@@ -79,7 +83,7 @@
 /plugin install automotive-ai-skills@automotive-ai-skills
 ```
 
-全16スキルがネイティブスキル(各フォルダの`SKILL.md`)としてインストールされ、車の質問をすると自動で発動します。
+全20スキルがネイティブスキル(各フォルダの`SKILL.md`)としてインストールされ、車の質問をすると自動で発動します。
 
 ### OpenAI Codex
 
@@ -124,7 +128,7 @@ automotive-ai-skills/
 ├── data/known-issues/        # 車種別の既知問題データベース（コミュニティ投稿）
 ├── examples/                 # 会話例（日英）
 ├── integrations/             # Claude Projectテンプレート、統合システムプロンプト
-└── skills/                   # 16スキル（各フォルダに README.md / README.ja.md / SKILL.md / skill.yaml）
+└── skills/                   # 20スキル（各フォルダに README.md / README.ja.md / SKILL.md / skill.yaml）
 ```
 
 ## ロードマップ
@@ -144,7 +148,7 @@ automotive-ai-skills/
 - [x] 他言語への展開開始 — スペイン語README（[README.es.md](./README.es.md)）。スキル本文の翻訳はコミュニティ主導
 - [x] 牽引・トレーラースキル（ヒッチ、垂直荷重、配線、蛇行予防）
 - [x] カーオーディオ・電装スキル（ヘッドユニット、12V配線の規律、CANの基礎）
-- [x] スキル本文のスペイン語翻訳を開始 — 主要4スキル完了（整備/OBD-II/整備計画/中古車）。**残り12本はコントリビューター歓迎**
+- [x] スキル本文のスペイン語翻訳を開始 — 主要4スキル完了（整備/OBD-II/整備計画/中古車）。**残り16本はコントリビューター歓迎**
 - [x] 既知問題データの構造化フォーマット（[`data/known-issues/index.yaml`](./data/known-issues/index.yaml)）
 - [ ] 全スキルのスペイン語対応完了
 - [ ] キャンピングカー居住設備スキル（水回り、ガス、サブバッテリー、ソーラー）

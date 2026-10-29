@@ -71,3 +71,4 @@ during a clutch job.
 - [OBD-II Diagnostic Assistant](../obd2-diagnostic-assistant/) — for trouble-code-driven electronic diagnosis
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/) — for symptom-first triage before repair
 - [Motorcycle Mechanic](../motorcycle-mechanic/) — for two-wheeled equivalents of this skill
+- [Repair Estimate Reviewer](../repair-estimate-reviewer/) — review proposed work and estimate scope before authorization

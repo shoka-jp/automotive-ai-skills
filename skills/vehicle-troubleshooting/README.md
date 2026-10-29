@@ -75,3 +75,4 @@ good. How do I find a parasitic drain?
 - [OBD-II Diagnostic Assistant](../obd2-diagnostic-assistant/) — when a warning light or stored code accompanies the symptom
 - [Mechanic Assistant](../mechanic-assistant/) — executing the repair after diagnosis
 - [Motorcycle Mechanic](../motorcycle-mechanic/) — two-wheeled troubleshooting
+- [Service Intake Assistant](../service-intake-assistant/) — prepare a factual workshop handoff

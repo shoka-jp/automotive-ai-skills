@@ -72,3 +72,4 @@
 - [Vehicle Maintenance Planner](../vehicle-maintenance-planner/README.ja.md) — 購入後のキャッチアップ整備計画
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/README.ja.md) — 試乗で見つかった特定の症状の調査
 - [EV Assistant](../ev-assistant/README.ja.md) — 中古EVの購入判断はバッテリー健全性の評価が鍵です
+- [Used Car Listing Assistant](../used-car-listing-assistant/README.ja.md) — 確認した車両状態から正確な販売説明を作成

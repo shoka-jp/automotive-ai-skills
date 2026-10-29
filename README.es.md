@@ -22,7 +22,7 @@ Cada habilidad define:
 
 Las habilidades son **independientes de la plataforma**: funcionan con Claude, ChatGPT, modelos locales o cualquier asistente de IA capaz. No requieren instalación ni código.
 
-## Habilidades (16)
+## Habilidades (20)
 
 Las cuatro primeras están **disponibles en español** — sigue el enlace de la columna derecha.
 
@@ -44,6 +44,10 @@ Las cuatro primeras están **disponibles en español** — sigue el enlace de la
 | 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Evaluación de golpes y arañazos, pintura, límites del bricolaje | — |
 | 🪝 [Towing & Trailer Advisor](./skills/towing-trailer-advisor/) | Enganches, peso en punta, cableado y frenos de remolque | — |
 | 🔊 [Car Audio & Electronics Assistant](./skills/car-audio-electronics/) | Radios, amplificadores, dash cams, disciplina de cableado 12V | — |
+| 📝 [Service Intake Assistant](./skills/service-intake-assistant/) | Recepción de síntomas, registro de evidencias y comunicación con el taller | — |
+| 🧾 [Repair Estimate Reviewer](./skills/repair-estimate-reviewer/) | Comparación del alcance, las evidencias y los cálculos de presupuestos de reparación | — |
+| 🏷️ [Used Car Listing Assistant](./skills/used-car-listing-assistant/) | Anuncios de vehículos usados con datos documentados, estado y desglose de precio | — |
+| 📣 [Vehicle Recall Checker](./skills/vehicle-recall-checker/) | Consultas oficiales de campañas, aplicabilidad al vehículo y pruebas de reparación | — |
 
 ## Uso
 

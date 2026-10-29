@@ -75,3 +75,4 @@
 - [OBD-II Diagnostic Assistant](../obd2-diagnostic-assistant/README.ja.md) — 警告灯やコードが症状に伴う場合
 - [Mechanic Assistant](../mechanic-assistant/README.ja.md) — 診断確定後の修理
 - [Motorcycle Mechanic](../motorcycle-mechanic/README.ja.md) — 二輪のトラブルシューティング
+- [Service Intake Assistant](../service-intake-assistant/README.ja.md) — 整備工場向けに事実を整理
