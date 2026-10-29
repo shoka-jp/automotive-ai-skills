@@ -88,3 +88,7 @@ docs(readme): add Japanese translation note
 ## Questions?
 
 Open a [discussion or issue](https://github.com/shoka-jp/automotive-ai-skills/issues). For conduct concerns, see [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md); for security concerns, see [SECURITY.md](./SECURITY.md).
+
+## Improve a vehicle brief
+
+Use the [quality workflow](./docs/quality.md) to contribute evidence and outcomes. Vehicle coverage needs original-market sources, precise variants, bilingual entries, and a regression case. Rebuild `assets/data/vehicle-brief.json` from its source files; do not edit the generated bundle alone. Reports are reviewed before they become reference claims.

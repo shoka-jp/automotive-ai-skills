@@ -13,6 +13,22 @@ An open-source collection of **AI skills for automotive diagnostics, maintenance
 
 ---
 
+## Try it with your vehicle
+
+**[Open the Vehicle Brief Builder →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)** · [Try an N-BOX buying brief](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html?vehicle=nbox&task=buy) · [日本語](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)
+
+[![Choose a vehicle and task, check official sources, and copy a useful brief](./assets/vehicle-brief-overview.svg)](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
+
+1. Choose a vehicle and goal: buying, symptoms, recall records, maintenance, estimates or selling.
+2. Read the relevant questions and references, filtered by model code, production year and original market.
+3. Copy the prompt into your preferred AI, save Markdown, or print the brief.
+
+**No account, API key or adapter.** Inputs are not sent or saved; shared links contain only the preset vehicle and goal. The builder does not run an AI diagnosis or an official eligibility lookup.
+
+Seven source-reviewed entries support eight Japan-market profiles. Other vehicles can use the general workflow; the full library has 17 entries. [Quality and limits](./docs/quality.md) · [Request a vehicle](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
+
+If this helps your next viewing or workshop visit, **Star** the repository to find it again and support its development. Documented findings and corrections are welcome.
+
 ## Overview
 
 Large language models are genuinely useful in the garage — but only when prompted with structure, context, and awareness of their limits. This repository packages that structure as **skills**: curated prompt frameworks, workflows, and guardrails that turn a general-purpose AI assistant into a focused automotive helper.
@@ -23,7 +39,7 @@ Each skill defines:
 - **How to use it** (recommended workflow and context to provide)
 - **Ready-to-use example prompts** you can copy and adapt
 
-The skills are **platform-agnostic**: they work with Claude, ChatGPT, local models, or any capable AI assistant. They are documentation-first — no code required to use them.
+The skills are **platform-agnostic**: they work with Claude, ChatGPT, local models, or any capable AI assistant. Use the browser builder or copy a skill directly; no code is required for either.
 
 ## Features
 

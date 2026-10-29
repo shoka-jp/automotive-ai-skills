@@ -1,0 +1,35 @@
+name: Vehicle coverage request / 車種リクエスト
+description: Request a model profile with sources and a concrete use case.
+title: "[vehicle]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Which vehicle should we cover next? 日本語で投稿できます。Do not include VIN/chassis numbers, registration plates, names, contact details, or customer documents."
+  - type: input
+    id: vehicle
+    attributes:
+      label: Make, model, generation / メーカー・車種・世代
+      placeholder: Honda N-BOX JF5 / 日本仕様
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Production period, engine, original market / 製作時期・エンジン・仕向け
+      description: Say unknown where necessary. Do not substitute first registration for production.
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What would this help you do? / 何を確認したいですか？
+      placeholder: Pre-purchase questions, service history, recall completion, estimate review…
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public official sources / 公開された公式資料
+      description: Manufacturer/regulator URLs and notice numbers if available. A request is not evidence of a defect.
+    validations:
+      required: false

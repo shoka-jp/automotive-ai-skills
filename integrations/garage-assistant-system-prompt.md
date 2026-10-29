@@ -68,5 +68,5 @@ the user paste that skill's full README for maximum fidelity.
 ## Extending it
 
 - **Add your vehicles:** append a `=== MY VEHICLES ===` block (see the [Claude Project template](./claude-project-template.md)).
-- **Add known issues:** paste relevant [`data/known-issues/`](../data/known-issues/) entries for your vehicles.
+- **Add known issues:** use the [Vehicle Brief Builder](../tools/vehicle-brief.html) or [shared reference routing](../docs/model-reference-routing.md), then read the selected full entry. If no reviewed profile matches, keep that uncertainty explicit.
 - **Trim to fit:** if the prompt budget is tight, keep Routing and Hard rules; the Universal workflow compresses well.

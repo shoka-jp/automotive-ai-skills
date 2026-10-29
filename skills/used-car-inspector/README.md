@@ -52,6 +52,8 @@ Asking price is $9,500. Help me build a negotiation position.
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Before contacting the seller:** share the listing details and ask for known issues, fair price range, and questions to ask remotely.
 2. **Before the viewing:** request a model-specific checklist and print it or keep it on your phone.
 3. **During inspection:** work through the checklist and note everything — take photos of anything questionable.

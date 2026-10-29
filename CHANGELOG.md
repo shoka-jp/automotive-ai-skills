@@ -11,6 +11,16 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Browser-only Vehicle Brief Builder in English and Japanese: eight reviewed
+  Japan-market vehicle profiles, six goals, source-linked checklists, copy,
+  Markdown download, printing, and preset sharing without personal notes.
+- Shared offline CLI/reference selector with exact model aliases, variant/year
+  and market limits; generated knowledge bundle checked against source files.
+- Deterministic contract tests, real-browser CI and screenshots, eight authored
+  downstream-answer review scenarios, and public quality/limitations guidance.
+- Vehicle requests and evidence/outcome issue templates; direct trial and Star
+  links plus a visual overview on the README and landing page.
+
 - Six bilingual Japan-market known-issue entries: Toyota 86/Subaru BRZ
   valve springs, Honda N-BOX JF3/JF4 fuel pump, Suzuki Wagon R MH23S
   evaporator leakage, Daihatsu Tanto LA600S/LA610S brake booster corrosion,
@@ -50,11 +60,14 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Six relevant skills and agent routing now load reviewed model references
+  before model-specific claims, with explicit missing-resource/no-match handling.
+
 - Known-issue templates require evidence for frequency and cost, distinguish
   recalls from warranty extensions, and prefer traceable primary sources.
 
 - Skill indexes, agent routing, landing cards, localized search metadata,
-  and plugin metadata cover all 20 skills; plugin version is 1.5.1.
+  and plugin metadata cover all 20 skills; plugin version is 1.6.0.
 - Language choice stays explicit; removed browser-language forced redirects.
 - Teaching conversations now identify illustrative costs and outcomes;
   FAQ translation coverage now matches the repository.

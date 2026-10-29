@@ -12,6 +12,22 @@
 
 ---
 
+## 車種を選んで、すぐ試す
+
+**[車種別チェックメーカーを開く →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)** · [N-BOXの購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy) · [English](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
+
+[![車種と目的を選び、公式出典を確認して、質問文をコピーする流れ](./assets/vehicle-brief-overview.svg)](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)
+
+1. 車種と目的を選ぶ。購入前・症状・リコール記録・整備計画・見積もり・販売説明に対応。
+2. 型式・製造年・仕向けに合う資料と、確認すべき質問を読む。
+3. 質問文を使いたいAIへコピー、Markdownで保存、または印刷する。
+
+**登録・APIキー・診断機は不要。** 入力を送信・保存せず、共有リンクには車種と目的だけを含めます。AI診断や公式の個別照会は実行しません。
+
+メーカー等の出典を確認した7件を日本向け8車種から参照できます。他の車にも共通手順を利用でき、資料全体は17件です。[品質と限界](./docs/quality.ja.md) · [車種をリクエスト](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
+
+役立ったら、GitHubの **Star** で保存・応援していただけると嬉しいです。確認できた事例や訂正も歓迎します。
+
 ## 概要
 
 大規模言語モデル（LLM）はガレージでも十分に役立ちます。ただし、それは適切な構造・文脈・限界の認識を持ってプロンプトを与えた場合に限ります。本リポジトリはその構造を「**スキル**」としてパッケージ化したものです。厳選されたプロンプトフレームワーク、ワークフロー、ガードレールにより、汎用AIアシスタントを自動車特化のアシスタントに変えます。

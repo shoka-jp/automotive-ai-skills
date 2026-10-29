@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "library_entry_count": 17,
+  "profiles": [
+    {
+      "id": "nbox",
+      "label": {
+        "en": "Honda N-BOX JF3/JF4",
+        "ja": "ホンダ N-BOX JF3/JF4"
+      },
+      "aliases": [
+        "N-BOX",
+        "NBOX",
+        "エヌボックス",
+        "JF3",
+        "JF4"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "JF3",
+          "years": [
+            2017,
+            2020
+          ]
+        },
+        {
+          "code": "JF4",
+          "years": [
+            2017,
+            2020
+          ]
+        }
+      ],
+      "entry_ids": [
+        "honda-nbox-jf3-jf4-fuel-pump"
+      ]
+    },
+    {
+      "id": "wagon-r",
+      "label": {
+        "en": "Suzuki Wagon R MH23S",
+        "ja": "スズキ ワゴンR MH23S"
+      },
+      "aliases": [
+        "Wagon R",
+        "ワゴンR",
+        "MH23S"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "MH23S",
+          "years": [
+            2008,
+            2012
+          ]
+        }
+      ],
+      "entry_ids": [
+        "suzuki-wagon-r-mh23s-evaporator-leak"
+      ]
+    },
+    {
+      "id": "tanto",
+      "label": {
+        "en": "Daihatsu Tanto LA600S/LA610S",
+        "ja": "ダイハツ タント LA600S/LA610S"
+      },
+      "aliases": [
+        "Tanto",
+        "タント",
+        "LA600S",
+        "LA610S"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "LA600S",
+          "years": [
+            2013,
+            2016
+          ]
+        },
+        {
+          "code": "LA610S",
+          "years": [
+            2013,
+            2016
+          ]
+        }
+      ],
+      "entry_ids": [
+        "daihatsu-tanto-la600s-brake-booster-corrosion"
+      ]
+    },
+    {
+      "id": "serena",
+      "label": {
+        "en": "Nissan Serena C26 family",
+        "ja": "日産 セレナ C26系"
+      },
+      "aliases": [
+        "Serena",
+        "セレナ",
+        "C26",
+        "FC26",
+        "NC26",
+        "FNC26"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "C26",
+          "years": [
+            2010,
+            2012
+          ]
+        },
+        {
+          "code": "FC26",
+          "years": [
+            2010,
+            2012
+          ]
+        },
+        {
+          "code": "NC26",
+          "years": [
+            2010,
+            2016
+          ]
+        },
+        {
+          "code": "FNC26",
+          "years": [
+            2010,
+            2016
+          ]
+        }
+      ],
+      "entry_ids": [
+        "nissan-serena-c26-eco-motor-bearing"
+      ]
+    },
+    {
+      "id": "cx5",
+      "label": {
+        "en": "Mazda CX-5 KE2 diesel",
+        "ja": "マツダ CX-5 KE2 ディーゼル"
+      },
+      "aliases": [
+        "CX-5",
+        "CX5",
+        "KE2FW",
+        "KE2AW"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "KE2FW",
+          "years": [
+            2012,
+            2016
+          ]
+        },
+        {
+          "code": "KE2AW",
+          "years": [
+            2012,
+            2016
+          ]
+        }
+      ],
+      "entry_ids": [
+        "mazda-cx5-ke2-injector-seal-oil-strainer"
+      ]
+    },
+    {
+      "id": "86",
+      "label": {
+        "en": "Toyota 86 ZN6",
+        "ja": "トヨタ 86 ZN6"
+      },
+      "aliases": [
+        "Toyota 86",
+        "トヨタ86",
+        "ZN6"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "ZN6",
+          "years": [
+            2012,
+            2013
+          ]
+        }
+      ],
+      "entry_ids": [
+        "toyota-86-subaru-brz-valve-spring"
+      ]
+    },
+    {
+      "id": "brz",
+      "label": {
+        "en": "Subaru BRZ ZC6",
+        "ja": "スバル BRZ ZC6"
+      },
+      "aliases": [
+        "BRZ",
+        "スバルBRZ",
+        "ZC6"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "ZC6",
+          "years": [
+            2012,
+            2013
+          ]
+        }
+      ],
+      "entry_ids": [
+        "toyota-86-subaru-brz-valve-spring"
+      ]
+    },
+    {
+      "id": "stepwgn",
+      "label": {
+        "en": "Honda Step WGN RK",
+        "ja": "ホンダ ステップワゴン RK系"
+      },
+      "aliases": [
+        "Step WGN",
+        "Stepwgn",
+        "ステップワゴン",
+        "RK1",
+        "RK2",
+        "RK5",
+        "RK6"
+      ],
+      "market": "Japan",
+      "variants": [
+        {
+          "code": "RK1",
+          "years": [
+            2009,
+            2015
+          ]
+        },
+        {
+          "code": "RK2",
+          "years": [
+            2009,
+            2015
+          ]
+        },
+        {
+          "code": "RK5",
+          "years": [
+            2009,
+            2015
+          ]
+        },
+        {
+          "code": "RK6",
+          "years": [
+            2009,
+            2015
+          ]
+        }
+      ],
+      "entry_ids": [
+        "honda-rk-stepwgn-cvt-judder"
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "buy",
+      "skill": "used-car-inspector",
+      "label": {
+        "en": "Buy a used car",
+        "ja": "中古車を買う"
+      },
+      "request": {
+        "en": "Prepare a pre-purchase question list, documents to request, and items for an independent inspection. Separate verified facts, seller statements, and unknowns.",
+        "ja": "購入前の質問、取り寄せる記録、第三者の点検で確認する事項を作成してください。確認済みの事実、売主の申告、不明な点を分けてください。"
+      }
+    },
+    {
+      "id": "symptom",
+      "skill": "vehicle-troubleshooting",
+      "label": {
+        "en": "Explain a symptom",
+        "ja": "症状を整理する"
+      },
+      "request": {
+        "en": "Organize the observed symptom, ask focused follow-up questions, and explain which evidence would distinguish possible causes. Do not diagnose a failed part from a model match alone.",
+        "ja": "観察した症状を整理し、追加質問と原因の切り分けに必要な根拠を示してください。車種が一致しただけで故障部品を断定しないでください。"
+      }
+    },
+    {
+      "id": "recall",
+      "skill": "vehicle-recall-checker",
+      "label": {
+        "en": "Check recall records",
+        "ja": "リコール記録を確認"
+      },
+      "request": {
+        "en": "Identify official lookup sources and questions about applicability and completion. Separate interim actions, final repairs, and unknown status. Distinguish a warranty extension from a recall.",
+        "ja": "公式照会先と、個別の対象・実施状況についての質問を整理してください。暫定措置、最終対策、未確認を分け、保証延長とリコールを区別してください。"
+      }
+    },
+    {
+      "id": "maintenance",
+      "skill": "vehicle-maintenance-planner",
+      "label": {
+        "en": "Plan maintenance",
+        "ja": "整備計画を立てる"
+      },
+      "request": {
+        "en": "Build a maintenance planning worksheet from actual records, use, mileage, and the exact manufacturer schedule. Ask for missing information rather than inventing service intervals or capacities.",
+        "ja": "整備記録、使い方、走行距離、その車両のメーカー指定をもとに整備計画の確認表を作成してください。不足情報を質問し、交換周期や容量を作らないでください。"
+      }
+    },
+    {
+      "id": "estimate",
+      "skill": "repair-estimate-reviewer",
+      "label": {
+        "en": "Review an estimate",
+        "ja": "修理見積もりを確認"
+      },
+      "request": {
+        "en": "List the estimate details needed to compare scope, parts, labor, diagnostic evidence, and totals. Do not invent a local fair price. Ask which work is authorized and distinguish recommendations from completed work.",
+        "ja": "作業範囲、部品、工賃、診断根拠、合計を比較するために必要な見積もり項目を整理してください。相場を捏造せず、承諾範囲と、提案・実施済み作業を区別してください。"
+      }
+    },
+    {
+      "id": "sell",
+      "skill": "used-car-listing-assistant",
+      "label": {
+        "en": "Prepare an honest listing",
+        "ja": "販売説明を作る"
+      },
+      "request": {
+        "en": "Draft a listing outline from documented specifications and condition. Separate evidence-backed claims, reported history, and unknowns; identify disclosures and price components to verify for the market.",
+        "ja": "裏付けのある仕様と状態から販売説明の下書きを作成してください。根拠のある事実、申告された履歴、不明点を分け、仕向けに応じて確認すべき開示事項と価格内訳を整理してください。"
+      }
+    }
+  ],
+  "entries": {
+    "honda-nbox-jf3-jf4-fuel-pump": {
+      "id": "honda-nbox-jf3-jf4-fuel-pump",
+      "evidence_type": "recall",
+      "campaign_ids": [
+        "5423"
+      ],
+      "source_urls": [
+        "https://www.honda.co.jp/recall/auto/info/231208_5423.html",
+        "https://www.mlit.go.jp/report/press/jidosha08_hh_004984.html"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Honda N-BOX JF3/JF4 — low-pressure fuel pump recall",
+          "path": "data/known-issues/honda-nbox-jf3-jf4-fuel-pump.html",
+          "scope": "- **Vehicles:** N-BOX and N-BOX Custom, DBA-JF3/JF4 and 6BA-JF3/JF4 rows in recall 5423.\n- **Engines/components:** Low-pressure fuel pump and its resin impeller.\n- **Production window:** Listed subranges span 2017-07-26 to 2020-02-14 for JF3 and to 2020-02-12 for JF4. They are not continuous eligibility ranges; use the complete manufacturer table.\n- **Markets:** Japan. The same notice lists other Honda models; their ranges are not interchangeable with N-BOX ranges.",
+          "issue": "The impeller can deform and prevent the pump from operating, potentially stalling the engine. The 2024-06-14 correction requires checking the pump identification mark and replacing the pump when applicable; a vehicle inside a listed range is not automatically a replacement case.",
+          "checks": [
+            "Distinguish “not subject after identification check,” “replacement completed,” and “not yet verified.”",
+            "Confirm the date and scope of the dealer result; earlier fuel-pump campaigns do not establish the current status.",
+            "Do not quote an old parts-supply announcement as a current appointment or completion promise."
+          ]
+        },
+        "ja": {
+          "title": "ホンダN-BOX JF3/JF4 — 低圧燃料ポンプのリコール",
+          "path": "data/known-issues/honda-nbox-jf3-jf4-fuel-pump.ja.html",
+          "scope": "- **車種:** 届出5423に掲載されたN-BOX／N-BOX CustomのDBA-JF3/JF4、6BA-JF3/JF4。\n- **エンジン/部位:** 低圧燃料ポンプと樹脂製インペラ。\n- **生産時期:** 掲載された区間はJF3が2017年7月26日〜2020年2月14日、JF4が2017年7月26日〜2020年2月12日にまたがります。連続した対象範囲ではなく、メーカーの全車台番号表で確認します。\n- **仕向け:** 日本。同じ届出の他車種の車台番号範囲をN-BOXに流用しません。",
+          "issue": "インペラが変形してポンプが作動しなくなり、エンストに至るおそれがあります。2024年6月14日の訂正後の対策は識別マークを確認して該当品を交換する内容です。車台番号が範囲内というだけで交換対象とは断定しません。",
+          "checks": [
+            "「識別確認で対象外」「交換実施済み」「未確認」を分ける。",
+            "販売店の確認日と対象範囲を確認する。過去の別の燃料ポンプ対策だけで今回の状態を決めない。",
+            "古い部品供給の案内を現在の予約・完了予定の約束として扱わない。"
+          ]
+        }
+      }
+    },
+    "suzuki-wagon-r-mh23s-evaporator-leak": {
+      "id": "suzuki-wagon-r-mh23s-evaporator-leak",
+      "evidence_type": "warranty_extension",
+      "campaign_ids": [],
+      "source_urls": [
+        "https://www.suzuki.co.jp/about/recall/2015/1218b/index.html"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Suzuki Wagon R MH23S — evaporator refrigerant leak",
+          "path": "data/known-issues/suzuki-wagon-r-mh23s-evaporator-leak.html",
+          "scope": "- **Vehicles:** Wagon R MH23S rows in the 2015-12-18 warranty-extension notice. Palette and Alto Lapin have separate rows in that notice.\n- **Engines/components:** Air-conditioning evaporator.\n- **Production window:** Discontinuous listed MH23S ranges within 2008-09-03 to 2012-08-20; verify the actual chassis row.\n- **Markets:** Japan; a warranty extension, not a recall or an unlimited free-repair offer.",
+          "issue": "Suzuki describes corrosion-related refrigerant leakage and poor cooling. The historical extension was nine years from first registration. Do not infer present coverage from the model name or from a previous refrigerant refill.",
+          "checks": [
+            "Ask for leak-diagnosis and replacement records, not just a gas-refill receipt.",
+            "Record first registration separately from production date when checking the historical nine-year condition.",
+            "Obtain an out-of-warranty quote before treating a cooling complaint as a minor recharge job."
+          ]
+        },
+        "ja": {
+          "title": "スズキ・ワゴンR MH23S — エバポレータの冷媒漏れ",
+          "path": "data/known-issues/suzuki-wagon-r-mh23s-evaporator-leak.ja.html",
+          "scope": "- **車種:** 2015年12月18日の保証延長案内にあるワゴンR MH23S。パレットとアルトラパンは同じ案内の別の行です。\n- **エンジン/部位:** エアコンのエバポレータ。\n- **生産時期:** 2008年9月3日〜2012年8月20日の間にある複数の区間。連続範囲とみなさず、該当する車台番号の行を確認します。\n- **仕向け:** 日本。保証期間延長であり、リコールや無期限の無償修理制度ではありません。",
+          "issue": "スズキは腐食に伴う冷媒漏れと冷え不良を案内しています。当時の延長条件は新車登録から9年間です。車名や過去のガス補充だけから、現在も保証対象と判断しません。",
+          "checks": [
+            "ガス補充の領収書だけでなく、漏れ診断と交換の記録を確認する。",
+            "9年間の条件を確認する際は、製作日と初度登録日を分けて記録する。",
+            "冷え不良を少額の補充だけで直ると決めず、保証外の場合の見積もりを確認する。"
+          ]
+        }
+      }
+    },
+    "daihatsu-tanto-la600s-brake-booster-corrosion": {
+      "id": "daihatsu-tanto-la600s-brake-booster-corrosion",
+      "evidence_type": "recall",
+      "campaign_ids": [
+        "4471"
+      ],
+      "source_urls": [
+        "https://www.daihatsu.co.jp/info/recall/99273.htm",
+        "https://www.mlit.go.jp/common/001289447.pdf"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Daihatsu Tanto LA600S/LA610S — brake booster corrosion",
+          "path": "data/known-issues/daihatsu-tanto-la600s-brake-booster-corrosion.html",
+          "scope": "- **Vehicles:** Tanto DBA-LA600S/LA610S in the 2019-04-11 notice. Other Daihatsu models have their own ranges.\n- **Engines/components:** Water sealing at the cowl/dash-panel joint and the brake booster.\n- **Production window:** LA600S: 2013-09-26 to 2016-10-04; LA610S: 2013-09-27 to 2016-10-04. Check the actual chassis range and status.\n- **Markets:** Japan; do not generalize the notice to later Tanto generations.",
+          "issue": "Water reaching the booster can cause corrosion and, if it progresses to perforation, reduced brake assistance. Recall 4471 addresses both the water-sealing cause and the condition of the booster.",
+          "checks": [
+            "Ask for the full campaign completion record and the booster inspection result.",
+            "If brake feel is abnormal, have the workshop decide safe transport before any purchase test drive.",
+            "Separate cosmetic rust elsewhere on the car from this specific brake-system assessment."
+          ]
+        },
+        "ja": {
+          "title": "ダイハツ・タント LA600S/LA610S — ブレーキブースタの腐食",
+          "path": "data/known-issues/daihatsu-tanto-la600s-brake-booster-corrosion.ja.html",
+          "scope": "- **車種:** 2019年4月11日の届出にあるタント DBA-LA600S/LA610S。他のダイハツ車はそれぞれ別の範囲です。\n- **エンジン/部位:** カウルルーバーとダッシュパネルの合わせ部の止水、およびブレーキブースタ。\n- **生産時期:** LA600Sは2013年9月26日〜2016年10月4日、LA610Sは2013年9月27日〜2016年10月4日。車台番号と実施状況を個別に確認します。\n- **仕向け:** 日本。後の世代のタントへ一律に適用しません。",
+          "issue": "ブースタへ水がかかって腐食が進むと、穴があき制動の補助が低下するおそれがあります。4471の対策は、水の侵入原因とブースタの状態の両方を扱います。",
+          "checks": [
+            "対策全体の完了記録とブースタ点検の結果を確認する。",
+            "ブレーキの感触に異常があれば、試乗前に整備工場へ安全な搬送方法を相談する。",
+            "車両の別の箇所の外観上の錆と、このブレーキ系の評価を混同しない。"
+          ]
+        }
+      }
+    },
+    "nissan-serena-c26-eco-motor-bearing": {
+      "id": "nissan-serena-c26-eco-motor-bearing",
+      "evidence_type": "recall",
+      "campaign_ids": [
+        "5268"
+      ],
+      "source_urls": [
+        "https://www.nissan.co.jp/RECALL/DATA/report5268.html",
+        "https://www.recall.caa.go.jp/result/detail.php?rcl=00000030366&screenkbn=03"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Nissan Serena C26 — ECO motor bearing recall",
+          "path": "data/known-issues/nissan-serena-c26-eco-motor-bearing.html",
+          "scope": "- **Vehicles:** ECO-motor idle-stop cars in the C26/FC26/NC26/FNC26 rows of recall 5268. The C26 family name alone is not enough to establish eligibility.\n- **Engines/components:** ECO motor internal bearings and seals.\n- **Production window:** C26: 2010-09-20 to 2012-06-30; FC26: 2010-11-15 to 2012-06-30; NC26: 2010-09-20 to 2016-06-16; FNC26: 2010-10-28 to 2016-06-17. Each requires chassis confirmation.\n- **Markets:** Japan. Do not substitute these rows for HC26/HFC26, later Serenas, or the separate X-Trail rows.",
+          "issue": "Bearing-seal failure can lead to noise and ECO motor failure, potentially stopping the engine. The notice also describes a fire risk when surrounding components carry combustible contamination. A temporary heat shield and final motor replacement are different stages of the remedy.",
+          "checks": [
+            "Read the model code, not only the vehicle name, and obtain the current chassis-specific result.",
+            "Ask separately whether the heat shield was fitted and whether the revised motor was installed.",
+            "Confirm current parts and appointment availability with the dealer instead of relying on an old schedule."
+          ]
+        },
+        "ja": {
+          "title": "日産セレナC26系 — ECOモーターのベアリング",
+          "path": "data/known-issues/nissan-serena-c26-eco-motor-bearing.ja.html",
+          "scope": "- **車種:** 5268のC26/FC26/NC26/FNC26の行にあるECOモーター式アイドリングストップ車。「C26系」という名称だけでは個別適用は確定できません。\n- **エンジン/部位:** ECOモーター内部のベアリングとシール。\n- **生産時期:** C26は2010年9月20日〜2012年6月30日、FC26は2010年11月15日〜2012年6月30日、NC26は2010年9月20日〜2016年6月16日、FNC26は2010年10月28日〜2016年6月17日。車台番号の照合が必要です。\n- **仕向け:** 日本。HC26/HFC26、後の世代、同じ案内のエクストレイルにこの行を流用しません。",
+          "issue": "ベアリングのシール不良から異音やECOモーター故障が起き、エンストに至るおそれがあります。周辺に可燃物が付着した条件では火災の危険も案内されています。暫定的な遮熱カバー装着と、最終的なモーター交換は別の段階です。",
+          "checks": [
+            "通称名だけでなく型式を読み、最新の車台番号別結果を取得する。",
+            "遮熱カバーの装着と対策品モーターの交換を別々に尋ねる。",
+            "古い予定表に頼らず、現在の部品・予約状況を販売店に確認する。"
+          ]
+        }
+      }
+    },
+    "mazda-cx5-ke2-injector-seal-oil-strainer": {
+      "id": "mazda-cx5-ke2-injector-seal-oil-strainer",
+      "evidence_type": "recall",
+      "campaign_ids": [
+        "3997"
+      ],
+      "source_urls": [
+        "https://www2.mazda.co.jp/service/recall/ra/20170217107/",
+        "https://www.recall.caa.go.jp/result/detail.php?rcl=00000017281&screenkbn=01"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Mazda CX-5 KE2 — injector sealing and oil-strainer blockage",
+          "path": "data/known-issues/mazda-cx5-ke2-injector-seal-oil-strainer.html",
+          "scope": "- **Vehicles:** Diesel CX-5 LDA-KE2FW/KE2AW, specifically item (1) of recall 3997. Do not assume all vehicles listed for its five issues need this particular repair.\n- **Engines/components:** Injector mounting/sealing, engine-oil contamination, and oil strainer.\n- **Production window:** The CX-5 campaign envelope is KE2FW 2012-02-13 to 2016-11-16 and KE2AW 2012-02-17 to 2016-11-16. The item (1) subset requires separate manufacturer confirmation.\n- **Markets:** Japan. This entry does not extend the claim to gasoline CX-5s, KF-generation vehicles, or overseas campaigns.",
+          "issue": "Item (1) describes inadequate injector clamping that can allow combustion gas into the cylinder head. Carbonized oil can obstruct the strainer, reduce oil pressure, and lead to engine seizure. This is a specific published mechanism, not a diagnosis for every diesel warning light.",
+          "checks": [
+            "Ask for the result for item (1), rather than treating a software update for another item as proof of this work.",
+            "Review oil-pressure assessment and repair records alongside the current symptoms and service history.",
+            "Keep engine-health inspection separate from recall status; a completed campaign is not an engine-condition certificate."
+          ]
+        },
+        "ja": {
+          "title": "マツダCX-5 KE2系 — インジェクタの密封不良とストレーナ詰まり",
+          "path": "data/known-issues/mazda-cx5-ke2-injector-seal-oil-strainer.ja.html",
+          "scope": "- **車種:** ディーゼルのCX-5 LDA-KE2FW/KE2AWのうち、3997の不具合(1)に該当する車両。5つの不具合の一覧に載る全車が、この修理の対象とは限りません。\n- **エンジン/部位:** インジェクタの取付・密封、エンジンオイルの汚染、オイルストレーナ。\n- **生産時期:** CX-5全体の掲載範囲はKE2FWが2012年2月13日〜2016年11月16日、KE2AWが2012年2月17日〜2016年11月16日。不具合(1)への個別適用は別途メーカーに確認します。\n- **仕向け:** 日本。ガソリン車、KF型、海外向けキャンペーンへ一律に拡大しません。",
+          "issue": "不具合(1)ではインジェクタの締結力不足から燃焼ガスが吹き抜け、炭化したオイルがストレーナを詰まらせ、油圧低下や焼き付きにつながる仕組みが説明されています。すべてのディーゼル警告灯の原因を示すものではありません。",
+          "checks": [
+            "別項目のソフト更新を証拠にせず、不具合(1)の対応結果を確認する。",
+            "現在の症状・整備履歴とあわせて油圧評価と修理記録を確認する。",
+            "リコールの状態とエンジンの健全性点検を分ける。対策完了はエンジン状態の証明書ではない。"
+          ]
+        }
+      }
+    },
+    "toyota-86-subaru-brz-valve-spring": {
+      "id": "toyota-86-subaru-brz-valve-spring",
+      "evidence_type": "recall",
+      "campaign_ids": [
+        "4361"
+      ],
+      "source_urls": [
+        "https://toyota.jp/recall/2018/1101_1.html",
+        "https://www.subaru.co.jp/recall/data/18-11-01-01.html"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Toyota 86 / Subaru BRZ — valve spring recall",
+          "path": "data/known-issues/toyota-86-subaru-brz-valve-spring.html",
+          "scope": "- **Vehicles:** Toyota 86 DBA-ZN6 and Subaru BRZ DBA-ZC6; this entry does not cover the other Subaru models in the same notice.\n- **Engines/components:** Valve springs in the engines fitted to the listed ZN6/ZC6 vehicles.\n- **Production window:** 86: 2012-03-12 to 2013-07-02; BRZ: 2012-03-09 to 2013-07-02. These are production windows, not proof that every vehicle in the interval is affected.\n- **Markets:** Japan. Confirm a Japanese-market import with its original-market manufacturer; do not reuse these ranges as overseas campaign coverage.",
+          "issue": "Recall 4361, filed on 2018-11-01, concerns springs that can fracture. Engine noise or poor running can progress to a stall. Identify applicability and repair completion separately; a model-year match is insufficient.",
+          "checks": [
+            "Compare the chassis identifier privately against the Toyota or Subaru notice and official lookup.",
+            "Obtain the specific campaign number, completion date, and workshop record, rather than a general “recalls done” statement.",
+            "Keep current symptoms on a separate diagnostic list; recall completion does not certify overall engine condition."
+          ]
+        },
+        "ja": {
+          "title": "トヨタ86／スバルBRZ — バルブスプリングのリコール",
+          "path": "data/known-issues/toyota-86-subaru-brz-valve-spring.ja.html",
+          "scope": "- **車種:** トヨタ86 DBA-ZN6、スバルBRZ DBA-ZC6。同じ届出に含まれる他のスバル車はこの記事の対象外です。\n- **エンジン/部位:** 掲載されたZN6/ZC6のエンジンのバルブスプリング。\n- **生産時期:** 86は2012年3月12日〜2013年7月2日、BRZは2012年3月9日〜2013年7月2日。製作期間であり、期間内の全車が対象という意味ではありません。\n- **仕向け:** 日本。日本仕様の並行輸入車は元の市場のメーカーにも確認し、この範囲を海外向け届出の対象範囲として流用しません。",
+          "issue": "2018年11月1日届出の4361では、バルブスプリングが折損し、異音・エンジン不調からエンストにつながるおそれが示されています。対象かどうかと、対策済みかどうかは別々に確認します。年式の一致だけでは確定できません。",
+          "checks": [
+            "車台番号を非公開でトヨタ・スバルの届出と公式照会に突き合わせる。",
+            "「リコール済み」という一言ではなく、対象の届出番号・実施日・工場の記録を取得する。",
+            "現在の症状は別に診断対象として整理する。対策済みでもエンジン全体の状態を保証しない。"
+          ]
+        }
+      }
+    },
+    "honda-rk-stepwgn-cvt-judder": {
+      "id": "honda-rk-stepwgn-cvt-judder",
+      "evidence_type": "manufacturer_specification",
+      "campaign_ids": [],
+      "source_urls": [
+        "https://global.honda/jp/news/2009/4091009-stepwgn.html",
+        "https://global.honda/jp/news/2012/4120531-stepwgn.html",
+        "https://www.honda.co.jp/auto-archive/stepwgn/spada/2012/webcatalog/driving/"
+      ],
+      "last_verified": "2026-10-30",
+      "localized": {
+        "en": {
+          "title": "Honda RK Step WGN — identify the transmission before investigating judder",
+          "path": "data/known-issues/honda-rk-stepwgn-cvt-judder.html",
+          "scope": "- **Vehicles:** Japan-market Step WGN RK1/RK2 and Step WGN Spada RK5/RK6, 2009–2015 generation.\n- **Engines/components:** R20A and the actual fitted transmission; model code alone does not settle every production revision.\n- **Production window:** At the October 2009 launch, FF used a torque-converter CVT and 4WD used 5AT. Revised 4WD models released on 2012-06-08 adopted CVT. Confirm the exact build variant around changeovers.\n- **Markets:** Japan; imports still require original-market identification.",
+          "issue": "Judder is a symptom, not a component diagnosis. Applying a start-clutch explanation from another Honda generation can lead to the wrong fluid or repair recommendation. Establish the transmission first, then investigate using measurements and factory procedures.",
+          "checks": [
+            "Confirm build information, FF/4WD, and the actual transmission. A later 4WD RK is not automatically 5AT.",
+            "Obtain invoices identifying the fluid and work; “Honda CVT oil changed” is not sufficiently specific.",
+            "Maintenance records do not prove healthy operation. Obtain an independent assessment if vibration remains unexplained.",
+            "Check any claimed campaign by number and vehicle identifier instead of accepting a generic “Honda judder fix.”"
+          ]
+        },
+        "ja": {
+          "title": "ホンダRK系ステップワゴン — 振動の診断前に変速機を特定する",
+          "path": "data/known-issues/honda-rk-stepwgn-cvt-judder.ja.html",
+          "scope": "- **車種:** 日本仕様のステップワゴンRK1/RK2、スパーダRK5/RK6（2009〜2015年の世代）。\n- **エンジン/部位:** R20Aと実際に搭載された変速機。型式だけで生産途中の全変更まで判定できるとは限りません。\n- **生産時期:** 2009年10月発売時はFFがトルクコンバーター付きCVT、4WDが5AT。2012年6月8日発売の改良4WD車にはCVTが導入されています。切り替え時期は実車の製造情報で確認します。\n- **仕向け:** 日本。並行輸入車も元の市場の仕様を照合します。",
+          "issue": "ジャダーは症状であり、故障部品の特定結果ではありません。別世代のHonda車の発進クラッチに関する説明を流用すると、フルードや修理の選択を誤る可能性があります。最初に変速機を特定し、測定結果と純正手順に基づいて調べます。",
+          "checks": [
+            "製造情報、FF/4WD、実際の変速機を確認する。後期4WDを一律に5ATと扱わない。",
+            "使用したフルードと作業を特定できる記録を求める。「HondaのCVTオイル交換済み」だけでは不足する。",
+            "整備記録を正常作動の証明としない。振動が未解決なら独立した点検を受ける。",
+            "キャンペーンは番号と車両識別情報で確認し、一般的な「Hondaのジャダー対策」をそのまま受け入れない。"
+          ]
+        }
+      }
+    }
+  }
+}

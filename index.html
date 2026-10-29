@@ -2,9 +2,9 @@
 layout: null
 title: AI skills for car diagnostics, maintenance & repair — open source
 description: >-
-  20 open-source AI skills for automotive diagnostics, maintenance, repair,
-  customization, EVs, and motorcycles. Works with Claude, ChatGPT, or any LLM.
-  English and Japanese for all skills; Spanish for four core skills.
+  Build a vehicle-specific checklist and AI prompt in your browser, with official
+  sources and no login or API key. Eight Japan-market profiles, six workflows,
+  and 20 automotive AI skills in English and Japanese.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@ description: >-
     "@type": "SoftwareSourceCode",
     "@id": "{{ '/' | absolute_url }}#source",
     "name": "Automotive AI Skills",
-    "description": "20 open-source automotive prompt frameworks with workflows, example prompts and limitations. All skills are available in English and Japanese; four have Spanish translations.",
+    "description": "A browser-based vehicle brief builder with source-linked checklists, plus 20 open-source automotive prompt frameworks. English and Japanese throughout; four skills also in Spanish.",
     "url": "{{ '/' | absolute_url }}",
     "codeRepository": "https://github.com/shoka-jp/automotive-ai-skills",
     "license": "https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE",
@@ -56,12 +56,7 @@ description: >-
     <section class="hero">
       <p class="eyebrow">Open-source prompt frameworks · Workflows with explicit limits</p>
       <h1>Automotive<span class="line2">AI Skills</span></h1>
-      <p class="lede">
-        Twenty structured skills that turn Claude, ChatGPT, or any capable LLM into a
-        disciplined garage partner — diagnostics, maintenance, used-car buying, EVs,
-        motorcycles, service intake, estimates, listings, and recalls. Each skill defines what to ask, what context to give,
-        and exactly where to stop trusting the machine.
-      </p>
+      <p class="lede">Choose your vehicle. Build a checklist with official sources. Bring better questions to your preferred AI, your next car viewing, or your workshop. Start in the browser, then go deeper with 20 automotive skills.</p>
       <p class="lang-row">
         <a href="{{ '/README.ja.html' | relative_url }}">日本語版 →</a>
         <a href="{{ '/README.es.html' | relative_url }}">Español →</a>
@@ -77,9 +72,9 @@ description: >-
         </table>
       </div>
       <div class="cta-row">
-        <a class="btn btn-primary" href="{{ '/docs/getting-started.html' | relative_url }}">Start with a skill</a>
-        <a class="btn btn-ghost" href="{{ '/docs/try-obd2-mcp.html' | relative_url }}">Run the car-free demo</a>
-        <a class="btn btn-ghost" href="https://github.com/shoka-jp/automotive-ai-skills">View on GitHub</a>
+        <a class="btn btn-primary" href="{{ '/tools/vehicle-brief.html' | relative_url }}">Build your vehicle brief →</a>
+        <a class="btn btn-ghost" href="{{ '/tools/vehicle-brief.ja.html' | relative_url }}">日本語で試す</a>
+        <a class="btn btn-ghost" href="https://github.com/shoka-jp/automotive-ai-skills">☆ Star on GitHub</a>
       </div>
     </section>
   </div>
@@ -89,6 +84,12 @@ description: >-
   </div>
 
   <div class="landing">
+    <section id="brief" aria-labelledby="brief-section-title">
+      <div class="sec-head"><h2 id="brief-section-title">From vehicle details to useful questions</h2><span class="count">No account · No API key</span></div>
+      <a href="{{ '/tools/vehicle-brief.html' | relative_url }}"><img src="{{ '/assets/vehicle-brief-overview.svg' | relative_url }}" alt="Choose a vehicle, verify source scope, and copy or save the brief" width="1120" height="420" style="width:100%;height:auto" loading="lazy"></a>
+      <p>Eight Japan-market profiles connect to seven source-reviewed entries. Six workflows cover buying, symptoms, recall records, maintenance, estimates and listings. Other vehicles can use a general brief. Inputs stay in the page; you choose what to copy.</p>
+      <p><a href="{{ '/tools/vehicle-brief.html?vehicle=nbox&amp;task=buy' | relative_url }}">Start with N-BOX →</a> · <a href="{{ '/docs/quality.html' | relative_url }}">What we test and what remains unmeasured</a> · <a href="https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml">Request your vehicle</a></p>
+    </section>
     <section id="demo" aria-labelledby="demo-title">
       <div class="sec-head"><h2 id="demo-title">See the data, then investigate</h2><span class="count">Reproducible mock demo</span></div>
       <p>The skills provide the investigation workflow. The companion <a href="https://github.com/shoka-jp/obd2-mcp">obd2-mcp</a> server supplies diagnostic data. Try its included MCP client with Git and Node.js — no vehicle, adapter or AI subscription required.</p>

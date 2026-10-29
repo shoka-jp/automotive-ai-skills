@@ -52,6 +52,8 @@ service it?
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Provide vehicle details.** Year, make, model, engine, transmission type, and current mileage.
 2. **Describe your driving.** Annual mileage, trip length, climate, towing, terrain — this determines normal vs. severe schedule.
 3. **Share known history.** Recent services and anything you know was skipped.

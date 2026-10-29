@@ -47,6 +47,8 @@ Create an evidence table and a dealer inquiry without certifying completion.
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Identify scope, not personal history.** Gather year, make, model, powertrain, original market, current country, import status, and the notice or lookup result available. Distinguish first-registration year from model year when relevant.
 2. **Use the correct identifier privately.** Let the owner enter the VIN/chassis number directly in an official site. Ask for a redacted result when enough for interpretation; do not include full identifiers in public reports. Do not pad, truncate, or invent a VIN for a market that uses a different chassis identifier.
 3. **Find current primary sources.** Start with the [official source guide](../../docs/vehicle-service-sources.md), then the manufacturer. General year/model searches identify possible campaigns; vehicle-specific manufacturer confirmation establishes applicability. For imports, check original-market information and ask the local authorized representative about support.
