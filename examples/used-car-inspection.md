@@ -1,5 +1,7 @@
 # Example: Inspecting a Used Car End-to-End
 
+> **Illustrative conversation:** A teaching scenario, not a recorded vehicle test or customer result. Dialogue, measurements, repair costs and outcomes are illustrative.
+
 **Skill:** [Used Car Inspector](../skills/used-car-inspector/)
 **Scenario:** A buyer evaluates a private-party listing — from pre-contact research through inspection findings to a negotiation position.
 

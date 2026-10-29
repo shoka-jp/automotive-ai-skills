@@ -4,7 +4,7 @@ title: AI skills for car diagnostics, maintenance & repair — open source
 description: >-
   16 open-source AI skills for automotive diagnostics, maintenance, repair,
   customization, EVs, and motorcycles. Works with Claude, ChatGPT, or any LLM.
-  English · 日本語 · Español. 自動車の故障診断・整備・車検をAIで支援。
+  English and Japanese for all skills; Spanish for four core skills.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,20 @@ description: >-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "@id": "{{ '/' | absolute_url }}#source",
+    "name": "Automotive AI Skills",
+    "description": "16 open-source automotive prompt frameworks with workflows, example prompts and limitations. All skills are available in English and Japanese; four have Spanish translations.",
+    "url": "{{ '/' | absolute_url }}",
+    "codeRepository": "https://github.com/shoka-jp/automotive-ai-skills",
+    "license": "https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE",
+    "inLanguage": ["en", "ja", "es"],
+    "author": {"@type": "Person", "name": "Sho Kamakura", "url": "https://github.com/shoka-jp"}
+  }
+  </script>
   <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
   <link rel="alternate" hreflang="ja" href="{{ '/README.ja.html' | absolute_url }}">
   <link rel="alternate" hreflang="es" href="{{ '/README.es.html' | absolute_url }}">
@@ -22,23 +36,6 @@ description: >-
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
   {% include theme-init.html %}
-  <script>
-    // Language auto-routing: on first external arrival, send ja/es browsers
-    // to their language page. Never redirects twice in a tab, and never when
-    // the visitor navigated here from within the site (so "English" links work).
-    (function () {
-      try {
-        if (sessionStorage.getItem('aas-stay')) return;
-        var ref = document.referrer;
-        if (ref && ref.indexOf(location.host) !== -1) { sessionStorage.setItem('aas-stay', '1'); return; }
-        var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
-        var target = '';
-        if (lang.indexOf('ja') === 0) target = 'README.ja.html';
-        else if (lang.indexOf('es') === 0) target = 'README.es.html';
-        if (target) { sessionStorage.setItem('aas-stay', '1'); location.replace(target); }
-      } catch (e) { /* storage blocked: stay on English */ }
-    })();
-  </script>
 </head>
 <body>
   <header class="shell-header">
@@ -57,7 +54,7 @@ description: >-
 
   <div class="landing">
     <section class="hero">
-      <p class="eyebrow">Open-source prompt frameworks · Service manual for the AI era</p>
+      <p class="eyebrow">Open-source prompt frameworks · Workflows with explicit limits</p>
       <h1>Automotive<span class="line2">AI Skills</span></h1>
       <p class="lede">
         Sixteen structured skills that turn Claude, ChatGPT, or any capable LLM into a
@@ -80,7 +77,8 @@ description: >-
         </table>
       </div>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#skills">Browse the skill index</a>
+        <a class="btn btn-primary" href="{{ '/docs/getting-started.html' | relative_url }}">Start with a skill</a>
+        <a class="btn btn-ghost" href="{{ '/docs/try-obd2-mcp.html' | relative_url }}">Run the car-free demo</a>
         <a class="btn btn-ghost" href="https://github.com/shoka-jp/automotive-ai-skills">View on GitHub</a>
       </div>
     </section>
@@ -91,6 +89,17 @@ description: >-
   </div>
 
   <div class="landing">
+    <section id="demo" aria-labelledby="demo-title">
+      <div class="sec-head"><h2 id="demo-title">See the data, then investigate</h2><span class="count">Reproducible mock demo</span></div>
+      <p>The skills provide the investigation workflow. The companion <a href="https://github.com/shoka-jp/obd2-mcp">obd2-mcp</a> server supplies diagnostic data. Try its included MCP client with Git and Node.js — no vehicle, adapter or AI subscription required.</p>
+      <div class="demo-grid">
+        <div class="demo-reading"><span class="k">Stored trouble code</span><strong>P0420</strong><span>One simulated DTC</span></div>
+        <div class="demo-reading"><span class="k">Freeze frame</span><strong>98 km/h</strong><span>2,210 rpm · coolant 88 °C</span></div>
+        <div class="demo-reading"><span class="k">Live reading</span><strong>0 km/h</strong><span>740 rpm · coolant 89 °C</span></div>
+      </div>
+      <p>Selected output captured on 2026-10-29 from simulated data. This demonstrates tool responses, not an AI diagnosis or a real-vehicle test.</p>
+      <p><a href="{{ '/docs/try-obd2-mcp.html' | relative_url }}">Commands, expected output and troubleshooting →</a> · <a href="{{ '/docs/try-obd2-mcp.ja.html' | relative_url }}">日本語の手順</a></p>
+    </section>
     <section id="how">
       <div class="sec-head"><h2>Operating procedure</h2><span class="count">3 steps</span></div>
       <div class="steps">
@@ -220,9 +229,10 @@ description: >-
           </ul>
         </div>
         <div class="res-block">
-          <h3>Worked examples</h3>
+          <h3>Illustrative conversations</h3>
+          <p>Teaching scenarios; repair costs and outcomes are illustrative.</p>
           <ul>
-            <li><a href="{{ '/examples/obd2-p0420-diagnosis.html' | relative_url }}">P0420: an $11 gasket, not a $1,200 cat</a></li>
+            <li><a href="{{ '/examples/obd2-p0420-diagnosis.html' | relative_url }}">P0420: test before replacing parts</a></li>
             <li><a href="{{ '/examples/used-car-inspection.html' | relative_url }}">Used BMW inspection → negotiation</a></li>
             <li><a href="{{ '/examples/maintenance-catchup-plan.html' | relative_url }}">No-records maintenance catch-up</a></li>
           </ul>
@@ -233,9 +243,18 @@ description: >-
             <li><a href="{{ '/integrations/claude-project-template.html' | relative_url }}">Claude Project template</a> <span>— one-skill assistant</span></li>
             <li><a href="{{ '/integrations/garage-assistant-system-prompt.html' | relative_url }}">Garage Assistant system prompt</a> <span>— all 16 routed</span></li>
             <li><a href="{{ '/docs/skill-authoring-guide.html' | relative_url }}">Skill authoring guide</a> <span>— contribute a skill</span></li>
-            <li><a href="{{ '/llms.txt' | relative_url }}">llms.txt</a> <span>— for AI crawlers</span></li>
+            <li><a href="{{ '/llms.txt' | relative_url }}">llms.txt</a> <span>— documentation index</span></li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section id="support">
+      <div class="sec-head"><h2>Help improve the next version</h2><span class="count">Maintained by Sho Kamakura</span></div>
+      <p>Report a confusing instruction, share a reproducible demo issue, or contribute a translation. Useful feedback helps decide what to improve next.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/shoka-jp">Follow the developer</a>
+        <a class="btn btn-ghost" href="https://github.com/sponsors/shoka-jp">Sponsor the open-source work</a>
+        <a class="btn btn-ghost" href="{{ '/CONTRIBUTING.html' | relative_url }}">Contribute</a>
       </div>
     </section>
   </div>

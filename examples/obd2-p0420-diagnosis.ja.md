@@ -1,5 +1,7 @@
 # 会話例:P0420を無駄な出費なしで診断する
 
+> **学習用の会話例:** 使い方を説明するシナリオです。会話中の修理費用・測定値・結果は説明用で、実車試験や利用者の実績を示すものではありません。
+
 [English](./obd2-p0420-diagnosis.md) | **日本語**
 
 **スキル:** [OBD-II Diagnostic Assistant](../skills/obd2-diagnostic-assistant/README.ja.md)

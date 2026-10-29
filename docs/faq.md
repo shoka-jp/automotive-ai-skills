@@ -21,6 +21,14 @@ No, but it helps for longer sessions. Two modes work well:
 
 Yes — MIT licensed. Attribution is appreciated but the license only requires preserving the copyright notice. See [LICENSE](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE).
 
+### Can this repository read my car directly?
+
+The skills are prompt frameworks and cannot connect to a vehicle by themselves. The companion [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) project supplies MCP tools for diagnostic data. Start with the [hardware-free demo](./try-obd2-mcp.md) to inspect simulated responses before considering a vehicle connection.
+
+### Are the example conversations real test results?
+
+The [example conversations](../examples/) are teaching scenarios. Their dialogue, repair costs and outcomes should not be treated as verified customer results. The [MCP demo guide](./try-obd2-mcp.md) separately identifies program output captured from simulated data and links to the script and test run.
+
 ## Trust and accuracy
 
 ### Can I trust the torque specs / capacities the AI gives me?
@@ -65,4 +73,4 @@ Open an issue first with the skill's scope and audience, then follow the [Skill 
 
 ### Why English first?
 
-English maximizes the contributor and user base. A Japanese README is maintained ([README.ja.md](../README.ja.md)), and translation of skill content is on the roadmap — translation PRs are welcome.
+English is the shared contribution language. All 16 skills also have Japanese READMEs; four core skills have Spanish translations. See the [skills index](../skills/README.md) for coverage. Translation corrections and the remaining Spanish translations are welcome.

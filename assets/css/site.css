@@ -508,3 +508,13 @@ a:hover { color: var(--blue-deep); }
   .spec-plate td { border-right: 0; border-bottom: 1px solid var(--rule); flex: 1 1 45%; }
   .shell-nav { gap: 0.8rem; }
 }
+
+
+/* Text-based demo remains accessible, selectable and crawlable. */
+.demo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.demo-reading { display: grid; gap: .35rem; padding: 1.4rem; border: 1px solid var(--rule); background: var(--paper-raised); }
+.demo-reading .k { font-family: var(--mono); font-size: .8rem; color: var(--ink-soft); }
+.demo-reading strong { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.2; color: var(--blue); }
+.demo-reading > span:last-child { font-size: .9rem; color: var(--ink-soft); }
+@media (max-width: 620px) { .demo-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } body { transition: none; } }

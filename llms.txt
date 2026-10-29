@@ -29,6 +29,9 @@ Key facts:
 
 ## Guides
 
+- [Hardware-free MCP demo](https://shoka-jp.github.io/automotive-ai-skills/docs/try-obd2-mcp.html): source-build commands, captured simulated output, test provenance and limitations; no AI subscription required
+- [MCPデモ（日本語）](https://shoka-jp.github.io/automotive-ai-skills/docs/try-obd2-mcp.ja.html): 車なしで故障コードとセンサー値を読む
+
 - [Getting Started](https://shoka-jp.github.io/automotive-ai-skills/docs/getting-started.html): five-minute walkthrough from finding the repo to a productive session
 - [FAQ](https://shoka-jp.github.io/automotive-ai-skills/docs/faq.html): trust, accuracy, platform, and usage questions answered directly
 - [Safety Disclaimer](https://shoka-jp.github.io/automotive-ai-skills/docs/safety-disclaimer.html): verification rules and professional-territory boundaries
@@ -39,7 +42,7 @@ Key facts:
 ## Data
 
 - [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues — 11 entries covering BMW, Toyota, Subaru, Honda, Nissan, and Mazda (engines, CVTs/DCTs, rotaries) and growing, with a machine-readable index.yaml
-- [Example Conversations](https://shoka-jp.github.io/automotive-ai-skills/examples/): annotated full sessions — P0420 diagnosis, used-car inspection, maintenance catch-up plan
+- [Example Conversations](https://shoka-jp.github.io/automotive-ai-skills/examples/): illustrative teaching conversations, not verified customer results — P0420 diagnosis, used-car inspection, maintenance catch-up plan
 
 ## Optional
 

@@ -11,6 +11,21 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Reproducible companion MCP demo guides in English and Japanese, with
+  captured simulated output, provenance, limitations and troubleshooting.
+- Landing-page demo and developer/sponsor/contribution links; source-code
+  structured data consistent with the visible project description.
+- Localized descriptions for all 36 skill language pages and key entry pages;
+  built-site checks for metadata, language alternates and internal links.
+
+### Changed
+
+- Language choice stays explicit; removed browser-language forced redirects.
+- Teaching conversations now identify illustrative costs and outcomes;
+  FAQ translation coverage now matches the repository.
+
+### Added
+
 - Known-issue entries (EN+JA): Nissan/Jatco CVT premature failure
   (`nissan-jatco-cvt-failure`), Toyota ZVW30 Prius EGR clogging and head
   gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
