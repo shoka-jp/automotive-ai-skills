@@ -31,6 +31,7 @@ jobs:
       # Same builder GitHub Pages uses; validates the site builds, no deploy.
       - uses: actions/jekyll-build-pages@v1
       - name: Validate rendered metadata and links
+        shell: bash
         run: python3 scripts/validate_site.py _site 2>&1 | tee site-validation.log
       - name: Save rendered site and validation report
         if: always()
