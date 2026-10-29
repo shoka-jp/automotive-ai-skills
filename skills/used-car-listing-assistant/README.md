@@ -48,6 +48,8 @@ registration/delivery conditions, and verify current advertising guidance.
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Collect the facts and market.** Record year/first registration, make, model, powertrain, trim, mileage and units, location, seller type, equipment, records, defects, and price conditions. Use the relevant platform's current listing requirements.
 2. **Build an evidence ledger.** Output claim; source/date; confirmed, seller-reported, or unknown; and permitted wording. Treat “no evidence supplied” as unknown. Do not infer accident history from a clean-looking photo or an auction grade alone.
 3. **Resolve material gaps.** Ask for missing condition disclosures, mileage history, inspection findings, warranty terms, and price components before calling the draft ready to publish. Keep a conspicuous “needs confirmation” checklist outside the customer-facing draft; do not hide known defects there.

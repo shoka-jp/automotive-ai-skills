@@ -1,0 +1,109 @@
+---
+layout: null
+title: Vehicle Brief Builder — car checklists with official sources
+description: Choose a vehicle and task to build a source-linked checklist and AI prompt. No login, API key, or adapter.
+  Eight Japan-market profiles, plus a general workflow for any vehicle.
+lang: en
+locale: en_US
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Vehicle Brief Builder", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web browser", "isAccessibleForFree": true, "inLanguage": "en", "url": "https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html", "author": {"@type": "Person", "name": "Sho Kamakura", "url": "https://github.com/shoka-jp"}, "codeRepository": "https://github.com/shoka-jp/automotive-ai-skills"}</script>
+  <link rel="alternate" hreflang="en" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ '/tools/vehicle-brief.ja.html' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Ctext y='.9em' font-size='70'%3E🔧%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="brief-shell">
+  <header class="brief-nav">
+    <a class="wordmark" href="{{ '/' | relative_url }}"><span class="tick">▮</span> Automotive AI Skills</a>
+    <nav aria-label="English + Japanese">
+      <a href="vehicle-brief.ja.html" hreflang="ja">日本語</a>
+      <a class="star-link" target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills">☆ Star on GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <section class="brief-hero" aria-labelledby="brief-title">
+      <div>
+        <p class="brief-eyebrow">AUTOMOTIVE AI SKILLS / FIELD GUIDE 01</p>
+        <h1 id="brief-title">Better questions.<br>Better car decisions.</h1>
+        <p class="lead">Turn your vehicle details into a practical checklist and a prompt for your preferred AI. Keep the evidence, the unknowns, and the next questions together.</p>
+        <div class="trust-row"><span>No account or API key</span><span>Inputs stay in this page</span><span>English + Japanese</span></div>
+      </div>
+      <div class="brief-spec"><strong>08 / 06</strong>Japan-market profiles<br>6 practical workflows</div>
+    </section>
+    <div class="sample-bar"><span>TRY A SAMPLE</span>
+      <button type="button" data-demo="nbox" disabled>N-BOX · buying</button>
+      <button type="button" data-demo="serena" disabled>Serena · recall records</button>
+      <button type="button" data-demo="cx5" disabled>CX-5 · repair evidence</button>
+    </div>
+    <div class="brief-grid">
+      <form id="brief-form" class="brief-panel" autocomplete="off">
+        <div class="panel-heading"><span class="step">01</span><h2>Your vehicle &amp; goal</h2></div>
+        <div class="form-body">
+          <div class="field"><label for="vehicle">Vehicle profile</label><select id="vehicle" name="vehicle" required><option value="">Choose a vehicle</option></select></div>
+          <div class="field" id="custom-vehicle" hidden><label for="vehicleName">Vehicle / generation</label><input id="vehicleName" name="vehicleName" maxlength="120" placeholder="e.g. 2020 Corolla hybrid"></div>
+          <div class="field"><label for="task">What would you like to do?</label><select id="task" name="task" required></select></div>
+          <div class="field"><label for="market">Original market</label><select id="market" name="market"><option value="unknown">Unknown</option><option value="Japan">Japan</option><option value="other">Outside Japan</option></select></div>
+          <div class="field-pair">
+            <div class="field"><label for="code">Model code <span class="optional">optional</span></label><select id="code" name="code"></select></div>
+            <div class="field"><label for="year">Production year <span class="optional">optional</span></label><input id="year" name="year" type="number" inputmode="numeric" min="1900" max="2100" step="1" placeholder="2019" aria-describedby="year-hint"><small id="year-hint">Not the first-registration year</small></div>
+          </div>
+          <div class="field"><label for="context">Engine, mileage &amp; history <span class="optional">optional</span></label><textarea id="context" name="context" maxlength="1000" rows="2" placeholder="Only details you know; leave unknowns blank."></textarea></div>
+          <div class="field"><label for="concern">What needs checking? <span class="optional">optional</span></label><textarea id="concern" name="concern" maxlength="2000" rows="3" placeholder="e.g. The seller says all recalls are done, but I have no completion record."></textarea></div>
+          <button id="generate" class="brief-button primary full" type="submit" disabled>Build my brief →</button>
+          <button id="reset" class="reset-button" type="button">Clear inputs</button>
+          <p class="privacy-note">Do not enter VIN/chassis numbers, names or contact details. This tool does not send or save form input. Copying into an external AI is your choice.</p>
+        </div>
+      </form>
+      <section class="brief-panel" aria-labelledby="output-title">
+        <div class="panel-heading"><span class="step">02</span><h2 id="output-title">Your evidence brief</h2></div>
+        <div id="empty" class="empty-state">
+          <div class="empty-symbol" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>A useful starting point, ready to copy.</h3><p>Choose a vehicle and goal, or try a sample. The builder assembles existing guidance; it does not run an AI diagnosis.</p>
+          <div class="empty-steps"><span>01 Choose</span><span>02 Check sources</span><span>03 Copy &amp; use</span></div>
+        </div>
+        <div id="result" class="output-body" hidden>
+          <div class="result-topline"><span id="result-task"></span><span id="reference-count"></span></div>
+          <h2 id="result-title"></h2>
+          <div class="result-actions">
+            <button id="copy" class="brief-button primary" type="button">Copy AI prompt</button>
+            <button id="download" class="brief-button" type="button">Save Markdown</button>
+            <button id="share" class="brief-button" type="button">Share preset</button>
+            <button id="print" class="brief-button" type="button">Print</button>
+          </div>
+          <input id="share-value" readonly hidden aria-label="Preset link (no personal details)">
+          <p id="selection-status" class="selection-note"></p>
+          <div id="references"></div>
+          <details id="prompt-details"><summary>Read or edit the copied prompt in your AI</summary><label for="output" class="small">Generated prompt</label><textarea id="output" readonly spellcheck="false"></textarea></details>
+          <pre id="print-output"></pre>
+          <div class="after-use"><p>Useful for your next viewing or workshop visit?</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills">☆ Star on GitHub</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml">Request a vehicle →</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=verified-finding.yml">Share a verified finding →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <p id="status" role="status" aria-live="polite">Loading reviewed references…</p>
+    <noscript><p>JavaScript is needed for the builder. You can still browse the skills and model library linked below.</p></noscript>
+  </main>
+  <footer class="brief-footer">
+    <a href="{{ '/skills/' | relative_url }}">All 20 skills</a>
+    <a href="{{ '/data/known-issues/' | relative_url }}">Full model library</a>
+    <a href="{{ '/docs/quality.html' | relative_url }}">How we check quality</a>
+    <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contribute</a>
+    <a href="{{ '/docs/safety-disclaimer.html' | relative_url }}">Safety &amp; limitations</a>
+    <p>Built by Sho Kamakura · MIT open source. Reference selection is not a diagnosis, eligibility result, or safety certificate.</p>
+  </footer>
+</div>
+<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}"></script>
+</body>
+</html>

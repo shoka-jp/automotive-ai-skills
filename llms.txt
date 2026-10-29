@@ -56,3 +56,10 @@ Key facts:
 - [Spanish README (Español)](https://shoka-jp.github.io/automotive-ai-skills/README.es.html)
 - [GitHub repository](https://github.com/shoka-jp/automotive-ai-skills)
 - [obd2-mcp](https://github.com/shoka-jp/obd2-mcp): companion MCP server that reads real vehicles (DTCs, live data, freeze frame, VIN) via ELM327 adapters; mock vehicle included
+
+## Interactive entry point
+
+- [Vehicle Brief Builder](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html): browser-only source-linked checklist and AI prompt builder; eight Japan-market profiles and six tasks; no AI inference or official eligibility lookup
+- [車種別チェックメーカー](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html): 日本語版。入力はページ内だけで処理し、質問文のコピー・保存・印刷が可能
+- [Quality and evidence](https://shoka-jp.github.io/automotive-ai-skills/docs/quality.html): deterministic and browser checks, answer-review cases, limitations, and evidence contribution loop
+- [Model-reference routing](https://shoka-jp.github.io/automotive-ai-skills/docs/model-reference-routing.html): shared CLI/browser lookup with exact profile, code, production-year, and market boundaries

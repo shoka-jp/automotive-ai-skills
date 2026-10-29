@@ -55,6 +55,8 @@ good. How do I find a parasitic drain?
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Describe the symptom's full signature.** What you sense, when it started, whether it is constant or intermittent, and what conditions trigger it (speed, RPM, temperature, steering, braking, weather).
 2. **Answer the follow-up questions.** The discriminating details ("does it change when you press the clutch?") are what narrow the diagnosis.
 3. **Get the ranked differential.** Ask for causes ordered by probability, with an urgency verdict.

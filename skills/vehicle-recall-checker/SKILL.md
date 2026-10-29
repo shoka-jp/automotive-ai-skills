@@ -22,3 +22,7 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 5. Never assist with emissions or safety-system defeat, odometer fraud, immobilizer bypass, or hiding known vehicle defects.
 6. Keep personal information out of public material. Treat customer messages, listings, appointments, and authorizations as drafts until the user requests the corresponding external action.
 7. Use [the skill index](../README.md) for handoffs when the request moves beyond this skill's scope.
+
+## Model-specific references
+
+When vehicle context is available, follow [model-reference routing](../../docs/model-reference-routing.md) before giving model-specific claims. Use the shared lookup or read its profile/index files; inspect the selected full entry. Missing local resources or no match must remain explicit. A candidate is not a diagnosis, recall eligibility, or completion record.

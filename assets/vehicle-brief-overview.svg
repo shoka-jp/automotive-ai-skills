@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Vehicle Brief Builder: choose a car, check sources, copy a useful brief</title>
+  <desc id="desc">An overview of the browser tool. Eight Japan-market vehicle profiles, six tasks, official source links, and export without an account or API key.</desc>
+  <rect width="1120" height="420" rx="16" fill="#f4f5f1"/>
+  <path d="M32 56H1088" stroke="#c9cdc6"/>
+  <rect x="32" y="25" width="6" height="13" fill="#e8541e"/>
+  <g font-family="Arial, sans-serif" fill="#1a2028">
+    <text x="48" y="36" font-size="14" font-weight="700" letter-spacing="1.1">AUTOMOTIVE AI SKILLS</text>
+    <text x="1088" y="36" text-anchor="end" font-size="12" fill="#66707d">OPEN SOURCE · EN / JA</text>
+    <text x="32" y="105" font-size="34" font-weight="700">Your car. Your questions. The evidence.</text>
+    <text x="32" y="137" font-size="16" fill="#3d4650">Build a practical checklist and an AI prompt — right in your browser.</text>
+    <g transform="translate(32 172)">
+      <rect width="312" height="178" rx="9" fill="#fdfdfb" stroke="#c9cdc6"/>
+      <text x="20" y="30" font-size="12" fill="#e8541e">01 / CHOOSE</text>
+      <text x="20" y="60" font-size="21" font-weight="700">Vehicle + purpose</text>
+      <rect x="20" y="78" width="272" height="36" rx="5" fill="#f4f5f1" stroke="#c9cdc6"/>
+      <text x="31" y="102" font-size="14">N-BOX JF3 · buying a used car</text>
+      <text x="20" y="141" font-size="13" fill="#66707d">8 reviewed profiles · 6 workflows</text>
+      <text x="20" y="161" font-size="13" fill="#66707d">General workflow for other cars</text>
+    </g>
+    <path d="M360 260h20m-7-6 7 6-7 6" stroke="#2456a6" stroke-width="2" fill="none"/>
+    <g transform="translate(400 172)">
+      <rect width="312" height="178" rx="9" fill="#fdfdfb" stroke="#c9cdc6"/>
+      <text x="20" y="30" font-size="12" fill="#e8541e">02 / VERIFY</text>
+      <text x="20" y="60" font-size="21" font-weight="700">Sources + scope</text>
+      <text x="20" y="94" font-size="14" fill="#2456a6">Production year · variant · market</text>
+      <text x="20" y="120" font-size="14" fill="#2456a6">Official notices + review dates</text>
+      <text x="20" y="151" font-size="13" fill="#66707d">A reference match is not a diagnosis.</text>
+    </g>
+    <path d="M728 260h20m-7-6 7 6-7 6" stroke="#2456a6" stroke-width="2" fill="none"/>
+    <g transform="translate(768 172)">
+      <rect width="320" height="178" rx="9" fill="#1a2028"/>
+      <text x="20" y="30" font-size="12" fill="#ff8a57">03 / USE</text>
+      <text x="20" y="60" font-size="21" font-weight="700" fill="#fff">Take a better brief</text>
+      <text x="20" y="94" font-size="14" fill="#ccd3c9">Copy into your preferred AI</text>
+      <text x="20" y="120" font-size="14" fill="#ccd3c9">Save Markdown · print · share preset</text>
+      <text x="20" y="151" font-size="13" fill="#ccd3c9">No account. No API key. No adapter.</text>
+    </g>
+    <text x="32" y="388" font-size="13" fill="#66707d">Inputs stay in the page. You choose what to copy or share.</text>
+    <text x="1088" y="388" text-anchor="end" font-size="13" fill="#2456a6">Built by Sho Kamakura</text>
+  </g>
+</svg>

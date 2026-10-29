@@ -77,3 +77,7 @@ The companion [obd2-mcp demo](./try-obd2-mcp.md) prints simulated trouble codes,
 - Browse the annotated [example conversations](../examples/) to see complete sessions.
 - Read the [FAQ](./faq.md).
 - Want to improve or add a skill? See the [Skill Authoring Guide](./skill-authoring-guide.md) and [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+## Start without choosing a skill
+
+The [Vehicle Brief Builder](../tools/vehicle-brief.html) selects a workflow for your goal and attaches reviewed model references when the scope matches. Copy the generated prompt into your preferred AI, or save/print it for a workshop conversation. No account or API key is needed. [Read its quality limits](./quality.md).

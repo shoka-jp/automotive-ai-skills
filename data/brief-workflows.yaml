@@ -1,0 +1,56 @@
+schema_version: 1
+workflows:
+- id: buy
+  skill: used-car-inspector
+  label:
+    en: Buy a used car
+    ja: 中古車を買う
+  request:
+    en: Prepare a pre-purchase question list, documents to request, and items for an independent inspection. Separate
+      verified facts, seller statements, and unknowns.
+    ja: 購入前の質問、取り寄せる記録、第三者の点検で確認する事項を作成してください。確認済みの事実、売主の申告、不明な点を分けてください。
+- id: symptom
+  skill: vehicle-troubleshooting
+  label:
+    en: Explain a symptom
+    ja: 症状を整理する
+  request:
+    en: Organize the observed symptom, ask focused follow-up questions, and explain which evidence would distinguish
+      possible causes. Do not diagnose a failed part from a model match alone.
+    ja: 観察した症状を整理し、追加質問と原因の切り分けに必要な根拠を示してください。車種が一致しただけで故障部品を断定しないでください。
+- id: recall
+  skill: vehicle-recall-checker
+  label:
+    en: Check recall records
+    ja: リコール記録を確認
+  request:
+    en: Identify official lookup sources and questions about applicability and completion. Separate interim actions,
+      final repairs, and unknown status. Distinguish a warranty extension from a recall.
+    ja: 公式照会先と、個別の対象・実施状況についての質問を整理してください。暫定措置、最終対策、未確認を分け、保証延長とリコールを区別してください。
+- id: maintenance
+  skill: vehicle-maintenance-planner
+  label:
+    en: Plan maintenance
+    ja: 整備計画を立てる
+  request:
+    en: Build a maintenance planning worksheet from actual records, use, mileage, and the exact manufacturer schedule.
+      Ask for missing information rather than inventing service intervals or capacities.
+    ja: 整備記録、使い方、走行距離、その車両のメーカー指定をもとに整備計画の確認表を作成してください。不足情報を質問し、交換周期や容量を作らないでください。
+- id: estimate
+  skill: repair-estimate-reviewer
+  label:
+    en: Review an estimate
+    ja: 修理見積もりを確認
+  request:
+    en: List the estimate details needed to compare scope, parts, labor, diagnostic evidence, and totals. Do not
+      invent a local fair price. Ask which work is authorized and distinguish recommendations from completed work.
+    ja: 作業範囲、部品、工賃、診断根拠、合計を比較するために必要な見積もり項目を整理してください。相場を捏造せず、承諾範囲と、提案・実施済み作業を区別してください。
+- id: sell
+  skill: used-car-listing-assistant
+  label:
+    en: Prepare an honest listing
+    ja: 販売説明を作る
+  request:
+    en: Draft a listing outline from documented specifications and condition. Separate evidence-backed claims, reported
+      history, and unknowns; identify disclosures and price components to verify for the market.
+    ja: 裏付けのある仕様と状態から販売説明の下書きを作成してください。根拠のある事実、申告された履歴、不明点を分け、仕向けに応じて確認すべき開示事項と価格内訳を整理してください。

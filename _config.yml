@@ -566,6 +566,11 @@ defaults:
 # SKILL.md files are plugin inputs read from git, not site content — they
 # rendered as orphan pages with generic titles, so they are excluded.
 exclude:
+  - node_modules
+  - package-lock.json
+  - tests
+  - browser-artifacts
+  - browser-build
   - CHANGELOG.md
   - .gitignore
   - scripts

@@ -31,6 +31,8 @@ This repository contains 20 automotive advisory skills. When the user asks an au
 
 Japanese versions exist as `README.ja.md` in each skill folder — reply in the language the user writes in. Model-specific known issues live in `data/known-issues/` (machine-readable index: `index.yaml`).
 
+For model-specific questions, follow [reference routing](docs/model-reference-routing.md). The shared browser/CLI selector uses reviewed profiles, exact model codes, production-year bounds, and an explicit market. Read the full matched entry; no match is not a clean bill of health. Never infer individual recall eligibility or completion from the profile.
+
 **Universal rules, regardless of skill:**
 
 1. Gather vehicle context (year, make, model, engine, mileage, market) before substantive advice.
@@ -49,3 +51,5 @@ When editing or adding content here:
 - **Known-issue entries** follow `data/known-issues/TEMPLATE.md` (or `TEMPLATE.ja.md`) and must be added to both the README tables and `index.yaml`.
 - **Links are relative** so they work on GitHub and on the GitHub Pages site (`.md` links are auto-converted to `.html`).
 - Commit messages follow Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`).
+
+- **Builder data:** after changing reviewed model entries, profiles, or brief workflows, run `python scripts/build_brief_data.py` and `npm test`. Commit the generated `assets/data/vehicle-brief.json` with its sources. Add a regression case for each new model boundary or corrected behavior.

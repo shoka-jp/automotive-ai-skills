@@ -1,0 +1,108 @@
+---
+layout: null
+title: 車種別チェックメーカー — 公式出典付きの確認メモとAI質問文
+description: 車種と目的を選ぶだけで、公式出典付きの確認事項とAIへの質問文を作成。ログイン・APIキー・診断機不要。日本向け8車種と、他の車にも使える共通手順に対応。
+lang: ja
+locale: ja_JP
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "車種別チェックメーカー", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web browser", "isAccessibleForFree": true, "inLanguage": "ja", "url": "https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html", "author": {"@type": "Person", "name": "Sho Kamakura", "url": "https://github.com/shoka-jp"}, "codeRepository": "https://github.com/shoka-jp/automotive-ai-skills"}</script>
+  <link rel="alternate" hreflang="en" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ '/tools/vehicle-brief.ja.html' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Ctext y='.9em' font-size='70'%3E🔧%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="brief-shell">
+  <header class="brief-nav">
+    <a class="wordmark" href="{{ '/' | relative_url }}"><span class="tick">▮</span> Automotive AI Skills</a>
+    <nav aria-label="日本語・英語対応">
+      <a href="vehicle-brief.html" hreflang="en">English</a>
+      <a class="star-link" target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills">☆ GitHubでStar</a>
+    </nav>
+  </header>
+  <main>
+    <section class="brief-hero" aria-labelledby="brief-title">
+      <div>
+        <p class="brief-eyebrow">AUTOMOTIVE AI SKILLS / 車両確認ガイド 01</p>
+        <h1 id="brief-title">車を知る。<br>次に聞くことが、わかる。</h1>
+        <p class="lead">車種と目的から、確認事項とAIへの質問文を作成。購入前の不安も、整備記録の疑問も、根拠と一緒に整理できます。</p>
+        <div class="trust-row"><span>登録・APIキー不要</span><span>入力はこのページ内だけ</span><span>日本語・英語対応</span></div>
+      </div>
+      <div class="brief-spec"><strong>08 / 06</strong>日本向け車種プロフィール<br>6つの目的に対応</div>
+    </section>
+    <div class="sample-bar"><span>まずはサンプルで</span>
+      <button type="button" data-demo="nbox" disabled>N-BOX・購入前</button>
+      <button type="button" data-demo="serena" disabled>セレナ・リコール記録</button>
+      <button type="button" data-demo="cx5" disabled>CX-5・修理の根拠</button>
+    </div>
+    <div class="brief-grid">
+      <form id="brief-form" class="brief-panel" autocomplete="off">
+        <div class="panel-heading"><span class="step">01</span><h2>車種と目的を選ぶ</h2></div>
+        <div class="form-body">
+          <div class="field"><label for="vehicle">車種プロフィール</label><select id="vehicle" name="vehicle" required><option value="">車種を選択</option></select></div>
+          <div class="field" id="custom-vehicle" hidden><label for="vehicleName">車種・世代</label><input id="vehicleName" name="vehicleName" maxlength="120" placeholder="例：2020年式カローラ・ハイブリッド"></div>
+          <div class="field"><label for="task">何を確認したいですか？</label><select id="task" name="task" required></select></div>
+          <div class="field"><label for="market">元の仕向け</label><select id="market" name="market"><option value="unknown">不明</option><option value="Japan">日本</option><option value="other">日本以外</option></select></div>
+          <div class="field-pair">
+            <div class="field"><label for="code">型式 <span class="optional">任意</span></label><select id="code" name="code"></select></div>
+            <div class="field"><label for="year">製造年 <span class="optional">任意</span></label><input id="year" name="year" type="number" inputmode="numeric" min="1900" max="2100" step="1" placeholder="2019" aria-describedby="year-hint"><small id="year-hint">初度登録年とは区別します</small></div>
+          </div>
+          <div class="field"><label for="context">エンジン・走行距離・履歴 <span class="optional">任意</span></label><textarea id="context" name="context" maxlength="1000" rows="2" placeholder="分かる範囲だけ記入。不明な情報は空欄で構いません。"></textarea></div>
+          <div class="field"><label for="concern">気になっていること <span class="optional">任意</span></label><textarea id="concern" name="concern" maxlength="2000" rows="3" placeholder="例：売主はリコール済みと説明していますが、実施記録がありません。"></textarea></div>
+          <button id="generate" class="brief-button primary full" type="submit" disabled>確認メモを作成 →</button>
+          <button id="reset" class="reset-button" type="button">入力を消去</button>
+          <p class="privacy-note">車台番号・氏名・連絡先は入力しないでください。このツールは入力内容を送信・保存しません。外部AIへの貼り付けは自分で選べます。</p>
+        </div>
+      </form>
+      <section class="brief-panel" aria-labelledby="output-title">
+        <div class="panel-heading"><span class="step">02</span><h2 id="output-title">確認メモ</h2></div>
+        <div id="empty" class="empty-state">
+          <div class="empty-symbol" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>根拠を添えて、次の質問へ。</h3><p>車種と目的を選ぶか、サンプルをお試しください。既存資料から確認事項を整理するツールです。AI診断は実行しません。</p>
+          <div class="empty-steps"><span>01 車種を選ぶ</span><span>02 根拠を確認</span><span>03 コピーして使う</span></div>
+        </div>
+        <div id="result" class="output-body" hidden>
+          <div class="result-topline"><span id="result-task"></span><span id="reference-count"></span></div>
+          <h2 id="result-title"></h2>
+          <div class="result-actions">
+            <button id="copy" class="brief-button primary" type="button">AI質問文をコピー</button>
+            <button id="download" class="brief-button" type="button">Markdown保存</button>
+            <button id="share" class="brief-button" type="button">車種・目的を共有</button>
+            <button id="print" class="brief-button" type="button">印刷</button>
+          </div>
+          <input id="share-value" readonly hidden aria-label="共有リンク（個人の入力は含みません）">
+          <p id="selection-status" class="selection-note"></p>
+          <div id="references"></div>
+          <details id="prompt-details"><summary>AIへ渡す質問文の全文を確認</summary><label for="output" class="small">作成した質問文</label><textarea id="output" readonly spellcheck="false"></textarea></details>
+          <pre id="print-output"></pre>
+          <div class="after-use"><p>次の現車確認や整備相談に役立ちましたか？</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills">☆ GitHubでStar</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml">車種をリクエスト →</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=verified-finding.yml">確認できた事例を共有 →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <p id="status" role="status" aria-live="polite">確認済み資料を読み込み中…</p>
+    <noscript><p>このツールにはJavaScriptが必要です。下のリンクからスキルと車種別資料を読むこともできます。</p></noscript>
+  </main>
+  <footer class="brief-footer">
+    <a href="{{ '/skills/' | relative_url }}">全20スキル</a>
+    <a href="{{ '/data/known-issues/README.ja.html' | relative_url }}">車種別資料の一覧</a>
+    <a href="{{ '/docs/quality.ja.html' | relative_url }}">品質の確かめ方</a>
+    <a href="{{ '/CONTRIBUTING.html' | relative_url }}">開発に参加</a>
+    <a href="{{ '/docs/safety-disclaimer.html' | relative_url }}">安全上の限界</a>
+    <p>Sho Kamakuraが開発 · MITオープンソース。資料の一致は、診断結果・個別適用・安全性の証明ではありません。</p>
+  </footer>
+</div>
+<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}"></script>
+</body>
+</html>

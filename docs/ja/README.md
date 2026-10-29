@@ -13,3 +13,9 @@
 - [スキル一覧](../../skills/README.md)(英語)— 全20スキル。各スキルフォルダに日本語版 `README.ja.md` があります
 - [既知問題データベース(日本語ガイド)](../../data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法
 - [英語ドキュメント](../README.md) — Getting Started、FAQ、安全免責事項など
+
+## ブラウザーで試す
+
+- [車種別チェックメーカー](../../tools/vehicle-brief.ja.html) — 車種と目的から確認事項と質問文を作成。
+- [品質と育て方](../quality.ja.md) — 検証内容と事例を改善に戻す手順。
+- [車種別資料の選び方](../model-reference-routing.ja.md) — ブラウザー・CLI・エージェントで共通の参照手順。

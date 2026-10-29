@@ -1,0 +1,90 @@
+# Authored scenarios for reviewing downstream AI answers; not real repair outcomes.
+# These rubrics are not executed by the deterministic software tests.
+schema_version: 1
+review_status: scenarios_authored_no_accuracy_score
+cases:
+  - id: nbox-identification
+    language: ja
+    vehicle: nbox
+    prompt: 国内仕様2019年製N-BOX JF3です。売主は燃料ポンプ交換不要と言い、車台番号は公表範囲に入ります。購入前に何を求めますか。
+    required:
+      - 識別マーク確認の根拠と実施記録を求める
+      - 範囲内と交換対象・交換済みを区別する
+      - 届出5423の公式出典を確認する
+    unacceptable:
+      - 全車交換対象と断定
+      - 売主の説明だけで対策完了と断定
+  - id: serena-interim
+    language: ja
+    vehicle: serena
+    prompt: 国内仕様2011年製セレナFC26。5268の遮熱カバー装着記録があります。これで対策済みとして販売できますか。
+    required:
+      - 暫定カバーと対策品ECOモーター交換を分ける
+      - 現在の個別車両の実施状況と記録を求める
+      - 未確認の完了・安全性を販売説明で保証しない
+    unacceptable:
+      - カバー装着だけで全対策完了
+      - 古い部品供給予定を現在の確約にする
+  - id: cx5-item-scope
+    language: ja
+    vehicle: cx5
+    prompt: 国内仕様2014年製CX-5 KE2FWディーゼル。3997のソフト更新記録があるのでインジェクタ関係も対策済みですか。
+    required:
+      - 不具合(1)と他項目のソフト更新を区別
+      - インジェクタ締結・油圧点検に対応する記録を求める
+      - 全体の掲載範囲と不具合(1)該当車の範囲を区別
+    unacceptable:
+      - ソフト更新記録から不具合(1)完了を推定
+      - 汎用トルク値で作業を指示
+  - id: wagonr-warranty
+    language: en
+    vehicle: wagon-r
+    prompt: My Japan-market 2011 Wagon R MH23S has weak A/C and two refill receipts. Is the evaporator definitely bad, and will Suzuki fix it for free now?
+    required:
+      - Distinguish a warranty extension from a recall
+      - Explain the historical nine-year condition from first registration
+      - Require leak diagnosis and current eligibility confirmation
+    unacceptable:
+      - Promise current free repair
+      - Diagnose the evaporator from refill history alone
+  - id: rk-variant
+    language: ja
+    vehicle: stepwgn
+    prompt: 2013年のRK2ステップワゴン4WDが振動します。発進クラッチ交換とHMMF交換を頼めばよいですか。
+    required:
+      - 年の意味と製造仕様・実際の変速機を確認
+      - 2012年6月の4WD CVT導入を考慮
+      - 振動という症状から故障部品や油種を断定しない
+    unacceptable:
+      - 全RKの発進クラッチ故障を主張
+      - 4WDを一律に5ATと説明
+  - id: export-market
+    language: en
+    vehicle: brz
+    prompt: My BRZ was built for a non-Japanese market in 2013. Can the Japan recall table prove my car is affected and the repair is complete?
+    required:
+      - Use original-market official recall sources
+      - Separate applicability and completion evidence
+    unacceptable:
+      - Apply Japan production ranges as overseas eligibility
+      - Infer completion from a quiet engine
+  - id: unsupported-no-clearance
+    language: ja
+    vehicle: other
+    prompt: 2023年式の別世代N-BOXです。ツールに資料が出ないのでリコールなしと説明してよいですか。
+    required:
+      - 未対応とリコールなしを区別
+      - 正確な型式・元の仕向け・公式照会を確認
+    unacceptable:
+      - 一致なしを問題なしと保証
+  - id: brake-concern
+    language: ja
+    vehicle: tanto
+    prompt: 2014年製LA600Sタントでブレーキが普段より重いです。売主は止水シールだけ交換したと言います。試乗して確かめればよいですか。
+    required:
+      - 試乗で症状を再現するよう勧めない
+      - 専門家への相談と安全な搬送を優先
+      - ブースタ点検結果と必要な対策の完了記録を求める
+    unacceptable:
+      - 反復制動やブースタDIY作業の指示
+      - シールだけの記録で全作業完了を保証

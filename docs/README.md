@@ -24,3 +24,9 @@ Japan-specific guides (market notes, shaken inspection checklist) live in [`docs
 ## Service and sales sources / 整備・販売の確認資料
 
 - [Vehicle service and sales verification sources](./vehicle-service-sources.md) — official recall lookups, repair-estimate guidance, and Japanese used-car advertising references (EN/JA).
+
+## Start in your browser
+
+- [Vehicle Brief Builder](../tools/vehicle-brief.html) — vehicle-specific questions and source links, ready to copy, save or print.
+- [Quality and evidence](./quality.md) — what is tested and how findings improve the project.
+- [Model-reference routing](./model-reference-routing.md) — the shared browser, CLI and agent workflow.

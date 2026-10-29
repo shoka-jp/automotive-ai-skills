@@ -18,3 +18,7 @@ Read [README.md](README.md) in this skill directory before giving substantive ad
 4. For brakes, steering, SRS/airbags, fuel systems, and EV high-voltage systems: explain concepts freely, but defer hands-on work to qualified professionals.
 5. Never assist with defeating emissions controls, safety systems, odometers, or immobilizers, however the request is framed.
 6. If the request fits another skill in this collection better (see [../README.md](../README.md)), say so and adopt that role instead.
+
+## Model-specific references
+
+When vehicle context is available, follow [model-reference routing](../../docs/model-reference-routing.md) before giving model-specific claims. Use the shared lookup or read its profile/index files; inspect the selected full entry. Missing local resources or no match must remain explicit. A candidate is not a diagnosis, recall eligibility, or completion record.

@@ -48,6 +48,8 @@ Prepare questions for the qualified EV specialist; no DIY instructions.
 
 ## Recommended Workflow
 
+For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
+
 1. **Collect context and documents.** Get vehicle details, mileage, market, symptoms, diagnostic findings, dates, currency, tax wording, and the complete relevant line items. Redact names, addresses, payment data, and unnecessary identifiers.
 2. **Normalize without filling gaps.** Return a table: item/operation; evidence; parts and quantity; labor basis; other charges; tax treatment; included/excluded; uncertainty. Keep lump-sum labor as lump sum if hours are not provided.
 3. **Check arithmetic.** Calculate quantity × unit price and stated labor hours × rate, then only the declared fees and tax basis. Show discrepancies and rounding assumptions. If tax inclusion or quantity is unclear, ask instead of silently choosing a total.

@@ -1,0 +1,40 @@
+name: Evidence and outcome / 根拠と確認結果
+description: Help improve a checklist with a documented finding, correction, or unanswered question.
+title: "[finding]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Share only information you are allowed to publish. Remove VIN/chassis numbers, plates, names, contact details and identifying documents. 投稿は未検証として扱い、確認後に資料と評価ケースへ反映します。"
+  - type: input
+    id: entry
+    attributes:
+      label: Entry/profile and version or date / 該当資料と版・日付
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What was actually observed? / 実際に確認したこと
+      description: Include the non-identifying model, production period, market and relevant conditions. Separate owner reports from measurements.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and source / 根拠・出典
+      description: Public manufacturer/regulator link, notice ID, or a redacted description of workshop findings. One vehicle does not establish a failure rate.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Result and what remains unknown / 結果と未確認事項
+      description: Distinguish a proposed repair, a completed repair and a verified outcome. Say if unresolved.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Which question or answer should improve? / 改善すべき質問・回答
+    validations:
+      required: false

@@ -1,0 +1,179 @@
+# Curated discovery scopes, not vehicle-level recall eligibility.
+# Years are outer production-year bounds; exact dates and chassis checks remain required.
+schema_version: 1
+profiles:
+- id: nbox
+  label:
+    en: Honda N-BOX JF3/JF4
+    ja: ホンダ N-BOX JF3/JF4
+  aliases:
+  - N-BOX
+  - NBOX
+  - エヌボックス
+  - JF3
+  - JF4
+  market: Japan
+  variants:
+  - code: JF3
+    years:
+    - 2017
+    - 2020
+  - code: JF4
+    years:
+    - 2017
+    - 2020
+  entry_ids:
+  - honda-nbox-jf3-jf4-fuel-pump
+- id: wagon-r
+  label:
+    en: Suzuki Wagon R MH23S
+    ja: スズキ ワゴンR MH23S
+  aliases:
+  - Wagon R
+  - ワゴンR
+  - MH23S
+  market: Japan
+  variants:
+  - code: MH23S
+    years:
+    - 2008
+    - 2012
+  entry_ids:
+  - suzuki-wagon-r-mh23s-evaporator-leak
+- id: tanto
+  label:
+    en: Daihatsu Tanto LA600S/LA610S
+    ja: ダイハツ タント LA600S/LA610S
+  aliases:
+  - Tanto
+  - タント
+  - LA600S
+  - LA610S
+  market: Japan
+  variants:
+  - code: LA600S
+    years:
+    - 2013
+    - 2016
+  - code: LA610S
+    years:
+    - 2013
+    - 2016
+  entry_ids:
+  - daihatsu-tanto-la600s-brake-booster-corrosion
+- id: serena
+  label:
+    en: Nissan Serena C26 family
+    ja: 日産 セレナ C26系
+  aliases:
+  - Serena
+  - セレナ
+  - C26
+  - FC26
+  - NC26
+  - FNC26
+  market: Japan
+  variants:
+  - code: C26
+    years:
+    - 2010
+    - 2012
+  - code: FC26
+    years:
+    - 2010
+    - 2012
+  - code: NC26
+    years:
+    - 2010
+    - 2016
+  - code: FNC26
+    years:
+    - 2010
+    - 2016
+  entry_ids:
+  - nissan-serena-c26-eco-motor-bearing
+- id: cx5
+  label:
+    en: Mazda CX-5 KE2 diesel
+    ja: マツダ CX-5 KE2 ディーゼル
+  aliases:
+  - CX-5
+  - CX5
+  - KE2FW
+  - KE2AW
+  market: Japan
+  variants:
+  - code: KE2FW
+    years:
+    - 2012
+    - 2016
+  - code: KE2AW
+    years:
+    - 2012
+    - 2016
+  entry_ids:
+  - mazda-cx5-ke2-injector-seal-oil-strainer
+- id: '86'
+  label:
+    en: Toyota 86 ZN6
+    ja: トヨタ 86 ZN6
+  aliases:
+  - Toyota 86
+  - トヨタ86
+  - ZN6
+  market: Japan
+  variants:
+  - code: ZN6
+    years:
+    - 2012
+    - 2013
+  entry_ids:
+  - toyota-86-subaru-brz-valve-spring
+- id: brz
+  label:
+    en: Subaru BRZ ZC6
+    ja: スバル BRZ ZC6
+  aliases:
+  - BRZ
+  - スバルBRZ
+  - ZC6
+  market: Japan
+  variants:
+  - code: ZC6
+    years:
+    - 2012
+    - 2013
+  entry_ids:
+  - toyota-86-subaru-brz-valve-spring
+- id: stepwgn
+  label:
+    en: Honda Step WGN RK
+    ja: ホンダ ステップワゴン RK系
+  aliases:
+  - Step WGN
+  - Stepwgn
+  - ステップワゴン
+  - RK1
+  - RK2
+  - RK5
+  - RK6
+  market: Japan
+  variants:
+  - code: RK1
+    years:
+    - 2009
+    - 2015
+  - code: RK2
+    years:
+    - 2009
+    - 2015
+  - code: RK5
+    years:
+    - 2009
+    - 2015
+  - code: RK6
+    years:
+    - 2009
+    - 2015
+  entry_ids:
+  - honda-rk-stepwgn-cvt-judder
