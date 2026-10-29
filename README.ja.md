@@ -162,6 +162,15 @@ automotive-ai-skills/
 
 これらのスキルは一般的な自動車情報を提供するものであり、**専門的な助言ではありません**。車両の作業は安全に直結するシステムを含みます。数値・仕様は必ず純正整備書で確認し、ブレーキ・ステアリング・エアバッグ（SRS）・燃料・高電圧系の作業は、少しでも不安があれば資格を持つ専門家に依頼してください。詳細は[安全免責事項](./docs/safety-disclaimer.md)（英語）を参照してください。
 
+## プロジェクトを応援する
+
+役立った方は、次の方法で開発を応援していただけます。
+
+- [開発者をフォロー](https://github.com/shoka-jp)して、自動車 × AIの開発をチェックする。
+- リポジトリをStarして保存したり、必要としている人に紹介する。
+- [Issue](https://github.com/shoka-jp/automotive-ai-skills/issues)で、試した手順・期待した結果・実際の結果を共有する。ログから車台番号などの個人情報を取り除いてください。
+- [GitHub Sponsors](https://github.com/sponsors/shoka-jp)でオープンソース活動を支援する。
+
 ## ライセンス
 
 [MIT](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE) © 2026 Sho Kamakura
