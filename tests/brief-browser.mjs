@@ -29,6 +29,7 @@ try {
     await page.locator('[data-demo=nbox]').waitFor({ state: 'visible' });
     await page.waitForFunction(() => !document.querySelector('[data-demo=nbox]').disabled);
     await page.click('[data-demo=nbox]');
+    assert.deepEqual(errors, [], 'The sample should render without a browser exception');
     assert.ok((await page.locator('#output').inputValue()).includes('5423'));
     assert.equal(await page.locator('.reference-card').count(), 1);
     await page.click('#copy');
@@ -75,7 +76,7 @@ try {
     await page.click('#copy');
     assert.equal(await page.locator('#prompt-details').getAttribute('open'), '');
     assert.equal(await page.evaluate(() => document.activeElement.id), 'output');
-    await page.click('#reset');
+    await page.click('#clear-inputs');
     assert.equal(await page.locator('#output').inputValue(), '');
     assert.equal(await page.locator('#result').isVisible(), false);
   }

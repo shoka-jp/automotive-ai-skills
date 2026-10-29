@@ -119,7 +119,7 @@ $('share').addEventListener('click', async () => {
   status.textContent = t('Preset link ready. Your year, model code, history and concern are not included.', '車種・目的だけの共有リンクです。製造年・型式・履歴・相談内容は含みません。');
 });
 $('print').addEventListener('click', () => window.print());
-$('reset').addEventListener('click', () => {
+$('clear-inputs').addEventListener('click', () => {
   form.reset(); variants(); current = null;
   $('result').hidden = true; $('empty').hidden = false;
   $('output').value = ''; $('print-output').textContent = ''; $('references').replaceChildren();
