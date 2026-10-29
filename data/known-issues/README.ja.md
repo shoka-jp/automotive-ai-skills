@@ -41,7 +41,6 @@
 | [日産 RB26 オイルポンプドライブ破損](./nissan-rb26-oil-pump-drive.ja.md)([EN](./nissan-rb26-oil-pump-drive.md)) | スカイラインGT-R BNR32/33/34 | 致命的 |
 | [日産 SR20 チェーンガイドのラトル音](./nissan-sr20det-chain-guide-rattle.ja.md)([EN](./nissan-sr20det-chain-guide-rattle.md)) | S13/S14/S15系ほか(1989〜2002年) | 軽微 |
 | [ホンダ RK系ステップワゴン 変速機の特定・振動の確認](./honda-rk-stepwgn-cvt-judder.ja.md)([EN](./honda-rk-stepwgn-cvt-judder.md)) | RK1/2/5/6（2009〜2015年、4WDは途中で5ATからCVTへ変更） | 重大（故障確認時） |
-
 | [86／BRZ バルブスプリング](./toyota-86-subaru-brz-valve-spring.ja.md)([EN](./toyota-86-subaru-brz-valve-spring.md)) | 日本仕様・86 ZN6／BRZ ZC6（2012〜2013年の指定製作範囲） | 致命的 |
 | [N-BOX 燃料ポンプ](./honda-nbox-jf3-jf4-fuel-pump.ja.md)([EN](./honda-nbox-jf3-jf4-fuel-pump.md)) | 日本仕様・JF3/JF4（2017〜2020年の指定製作範囲） | 致命的 |
 | [ワゴンR エバポレータ漏れ](./suzuki-wagon-r-mh23s-evaporator-leak.ja.md)([EN](./suzuki-wagon-r-mh23s-evaporator-leak.md)) | 日本仕様・MH23S（2008〜2012年の指定製作範囲） | 重大 |

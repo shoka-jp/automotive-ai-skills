@@ -41,7 +41,6 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [nissan-rb26-oil-pump-drive.md](./nissan-rb26-oil-pump-drive.md) | Nissan Skyline GT-R RB26DETT (BNR32/33/34) | Critical | [あり](./nissan-rb26-oil-pump-drive.ja.md) |
 | [nissan-sr20det-chain-guide-rattle.md](./nissan-sr20det-chain-guide-rattle.md) | Nissan SR20DET/DE (S13/S14/S15 etc., 1989–2002) | Annoyance | [あり](./nissan-sr20det-chain-guide-rattle.ja.md) |
 | [Step WGN transmission identification / judder](./honda-rk-stepwgn-cvt-judder.md) | RK1/2/5/6 (2009–2015; 4WD changed from 5AT to CVT) | Major if fault confirmed | [あり](./honda-rk-stepwgn-cvt-judder.ja.md) |
-
 | [86 / BRZ valve springs](./toyota-86-subaru-brz-valve-spring.md) | Japan: ZN6 / ZC6; 2012-2013 (specified production ranges only) | Critical | [あり](./toyota-86-subaru-brz-valve-spring.ja.md) |
 | [N-BOX fuel pump](./honda-nbox-jf3-jf4-fuel-pump.md) | Japan: N-BOX JF3 / JF4; 2017-2020 (listed DBA/6BA chassis subranges only) | Critical | [あり](./honda-nbox-jf3-jf4-fuel-pump.ja.md) |
 | [Wagon R evaporator leak](./suzuki-wagon-r-mh23s-evaporator-leak.md) | Japan: Wagon R MH23S; 2008-2012 (specified production subranges only) | Major | [あり](./suzuki-wagon-r-mh23s-evaporator-leak.ja.md) |
