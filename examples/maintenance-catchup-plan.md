@@ -1,5 +1,7 @@
 # Example: Building a Catch-Up Maintenance Plan
 
+> **Illustrative conversation:** A teaching scenario, not a recorded vehicle test or customer result. Dialogue, measurements, repair costs and outcomes are illustrative.
+
 **Skill:** [Vehicle Maintenance Planner](../skills/vehicle-maintenance-planner/)
 **Scenario:** A newly purchased vehicle with unknown service history gets a prioritized, budgeted catch-up plan split between DIY and shop work.
 

@@ -1,5 +1,7 @@
 # 会話例:中古車を最初から最後までチェックする
 
+> **学習用の会話例:** 使い方を説明するシナリオです。会話中の修理費用・測定値・結果は説明用で、実車試験や利用者の実績を示すものではありません。
+
 [English](./used-car-inspection.md) | **日本語**
 
 **スキル:** [Used Car Inspector](../skills/used-car-inspector/README.ja.md)

@@ -68,6 +68,10 @@ Before applying any safety-relevant advice:
 
 Read the full [safety disclaimer](./safety-disclaimer.md).
 
+## Try a data-reading tool without a car
+
+The companion [obd2-mcp demo](./try-obd2-mcp.md) prints simulated trouble codes, freeze frame and live data. It is an optional tool integration; the prompt frameworks above work without it.
+
 ## Next steps
 
 - Browse the annotated [example conversations](../examples/) to see complete sessions.

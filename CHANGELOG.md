@@ -11,6 +11,13 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Reproducible companion MCP demo guides in English and Japanese, with
+  captured simulated output, provenance, limitations and troubleshooting.
+- Landing-page demo and developer/sponsor/contribution links; source-code
+  structured data consistent with the visible project description.
+- Localized descriptions for all 36 skill language pages and key entry pages;
+  built-site checks for metadata, language alternates and internal links.
+
 - Known-issue entries (EN+JA): Nissan/Jatco CVT premature failure
   (`nissan-jatco-cvt-failure`), Toyota ZVW30 Prius EGR clogging and head
   gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
@@ -25,8 +32,17 @@ invalidates existing links or skill usage patterns.
   completeness, plugin version match, skills-table sync), a Jekyll build
   check, and internal/external link checking with lychee
 
+### Changed
+
+- Language choice stays explicit; removed browser-language forced redirects.
+- Teaching conversations now identify illustrative costs and outcomes;
+  FAQ translation coverage now matches the repository.
+
 ### Fixed
 
+- Duplicate `README.html` pages keep working but now use their directory
+  URL consistently in canonical/Open Graph/JSON-LD metadata. The sitemap
+  lists canonical pages only, fixing mismatched language alternates.
 - `.claude-plugin/marketplace.json` version synced with `plugin.json` (was
   created at 1.0.0 in the 1.4.0 release commit instead of matching
   `plugin.json`)

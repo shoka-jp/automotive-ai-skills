@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
+  {% include seo.html %}
   {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
   {%- comment -%} hreflang alternates: pair README.md / README.ja.md / README.es.md
       (and foo.md / foo.ja.md) siblings in the same directory.
@@ -82,3 +82,4 @@
   </footer>
 </body>
 </html>
+

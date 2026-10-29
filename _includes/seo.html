@@ -1,0 +1,14 @@
+{%- comment -%}
+GitHub Pages renders both README.html and a directory index from each README.
+Keep the old HTML URLs working, but give every alias the directory canonical.
+Apply this consistently to the canonical tag, Open Graph URL and JSON-LD.
+The custom sitemap lists only the directory versions.
+{%- endcomment -%}
+{%- capture metadata -%}{% seo %}{%- endcapture -%}
+{%- if page.url contains '/README.html' -%}
+  {%- assign alias_url = page.url | absolute_url -%}
+  {%- assign preferred_url = page.url | remove: 'README.html' | absolute_url -%}
+  {{ metadata | replace: alias_url, preferred_url }}
+{%- else -%}
+  {{ metadata }}
+{%- endif -%}

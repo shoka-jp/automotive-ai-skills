@@ -1,5 +1,7 @@
 # Example: Diagnosing a P0420 Without Wasting Money
 
+> **Illustrative conversation:** A teaching scenario, not a recorded vehicle test or customer result. Dialogue, measurements, repair costs and outcomes are illustrative.
+
 **Skill:** [OBD-II Diagnostic Assistant](../skills/obd2-diagnostic-assistant/)
 **Scenario:** A check engine light with the most commonly misdiagnosed code in OBD-II. The naive fix is a $1,200 catalytic converter; the actual fix here costs far less.
 

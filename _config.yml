@@ -32,6 +32,9 @@ relative_links:
 # Social/meta used by jekyll-seo-tag
 github_username: shoka-jp
 repository: shoka-jp/automotive-ai-skills
+author:
+  name: Sho Kamakura
+  url: https://github.com/shoka-jp
 
 defaults:
   - scope:
@@ -67,6 +70,315 @@ defaults:
       sitemap: false
       noindex: true
 
+  # Page-specific, localized search snippets. Keep these aligned with the visible introductions.
+  - scope:
+      path: '**/*.ja.md'
+    values:
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: docs/ja/**
+    values:
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: '**/*.es.md'
+    values:
+      lang: es
+      locale: es_ES
+  - scope:
+      path: skills/body-paint-assistant/README.ja.md
+    values:
+      description: 車のボディと塗装のためのAIスキルです。へこみ・傷の評価、修理方法の選択(デントリペア/パテ/パネル交換)、色合わせとぼかしの考え方、そして「DIYの限界はどこか」の正直なガイダンスを提供します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/body-paint-assistant/README.md
+    values:
+      description: An AI skill for vehicle bodywork and paint — dent and scratch assessment, repair method
+        selection (PDR vs. filler vs. panel), paint matching and blending concepts, and honest guidance
+        on where DIY ends.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/car-audio-electronics/README.ja.md
+    values:
+      description: 社外オーディオと12V電装のためのAIスキルです。ヘッドユニット(カーナビ/ディスプレイオーディオ)交換、スピーカーとアンプの取り付け、ドライブレコーダーなどのアクセサリー配線、正しい電源・アース・ヒューズの取り方、そして現代のCANバス車が「ノー」と言う境界線を扱います。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/car-audio-electronics/README.md
+    values:
+      description: An AI skill for aftermarket audio and 12V electronics — head unit replacement, speaker
+        and amplifier installs, dash cams and accessory wiring, power and grounding done right, and knowing
+        where modern CAN-bus vehicles say no.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/classic-car-restorer/README.ja.md
+    values:
+      description: クラシックカー・旧車のためのAIスキルです。ポイント点火、キャブレター、錆の診断、絶版部品の調達、そして「レストアか保存か」の判断を支援します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/classic-car-restorer/README.md
+    values:
+      description: An AI skill for classic and vintage vehicles — points ignition, carburetors, rust assessment,
+        obsolete parts sourcing, and the judgment calls of restoration versus preservation.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/commercial-vehicle-assistant/README.ja.md
+    values:
+      description: トラック・バン・商用車のためのAIスキルです。エアブレーキシステム、運行前点検、積載物の固縛、重量コンプライアンスの基礎、そして「稼ぐ車両」の整備の現実を扱います。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/commercial-vehicle-assistant/README.md
+    values:
+      description: An AI skill for trucks, vans, and commercial vehicles — air brake systems, pre-trip inspections,
+        load securing, weight compliance awareness, and the maintenance realities of vehicles that earn
+        their keep.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/diesel-specialist/README.ja.md
+    values:
+      description: 現代および旧世代のディーゼルエンジンのためのAIスキルです。コモンレールシステム、排ガス後処理装置(DPF/EGR/SCR)、グロープラグ、ターボチャージャー、ディーゼル特有の診断と整備をカバーします。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/diesel-specialist/README.md
+    values:
+      description: An AI skill for modern and older diesel engines — common rail systems, emissions aftertreatment
+        (DPF/EGR/SCR), glow plugs, turbochargers, and diesel-specific diagnosis and maintenance.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/ev-assistant/README.ja.md
+    values:
+      description: 電気自動車のオーナーシップ全般を支援するAIスキルです。充電戦略、バッテリー健全性、航続距離の管理、EV特有の整備、自宅充電の設備計画、新車・中古EVの購入ガイダンスをカバーします。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/ev-assistant/README.md
+    values:
+      description: An AI skill for electric vehicle ownership — charging strategy, battery health, range
+        management, EV-specific maintenance, home charging setup, and buying guidance for new and used EVs.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/fleet-manager/README.ja.md
+    values:
+      description: 複数車両の管理のためのAIスキルです。車両群をまたいだ整備スケジュール、コスト追跡とTCO分析、稼働停止(ダウンタイム)の計画、ドライバー点検ルーチン、入れ替え時期の判断を支援します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/fleet-manager/README.md
+    values:
+      description: An AI skill for managing multiple vehicles — maintenance scheduling across a fleet, cost
+        tracking and TCO analysis, downtime planning, driver check routines, and replacement timing.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/mechanic-assistant/README.es.md
+    values:
+      description: Una habilidad de IA de propósito general que apoya a mecánicos profesionales y aficionados
+        serios durante los trabajos de reparación — desde la evaluación inicial de síntomas hasta pares
+        de apriete, guías de procedimiento y verificación posreparación.
+      lang: es
+      locale: es_ES
+  - scope:
+      path: skills/mechanic-assistant/README.ja.md
+    values:
+      description: プロの整備士や本格的なDIYユーザーを、修理作業の最初から最後まで支援する汎用AIスキルです。初期の症状判断から、トルク値、作業手順のウォークスルー、修理後の確認までをカバーします。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/mechanic-assistant/README.md
+    values:
+      description: A general-purpose AI skill that supports professional mechanics and serious DIYers through
+        repair jobs — from initial symptom assessment to torque specs, procedure walkthroughs, and post-repair
+        verification.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/motorcycle-mechanic/README.ja.md
+    values:
+      description: バイクの整備・診断・修理のためのAIスキルです。チェーンとスプロケットの整備、キャブレターとFIシステム、バルブクリアランス調整、タイヤとサスペンションのセッティング、冬季保管までをカバーします。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/motorcycle-mechanic/README.md
+    values:
+      description: An AI skill for motorcycle maintenance, diagnosis, and repair — covering chain and sprocket
+        service, carburetor and EFI systems, valve adjustments, tire and suspension setup, and seasonal
+        storage.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/obd2-diagnostic-assistant/README.es.md
+    values:
+      description: Una habilidad de IA para interpretar códigos de falla OBD-II (DTC), datos de freeze frame
+        y lecturas de sensores en vivo — convirtiendo la salida del escáner en un plan de diagnóstico estructurado.
+      lang: es
+      locale: es_ES
+  - scope:
+      path: skills/obd2-diagnostic-assistant/README.ja.md
+    values:
+      description: OBD-II故障診断コード(DTC)、フリーズフレームデータ、ライブセンサーデータを解釈し、スキャンツールの出力を構造化された診断計画に変えるAIスキルです。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/obd2-diagnostic-assistant/README.md
+    values:
+      description: An AI skill for interpreting OBD-II diagnostic trouble codes (DTCs), freeze frame data,
+        and live sensor readings — turning scanner output into a structured diagnostic plan.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/tire-wheel-advisor/README.ja.md
+    values:
+      description: タイヤとホイール専門のAIスキルです。サイズとフィッティングの計算、季節戦略(夏冬履き替え)、ロードインデックスと速度記号、TPMS(空気圧センサー)、摩耗診断、保管方法を扱います。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/tire-wheel-advisor/README.md
+    values:
+      description: An AI skill dedicated to tires and wheels — sizing and fitment math, seasonal strategy,
+        load and speed ratings, TPMS, wear diagnosis, and storage.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/towing-trailer-advisor/README.ja.md
+    values:
+      description: 安全に牽引するためのAIスキルです。ヒッチの選定と定格、垂直荷重(ヒッチ荷重)と積載配分、トレーラーの配線とブレーキコントローラー、スウェイ(蛇行)の予防、トレーラーの整備を扱います。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/towing-trailer-advisor/README.md
+    values:
+      description: An AI skill for towing safely — hitch selection and ratings, tongue weight and load distribution,
+        trailer wiring and brake controllers, sway prevention, and trailer maintenance.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/used-car-inspector/README.es.md
+    values:
+      description: Una habilidad de IA que te guía en la evaluación de un vehículo usado antes de comprarlo
+        — listas de inspección, detección de señales de alarma, problemas conocidos por modelo y apoyo en
+        la negociación.
+      lang: es
+      locale: es_ES
+  - scope:
+      path: skills/used-car-inspector/README.ja.md
+    values:
+      description: 中古車の購入前評価を支援するAIスキルです。点検チェックリスト、要注意サインの検出、車種別の既知の弱点、価格交渉のサポートを提供します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/used-car-inspector/README.md
+    values:
+      description: An AI skill that guides you through evaluating a used vehicle before purchase — inspection
+        checklists, red-flag detection, model-specific known issues, and price negotiation support.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/vehicle-customization-advisor/README.ja.md
+    values:
+      description: 車のカスタマイズ・改造を計画するためのAIスキルです。パフォーマンス、足回り、ホイール&タイヤ、オーディオ、ライティング、外装を、適合性・施工順序・予算・法規適合に配慮しながら組み立てます。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/vehicle-customization-advisor/README.md
+    values:
+      description: An AI skill for planning vehicle modifications — performance, suspension, wheels and
+        tires, audio, lighting, and aesthetics — with attention to compatibility, build order, budget, and
+        legality.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/vehicle-maintenance-planner/README.es.md
+    values:
+      description: Una habilidad de IA que construye y gestiona calendarios de mantenimiento preventivo
+        adaptados a tu vehículo, kilometraje, clima y patrón de conducción.
+      lang: es
+      locale: es_ES
+  - scope:
+      path: skills/vehicle-maintenance-planner/README.ja.md
+    values:
+      description: 車種・走行距離・気候・使い方に合わせて、予防整備のスケジュールと優先順位を整理するAIスキルです。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/vehicle-maintenance-planner/README.md
+    values:
+      description: An AI skill that builds and manages preventive maintenance schedules tailored to your
+        specific vehicle, mileage, climate, and driving pattern.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/vehicle-troubleshooting/README.ja.md
+    values:
+      description: 異音・振動・におい・液漏れ・警告灯・走行時の違和感など、症状を起点に原因を絞り込むAIスキルです。部品を買う前に、鑑別診断の手法で可能性を狭めます。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: skills/vehicle-troubleshooting/README.md
+    values:
+      description: An AI skill for symptom-first diagnosis — noises, vibrations, smells, leaks, warning
+        lights, and drivability problems — using structured differential diagnosis to narrow causes before
+        any parts are bought.
+      lang: en
+      locale: en_US
+  - scope:
+      path: README.ja.md
+    values:
+      title: 自動車の診断・整備を支援する16のAIスキル
+      description: 故障診断、整備計画、中古車選び、EV、バイクを支援するオープンソースのプロンプト集。全16スキルに日本語版と利用上の限界を収録。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: README.es.md
+    values:
+      title: Habilidades de IA para diagnóstico y mantenimiento de vehículos
+      description: 16 guías de trabajo con IA para diagnóstico, mantenimiento y compra de vehículos. Cuatro
+        habilidades en español, ejemplos y límites de uso. Código abierto, licencia MIT.
+      lang: es
+      locale: es_ES
+  - scope:
+      path: docs/getting-started.md
+    values:
+      title: Get started with automotive AI skills
+      description: Choose a skill, prepare vehicle context, adapt an example prompt and verify the result.
+        A practical introduction to the automotive AI prompt frameworks.
+      lang: en
+      locale: en_US
+  - scope:
+      path: docs/faq.md
+    values:
+      title: 'Automotive AI Skills FAQ: setup, languages and limitations'
+      description: Answers about installing skills, reading OBD-II data, supported languages, free use,
+        accuracy limits and contributing corrections.
+      lang: en
+      locale: en_US
+  - scope:
+      path: skills/README.md
+    values:
+      title: Choose an automotive AI skill
+      description: Find the right prompt framework for a warning light, maintenance plan, used-car inspection,
+        EV, motorcycle or repair task. Browse all 16 skills.
+      lang: en
+      locale: en_US
+  - scope:
+      path: docs/README.md
+    values:
+      title: Automotive AI guides and demos
+      description: Start using the skills, run the hardware-free OBD-II MCP demo, read FAQs and find Japanese
+        guides and contribution documentation.
+      lang: en
+      locale: en_US
+
 # LICENSE is intentionally not excluded: README badges link to ./LICENSE,
 # so it must be published (served as plain text) to avoid a 404.
 # SKILL.md files are plugin inputs read from git, not site content — they
@@ -74,6 +386,7 @@ defaults:
 exclude:
   - CHANGELOG.md
   - .gitignore
+  - scripts
   - "skills/*/SKILL.md"
 
 # jekyll-optional-front-matter skips README/CONTRIBUTING/CODE_OF_CONDUCT by
