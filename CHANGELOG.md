@@ -18,14 +18,6 @@ invalidates existing links or skill usage patterns.
 - Localized descriptions for all 36 skill language pages and key entry pages;
   built-site checks for metadata, language alternates and internal links.
 
-### Changed
-
-- Language choice stays explicit; removed browser-language forced redirects.
-- Teaching conversations now identify illustrative costs and outcomes;
-  FAQ translation coverage now matches the repository.
-
-### Added
-
 - Known-issue entries (EN+JA): Nissan/Jatco CVT premature failure
   (`nissan-jatco-cvt-failure`), Toyota ZVW30 Prius EGR clogging and head
   gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
@@ -39,6 +31,12 @@ invalidates existing links or skill usage patterns.
   (`scripts/validate_repo.py` — known-issues index sync, skill folder
   completeness, plugin version match, skills-table sync), a Jekyll build
   check, and internal/external link checking with lychee
+
+### Changed
+
+- Language choice stays explicit; removed browser-language forced redirects.
+- Teaching conversations now identify illustrative costs and outcomes;
+  FAQ translation coverage now matches the repository.
 
 ### Fixed
 
