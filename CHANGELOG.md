@@ -11,6 +11,15 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Six bilingual Japan-market known-issue entries: Toyota 86/Subaru BRZ
+  valve springs, Honda N-BOX JF3/JF4 fuel pump, Suzuki Wagon R MH23S
+  evaporator leakage, Daihatsu Tanto LA600S/LA610S brake booster corrosion,
+  Nissan Serena C26 ECO motor bearings, and Mazda CX-5 KE2 injector sealing.
+  The database now has 17 entries, with 12 new copyable buyer-check prompts.
+- Primary-source URLs, campaign identifiers, markets, and verification dates
+  for the six new entries and the corrected RK Step WGN note; matching
+  localized search metadata and landing-page links.
+
 - Four bilingual workshop and sales skills: Service Intake Assistant,
   Repair Estimate Reviewer, Used Car Listing Assistant, and Vehicle Recall
   Checker — 20 skills total, each with routing metadata and four example
@@ -33,7 +42,7 @@ invalidates existing links or skill usage patterns.
   ringland/rod-bearing failure (`subaru-ej20t-ringland-bearing`),
   Nissan RB26 oil pump drive failure (`nissan-rb26-oil-pump-drive`),
   Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`),
-  Honda RK Step WGN CVT start-clutch judder (`honda-rk-stepwgn-cvt-judder`)
+  Honda RK Step WGN transmission identification and judder checks (`honda-rk-stepwgn-cvt-judder`)
 - CI (GitHub Actions): repository consistency checks
   (`scripts/validate_repo.py` — known-issues index sync, skill folder
   completeness, plugin version match, skills-table sync), a Jekyll build
@@ -41,13 +50,21 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Known-issue templates require evidence for frequency and cost, distinguish
+  recalls from warranty extensions, and prefer traceable primary sources.
+
 - Skill indexes, agent routing, landing cards, localized search metadata,
-  and plugin metadata cover all 20 skills; plugin version is 1.5.0.
+  and plugin metadata cover all 20 skills; plugin version is 1.5.1.
 - Language choice stays explicit; removed browser-language forced redirects.
 - Teaching conversations now identify illustrative costs and outcomes;
   FAQ translation coverage now matches the repository.
 
 ### Fixed
+
+- Corrected the RK Step WGN transmission article: launch FF torque-converter
+  CVT versus 4WD 5AT, followed by the June 2012 4WD CVT revision. Withdrew
+  unsupported start-clutch, blanket fluid, prevalence, and repair-price claims
+  while preserving the existing URL.
 
 - Duplicate `README.html` pages keep working but now use their directory
   URL consistently in canonical/Open Graph/JSON-LD metadata. The sitemap
@@ -58,7 +75,7 @@ invalidates existing links or skill usage patterns.
 - Repository-structure trees in `README.md`/`README.ja.md` said "12 skills"
   and omitted `SKILL.md` from the per-skill file list (now 16 skills, 4 files)
 - Known-issues counts in `llms.txt` and both README roadmaps updated from
-  "4 platforms" to the current 11 entries
+  "4 platforms" to the current 17 entries
 - `CONTRIBUTING.md` PR checklist now lists the full index-sync set
   (`README.ja.md`, `index.html`, `llms.txt`) and the Japanese-mirror rule,
   matching `AGENTS.md`

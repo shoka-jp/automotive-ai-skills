@@ -186,7 +186,7 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Example integrations: Claude Project template and combined system prompt in [`integrations/`](./integrations/)
 - [x] Commercial Vehicle & Truck Assistant skill (air brakes, pre-trip inspection, load securing)
 - [x] Body & Paint Assistant skill (dent assessment, paint matching, DIY correction limits)
-- [x] Known-issues coverage expanded — 11 entries covering BMW, Toyota, Subaru, Honda, Nissan, and Mazda, all bilingual — and growing; **community entries wanted, ongoing**
+- [x] Known-issues coverage expanded — 17 entries covering BMW, Toyota, Subaru, Honda, Nissan, Mazda, Suzuki, and Daihatsu, all bilingual — and growing; **community entries wanted, ongoing**
 - [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
 - [x] Towing & Trailer Advisor skill (hitches, tongue weight, wiring, sway)
 - [x] Car Audio & Electronics Assistant skill (head units, 12V discipline, CAN awareness)

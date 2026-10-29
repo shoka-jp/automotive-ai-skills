@@ -114,13 +114,176 @@ entries:
       en: nissan-sr20det-chain-guide-rattle.md
       ja: nissan-sr20det-chain-guide-rattle.ja.md
   - id: honda-rk-stepwgn-cvt-judder
-    title: "CVT start-clutch judder"
+    title: Transmission identification before judder diagnosis (correction)
     make: Honda
-    platform: "R20A 2.0L + start-clutch CVT"
-    models: "Step WGN RK1/RK2, Step WGN Spada RK5/RK6; related Fit GE, Freed GB3/GB4, Stream RN"
-    years: "2009-2015 (earlier/high-mileage cars worst)"
+    platform: R20A; CVT or 5AT depending on drive layout and production revision
+    models: Step WGN RK1/RK2; Step WGN Spada RK5/RK6
+    years: 2009-2015; revised 4WD adopted CVT in June 2012
     severity: major
-    tags: [transmission, cvt, judder, start-clutch, minivan]
+    tags:
+    - transmission
+    - cvt
+    - 5at
+    - judder
+    - identification
+    - correction
+    - minivan
+    markets:
+    - Japan
+    evidence_type: manufacturer_specification
+    campaign_ids: []
+    source_urls:
+    - https://global.honda/jp/news/2009/4091009-stepwgn.html
+    - https://global.honda/jp/news/2012/4120531-stepwgn.html
+    - https://www.honda.co.jp/auto-archive/stepwgn/spada/2012/webcatalog/driving/
+    last_verified: '2026-10-30'
     files:
       en: honda-rk-stepwgn-cvt-judder.md
       ja: honda-rk-stepwgn-cvt-judder.ja.md
+  - id: toyota-86-subaru-brz-valve-spring
+    title: Toyota 86 / Subaru BRZ — valve spring recall
+    make: Toyota / Subaru
+    platform: ZN6 / ZC6
+    models: Toyota 86 ZN6; Subaru BRZ ZC6
+    years: 2012-2013 (specified production ranges only)
+    severity: critical
+    tags:
+    - engine
+    - valve-spring
+    - recall
+    - sports-car
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '4361'
+    source_urls:
+    - https://toyota.jp/recall/2018/1101_1.html
+    - https://www.subaru.co.jp/recall/data/18-11-01-01.html
+    last_verified: '2026-10-30'
+    files:
+      en: toyota-86-subaru-brz-valve-spring.md
+      ja: toyota-86-subaru-brz-valve-spring.ja.md
+  - id: honda-nbox-jf3-jf4-fuel-pump
+    title: Honda N-BOX JF3/JF4 — low-pressure fuel pump recall
+    make: Honda
+    platform: N-BOX JF3 / JF4
+    models: N-BOX / N-BOX Custom JF3 and JF4
+    years: 2017-2020 (listed DBA/6BA chassis subranges only)
+    severity: critical
+    tags:
+    - fuel-system
+    - fuel-pump
+    - recall
+    - kei-car
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '5423'
+    source_urls:
+    - https://www.honda.co.jp/recall/auto/info/231208_5423.html
+    - https://www.mlit.go.jp/report/press/jidosha08_hh_004984.html
+    last_verified: '2026-10-30'
+    files:
+      en: honda-nbox-jf3-jf4-fuel-pump.md
+      ja: honda-nbox-jf3-jf4-fuel-pump.ja.md
+  - id: suzuki-wagon-r-mh23s-evaporator-leak
+    title: Suzuki Wagon R MH23S — evaporator refrigerant leak
+    make: Suzuki
+    platform: Wagon R MH23S
+    models: Wagon R MH23S (listed subranges)
+    years: 2008-2012 (specified production subranges only)
+    severity: major
+    tags:
+    - air-conditioning
+    - evaporator
+    - refrigerant
+    - warranty-extension
+    - kei-car
+    markets:
+    - Japan
+    evidence_type: warranty_extension
+    campaign_ids: []
+    source_urls:
+    - https://www.suzuki.co.jp/about/recall/2015/1218b/index.html
+    last_verified: '2026-10-30'
+    files:
+      en: suzuki-wagon-r-mh23s-evaporator-leak.md
+      ja: suzuki-wagon-r-mh23s-evaporator-leak.ja.md
+  - id: daihatsu-tanto-la600s-brake-booster-corrosion
+    title: Daihatsu Tanto LA600S/LA610S — brake booster corrosion
+    make: Daihatsu
+    platform: Tanto LA600S / LA610S
+    models: Tanto DBA-LA600S and DBA-LA610S
+    years: 2013-2016 (specified production ranges only)
+    severity: critical
+    tags:
+    - brakes
+    - brake-booster
+    - corrosion
+    - recall
+    - kei-car
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '4471'
+    source_urls:
+    - https://www.daihatsu.co.jp/info/recall/99273.htm
+    - https://www.mlit.go.jp/common/001289447.pdf
+    last_verified: '2026-10-30'
+    files:
+      en: daihatsu-tanto-la600s-brake-booster-corrosion.md
+      ja: daihatsu-tanto-la600s-brake-booster-corrosion.ja.md
+  - id: nissan-serena-c26-eco-motor-bearing
+    title: Nissan Serena C26 — ECO motor bearing recall
+    make: Nissan
+    platform: Serena C26 / FC26 / NC26 / FNC26
+    models: ECO-motor idle-stop Serena C26, FC26, NC26, FNC26
+    years: 2010-2016 (model-code-specific production ranges)
+    severity: critical
+    tags:
+    - eco-motor
+    - bearing
+    - idle-stop
+    - recall
+    - minivan
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '5268'
+    source_urls:
+    - https://www.nissan.co.jp/RECALL/DATA/report5268.html
+    - https://www.recall.caa.go.jp/result/detail.php?rcl=00000030366&screenkbn=03
+    last_verified: '2026-10-30'
+    files:
+      en: nissan-serena-c26-eco-motor-bearing.md
+      ja: nissan-serena-c26-eco-motor-bearing.ja.md
+  - id: mazda-cx5-ke2-injector-seal-oil-strainer
+    title: Mazda CX-5 KE2 — injector sealing and oil-strainer blockage
+    make: Mazda
+    platform: CX-5 KE2FW / KE2AW diesel
+    models: Diesel CX-5 LDA-KE2FW and LDA-KE2AW; item (1) subset only
+    years: 2012-2016 (campaign envelope; item (1) is a subset)
+    severity: critical
+    tags:
+    - diesel
+    - injector
+    - oil-pressure
+    - oil-strainer
+    - recall
+    - suv
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '3997'
+    source_urls:
+    - https://www2.mazda.co.jp/service/recall/ra/20170217107/
+    - https://www.recall.caa.go.jp/result/detail.php?rcl=00000017281&screenkbn=01
+    last_verified: '2026-10-30'
+    files:
+      en: mazda-cx5-ke2-injector-seal-oil-strainer.md
+      ja: mazda-cx5-ke2-injector-seal-oil-strainer.ja.md

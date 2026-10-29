@@ -1,45 +1,52 @@
-# Honda RK Step WGN — CVT start-clutch judder
+# Honda RK Step WGN — identify the transmission before investigating judder
 
 **English** | [日本語](./honda-rk-stepwgn-cvt-judder.ja.md)
 
+Correction: the former version incorrectly described this generation as a start-clutch CVT family and generalized its fluid, repair, and failure-frequency claims. Those claims have been withdrawn. This URL remains a diagnostic verification note, not evidence of a confirmed widespread defect.
+
 ## Scope
 
-- **Vehicles:** Step WGN RK1/RK2 and Step WGN Spada RK5/RK6 (4th generation, 2009–2015); the same start-clutch CVT architecture in Fit GE, Freed GB3/GB4, and Stream RN shows the same fault
-- **Engines/components:** R20A 2.0L four with Honda CVT — wet multi-plate **start clutch** (this CVT generation uses a start clutch instead of a torque converter), CVT fluid (genuine HMMF)
-- **Production window:** 2009–2015 production; judder complaints concentrate in earlier cars and high-mileage examples
-- **Markets:** JDM (Step WGN was not officially sold in North America/Europe)
+- **Vehicles:** Japan-market Step WGN RK1/RK2 and Step WGN Spada RK5/RK6, 2009–2015 generation.
+- **Engines/components:** R20A and the actual fitted transmission; model code alone does not settle every production revision.
+- **Production window:** At the October 2009 launch, FF used a torque-converter CVT and 4WD used 5AT. Revised 4WD models released on 2012-06-08 adopted CVT. Confirm the exact build variant around changeovers.
+- **Markets:** Japan; imports still require original-market identification.
 
 ## The issue
 
-Instead of a torque converter, this Honda CVT generation launches through a wet multi-plate start clutch. As the CVT fluid ages and clutch wear particles accumulate, the friction characteristics of the clutch surfaces change, and engagement turns from smooth slip into grab-slip-grab — felt as a shudder (judder) every time the van pulls away. Honda addressed it with service campaigns (fluid replacement and control-software updates) across the start-clutch CVT family; neglected cases progress until the clutch or transmission needs replacement.
+Judder is a symptom, not a component diagnosis. Applying a start-clutch explanation from another Honda generation can lead to the wrong fluid or repair recommendation. Establish the transmission first, then investigate using measurements and factory procedures.
 
 ## Symptoms an owner can detect
 
-- Shudder/vibration on takeoff from a stop and in low-speed creep (roughly 0–20 km/h), often worse when the transmission is fully warm or in stop-and-go traffic
-- The vibration disappears once the vehicle is rolling at speed — distinguishing it from driveline or engine mount faults
-- Judder after long highway driving followed by city crawling is a classic complaint pattern
-- Scan tools show few or no codes in typical cases — diagnosis is by symptom and fluid history
+- Record an already-observed vibration's conditions: stationary/moving, cold/warm, launch/steady load/braking.
+- Keep warning messages and diagnostic results with dates. The word “judder” does not identify a failed clutch.
+- Do not perform a stall test or recreate severe symptoms for the AI. Braking, steering, or control concerns require professional assessment before driving.
 
 ## Severity
 
-**Major.** Early cases are recoverable with fluid service, but ignored judder progresses to start clutch replacement or a transmission exchange — a repair bill that is significant against the used value of an RK.
+**Major, if a transmission fault is confirmed.** Vibration alone does not establish cost or urgency; inspection is needed. Immediate braking or control concerns take priority.
 
 ## Frequency (honest assessment)
 
-Very common on fluid-neglected, high-mileage examples; Honda's own campaign coverage across this CVT family shows the maker treated it as systemic. Cars with regular genuine-HMMF fluid changes frequently never develop noticeable judder. Note the RK has other well-known but separate wear items (starter motor, A/C compressor, alternator, power sliding door rollers/motors) that buyers tend to lump together with the CVT reputation.
+The cited manufacturer specifications establish transmission variants, not a model-wide judder rate. No verified prevalence claim or RK-wide start-clutch campaign is asserted here.
 
 ## Fix and cost
 
-- **Repair:** First line: CVT fluid replacement with genuine HMMF (sometimes 2–3 exchanges to flush) plus any applicable Honda software update — resolves many early cases. Persistent judder: start clutch replacement or remanufactured CVT. Prevention: HMMF changes every 40,000 km or so, well before Honda's nominal schedule
-- **Typical cost:** Fluid service JPY 1–3万円; start clutch job JPY 10–20万円; remanufactured CVT exchange JPY 25–45万円 (Japan, dealer/independent mix)
+- **Repair:** Identify the fitted transmission and its specified fluid before service. Do not prescribe HMMF or HCF-2 across all RK cars, repeated fluid exchanges, a generic interval, or start-clutch replacement from this page. A qualified workshop must identify the fault and applicable Honda procedure.
+- **Typical cost:** No reliable current range is established for an undiagnosed symptom. Obtain an itemized diagnosis and repair estimate; keep inspection, fluid service, and component replacement separate.
 
 ## Buyer checklist
 
-- Test drive must include several full stops and gentle takeoffs, ideally with the transmission fully warm — takeoff shudder is the tell
-- Ask for CVT fluid records; genuine HMMF at regular intervals is a strong plus, "never changed" at 100,000 km is a risk marker
-- Have a dealer check by VIN whether CVT-related service campaigns were applied
-- Budget separately for the RK's other common wear items (starter, A/C compressor, alternator, sliding door mechanisms) — they are unrelated to the CVT but arrive in the same ownership window
+- Confirm build information, FF/4WD, and the actual transmission. A later 4WD RK is not automatically 5AT.
+- Obtain invoices identifying the fluid and work; “Honda CVT oil changed” is not sufficiently specific.
+- Maintenance records do not prove healthy operation. Obtain an independent assessment if vibration remains unexplained.
+- Check any claimed campaign by number and vehicle identifier instead of accepting a generic “Honda judder fix.”
 
 ## Sources
 
-Honda service campaigns and warranty-extension history on the start-clutch CVT family (Fit/Freed/Step WGN era); extensively documented by Japanese Honda-specialist shops and owner communities. Verify campaign applicability for a specific vehicle by VIN at a Honda dealer.
+- [Honda launch announcement, 2009-10-09: torque-converter CVT and original 4WD 5AT](https://global.honda/jp/news/2009/4091009-stepwgn.html)
+- [Honda revised 4WD announcement, 2012-05-31: CVT on the 2012-06-08 release](https://global.honda/jp/news/2012/4120531-stepwgn.html)
+- [Honda archive: pre-update Spada transmission description](https://www.honda.co.jp/auto-archive/stepwgn/spada/2012/webcatalog/driving/)
+
+Sources checked: 2026-10-30. The diagnostic checklist is project guidance, not a manufacturer failure-rate statement.
+
+[Vehicle Troubleshooting](../../skills/vehicle-troubleshooting/) · [Repair Estimate Reviewer](../../skills/repair-estimate-reviewer/)

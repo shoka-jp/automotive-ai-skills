@@ -46,7 +46,7 @@ Key facts:
 
 ## Data
 
-- [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues — 11 entries covering BMW, Toyota, Subaru, Honda, Nissan, and Mazda (engines, CVTs/DCTs, rotaries) and growing, with a machine-readable index.yaml
+- [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues — 17 entries covering BMW, Toyota, Subaru, Honda, Nissan, Mazda, Suzuki, and Daihatsu (engines, transmissions, fuel systems, brakes, and A/C) and growing, with a machine-readable index.yaml
 - [Example Conversations](https://shoka-jp.github.io/automotive-ai-skills/examples/): illustrative teaching conversations, not verified customer results — P0420 diagnosis, used-car inspection, maintenance catch-up plan
 
 ## Optional
