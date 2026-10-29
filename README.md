@@ -200,6 +200,15 @@ Contributions are welcome — new skills, improvements to existing ones, correct
 
 Good first contributions: fixing inaccuracies, adding example prompts, and expanding the FAQ.
 
+## Support the project
+
+If these skills help with your automotive workflow:
+
+- [Follow shoka-jp](https://github.com/shoka-jp) for related automotive AI projects.
+- Star this repository to bookmark it, or share a skill with someone who could use it.
+- Help improve the examples, correct inaccuracies, or contribute a translation using the [contribution guide](./CONTRIBUTING.md).
+- [Sponsor the maintainer](https://github.com/sponsors/shoka-jp) to support this open-source work.
+
 ## Safety Disclaimer
 
 These skills provide general automotive information, **not professional advice**. Vehicle work involves safety-critical systems. Always verify specifications against factory documentation, and defer brake, steering, airbag (SRS), fuel, and high-voltage work to qualified professionals when in doubt. See the full [safety disclaimer](./docs/safety-disclaimer.md).
