@@ -87,9 +87,7 @@
 
 このスキル集は「知識」レイヤーです。姉妹プロジェクトの [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) は「道具」レイヤー — 安価なELM327アダプタ経由で、AIが実車の故障コード・ライブデータ・フリーズフレームを直接読めるMCPサーバーです(モック車両同梱なのでハードウェアなしでも試せます):
 
-```bash
-claude mcp add obd2 -- npx -y obd2-mcp
-```
+[ソースからビルドして試す手順（英日）](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md)
 
 ### その他
 
