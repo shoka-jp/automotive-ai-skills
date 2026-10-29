@@ -4,7 +4,7 @@ Ready-to-use templates for wiring these skills into AI platforms.
 
 | File | Use with | What it gives you |
 |---|---|---|
-| [Claude Code plugin](https://github.com/shoka-jp/automotive-ai-skills/tree/main/.claude-plugin) | Claude Code | `/plugin marketplace add shoka-jp/automotive-ai-skills` → all 16 skills install natively (`SKILL.md` per skill) and auto-trigger |
+| [Claude Code plugin](https://github.com/shoka-jp/automotive-ai-skills/tree/main/.claude-plugin) | Claude Code | `/plugin marketplace add shoka-jp/automotive-ai-skills` → all 20 skills install natively (`SKILL.md` per skill) and auto-trigger |
 | [codex.md](./codex.md) | OpenAI Codex | `AGENTS.md` auto-load in-repo, global setup, or one slash command per skill |
 | [claude-project-template.md](./claude-project-template.md) | Claude Projects, Custom GPTs, or any system-prompt slot | A single-skill dedicated assistant, step by step |
 | [garage-assistant-system-prompt.md](./garage-assistant-system-prompt.md) | Any assistant with a system prompt | One combined "garage assistant" that routes between all skills |

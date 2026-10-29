@@ -72,3 +72,4 @@
 - [Used Car Inspector](../used-car-inspector/README.ja.md) — 購入直後の車両の状態把握
 - [Mechanic Assistant](../mechanic-assistant/README.ja.md) — 計画内のDIY整備の実行
 - [EV Assistant](../ev-assistant/README.ja.md) — EVの整備スケジュールは大きく異なります
+- [Vehicle Recall Checker](../vehicle-recall-checker/README.ja.md) — リコールの個別適用と完了根拠を確認

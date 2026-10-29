@@ -1,6 +1,6 @@
 # Automotive AI Skills
 
-> Open-source collection of 16 AI skills (structured prompt frameworks) for automotive diagnostics, maintenance, repair, customization, EVs, and motorcycles. Platform-agnostic — works with Claude, ChatGPT, or any capable LLM. Content available in English and Japanese (all skills) and Spanish (core skills). MIT licensed.
+> Open-source collection of 20 AI skills (structured prompt frameworks) for automotive diagnostics, maintenance, repair, customization, EVs, motorcycles, service intake, estimate review, sales listings, and recall checks. Platform-agnostic — works with Claude, ChatGPT, or any capable LLM. Content available in English and Japanese (all skills) and Spanish (core skills). MIT licensed.
 
 Key facts:
 - Each skill defines capabilities, ready-to-use example prompts, a recommended workflow, and honest limitations.
@@ -26,6 +26,11 @@ Key facts:
 - [Body & Paint Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/body-paint-assistant/): dent/scratch assessment, repair paths, paint matching, DIY limits
 - [Towing & Trailer Advisor](https://shoka-jp.github.io/automotive-ai-skills/skills/towing-trailer-advisor/): hitches, tongue weight, trailer wiring and brakes, sway prevention
 - [Car Audio & Electronics Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/car-audio-electronics/): head units, amps, dash cams, 12V wiring discipline, CAN-bus limits
+
+- [Service Intake Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/service-intake-assistant/): Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and a technician handoff.
+- [Repair Estimate Reviewer](https://shoka-jp.github.io/automotive-ai-skills/skills/repair-estimate-reviewer/): Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions to resolve before authorization.
+- [Used Car Listing Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/used-car-listing-assistant/): Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit price breakdown without unsupported claims.
+- [Vehicle Recall Checker](https://shoka-jp.github.io/automotive-ai-skills/skills/vehicle-recall-checker/): Guide official recall lookups, separate model-level notices from vehicle applicability, and document completion evidence or unknown status.
 
 ## Guides
 

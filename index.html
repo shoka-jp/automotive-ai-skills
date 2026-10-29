@@ -2,7 +2,7 @@
 layout: null
 title: AI skills for car diagnostics, maintenance & repair — open source
 description: >-
-  16 open-source AI skills for automotive diagnostics, maintenance, repair,
+  20 open-source AI skills for automotive diagnostics, maintenance, repair,
   customization, EVs, and motorcycles. Works with Claude, ChatGPT, or any LLM.
   English and Japanese for all skills; Spanish for four core skills.
 ---
@@ -18,7 +18,7 @@ description: >-
     "@type": "SoftwareSourceCode",
     "@id": "{{ '/' | absolute_url }}#source",
     "name": "Automotive AI Skills",
-    "description": "16 open-source automotive prompt frameworks with workflows, example prompts and limitations. All skills are available in English and Japanese; four have Spanish translations.",
+    "description": "20 open-source automotive prompt frameworks with workflows, example prompts and limitations. All skills are available in English and Japanese; four have Spanish translations.",
     "url": "{{ '/' | absolute_url }}",
     "codeRepository": "https://github.com/shoka-jp/automotive-ai-skills",
     "license": "https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE",
@@ -57,9 +57,9 @@ description: >-
       <p class="eyebrow">Open-source prompt frameworks · Workflows with explicit limits</p>
       <h1>Automotive<span class="line2">AI Skills</span></h1>
       <p class="lede">
-        Sixteen structured skills that turn Claude, ChatGPT, or any capable LLM into a
+        Twenty structured skills that turn Claude, ChatGPT, or any capable LLM into a
         disciplined garage partner — diagnostics, maintenance, used-car buying, EVs,
-        motorcycles, and more. Each skill defines what to ask, what context to give,
+        motorcycles, service intake, estimates, listings, and recalls. Each skill defines what to ask, what context to give,
         and exactly where to stop trusting the machine.
       </p>
       <p class="lang-row">
@@ -69,7 +69,7 @@ description: >-
       <div class="spec-plate" role="table" aria-label="Project specifications">
         <table>
           <tr>
-            <td><span class="k">Skills</span><span class="v">16</span></td>
+            <td><span class="k">Skills</span><span class="v">20</span></td>
             <td><span class="k">Languages</span><span class="v">EN · JA · ES</span></td>
             <td><span class="k">License</span><span class="v">MIT</span></td>
             <td><span class="k">Install</span><span class="v orange">NONE</span></td>
@@ -122,7 +122,7 @@ description: >-
     </section>
 
     <section id="skills">
-      <div class="sec-head"><h2>Skill index</h2><span class="count">SEC 01–16 · EN/JA all · ES core</span></div>
+      <div class="sec-head"><h2>Skill index</h2><span class="count">SEC 01–20 · EN/JA all · ES core</span></div>
       <div class="skill-grid">
         <a class="skill-card" href="{{ '/skills/mechanic-assistant/' | relative_url }}">
           <span class="sec">SEC 01 · 🔧</span><h3>Mechanic Assistant</h3>
@@ -204,6 +204,26 @@ description: >-
           <p>Head units, amps, dash cams, 12V wiring discipline, CAN limits.</p>
           <span class="langs">EN · JA</span>
         </a>
+        <a class="skill-card" href="{{ '/skills/service-intake-assistant/' | relative_url }}">
+          <span class="sec">SEC 17 · 📝</span><h3>Service Intake Assistant</h3>
+          <p>Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and a technician handoff.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/repair-estimate-reviewer/' | relative_url }}">
+          <span class="sec">SEC 18 · 🧾</span><h3>Repair Estimate Reviewer</h3>
+          <p>Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions to resolve before authorization.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/used-car-listing-assistant/' | relative_url }}">
+          <span class="sec">SEC 19 · 🏷️</span><h3>Used Car Listing Assistant</h3>
+          <p>Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit price breakdown without unsupported claims.</p>
+          <span class="langs">EN · JA</span>
+        </a>
+        <a class="skill-card" href="{{ '/skills/vehicle-recall-checker/' | relative_url }}">
+          <span class="sec">SEC 20 · 📣</span><h3>Vehicle Recall Checker</h3>
+          <p>Guide official recall lookups, separate model-level notices from vehicle applicability, and document completion evidence or unknown status.</p>
+          <span class="langs">EN · JA</span>
+        </a>
       </div>
     </section>
 
@@ -241,7 +261,7 @@ description: >-
           <h3>Build with it</h3>
           <ul>
             <li><a href="{{ '/integrations/claude-project-template.html' | relative_url }}">Claude Project template</a> <span>— one-skill assistant</span></li>
-            <li><a href="{{ '/integrations/garage-assistant-system-prompt.html' | relative_url }}">Garage Assistant system prompt</a> <span>— all 16 routed</span></li>
+            <li><a href="{{ '/integrations/garage-assistant-system-prompt.html' | relative_url }}">Garage Assistant system prompt</a> <span>— all 20 routed</span></li>
             <li><a href="{{ '/docs/skill-authoring-guide.html' | relative_url }}">Skill authoring guide</a> <span>— contribute a skill</span></li>
             <li><a href="{{ '/llms.txt' | relative_url }}">llms.txt</a> <span>— documentation index</span></li>
           </ul>

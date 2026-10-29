@@ -10,5 +10,5 @@ tags: [symptoms, noise, vibration, leaks, diagnosis]
 languages:
   en: README.md
   ja: README.ja.md
-related: [obd2-diagnostic-assistant, mechanic-assistant, motorcycle-mechanic]
+related: [obd2-diagnostic-assistant, mechanic-assistant, motorcycle-mechanic, service-intake-assistant]
 safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

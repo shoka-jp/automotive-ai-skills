@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "Automotive AI skills for Claude Code — diagnostics, maintenance, repair, EVs, motorcycles, and more.",
-    "version": "1.4.0"
+    "version": "1.5.0"
   },
   "plugins": [
     {
       "name": "automotive-ai-skills",
       "source": "./",
-      "description": "All 16 automotive skills in one plugin: OBD-II diagnostics, repair, maintenance planning, used-car inspection, troubleshooting, customization, EV, motorcycle, diesel, classic car, fleet, tire & wheel, commercial vehicle, body & paint, towing, and car audio.",
+      "description": "20 automotive AI skills: diagnostics, repair, maintenance, used-car inspection, EVs, motorcycles, and workshop and sales workflows including intake, estimate review, listings, and recall checks. All skills in English and Japanese; four also in Spanish.",
       "category": "productivity",
       "keywords": ["automotive", "car", "obd2", "maintenance", "diagnostics"]
     }

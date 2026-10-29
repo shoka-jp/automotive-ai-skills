@@ -1,0 +1,21 @@
+schema_version: 1
+name: repair-estimate-reviewer
+title: Repair Estimate Reviewer
+summary: Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions
+  to resolve before authorization.
+audience: Owners, service advisors, used-car businesses, and fleet purchasers
+tags:
+- repair-estimate
+- quote-comparison
+- labor
+- parts
+- service-advisor
+languages:
+  en: README.md
+  ja: README.ja.md
+related:
+- service-intake-assistant
+- mechanic-assistant
+- vehicle-maintenance-planner
+safety_notes: Verify vehicle-specific information against current primary sources and factory documentation.
+  Defer safety-critical hands-on work to qualified professionals. See docs/safety-disclaimer.md.

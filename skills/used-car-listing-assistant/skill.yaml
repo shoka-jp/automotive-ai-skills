@@ -1,0 +1,21 @@
+schema_version: 1
+name: used-car-listing-assistant
+title: Used Car Listing Assistant
+summary: Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit
+  price breakdown without unsupported claims.
+audience: Independent dealers, sales staff, and private sellers
+tags:
+- used-car
+- listing
+- dealer
+- vehicle-sales
+- disclosure
+languages:
+  en: README.md
+  ja: README.ja.md
+related:
+- used-car-inspector
+- vehicle-recall-checker
+- repair-estimate-reviewer
+safety_notes: Verify vehicle-specific information against current primary sources and factory documentation.
+  Defer safety-critical hands-on work to qualified professionals. See docs/safety-disclaimer.md.

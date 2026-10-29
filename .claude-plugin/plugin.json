@@ -1,7 +1,7 @@
 {
   "name": "automotive-ai-skills",
-  "version": "1.4.0",
-  "description": "16 automotive AI skills: OBD-II diagnostics, repair guidance, maintenance planning, used-car inspection, troubleshooting, customization, EVs, motorcycles, diesels, classics, fleets, tires, trucks, body & paint, towing, and car audio. English and Japanese.",
+  "version": "1.5.0",
+  "description": "20 automotive AI skills: diagnostics, repair, maintenance, used-car inspection, EVs, motorcycles, and workshop and sales workflows including intake, estimate review, listings, and recall checks. All skills in English and Japanese; four also in Spanish.",
   "author": {
     "name": "Sho Kamakura",
     "url": "https://github.com/shoka-jp"

@@ -71,3 +71,4 @@
 - [OBD-II Diagnostic Assistant](../obd2-diagnostic-assistant/README.ja.md) — 故障コードを起点とした電子診断
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/README.ja.md) — 修理前の症状ベースの切り分け
 - [Motorcycle Mechanic](../motorcycle-mechanic/README.ja.md) — 二輪版の整備アシスタント
+- [Repair Estimate Reviewer](../repair-estimate-reviewer/README.ja.md) — 作業承認前の見積もりと範囲を確認

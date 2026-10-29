@@ -72,3 +72,4 @@ Asking price is $9,500. Help me build a negotiation position.
 - [Vehicle Maintenance Planner](../vehicle-maintenance-planner/) — post-purchase catch-up planning
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/) — investigate specific symptoms found during a test drive
 - [EV Assistant](../ev-assistant/) — used EV purchases hinge on battery health assessment
+- [Used Car Listing Assistant](../used-car-listing-assistant/) — turn verified condition findings into an accurate sales draft

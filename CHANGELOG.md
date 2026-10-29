@@ -11,6 +11,13 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Four bilingual workshop and sales skills: Service Intake Assistant,
+  Repair Estimate Reviewer, Used Car Listing Assistant, and Vehicle Recall
+  Checker — 20 skills total, each with routing metadata and four example
+  prompts per language.
+- Official verification-source guide for recall checks, repair estimates,
+  and Japanese used-car advertising; clear distinctions between reported,
+  verified, and unknown information.
 - Reproducible companion MCP demo guides in English and Japanese, with
   captured simulated output, provenance, limitations and troubleshooting.
 - Landing-page demo and developer/sponsor/contribution links; source-code
@@ -34,6 +41,8 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Skill indexes, agent routing, landing cards, localized search metadata,
+  and plugin metadata cover all 20 skills; plugin version is 1.5.0.
 - Language choice stays explicit; removed browser-language forced redirects.
 - Teaching conversations now identify illustrative costs and outcomes;
   FAQ translation coverage now matches the repository.

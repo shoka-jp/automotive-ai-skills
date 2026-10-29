@@ -1,0 +1,21 @@
+schema_version: 1
+name: vehicle-recall-checker
+title: Vehicle Recall Checker
+summary: Guide official recall lookups, separate model-level notices from vehicle applicability, and document
+  completion evidence or unknown status.
+audience: Owners, used-car buyers and sellers, service advisors, and fleets
+tags:
+- recall
+- vin
+- chassis-number
+- campaign
+- service-records
+languages:
+  en: README.md
+  ja: README.ja.md
+related:
+- used-car-inspector
+- service-intake-assistant
+- vehicle-maintenance-planner
+safety_notes: Verify vehicle-specific information against current primary sources and factory documentation.
+  Defer safety-critical hands-on work to qualified professionals. See docs/safety-disclaimer.md.

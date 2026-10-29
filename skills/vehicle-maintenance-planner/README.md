@@ -72,3 +72,4 @@ service it?
 - [Used Car Inspector](../used-car-inspector/) — assess condition before building a plan for a newly purchased vehicle
 - [Mechanic Assistant](../mechanic-assistant/) — perform the DIY services in your plan
 - [EV Assistant](../ev-assistant/) — EV-specific maintenance schedules differ substantially
+- [Vehicle Recall Checker](../vehicle-recall-checker/) — verify campaign applicability and completion evidence

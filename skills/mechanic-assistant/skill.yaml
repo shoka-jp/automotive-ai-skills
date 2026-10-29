@@ -11,5 +11,5 @@ languages:
   en: README.md
   ja: README.ja.md
   es: README.es.md
-related: [obd2-diagnostic-assistant, vehicle-troubleshooting, motorcycle-mechanic]
+related: [obd2-diagnostic-assistant, vehicle-troubleshooting, motorcycle-mechanic, repair-estimate-reviewer]
 safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."
