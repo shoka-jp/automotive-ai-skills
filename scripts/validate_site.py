@@ -131,8 +131,11 @@ def check_site(root):
                 if page.canonicals and target.alternates.get(page.lang) != page.canonicals[0]:
                     fail(path, f'alternate is not reciprocal: {url}')
 
+    # Multiple reachable URLs may deliberately share a directory canonical.
+    # Count one description per canonical page, not compatibility aliases.
     skill_snippets = [p.meta.get('description') for path, p in pages.items()
                       if path.startswith('skills/') and path != 'skills/index.html'
+                      and not path.endswith('/README.html')
                       and 'noindex' not in p.meta.get('robots', '')]
     for description, count in Counter(skill_snippets).items():
         if count > 1:

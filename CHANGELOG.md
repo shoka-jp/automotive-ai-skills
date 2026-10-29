@@ -40,6 +40,9 @@ invalidates existing links or skill usage patterns.
 
 ### Fixed
 
+- Duplicate `README.html` pages keep working but now use their directory
+  URL consistently in canonical/Open Graph/JSON-LD metadata. The sitemap
+  lists canonical pages only, fixing mismatched language alternates.
 - `.claude-plugin/marketplace.json` version synced with `plugin.json` (was
   created at 1.0.0 in the 1.4.0 release commit instead of matching
   `plugin.json`)

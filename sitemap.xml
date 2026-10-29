@@ -1,0 +1,16 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- assign ordered_pages = site.pages | sort: 'url' -%}
+  {%- for entry in ordered_pages -%}
+    {%- assign last_character = entry.url | slice: -1, 1 -%}
+    {%- if entry.url contains '.html' or last_character == '/' -%}
+      {%- unless entry.url contains '/README.html' or entry.noindex or entry.sitemap == false %}
+  <url><loc>{{ entry.url | absolute_url | xml_escape }}</loc></url>
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor %}
+</urlset>
