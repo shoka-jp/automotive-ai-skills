@@ -440,6 +440,127 @@ defaults:
       lang: ja
       locale: ja_JP
 
+  - scope:
+      path: data/known-issues/toyota-86-subaru-brz-valve-spring.md
+    values:
+      title: Toyota 86 / Subaru BRZ — valve spring recall
+      description: 'Japan-market 86 / BRZ valve springs: production scope, official sources, remedy records, and questions
+        to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/toyota-86-subaru-brz-valve-spring.ja.md
+    values:
+      title: トヨタ86／スバルBRZ — バルブスプリングのリコール
+      description: 86／BRZ バルブスプリングの日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/honda-nbox-jf3-jf4-fuel-pump.md
+    values:
+      title: Honda N-BOX JF3/JF4 — low-pressure fuel pump recall
+      description: 'Japan-market N-BOX fuel pump: production scope, official sources, remedy records, and questions
+        to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/honda-nbox-jf3-jf4-fuel-pump.ja.md
+    values:
+      title: ホンダN-BOX JF3/JF4 — 低圧燃料ポンプのリコール
+      description: N-BOX 燃料ポンプの日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/suzuki-wagon-r-mh23s-evaporator-leak.md
+    values:
+      title: Suzuki Wagon R MH23S — evaporator refrigerant leak
+      description: 'Japan-market Wagon R evaporator leak: production scope, official sources, remedy records, and
+        questions to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/suzuki-wagon-r-mh23s-evaporator-leak.ja.md
+    values:
+      title: スズキ・ワゴンR MH23S — エバポレータの冷媒漏れ
+      description: ワゴンR エバポレータ漏れの日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/daihatsu-tanto-la600s-brake-booster-corrosion.md
+    values:
+      title: Daihatsu Tanto LA600S/LA610S — brake booster corrosion
+      description: 'Japan-market Tanto brake booster corrosion: production scope, official sources, remedy records,
+        and questions to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/daihatsu-tanto-la600s-brake-booster-corrosion.ja.md
+    values:
+      title: ダイハツ・タント LA600S/LA610S — ブレーキブースタの腐食
+      description: タント ブレーキブースタ腐食の日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/nissan-serena-c26-eco-motor-bearing.md
+    values:
+      title: Nissan Serena C26 — ECO motor bearing recall
+      description: 'Japan-market Serena ECO motor bearing: production scope, official sources, remedy records, and
+        questions to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/nissan-serena-c26-eco-motor-bearing.ja.md
+    values:
+      title: 日産セレナC26系 — ECOモーターのベアリング
+      description: セレナ ECOモータ軸受の日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/mazda-cx5-ke2-injector-seal-oil-strainer.md
+    values:
+      title: Mazda CX-5 KE2 — injector sealing and oil-strainer blockage
+      description: 'Japan-market CX-5 injector sealing / oil strainer: production scope, official sources, remedy
+        records, and questions to verify before purchase.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/mazda-cx5-ke2-injector-seal-oil-strainer.ja.md
+    values:
+      title: マツダCX-5 KE2系 — インジェクタの密封不良とストレーナ詰まり
+      description: CX-5 インジェクタ気密・オイルストレーナの日本仕様向け確認資料。型式・製作期間、公式出典、対策履歴、購入前の質問を整理。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/honda-rk-stepwgn-cvt-judder.md
+    values:
+      title: Honda RK Step WGN transmission identification and judder checks
+      description: Identify the actual RK Step WGN transmission using Honda sources; corrected CVT/5AT scope and evidence
+        to gather before judder diagnosis.
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/README.md
+    values:
+      title: 'Model-specific known issues and verification: 17 entries'
+      description: Browse 17 bilingual model-specific entries, including N-BOX, Wagon R, Tanto, Serena, CX-5, 86 and
+        BRZ; verify production scope and official evidence.
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/honda-rk-stepwgn-cvt-judder.ja.md
+    values:
+      title: RK系ステップワゴンの変速機特定と振動の確認
+      description: RK1/2/5/6のFF・4WDと仕様変更を公式資料で確認。スタートクラッチという旧記載を訂正し、油種や修理の決めつけを避ける。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/README.ja.md
+    values:
+      title: 車種別の既知問題と確認事項：17件
+      description: N-BOX、ワゴンR、タント、セレナ、CX-5、86／BRZなど、型式・製作範囲・仕向け別の購入前チェックと公式情報。
+      lang: ja
+      locale: ja_JP
+
 # LICENSE is intentionally not excluded: README badges link to ./LICENSE,
 # so it must be published (served as plain text) to avoid a 404.
 # SKILL.md files are plugin inputs read from git, not site content — they

@@ -2,7 +2,7 @@
 
 [English](./README.md) | **日本語**
 
-**車種別の既知問題**をコミュニティで蓄積するデータベースです。「オーナーズクラブでは常識」という知識 — これがあるとAIスキルの精度が特定車種に対して劇的に上がります。
+**車種別の既知問題と確認事項を17件**収録しています。対象の型式・製作時期・仕向けを確認し、AIへの質問や購入前の確認に使うための資料です。
 
 各エントリは「1つのプラットフォーム(車種/世代/エンジン)の1つの問題」を1つのMarkdownファイルで記述します。AIとの会話にスキルと一緒に貼り付けて使うことも、購入検討者・オーナーがそのまま読むこともできます。
 
@@ -19,9 +19,9 @@
 - **1ファイル1問題。** 複数の問題はファイルを分けてください。
 - **範囲を正確に。** 年式、エンジン型式、仕向け。「BMWのタイミングチェーン」では広すぎ、「2015年頃以前に生産されたN20エンジン」が適切です。
 - **症状は観察可能な形で。** 壊れる部品名だけでなく、オーナーが聞ける・見える・測れることを書いてください。
-- **頻度は正直に。** 「定番の弱点」と「全車必ず壊れる」は別の主張です。誇張しないでください。
-- **修理内容と現実的な費用レンジ**を、通貨と地域(見積りの根拠となる国・工場種別)付きで記載してください。
-- **情報源をおおまかに明記**(オーナーコミュニティ、サービスキャンペーン番号、整備現場の経験など)。著作物の転載は不可。
+- **頻度は正直に。** 届出台数は故障台数ではありません。裏付けがなければ発生率は不明と明記し、全車が故障すると断定しません。
+- **修理内容と費用の根拠を明記。** 検証できる見積りがあれば地域・通貨・時点を添えます。なければ不明とし、金額を作らず見積り取得を案内してください。リコールと保証延長を区別し、個別適用を確認します。
+- **一次資料を優先。** メーカー・行政のURL、届出番号、確認日を記載し、対象範囲の限定や訂正も反映します。体験談は公表済みの事実と区別し、著作物を転載しません。
 - **排ガス装置・安全装置の無効化に関するエントリは受け付けません**([CONTRIBUTING.md](../../CONTRIBUTING.md) 参照)。
 
 日本語エントリはファイル名を `.ja.md` にしてください。日本市場固有の車種(軽自動車、国内専売車)のエントリは特に歓迎です — 海外にデータが少なく、価値が高い領域です。
@@ -40,10 +40,19 @@
 | [スバル EJ系ターボ リングランド割れ・メタル](./subaru-ej20t-ringland-bearing.ja.md)([EN](./subaru-ej20t-ringland-bearing.md)) | WRX/STI GC8/GDB/GRB、EJ255/257 | 重大 |
 | [日産 RB26 オイルポンプドライブ破損](./nissan-rb26-oil-pump-drive.ja.md)([EN](./nissan-rb26-oil-pump-drive.md)) | スカイラインGT-R BNR32/33/34 | 致命的 |
 | [日産 SR20 チェーンガイドのラトル音](./nissan-sr20det-chain-guide-rattle.ja.md)([EN](./nissan-sr20det-chain-guide-rattle.md)) | S13/S14/S15系ほか(1989〜2002年) | 軽微 |
-| [ホンダ RK系ステップワゴン CVTジャダー](./honda-rk-stepwgn-cvt-judder.ja.md)([EN](./honda-rk-stepwgn-cvt-judder.md)) | RK1/2/5/6(2009〜2015年) | 重大 |
+| [ホンダ RK系ステップワゴン 変速機の特定・振動の確認](./honda-rk-stepwgn-cvt-judder.ja.md)([EN](./honda-rk-stepwgn-cvt-judder.md)) | RK1/2/5/6（2009〜2015年、4WDは途中で5ATからCVTへ変更） | 重大（故障確認時） |
+
+| [86／BRZ バルブスプリング](./toyota-86-subaru-brz-valve-spring.ja.md)([EN](./toyota-86-subaru-brz-valve-spring.md)) | 日本仕様・86 ZN6／BRZ ZC6（2012〜2013年の指定製作範囲） | 致命的 |
+| [N-BOX 燃料ポンプ](./honda-nbox-jf3-jf4-fuel-pump.ja.md)([EN](./honda-nbox-jf3-jf4-fuel-pump.md)) | 日本仕様・JF3/JF4（2017〜2020年の指定製作範囲） | 致命的 |
+| [ワゴンR エバポレータ漏れ](./suzuki-wagon-r-mh23s-evaporator-leak.ja.md)([EN](./suzuki-wagon-r-mh23s-evaporator-leak.md)) | 日本仕様・MH23S（2008〜2012年の指定製作範囲） | 重大 |
+| [タント ブレーキブースタ腐食](./daihatsu-tanto-la600s-brake-booster-corrosion.ja.md)([EN](./daihatsu-tanto-la600s-brake-booster-corrosion.md)) | 日本仕様・LA600S/LA610S（2013〜2016年の指定製作範囲） | 致命的 |
+| [セレナ ECOモータ軸受](./nissan-serena-c26-eco-motor-bearing.ja.md)([EN](./nissan-serena-c26-eco-motor-bearing.md)) | 日本仕様・C26/FC26/NC26/FNC26（2010〜2016年、型式別に異なる） | 致命的 |
+| [CX-5 インジェクタ気密・オイルストレーナ](./mazda-cx5-ke2-injector-seal-oil-strainer.ja.md)([EN](./mazda-cx5-ke2-injector-seal-oil-strainer.md)) | 日本仕様・KE2FW/KE2AW（2012〜2016年、届出3997の不具合(1)該当車） | 致命的 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*
 
 ## 機械可読インデックス
 
 [`index.yaml`](./index.yaml) は上の表を構造化メタデータ(メーカー、プラットフォーム、年式、深刻度、タグ、言語別ファイルパス)としてミラーしたもので、プログラムからの利用を想定しています — 例:特定車種のエントリだけを抽出してAIセッションに注入する、など。エントリを投稿する際は、同じPRで `index.yaml` にも追加してください。
+
+新規・再検証したエントリでは、`markets`（仕向け）、`evidence_type`（`recall`／`warranty_extension`／`manufacturer_specification`）、`campaign_ids`、`source_urls`、`last_verified`（日本時間の確認日）も記録します。これらは任意の追加項目で、旧エントリに存在しない場合は未確認です。概要の年式だけで対象車と判定せず、本文とメーカーの個別照会を確認してください。

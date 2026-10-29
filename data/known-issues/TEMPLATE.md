@@ -25,12 +25,12 @@
 
 ## Frequency (honest assessment)
 
-<How common is this really? "Common at high mileage", "affects early production only", "rare but catastrophic"…>
+<State the supported frequency or explicitly say it is unknown. Recall population is not a failure count; production scope is not a failure rate.>
 
 ## Fix and cost
 
 - **Repair:** <what the proper fix is; note preventive options>
-- **Typical cost:** <range, currency, and region the estimate comes from; DIY vs. shop if relevant>
+- **Typical cost:** <supported range with currency, region, and date, or state that a quote is needed; distinguish recall/warranty eligibility from retail costs>
 
 ## Buyer checklist
 
@@ -38,4 +38,4 @@
 
 ## Sources
 
-<General attribution: owners' communities, TSB/service campaign numbers, shop experience. No copyrighted text.>
+<Prefer manufacturer/regulator URLs, notice numbers, and verification date. Distinguish recalls, warranty extensions, specifications, and anecdotal reports. Preserve exact production/market limits and corrections. No copyrighted text.>
