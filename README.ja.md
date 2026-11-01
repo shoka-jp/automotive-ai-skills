@@ -14,7 +14,7 @@
 
 ## 車種を選んで、すぐ試す
 
-**[車種別チェックメーカーを開く →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)** · [N-BOXの購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy) · [English](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
+**[車種別チェックメーカーを開く →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)** · [N-BOXの購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy) · [中古N-BOX購入前ガイド](./docs/ja/nbox-used-car-check.md) · [English](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
 
 [![車種と目的を選び、公式出典を確認して、質問文をコピーする流れ](./assets/vehicle-brief-overview.svg)](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)
 
