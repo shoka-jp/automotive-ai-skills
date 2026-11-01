@@ -41,6 +41,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /assets/social-preview.png
   # Root README.md renders at /README.html and duplicates the landing page;
   # canonicalize it on / via jekyll-seo-tag (no front matter in README.md)
   # and keep it out of the sitemap — a page whose canonical points elsewhere
