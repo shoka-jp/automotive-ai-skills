@@ -1,3 +1,5 @@
+<img src="./assets/automotive-ai-skills-logo.svg" alt="Automotive AI Skills logo" width="96" align="right">
+
 # 🚗 Automotive AI Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
