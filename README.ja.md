@@ -79,6 +79,8 @@
 
 ## 日本のユーザー向けコンテンツ
 
+- 🚗 [中古N-BOXの購入前チェック](./docs/ja/nbox-used-car-check.md) — JF3・JF4を例に、整備記録とリコール届出の確認事項を整理。
+
 - 📗 [日本のユーザー向けガイド](./docs/ja/japan-guide.md) — 米国向け記述の読み替え表、軽自動車・国内中古車市場での使い方、用語対訳
 - ✅ [車検前セルフチェックリスト](./docs/ja/shaken-checklist.md) — 車検（継続検査）前の点検項目と、AIスキルとの組み合わせ方
 - 💬 会話例の日本語版 — [P0420の診断](./examples/obd2-p0420-diagnosis.ja.md) / [中古車チェック](./examples/used-car-inspection.ja.md) / [キャッチアップ整備計画](./examples/maintenance-catchup-plan.ja.md)
