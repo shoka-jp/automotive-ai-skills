@@ -54,6 +54,8 @@ service it?
 
 For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
 
+**Standalone installation:** If the repository-relative routing guide or data files are missing, use the [online routing guide](https://shoka-jp.github.io/automotive-ai-skills/docs/model-reference-routing.html) or [browser builder](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html). Ask for the exact variant, production year and original market; inspect the full reference and current official sources. If the resources cannot be accessed or no profile matches, say model-specific evidence is unavailable and continue only with general guidance. A match is not a diagnosis, recall eligibility, or proof of completion.
+
 1. **Provide vehicle details.** Year, make, model, engine, transmission type, and current mileage.
 2. **Describe your driving.** Annual mileage, trip length, climate, towing, terrain — this determines normal vs. severe schedule.
 3. **Share known history.** Recent services and anything you know was skipped.

@@ -26,3 +26,5 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 ## Model-specific references
 
 When vehicle context is available, follow [model-reference routing](../../docs/model-reference-routing.md) before giving model-specific claims. Use the shared lookup or read its profile/index files; inspect the selected full entry. Missing local resources or no match must remain explicit. A candidate is not a diagnosis, recall eligibility, or completion record.
+
+**Standalone installation:** If the repository-relative routing guide or data files are missing, use the [online routing guide](https://shoka-jp.github.io/automotive-ai-skills/docs/model-reference-routing.html) or [browser builder](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html). Ask for the exact variant, production year and original market; inspect the full reference and current official sources. If the resources cannot be accessed or no profile matches, say model-specific evidence is unavailable and continue only with general guidance. A match is not a diagnosis, recall eligibility, or proof of completion.

@@ -54,6 +54,8 @@ Asking price is $9,500. Help me build a negotiation position.
 
 For model-specific checks, follow [reference routing](../../docs/model-reference-routing.md) using the variant, production year, and original market. The [browser builder](../../tools/vehicle-brief.html) can prepare the prompt. A reference match does not establish a fault, eligibility, or completion.
 
+**Standalone installation:** If the repository-relative routing guide or data files are missing, use the [online routing guide](https://shoka-jp.github.io/automotive-ai-skills/docs/model-reference-routing.html) or [browser builder](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html). Ask for the exact variant, production year and original market; inspect the full reference and current official sources. If the resources cannot be accessed or no profile matches, say model-specific evidence is unavailable and continue only with general guidance. A match is not a diagnosis, recall eligibility, or proof of completion.
+
 1. **Before contacting the seller:** share the listing details and ask for known issues, fair price range, and questions to ask remotely.
 2. **Before the viewing:** request a model-specific checklist and print it or keep it on your phone.
 3. **During inspection:** work through the checklist and note everything — take photos of anything questionable.
