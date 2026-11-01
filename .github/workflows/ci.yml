@@ -66,7 +66,9 @@ jobs:
       # rate-limit and flake. Review the step summary when it goes red.
       - uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --scheme https --scheme http "**/*.md"
+          # NHTSA blocks automated CI requests with 403; verify this URL manually.
+          # Only this exact recall lookup URL is excluded. Other URLs remain checked.
+          args: --no-progress --scheme https --scheme http --exclude '^https://www[.]nhtsa[.]gov/recalls/?$' "**/*.md"
           fail: true
 
 
