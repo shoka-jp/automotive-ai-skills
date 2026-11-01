@@ -8,7 +8,7 @@ locale: ja_JP
 
 中古のN-BOXを見に行く前に、車の情報、整備記録、リコールへの対応状況を整理しておくと、売主や整備工場に具体的な質問ができます。このページでは、日本向け **JF3・JF4** を例に確認の進め方を紹介します。
 
-[**N-BOXの購入前チェックを試す →**](../../tools/vehicle-brief.ja.html?vehicle=nbox&task=buy)
+[**N-BOXの購入前チェックを試す →**](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy)
 
 ツールは登録や診断機を使わずに、確認メモとAIへの質問文を作成します。**AIによる診断や、リコール対象・改修完了の判定は行いません。**
 
@@ -37,7 +37,7 @@ Hondaの[リコール届出5423](https://www.honda.co.jp/recall/auto/info/231208
 
 ## ツールの使い方
 
-1. [N-BOX購入前チェック](../../tools/vehicle-brief.ja.html?vehicle=nbox&task=buy)を開きます。
+1. [N-BOX購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy)を開きます。
 2. **N-BOX・購入前**のサンプルを押すと、JF3・2019年・日本向けの例と、参照資料を表示します。これは説明用の架空の条件です。
 3. 実際に相談するときは型式や製作年などを分かる範囲で選び、資料の範囲と出典を確認します。質問文をコピーして任意のAIに渡せます。
 
