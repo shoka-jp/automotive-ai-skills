@@ -14,8 +14,6 @@
 
 ---
 
-**[🚗 車の模擬データをブラウザーで見る →](https://shoka-jp.github.io/automotive-ai-skills/tools/obd2-preview.ja.html)** — 車・診断機・インストール不要。記録時と現在の状態を見比べられます。
-
 ## 車種を選んで、すぐ試す
 
 **[車種別チェックメーカーを開く →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)** · [N-BOXの購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy) · [中古N-BOX購入前ガイド](./docs/ja/nbox-used-car-check.md) · [English](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
