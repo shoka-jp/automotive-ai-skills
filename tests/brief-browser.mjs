@@ -80,6 +80,21 @@ try {
     assert.equal(await page.locator('#output').inputValue(), '');
     assert.equal(await page.locator('#result').isVisible(), false);
   }
+  for (const width of [390, 1365]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto(base + 'tools/obd2-preview.ja.html');
+    assert.equal(await page.locator('details').count(), 3);
+    for (const card of await page.locator('details').all()) {
+      await card.locator('summary').click();
+      assert.equal(await card.evaluate(element => element.open), true);
+      assert.equal(await card.locator('.body').isVisible(), true);
+    }
+    const prompt = await page.locator('#sample-prompt').inputValue();
+    for (const value of ['P0420', '98 km', '2,210 rpm', '740 rpm']) assert.ok(prompt.includes(value));
+    assert.ok(await page.locator('#sample-prompt').getAttribute('readonly') !== null);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'OBD preview must fit the viewport');
+    await page.screenshot({ path: `browser-artifacts/obd-preview-${width}.png`, fullPage: true });
+  }
   assert.deepEqual(errors, []);
   console.log('OK: both languages, three demos, copy/fallback, download, privacy, scope exclusions, reset, and mobile overflow.');
 } finally { await browser.close(); server.close(); }
