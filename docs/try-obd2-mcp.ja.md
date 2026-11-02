@@ -6,6 +6,8 @@ locale: ja_JP
 ---
 # 車なしで試すOBD-II MCPサーバー
 
+**まずはインストールなしで試したい方へ：** [ブラウザの体験ページ](../tools/obd2-preview.ja.html)で模擬データを見られます。MCPツールを実行するときに、この手順へ進んでください。
+
 [English](./try-obd2-mcp.md)
 
 **実際のMCPクライアントを動かし、模擬車両のデータを読みます。** 姉妹プロジェクトの[obd2-mcp](https://github.com/shoka-jp/obd2-mcp)には、ツールの応答を表示するデモが付属しています。Git・Node.js・npmがあれば実行でき、実車・ELM327アダプタ・AIの有料契約は不要です。

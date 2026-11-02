@@ -1,0 +1,36 @@
+---
+layout: null
+title: Explore sample OBD-II car data without installing anything
+description: Open sample trouble-code, freeze-frame and current-reading cards, then copy a question for your preferred AI. No car, account or installation required.
+lang: en
+locale: en_US
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{% include seo.html %}
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}">
+<link rel="alternate" hreflang="en" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
+<link rel="alternate" hreflang="ja" href="{{ '/tools/obd2-preview.ja.html' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
+<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}" defer></script>
+</head>
+<body>
+<header><a href="{{ '/' | relative_url }}">← Automotive AI Skills</a><a href="{{ '/tools/obd2-preview.ja.html' | relative_url }}" lang="ja" hreflang="ja">日本語</a></header>
+<main>
+<div class="hero"><span class="tag">No car. No account. No installation.</span><h1>Explore the data<br>behind a warning light.</h1><p class="intro">What gets recorded when a warning light comes on? Open the sample cards to compare the moment a code was recorded with a later reading.</p></div>
+<p class="notice"><strong>This is a simulated vehicle example.</strong> This page does not connect to a car or scanner, take live readings, or run an AI diagnosis.</p>
+<section aria-labelledby="cards"><h2 id="cards">Tap a card to explore</h2>
+<div class="grid">
+<details><summary>Warning record <strong>P0420</strong>Stored trouble code</summary><div class="body"><p>The simulated vehicle has one stored P0420 and its warning light is on. There are no pending codes.</p><p>A code is a starting point for investigation. It does not, by itself, tell you which part to replace.</p></div></details>
+<details><summary>When it was recorded <strong>98 km/h</strong>The vehicle was moving</summary><div class="body"><p>Engine speed was 2,210 rpm and coolant temperature was 88°C. This snapshot from when the code was recorded is called a freeze frame.</p></div></details>
+<details><summary>Current sample reading <strong>0 km/h</strong>The vehicle is stationary</summary><div class="body"><p>Engine speed is 740 rpm and coolant temperature is 89°C. Current readings can differ from the conditions recorded with the code.</p></div></details>
+</div></section>
+<section aria-labelledby="ask-ai"><h2 id="ask-ai">Ask your AI about this example</h2><p>Copy the text below and paste it into the AI you normally use. Nothing is sent automatically from this page.</p><label for="sample-prompt"><strong>Question to copy (simulated data)</strong></label><textarea id="sample-prompt" readonly rows="12" style="display:block;width:100%;min-height:18rem;margin-top:12px;padding:16px;border:1px solid #91aaa5;border-radius:12px;font:inherit;line-height:1.7;color:#172b3c;background:white">This is simulated data from a fictional vehicle. The stored trouble code is P0420. When the code was recorded, speed was 98 km/h, engine speed was 2,210 rpm and coolant temperature was 88°C. The current sample shows the vehicle stationary, with engine speed at 740 rpm and coolant temperature at 89°C.
+
+Separate what these readings show from what remains unknown. Suggest three questions to ask a mechanic. Do not claim a confirmed cause or recommend replacing a part from this code alone.</textarea><div class="copy-controls"><button class="button" id="copy-prompt" type="button" hidden data-success="Copied. Paste the question into your preferred AI." data-fallback="Automatic copying is unavailable. The question is selected; use your device's Copy command.">Copy question</button><p id="copy-status" role="status" aria-live="polite"></p></div><p>Responses vary by AI. If you use a real vehicle's details with an external service, leave out VINs and personal information.</p></section>
+<section><h2>What can you do next?</h2><p>Bring the recorded conditions and current readings to a mechanic, rather than choosing a repair from the code alone. Ask a qualified professional about safety-critical work.</p><div class="next"><a class="button" href="{{ '/tools/vehicle-brief.html' | relative_url }}">Build a brief for your vehicle →</a><a class="button" href="{{ '/docs/try-obd2-mcp.html' | relative_url }}">See how to run the tools →</a></div></section>
+<footer><p>Values are excerpts from simulated output captured on October 29, 2026. See the <a href="https://github.com/shoka-jp/obd2-mcp/blob/main/docs/demo-results.md">original record and verification limits</a>.</p><p><a href="https://github.com/shoka-jp/automotive-ai-skills">View the project on GitHub</a></p></footer>
+</main></body></html>

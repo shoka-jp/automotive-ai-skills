@@ -82,7 +82,7 @@ Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#
 
 🇯🇵 **All skills are also available in Japanese** — open the `README.ja.md` in each skill folder, or start from the [Japanese README](./README.ja.md). Japan-specific guides (shaken inspection checklist, market notes) live in [`docs/ja/`](./docs/ja/).
 
-Try the companion tool: [car-free OBD-II MCP demo](./docs/try-obd2-mcp.md) — commands, captured simulated output and limitations.
+Try the companion tool: [explore simulated OBD-II data in your browser](https://shoka-jp.github.io/automotive-ai-skills/tools/obd2-preview.html) — no installation, account or vehicle. Open the cards and copy a question for your preferred AI. [Run the MCP demo yourself](./docs/try-obd2-mcp.md) for commands, captured output and limitations.
 
 ## Installation
 

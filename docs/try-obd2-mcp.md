@@ -6,6 +6,8 @@ locale: en_US
 ---
 # Try an OBD-II MCP server without a car
 
+**Prefer to start without installing anything?** [Explore the browser preview](../tools/obd2-preview.html), then return here when you want to run the MCP tools yourself.
+
 [日本語](./try-obd2-mcp.ja.md)
 
 **Run a real MCP client against a simulated vehicle.** The companion [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) server includes a demo that prints tool responses. You need Git, Node.js and npm; no car, ELM327 adapter or AI subscription is required.

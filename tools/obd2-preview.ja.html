@@ -11,22 +11,14 @@ locale: ja_JP
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {% include seo.html %}
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
-<style>
-:root{color-scheme:light; font-family:system-ui,sans-serif; color:#172b3c; background:#f3f6f5}
-*{box-sizing:border-box} body{margin:0} main,header{max-width:1040px;margin:auto;padding:24px}
-header a,a{color:#075e65} .hero{background:#102b40;color:#fff;border-radius:24px;padding:clamp(24px,5vw,48px)}
-h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.3;margin:.4em 0}.tag{color:#85ead6;font-weight:700}
-.intro{font-size:1.1rem;line-height:1.8;max-width:48rem}.notice{padding:16px 20px;background:#fff1cf;border-radius:12px;line-height:1.7;margin:24px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
-details{background:#fff;border:1px solid #cddcda;border-radius:16px;overflow:hidden}
-summary{cursor:pointer;padding:22px;font-weight:700;min-height:115px;line-height:1.6} summary:focus-visible,a:focus-visible{outline:3px solid #ee8433;outline-offset:3px}
-summary strong{display:block;font-size:1.7rem;color:#076d71}.body{border-top:1px solid #dce7e4;padding:0 22px 20px;line-height:1.8}
-section{margin:36px 0}.next{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-block;background:#086c6b;color:white;border-radius:10px;padding:14px 20px;text-decoration:none;font-weight:700}
-footer{padding:24px 0;line-height:1.7;font-size:.95rem}
-</style>
+<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}">
+<link rel="alternate" hreflang="en" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
+<link rel="alternate" hreflang="ja" href="{{ '/tools/obd2-preview.ja.html' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
+<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}" defer></script>
 </head>
 <body>
-<header><a href="{{ '/' | relative_url }}">← Automotive AI Skills</a></header>
+<header><a href="{{ '/README.ja.html' | relative_url }}">← Automotive AI Skills</a><a href="{{ '/tools/obd2-preview.html' | relative_url }}" lang="en" hreflang="en">English</a></header>
 <main>
 <div class="hero"><span class="tag">車もアプリのインストールも不要</span><h1>車のデータを、<br>見てみよう。</h1><p class="intro">警告灯がついたとき、どんな情報が記録されるのでしょう？ サンプルのカードを開いて、記録された瞬間と現在の違いを見比べてみましょう。</p></div>
 <p class="notice"><strong>これは模擬車両の記録例です。</strong> 車や診断機には接続せず、AI診断や実際の読み取りも行いません。</p>
@@ -38,7 +30,7 @@ footer{padding:24px 0;line-height:1.7;font-size:.95rem}
 </div></section>
 <section aria-labelledby="ask-ai"><h2 id="ask-ai">この例をAIに聞いてみる</h2><p>下の文章を選択してコピーし、普段使っているAIに貼り付けてください。このページから自動で送信されることはありません。</p><label for="sample-prompt"><strong>コピーする質問文（模擬データ）</strong></label><textarea id="sample-prompt" readonly rows="12" style="display:block;width:100%;min-height:18rem;margin-top:12px;padding:16px;border:1px solid #91aaa5;border-radius:12px;font:inherit;line-height:1.7;color:#172b3c;background:white">これは架空の車の模擬データです。保存された故障コードはP0420です。コードが記録されたときは時速98 km、エンジン回転数2,210 rpm、水温88°Cでした。現在は停車中で、回転数740 rpm、水温89°Cです。
 
-この情報から分かる事実と、まだ分からないことを分けて、整備士に相談するときの質問を3つ教えてください。原因や交換部品を断定しないでください。</textarea><p>出力はAIによって異なります。実際の車の情報を外部サービスに入力する場合は、車台番号や個人情報を含めないでください。</p></section>
+この情報から分かる事実と、まだ分からないことを分けて、整備士に相談するときの質問を3つ教えてください。原因や交換部品を断定しないでください。</textarea><div class="copy-controls"><button class="button" id="copy-prompt" type="button" hidden data-success="コピーしました。普段使っているAIに貼り付けてください。" data-fallback="自動コピーできないため、質問文を選択しました。端末のコピー操作でコピーしてください。">質問文をコピー</button><p id="copy-status" role="status" aria-live="polite"></p></div><p>出力はAIによって異なります。実際の車の情報を外部サービスに入力する場合は、車台番号や個人情報を含めないでください。</p></section>
 <section><h2>次に何をすればいい？</h2><p>コードだけで原因を決めず、記録時の状況と現在の値を一緒に整備士に伝えると、相談の出発点になります。安全に関わる作業は専門家に相談してください。</p><div class="next"><a class="button" href="{{ '/tools/vehicle-brief.ja.html' | relative_url }}">自分の車の確認メモを作る →</a><a class="button" href="{{ '/docs/try-obd2-mcp.ja.html' | relative_url }}">仕組みと実行方法を見る →</a></div></section>
 <footer><p>表示値は2026年10月29日に取得した模擬データの抜粋です。<a href="https://github.com/shoka-jp/obd2-mcp/blob/main/docs/demo-results.md">元の記録と検証範囲</a>をご覧ください。</p><p><a href="https://github.com/shoka-jp/automotive-ai-skills">GitHubでプロジェクトを見る</a></p></footer>
 </main></body></html>

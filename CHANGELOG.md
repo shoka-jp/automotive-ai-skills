@@ -11,6 +11,9 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- English OBD-II browser preview, language switching and localized copy buttons
+  with a manual-selection fallback; no installation or automatic AI submission.
+
 - Browser-only Vehicle Brief Builder in English and Japanese: eight reviewed
   Japan-market vehicle profiles, six goals, source-linked checklists, copy,
   Markdown download, printing, and preset sharing without personal notes.
