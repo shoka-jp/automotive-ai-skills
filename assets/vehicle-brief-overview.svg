@@ -15,7 +15,7 @@
       <text x="20" y="60" font-size="21" font-weight="700">Vehicle + purpose</text>
       <rect x="20" y="78" width="272" height="36" rx="5" fill="#f4f5f1" stroke="#c9cdc6"/>
       <text x="31" y="102" font-size="14">N-BOX JF3 · buying a used car</text>
-      <text x="20" y="141" font-size="13" fill="#66707d">8 reviewed profiles · 6 workflows</text>
+      <text x="20" y="141" font-size="13" fill="#66707d">Reviewed profiles · 6 workflows</text>
       <text x="20" y="161" font-size="13" fill="#66707d">General workflow for other cars</text>
     </g>
     <path d="M360 260h20m-7-6 7 6-7 6" stroke="#2456a6" stroke-width="2" fill="none"/>
