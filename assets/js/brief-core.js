@@ -7,14 +7,14 @@ export function normalize(value) {
 }
 
 export function resolveProfile(data, value) {
-  const q = normalize(String(value ?? '').normalize('NFKC').replace(/^(DBA|6BA|LDA)-/i, ''));
+  const q = normalize(String(value ?? '').normalize('NFKC').replace(/^(DBA|6BA|LDA|DAA|6AA)-/i, ''));
   if (!q) return null;
   const hits = data.profiles.filter(p => [p.id, ...p.aliases, ...Object.values(p.label)].some(x => normalize(x) === q));
   return hits.length === 1 ? hits[0] : null;
 }
 
 const clean = (value, limit = 2000) => String(value ?? '').replace(/[\u0000-\u0008\u000B-\u001F\u007F]/g, '').slice(0, limit).trim();
-const normalizeCode = value => clean(value, 24).normalize('NFKC').toUpperCase().replace(/^(DBA|6BA|LDA)-/, '');
+const normalizeCode = value => clean(value, 24).normalize('NFKC').toUpperCase().replace(/^(DBA|6BA|LDA|DAA|6AA)-/, '');
 const selectedCode = (profile, input) => normalizeCode(input.code) ||
   (profile?.variants.find(v => v.code === normalizeCode(input.vehicle))?.code ?? '');
 
@@ -47,7 +47,7 @@ export const messages = {
     'code-mismatch': 'The model code does not match this profile. Confirm the generation and code before attaching model-specific references.',
     'outside-years': 'The supplied production year is outside this profile’s published reference window. No reference was attached; this does not clear the vehicle of other issues or recalls.',
     'invalid-year': 'Enter a four-digit production year from 1900 to 2100, or leave it blank. Do not substitute registration or model year without saying so.',
-    recall: 'Recall notice', warranty_extension: 'Warranty extension — not a recall', manufacturer_specification: 'Manufacturer specification / correction — not a confirmed widespread defect',
+    recall: 'Recall notice', service_campaign: 'Service campaign — not a recall', warranty_extension: 'Warranty extension — not a recall', manufacturer_specification: 'Manufacturer specification / correction — not a confirmed widespread defect',
   },
   ja: {
     candidate: '関連資料の候補です。正確な製作日・仕様・車台番号の個別照会が必要であり、リコール対象や対策完了の判定ではありません。',
@@ -57,7 +57,7 @@ export const messages = {
     'code-mismatch': '型式がこの車種の資料と一致しません。世代と型式を確認してから車種別資料を選んでください。',
     'outside-years': '入力された製造年は、この資料の掲載範囲外です。資料は添付していませんが、他の不具合やリコールがないとは判断できません。',
     'invalid-year': '製造年は1900〜2100の西暦4桁、または空欄にしてください。初度登録年やモデル年を説明なしに置き換えないでください。',
-    recall: 'リコールの届出', warranty_extension: '保証期間延長（リコールではありません）', manufacturer_specification: 'メーカー仕様・訂正資料（多発故障の認定ではありません）',
+    recall: 'リコールの届出', service_campaign: 'サービスキャンペーン（リコールではありません）', warranty_extension: '保証期間延長（リコールではありません）', manufacturer_specification: 'メーカー仕様・訂正資料（多発故障の認定ではありません）',
   },
 };
 

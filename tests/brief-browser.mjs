@@ -66,6 +66,28 @@ try {
     assert.equal(await page.locator('.reference-card').count(), 0);
     await page.click('[data-demo=cx5]');
     assert.ok((await page.locator('#output').inputValue()).includes('3997'));
+    for (const [vehicle, code, year, marker] of [
+      ['aqua', 'NHP10H', '2020', lang === 'ja' ? 'サービスキャンペーン（リコールではありません）' : 'Service campaign — not a recall'],
+      ['prius-50', 'ZVW51', '2016', '3905'],
+      ['fit-gk-gp', 'GP5', '2018', '5423'],
+    ]) {
+      await page.selectOption('#vehicle', vehicle);
+      await page.selectOption('#code', code);
+      await page.fill('#year', year);
+      await page.click('#generate');
+      assert.equal(await page.locator('.reference-card').count(), 1);
+      assert.ok((await page.locator('#output').inputValue()).includes(marker));
+      if (vehicle === 'aqua') {
+        assert.equal(await page.locator('.reference-kind').textContent(), marker);
+        await page.click('#copy');
+        assert.ok((await page.evaluate(() => navigator.clipboard.readText())).includes(marker));
+      }
+      await page.fill('#year', '2025');
+      await page.click('#generate');
+      assert.equal(await page.locator('.reference-card').count(), 0);
+    }
+    await page.fill('#year', '2018');
+    await page.click('#generate');
     await mkdir('browser-artifacts', { recursive: true });
     await page.screenshot({ path: `browser-artifacts/builder-${lang}-desktop.png`, fullPage: true });
     await page.setViewportSize({ width: 390, height: 844 });

@@ -14,6 +14,8 @@
 
 ---
 
+追加した車種で試す：[トヨタ アクア NHP10/NHP10H](./tools/vehicle-brief.ja.html?vehicle=aqua&task=buy) · [トヨタ プリウス ZVW50/ZVW51/ZVW55](./tools/vehicle-brief.ja.html?vehicle=prius-50&task=buy) · [ホンダ フィット GK3〜GK6／GP5〜GP6](./tools/vehicle-brief.ja.html?vehicle=fit-gk-gp&task=buy)
+
 ## 車種を選んで、すぐ試す
 
 **[車種別チェックメーカーを開く →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)** · [N-BOXの購入前チェック](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=nbox&task=buy) · [中古N-BOX購入前ガイド](./docs/ja/nbox-used-car-check.md) · [English](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)
@@ -26,7 +28,7 @@
 
 **登録・APIキー・診断機は不要。** 入力を送信・保存せず、共有リンクには車種と目的だけを含めます。AI診断や公式の個別照会は実行しません。
 
-メーカー等の出典を確認した7件を日本向け8車種から参照できます。他の車にも共通手順を利用でき、資料全体は17件です。[品質と限界](./docs/quality.ja.md) · [車種をリクエスト](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
+メーカー等の出典を確認した10件を日本向け11車種から参照できます。他の車にも共通手順を利用でき、資料全体は20件です。[品質と限界](./docs/quality.ja.md) · [車種をリクエスト](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 
 役立ったら、GitHubの **Star** で保存・応援していただけると嬉しいです。確認できた事例や訂正も歓迎します。
 
@@ -164,7 +166,7 @@ automotive-ai-skills/
 - [x] 連携サンプル（[`integrations/`](./integrations/)：Claude Projectテンプレート、統合システムプロンプト）
 - [x] 商用車・トラックスキル（エアブレーキ、運行前点検、固縛）
 - [x] 板金・塗装スキル（へこみ評価、色合わせ、DIYの限界）
-- [x] 既知問題データベースの拡充 — 17件収録（BMW・トヨタ・スバル・ホンダ・日産・マツダ・スズキ・ダイハツ）、すべて日英対応・拡充中。**投稿は継続募集中**
+- [x] 既知問題データベースの拡充 — 20件収録（BMW・トヨタ・スバル・ホンダ・日産・マツダ・スズキ・ダイハツ）、すべて日英対応・拡充中。**投稿は継続募集中**
 - [x] 他言語への展開開始 — スペイン語README（[README.es.md](./README.es.md)）。スキル本文の翻訳はコミュニティ主導
 - [x] 牽引・トレーラースキル（ヒッチ、垂直荷重、配線、蛇行予防）
 - [x] カーオーディオ・電装スキル（ヘッドユニット、12V配線の規律、CANの基礎）

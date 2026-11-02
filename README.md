@@ -15,6 +15,8 @@ An open-source collection of **AI skills for automotive diagnostics, maintenance
 
 ---
 
+New vehicle checks: [Toyota Aqua NHP10/NHP10H](./tools/vehicle-brief.html?vehicle=aqua&task=buy) · [Toyota Prius ZVW50/ZVW51/ZVW55](./tools/vehicle-brief.html?vehicle=prius-50&task=buy) · [Honda Fit GK3–GK6 / GP5–GP6](./tools/vehicle-brief.html?vehicle=fit-gk-gp&task=buy)
+
 ## Try it with your vehicle
 
 **[Open the Vehicle Brief Builder →](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html)** · [Try an N-BOX buying brief](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html?vehicle=nbox&task=buy) · [日本語](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html)
@@ -27,7 +29,7 @@ An open-source collection of **AI skills for automotive diagnostics, maintenance
 
 **No account, API key or adapter.** Inputs are not sent or saved; shared links contain only the preset vehicle and goal. The builder does not run an AI diagnosis or an official eligibility lookup.
 
-Seven source-reviewed entries support eight Japan-market profiles. Other vehicles can use the general workflow; the full library has 17 entries. [Quality and limits](./docs/quality.md) · [Request a vehicle](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
+Ten source-reviewed entries support eleven Japan-market profiles. Other vehicles can use the general workflow; the full library has 20 entries. [Quality and limits](./docs/quality.md) · [Request a vehicle](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 
 If this helps your next viewing or workshop visit, **Star** the repository to find it again and support its development. Documented findings and corrections are welcome.
 
@@ -204,7 +206,7 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Example integrations: Claude Project template and combined system prompt in [`integrations/`](./integrations/)
 - [x] Commercial Vehicle & Truck Assistant skill (air brakes, pre-trip inspection, load securing)
 - [x] Body & Paint Assistant skill (dent assessment, paint matching, DIY correction limits)
-- [x] Known-issues coverage expanded — 17 entries covering BMW, Toyota, Subaru, Honda, Nissan, Mazda, Suzuki, and Daihatsu, all bilingual — and growing; **community entries wanted, ongoing**
+- [x] Known-issues coverage expanded — 20 entries covering BMW, Toyota, Subaru, Honda, Nissan, Mazda, Suzuki, and Daihatsu, all bilingual — and growing; **community entries wanted, ongoing**
 - [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
 - [x] Towing & Trailer Advisor skill (hitches, tongue weight, wiring, sway)
 - [x] Car Audio & Electronics Assistant skill (head units, 12V discipline, CAN awareness)

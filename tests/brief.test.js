@@ -117,3 +117,58 @@ test('CLI runs without API keys and routes exact model code', () => {
   const invalid = spawnSync(process.execPath, ['scripts/vehicle_brief.mjs', '--market', 'Mars'], { encoding: 'utf8' });
   assert.equal(invalid.status, 2);
 });
+
+test('new compact-car variants preserve production bounds with full type prefixes', () => {
+  const cases = [
+    ['aqua', 'DAA-NHP10', 2011, 2021], ['aqua', '6AA-NHP10H', 2017, 2021],
+    ...['ZVW50', 'ZVW51', 'ZVW55'].map(code => ['prius-50', `DAA-${code}`, 2015, 2016]),
+    ...['GK3', 'GK4', 'GK5', 'GK6'].map(code => ['fit-gk-gp', `DBA-${code}`, 2017, 2019]),
+    ...['GP5', 'GP6'].map(code => ['fit-gk-gp', `DAA-${code}`, 2017, 2019]),
+  ];
+  for (const [vehicle, code, first, last] of cases) {
+    assert.equal(resolveProfile(data, code)?.id, vehicle, code);
+    for (const year of [first, last]) {
+      const input = { vehicle, code, year: String(year), market: 'Japan' };
+      assert.equal(selectReferences(data, input).status, 'candidate', code + '/' + year);
+      assert.equal(selectReferences(data, { ...input, vehicle: code, code: '' }).status, 'candidate');
+      assert.equal(selectReferences(data, { ...input, market: 'other' }).references.length, 0);
+    }
+    for (const year of [first - 1, last + 1]) {
+      assert.equal(selectReferences(data, { vehicle: code, year: String(year), market: 'Japan' }).status, 'outside-years', code + '/' + year);
+      assert.equal(selectReferences(data, { vehicle, code, year: String(year), market: 'Japan' }).references.length, 0);
+    }
+  }
+  for (const code of ['ZVW30', 'ZVW52', 'MXPK11', 'GR3', 'GE6', 'Prius', 'Fit', 'Jazz', 'Prius c']) {
+    assert.equal(resolveProfile(data, code), null, 'must not guess generation: ' + code);
+  }
+  assert.equal(selectReferences(data, { vehicle: 'aqua', code: 'MXPK11', market: 'Japan' }).status, 'code-mismatch');
+  assert.equal(selectReferences(data, { vehicle: 'prius-50', code: 'ZVW30', market: 'Japan' }).status, 'code-mismatch');
+  assert.equal(selectReferences(data, { vehicle: 'fit-gk-gp', code: 'GR3', market: 'Japan' }).status, 'code-mismatch');
+});
+test('Aqua service campaign preserves conditional repair and asterisk uncertainty in both languages', () => {
+  for (const lang of ['en', 'ja']) {
+    const r = makeBrief(data, { vehicle: '6AA-NHP10H', year: '2020', market: 'Japan', task: 'recall', lang }, { today: '2026-11-03' });
+    assert.equal(r.status, 'candidate');
+    assert.match(r.text, lang === 'en' ? /Service campaign — not a recall/ : /サービスキャンペーン（リコールではありません）/);
+    assert.match(r.text, lang === 'en' ? /not proof of repair completion/ : /修理完了の証明ではない/);
+    assert.match(r.text, lang === 'en' ? /warning lights/ : /警告灯/);
+    assert.doesNotMatch(r.text, /Notice IDs:|届出番号:/);
+    assert.ok(!r.text.includes('undefined'));
+  }
+});
+test('Prius brief keeps parking-cable completion distinct from other brake work', () => {
+  const r = makeBrief(data, { vehicle: 'DAA-ZVW51', year: '2016', market: 'Japan', task: 'buy' });
+  assert.match(r.text, /3905/);
+  assert.match(r.text, /2015-10-26 to 2016-10-03/);
+  assert.match(r.text, /Separate the parking-cable record from actuator/);
+  assert.doesNotMatch(r.text, /5423/);
+});
+test('Fit Hybrid brief requires fuel-pump evidence independently of transmission records', () => {
+  const r = makeBrief(data, { vehicle: 'DAA-GP5', year: '2018', market: 'Japan', task: 'buy' });
+  assert.match(r.text, /5423 fuel-pump identification result/);
+  assert.match(r.text, /Keep i-DCD clutch, transmission and software records separate/);
+  assert.doesNotMatch(r.text, /N-BOX JF3/);
+  const cli = execFileSync(process.execPath, ['scripts/vehicle_brief.mjs', '--vehicle', 'DAA-GP5', '--year', '2018', '--market', 'Japan', '--lang', 'ja'], { encoding: 'utf8' });
+  assert.match(cli, /フィット/);
+  assert.match(cli, /対策品と識別/);
+});

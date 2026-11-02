@@ -11,7 +11,7 @@ The [Vehicle Brief Builder](../tools/vehicle-brief.html) assembles questions and
 ## What is checked automatically
 
 - Exact vehicle aliases, model-code differences, production-year bounds and original-market scope. A match is always a **reference candidate**, never proof of eligibility or completion.
-- Recall versus warranty-extension versus specification/correction labels; source dates older than 180 days get a recheck notice. A fresh date still does not replace current official lookup.
+- Recall versus service-campaign versus warranty-extension versus specification/correction labels; source dates older than 180 days get a recheck notice. A fresh date still does not replace current official lookup.
 - Browser/CLI output, bilingual workflows, and preset links that exclude personal notes, history, year and model code.
 - Real-browser operation in English and Japanese: samples, clipboard and manual-copy fallback, Markdown download, field changes, source exclusions, clearing and mobile overflow.
 - A generated data bundle that must match the reviewed source files, plus existing repository, site metadata and link checks.
@@ -30,7 +30,7 @@ Browser checks use a real Jekyll build in [CI](https://github.com/shoka-jp/autom
 
 Passing software tests is **not diagnostic accuracy**, an AI benchmark score, or clinical/safety validation. The downstream AI, its version, and the user's vehicle evidence vary. [Answer review cases](../evals/answer-cases.yaml) specify questions, required distinctions and unacceptable claims for reviewing actual AI outputs. They are authored scenarios, not confirmed real-world repairs; no model accuracy percentage is claimed.
 
-The full library has 17 entries. The builder initially selects **7 source-reviewed entries through 8 Japan-market vehicle profiles**. Older community entries remain readable in the [full database](../data/known-issues/) but are not automatically injected until their sources and scope are reviewed. Other vehicles can use the general workflows without model-specific references.
+The full library has 20 entries. The builder initially selects **10 source-reviewed entries through 11 Japan-market vehicle profiles**. Older community entries remain readable in the [full database](../data/known-issues/) but are not automatically injected until their sources and scope are reviewed. Other vehicles can use the general workflows without model-specific references.
 
 ## How a finding becomes an improvement
 

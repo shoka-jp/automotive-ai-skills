@@ -542,8 +542,8 @@ defaults:
   - scope:
       path: data/known-issues/README.md
     values:
-      title: 'Model-specific known issues and verification: 17 entries'
-      description: Browse 17 bilingual model-specific entries, including N-BOX, Wagon R, Tanto, Serena, CX-5, 86 and
+      title: 'Model-specific known issues and verification: 20 entries'
+      description: Browse 20 bilingual model-specific entries, including N-BOX, Wagon R, Tanto, Serena, CX-5, 86 and
         BRZ; verify production scope and official evidence.
       lang: en
       locale: en_US
@@ -557,8 +557,54 @@ defaults:
   - scope:
       path: data/known-issues/README.ja.md
     values:
-      title: 車種別の既知問題と確認事項：17件
+      title: 車種別の既知問題と確認事項：20件
       description: N-BOX、ワゴンR、タント、セレナ、CX-5、86／BRZなど、型式・製作範囲・仕向け別の購入前チェックと公式情報。
+      lang: ja
+      locale: ja_JP
+
+  - scope:
+      path: data/known-issues/toyota-aqua-nhp10-brake-actuator.md
+    values:
+      title: Toyota Aqua NHP10/NHP10H — brake actuator service campaign
+      description: 'Aqua NHP10 / NHP10H: official Japan-market scope, remedy records
+        and buyer questions. Distinguish applicability, diagnosis and completion.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/toyota-aqua-nhp10-brake-actuator.ja.md
+    values:
+      title: トヨタ アクア NHP10/NHP10H — ブレーキアクチュエータのサービスキャンペーン
+      description: Aqua NHP10 / NHP10Hの日本仕様向け資料。公式の対象範囲・対策内容と購入前の質問を整理し、個別適用・診断・実施済みを区別します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/toyota-prius-zvw50-parking-brake.md
+    values:
+      title: Toyota Prius ZVW50/ZVW51/ZVW55 — parking brake cable recall
+      description: 'Prius ZVW50 / ZVW51 / ZVW55: official Japan-market scope, remedy
+        records and buyer questions. Distinguish applicability, diagnosis and completion.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/toyota-prius-zvw50-parking-brake.ja.md
+    values:
+      title: トヨタ プリウス ZVW50/ZVW51/ZVW55 — 駐車ブレーキケーブルのリコール
+      description: Prius ZVW50 / ZVW51 / ZVW55の日本仕様向け資料。公式の対象範囲・対策内容と購入前の質問を整理し、個別適用・診断・実施済みを区別します。
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: data/known-issues/honda-fit-gk-gp-fuel-pump.md
+    values:
+      title: Honda Fit GK3–GK6 / GP5–GP6 — low-pressure fuel pump recall
+      description: 'Fit GK3-GK6 / GP5-GP6: official Japan-market scope, remedy records
+        and buyer questions. Distinguish applicability, diagnosis and completion.'
+      lang: en
+      locale: en_US
+  - scope:
+      path: data/known-issues/honda-fit-gk-gp-fuel-pump.ja.md
+    values:
+      title: ホンダ フィット GK3〜GK6／GP5〜GP6 — 低圧燃料ポンプのリコール
+      description: Fit GK3-GK6 / GP5-GP6の日本仕様向け資料。公式の対象範囲・対策内容と購入前の質問を整理し、個別適用・診断・実施済みを区別します。
       lang: ja
       locale: ja_JP
 
