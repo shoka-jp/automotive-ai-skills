@@ -15,7 +15,7 @@ An open-source collection of **AI skills for automotive diagnostics, maintenance
 
 ---
 
-New vehicle checks: [Toyota Aqua NHP10/NHP10H](./tools/vehicle-brief.html?vehicle=aqua&task=buy) · [Toyota Prius ZVW50/ZVW51/ZVW55](./tools/vehicle-brief.html?vehicle=prius-50&task=buy) · [Honda Fit GK3–GK6 / GP5–GP6](./tools/vehicle-brief.html?vehicle=fit-gk-gp&task=buy)
+New vehicle checks: [Toyota Aqua NHP10/NHP10H](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html?vehicle=aqua&task=buy) · [Toyota Prius ZVW50/ZVW51/ZVW55](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html?vehicle=prius-50&task=buy) · [Honda Fit GK3–GK6 / GP5–GP6](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.html?vehicle=fit-gk-gp&task=buy)
 
 ## Try it with your vehicle
 

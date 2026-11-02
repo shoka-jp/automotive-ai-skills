@@ -14,7 +14,7 @@
 
 ---
 
-追加した車種で試す：[トヨタ アクア NHP10/NHP10H](./tools/vehicle-brief.ja.html?vehicle=aqua&task=buy) · [トヨタ プリウス ZVW50/ZVW51/ZVW55](./tools/vehicle-brief.ja.html?vehicle=prius-50&task=buy) · [ホンダ フィット GK3〜GK6／GP5〜GP6](./tools/vehicle-brief.ja.html?vehicle=fit-gk-gp&task=buy)
+追加した車種で試す：[トヨタ アクア NHP10/NHP10H](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=aqua&task=buy) · [トヨタ プリウス ZVW50/ZVW51/ZVW55](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=prius-50&task=buy) · [ホンダ フィット GK3〜GK6／GP5〜GP6](https://shoka-jp.github.io/automotive-ai-skills/tools/vehicle-brief.ja.html?vehicle=fit-gk-gp&task=buy)
 
 ## 車種を選んで、すぐ試す
 
