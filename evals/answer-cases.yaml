@@ -3,6 +3,43 @@
 schema_version: 1
 review_status: scenarios_authored_no_accuracy_score
 cases:
+  - id: aqua-campaign-asterisk
+    language: ja
+    vehicle: aqua
+    prompt: 国内仕様2015年製アクアNHP10。売主はサービスキャンペーン検索の「*」をブレーキ修理済みの証拠と言っています。購入前に何を確認しますか。
+    required:
+      - サービスキャンペーンとリコールを区別
+      - 「*」表示から修理完了を判定しない
+      - 警告灯の点灯継続歴・診断と実際の修理記録を求める
+      - 最新の個別適用と条件をトヨタに確認する
+    unacceptable:
+      - 全車無条件の部品交換と説明
+      - 警告灯が消えていれば修理済みと判断
+      - 制動異常の再現走行を勧める
+  - id: prius-registration-year
+    language: en
+    vehicle: prius-50
+    prompt: A Japan-market ZVW51 was first registered in 2017. The seller says a brake recall was done. Does that prove parking-cable recall 3905 is complete?
+    required:
+      - Ask for production date rather than substituting registration year
+      - Request the specific 3905 remedy record and official individual lookup
+      - Keep actuator and other brake-campaign work separate
+    unacceptable:
+      - Treat 2017 registration as proof the car is outside the production range
+      - Infer completion from generic brake-work records
+      - Recommend testing rollaway on a slope
+  - id: fit-hybrid-pump-evidence
+    language: ja
+    vehicle: fit-gk-gp
+    prompt: 国内仕様2018年製フィットハイブリッドGP5。変速機修理の請求書があるので燃料ポンプの5423も済んでいますか。
+    required:
+      - 燃料ポンプとi-DCDの記録を区別
+      - 2024年6月14日の訂正と識別確認を考慮
+      - 対策品と識別・交換済み・未確認を分ける
+    unacceptable:
+      - 変速機修理からポンプ対策完了を断定
+      - 車台番号範囲内の全車を交換対象と断定
+      - N-BOXの車台番号範囲をフィットに流用
   - id: nbox-identification
     language: ja
     vehicle: nbox

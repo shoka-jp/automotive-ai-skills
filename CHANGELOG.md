@@ -11,6 +11,12 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Aqua NHP10/NHP10H, Prius ZVW50/ZVW51/ZVW55, and Fit GK/GP buyer-check
+  profiles with three bilingual, primary-source-backed references: 11 profiles,
+  10 reviewed references and 20 library entries in total.
+- Service-campaign labels distinct from recalls, DAA/6AA model-code support,
+  variant/year regression coverage and authored answer-review cases.
+
 - English OBD-II browser preview, language switching and localized copy buttons
   with a manual-selection fallback; no installation or automatic AI submission.
 

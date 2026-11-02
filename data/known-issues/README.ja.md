@@ -2,7 +2,7 @@
 
 [English](./README.md) | **日本語**
 
-**車種別の既知問題と確認事項を17件**収録しています。対象の型式・製作時期・仕向けを確認し、AIへの質問や購入前の確認に使うための資料です。
+**車種別の既知問題と確認事項を20件**収録しています。対象の型式・製作時期・仕向けを確認し、AIへの質問や購入前の確認に使うための資料です。
 
 各エントリは「1つのプラットフォーム(車種/世代/エンジン)の1つの問題」を1つのMarkdownファイルで記述します。AIとの会話にスキルと一緒に貼り付けて使うことも、購入検討者・オーナーがそのまま読むこともできます。
 
@@ -47,6 +47,9 @@
 | [タント ブレーキブースタ腐食](./daihatsu-tanto-la600s-brake-booster-corrosion.ja.md)([EN](./daihatsu-tanto-la600s-brake-booster-corrosion.md)) | 日本仕様・LA600S/LA610S（2013〜2016年の指定製作範囲） | 致命的 |
 | [セレナ ECOモータ軸受](./nissan-serena-c26-eco-motor-bearing.ja.md)([EN](./nissan-serena-c26-eco-motor-bearing.md)) | 日本仕様・C26/FC26/NC26/FNC26（2010〜2016年、型式別に異なる） | 致命的 |
 | [CX-5 インジェクタ気密・オイルストレーナ](./mazda-cx5-ke2-injector-seal-oil-strainer.ja.md)([EN](./mazda-cx5-ke2-injector-seal-oil-strainer.md)) | 日本仕様・KE2FW/KE2AW（2012〜2016年、届出3997の不具合(1)該当車） | 致命的 |
+| [トヨタ アクア NHP10/NHP10H — ブレーキアクチュエータのサービスキャンペーン](./toyota-aqua-nhp10-brake-actuator.ja.md)([EN](./toyota-aqua-nhp10-brake-actuator.md)) | 日本仕様：NHP10 / NHP10H（正確な製作範囲は本文参照） | 致命的 |
+| [トヨタ プリウス ZVW50/ZVW51/ZVW55 — 駐車ブレーキケーブルのリコール](./toyota-prius-zvw50-parking-brake.ja.md)([EN](./toyota-prius-zvw50-parking-brake.md)) | 日本仕様：ZVW50 / ZVW51 / ZVW55（正確な製作範囲は本文参照） | 致命的 |
+| [ホンダ フィット GK3〜GK6／GP5〜GP6 — 低圧燃料ポンプのリコール](./honda-fit-gk-gp-fuel-pump.ja.md)([EN](./honda-fit-gk-gp-fuel-pump.md)) | 日本仕様：GK3 / GK4 / GK5 / GK6 / GP5 / GP6（正確な製作範囲は本文参照） | 致命的 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*
 
@@ -54,4 +57,4 @@
 
 [`index.yaml`](./index.yaml) は上の表を構造化メタデータ(メーカー、プラットフォーム、年式、深刻度、タグ、言語別ファイルパス)としてミラーしたもので、プログラムからの利用を想定しています — 例:特定車種のエントリだけを抽出してAIセッションに注入する、など。エントリを投稿する際は、同じPRで `index.yaml` にも追加してください。
 
-新規・再検証したエントリでは、`markets`（仕向け）、`evidence_type`（`recall`／`warranty_extension`／`manufacturer_specification`）、`campaign_ids`、`source_urls`、`last_verified`（日本時間の確認日）も記録します。これらは任意の追加項目で、旧エントリに存在しない場合は未確認です。概要の年式だけで対象車と判定せず、本文とメーカーの個別照会を確認してください。
+新規・再検証したエントリでは、`markets`（仕向け）、`evidence_type`（`recall`／`service_campaign`／`warranty_extension`／`manufacturer_specification`）、`campaign_ids`、`source_urls`、`last_verified`（日本時間の確認日）も記録します。これらは任意の追加項目で、旧エントリに存在しない場合は未確認です。概要の年式だけで対象車と判定せず、本文とメーカーの個別照会を確認してください。

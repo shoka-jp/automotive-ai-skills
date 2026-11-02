@@ -287,3 +287,70 @@ entries:
     files:
       en: mazda-cx5-ke2-injector-seal-oil-strainer.md
       ja: mazda-cx5-ke2-injector-seal-oil-strainer.ja.md
+  - id: toyota-aqua-nhp10-brake-actuator
+    title: Toyota Aqua NHP10/NHP10H — brake actuator service campaign
+    make: Toyota
+    platform: NHP10 / NHP10H
+    models: Aqua NHP10 / NHP10H
+    years: 2011-2021; NHP10H from 2017 (listed subranges only)
+    severity: critical
+    tags:
+    - brakes
+    - actuator
+    - service-campaign
+    markets:
+    - Japan
+    evidence_type: service_campaign
+    campaign_ids: []
+    source_urls:
+    - https://toyota.jp/recall/campaign/250620.html
+    last_verified: '2026-11-03'
+    files:
+      en: toyota-aqua-nhp10-brake-actuator.md
+      ja: toyota-aqua-nhp10-brake-actuator.ja.md
+  - id: toyota-prius-zvw50-parking-brake
+    title: Toyota Prius ZVW50/ZVW51/ZVW55 — parking brake cable recall
+    make: Toyota
+    platform: ZVW50 / ZVW51 / ZVW55
+    models: Prius ZVW50 / ZVW51 / ZVW55
+    years: 2015-2016 (listed subranges only)
+    severity: critical
+    tags:
+    - brakes
+    - parking-brake
+    - recall
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '3905'
+    source_urls:
+    - https://toyota.jp/recall/2016/1012.html
+    - https://www.mlit.go.jp/report/press/jidosha08_hh_002409.html
+    last_verified: '2026-11-03'
+    files:
+      en: toyota-prius-zvw50-parking-brake.md
+      ja: toyota-prius-zvw50-parking-brake.ja.md
+  - id: honda-fit-gk-gp-fuel-pump
+    title: Honda Fit GK3–GK6 / GP5–GP6 — low-pressure fuel pump recall
+    make: Honda
+    platform: GK3 / GK4 / GK5 / GK6 / GP5 / GP6
+    models: Fit GK3-GK6 / GP5-GP6
+    years: 2017-2019 (code-specific subranges only)
+    severity: critical
+    tags:
+    - fuel-system
+    - fuel-pump
+    - recall
+    markets:
+    - Japan
+    evidence_type: recall
+    campaign_ids:
+    - '5423'
+    source_urls:
+    - https://www.honda.co.jp/recall/auto/info/231208_5423.html
+    - https://www.mlit.go.jp/report/press/jidosha08_hh_005150.html
+    last_verified: '2026-11-03'
+    files:
+      en: honda-fit-gk-gp-fuel-pump.md
+      ja: honda-fit-gk-gp-fuel-pump.ja.md

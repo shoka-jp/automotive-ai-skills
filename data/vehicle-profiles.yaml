@@ -177,3 +177,95 @@ profiles:
     - 2015
   entry_ids:
   - honda-rk-stepwgn-cvt-judder
+- id: aqua
+  label:
+    en: Toyota Aqua NHP10/NHP10H
+    ja: トヨタ アクア NHP10/NHP10H
+  aliases:
+  - Aqua
+  - アクア
+  - NHP10
+  - NHP10H
+  market: Japan
+  variants:
+  - code: NHP10
+    years:
+    - 2011
+    - 2021
+  - code: NHP10H
+    years:
+    - 2017
+    - 2021
+  entry_ids:
+  - toyota-aqua-nhp10-brake-actuator
+- id: prius-50
+  label:
+    en: Toyota Prius ZVW50/ZVW51/ZVW55
+    ja: トヨタ プリウス ZVW50/ZVW51/ZVW55
+  aliases:
+  - Prius 50
+  - 50 Prius
+  - 50系プリウス
+  - プリウス50
+  - ZVW50
+  - ZVW51
+  - ZVW55
+  market: Japan
+  variants:
+  - code: ZVW50
+    years:
+    - 2015
+    - 2016
+  - code: ZVW51
+    years:
+    - 2015
+    - 2016
+  - code: ZVW55
+    years:
+    - 2015
+    - 2016
+  entry_ids:
+  - toyota-prius-zvw50-parking-brake
+- id: fit-gk-gp
+  label:
+    en: Honda Fit GK3–GK6 / GP5–GP6
+    ja: ホンダ フィット GK3〜GK6／GP5〜GP6
+  aliases:
+  - Fit GK
+  - Fit GP
+  - フィットGK
+  - フィットGP
+  - GK3
+  - GK4
+  - GK5
+  - GK6
+  - GP5
+  - GP6
+  market: Japan
+  variants:
+  - code: GK3
+    years:
+    - 2017
+    - 2019
+  - code: GK4
+    years:
+    - 2017
+    - 2019
+  - code: GK5
+    years:
+    - 2017
+    - 2019
+  - code: GK6
+    years:
+    - 2017
+    - 2019
+  - code: GP5
+    years:
+    - 2017
+    - 2019
+  - code: GP6
+    years:
+    - 2017
+    - 2019
+  entry_ids:
+  - honda-fit-gk-gp-fuel-pump

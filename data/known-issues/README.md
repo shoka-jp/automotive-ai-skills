@@ -2,7 +2,7 @@
 
 **English** | [日本語](./README.ja.md)
 
-A collection of **17 model-specific issue and verification entries**. Match the platform, production period, and market before using them to inform an AI conversation or a pre-purchase check.
+A collection of **20 model-specific issue and verification entries**. Match the platform, production period, and market before using them to inform an AI conversation or a pre-purchase check.
 
 Each entry is one Markdown file describing one issue on one platform (model/generation/engine). Entries are designed to be pasted into an AI session alongside a skill, or read directly by a buyer or owner.
 
@@ -47,6 +47,9 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [Tanto brake booster corrosion](./daihatsu-tanto-la600s-brake-booster-corrosion.md) | Japan: Tanto LA600S / LA610S; 2013-2016 (specified production ranges only) | Critical | [あり](./daihatsu-tanto-la600s-brake-booster-corrosion.ja.md) |
 | [Serena ECO motor bearing](./nissan-serena-c26-eco-motor-bearing.md) | Japan: Serena C26 / FC26 / NC26 / FNC26; 2010-2016 (model-code-specific production ranges) | Critical | [あり](./nissan-serena-c26-eco-motor-bearing.ja.md) |
 | [CX-5 injector sealing / oil strainer](./mazda-cx5-ke2-injector-seal-oil-strainer.md) | Japan: CX-5 KE2FW / KE2AW diesel; 2012-2016 (campaign envelope; item (1) is a subset) | Critical | [あり](./mazda-cx5-ke2-injector-seal-oil-strainer.ja.md) |
+| [Toyota Aqua NHP10/NHP10H — brake actuator service campaign](./toyota-aqua-nhp10-brake-actuator.md) | Japan: NHP10 / NHP10H; 2011-2021; NHP10H from 2017 (listed subranges only) | Critical | [あり](./toyota-aqua-nhp10-brake-actuator.ja.md) |
+| [Toyota Prius ZVW50/ZVW51/ZVW55 — parking brake cable recall](./toyota-prius-zvw50-parking-brake.md) | Japan: ZVW50 / ZVW51 / ZVW55; 2015-2016 (listed subranges only) | Critical | [あり](./toyota-prius-zvw50-parking-brake.ja.md) |
+| [Honda Fit GK3–GK6 / GP5–GP6 — low-pressure fuel pump recall](./honda-fit-gk-gp-fuel-pump.md) | Japan: GK3 / GK4 / GK5 / GK6 / GP5 / GP6; 2017-2019 (code-specific subranges only) | Critical | [あり](./honda-fit-gk-gp-fuel-pump.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
 
@@ -54,4 +57,4 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 
 [`index.yaml`](./index.yaml) mirrors the table above with structured metadata (make, platform, years, severity, tags, file paths per language) for programmatic consumption — e.g., filtering entries for a specific vehicle before injecting them into an AI session. When contributing an entry, add it to `index.yaml` in the same PR.
 
-New or reverified entries also record optional `markets`, `evidence_type` (`recall`, `warranty_extension`, or `manufacturer_specification`), `campaign_ids`, `source_urls`, and `last_verified` (verification date in Japan). Absence of these fields on a legacy entry means they have not been recorded, not that its evidence was rechecked. Summary years alone never establish eligibility; read the entry and use the manufacturer’s individual-vehicle lookup.
+New or reverified entries also record optional `markets`, `evidence_type` (`recall`, `service_campaign`, `warranty_extension`, or `manufacturer_specification`), `campaign_ids`, `source_urls`, and `last_verified` (verification date in Japan). Absence of these fields on a legacy entry means they have not been recorded, not that its evidence was rechecked. Summary years alone never establish eligibility; read the entry and use the manufacturer’s individual-vehicle lookup.

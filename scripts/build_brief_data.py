@@ -34,7 +34,7 @@ def build():
             assert row.get('source_urls') and row.get('last_verified'), f'{key}: needs reviewed sources'
             assert all(url.startswith('https://') for url in row['source_urls']), key
             datetime.date.fromisoformat(row['last_verified'])
-            assert row.get('evidence_type') in ('recall', 'warranty_extension', 'manufacturer_specification')
+            assert row.get('evidence_type') in ('recall', 'service_campaign', 'warranty_extension', 'manufacturer_specification')
             assert row.get('markets') == ['Japan']
             item = {k: row[k] for k in ('id', 'evidence_type', 'campaign_ids', 'source_urls', 'last_verified')}
             item['localized'] = {}
