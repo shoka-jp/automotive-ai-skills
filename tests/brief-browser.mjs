@@ -80,21 +80,57 @@ try {
     assert.equal(await page.locator('#output').inputValue(), '');
     assert.equal(await page.locator('#result').isVisible(), false);
   }
-  for (const width of [390, 1365]) {
-    await page.setViewportSize({ width, height: 844 });
-    await page.goto(base + 'tools/obd2-preview.ja.html');
-    assert.equal(await page.locator('details').count(), 3);
-    for (const card of await page.locator('details').all()) {
-      await card.locator('summary').click();
-      assert.equal(await card.evaluate(element => element.open), true);
-      assert.equal(await card.locator('.body').isVisible(), true);
+  for (const lang of ['en', 'ja']) {
+    const preview = `tools/obd2-preview${lang === 'ja' ? '.ja' : ''}.html`;
+    for (const width of [390, 1365]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(base + preview);
+      assert.equal(await page.locator('html').getAttribute('lang'), lang);
+      assert.equal(await page.locator('details').count(), 3);
+      for (const card of await page.locator('details').all()) {
+        await card.locator('summary').click();
+        assert.equal(await card.evaluate(element => element.open), true);
+        assert.equal(await card.locator('.body').isVisible(), true);
+      }
+      const prompt = await page.locator('#sample-prompt').inputValue();
+      for (const value of ['P0420', '98 km', '2,210 rpm', '740 rpm']) assert.ok(prompt.includes(value));
+      assert.ok(await page.locator('#sample-prompt').getAttribute('readonly') !== null);
+      const requests = [];
+      const captureRequest = request => requests.push(request.url());
+      page.on('request', captureRequest);
+      await page.click('#copy-prompt');
+      await page.waitForFunction(() => !document.querySelector('#copy-prompt').disabled);
+      assert.equal(await page.evaluate(() => navigator.clipboard.readText()), prompt);
+      assert.equal(await page.locator('#copy-status').textContent(), await page.locator('#copy-prompt').getAttribute('data-success'));
+      // Cover both unsupported clipboard APIs and permission rejection.
+      await page.evaluate(mode => Object.defineProperty(navigator, 'clipboard', {
+        value: mode === 390 ? undefined : { writeText: async () => { throw new Error('Permission denied'); } },
+        configurable: true
+      }), width);
+      await page.click('#copy-prompt');
+      await page.waitForFunction(() => !document.querySelector('#copy-prompt').disabled);
+      assert.equal(await page.locator('#copy-status').textContent(), await page.locator('#copy-prompt').getAttribute('data-fallback'));
+      assert.equal(await page.evaluate(() => document.activeElement.id), 'sample-prompt');
+      assert.deepEqual(await page.locator('#sample-prompt').evaluate(el => [el.selectionStart, el.selectionEnd]), [0, prompt.length]);
+      assert.deepEqual(requests, [], 'Copying must not submit the sample to any service');
+      page.off('request', captureRequest);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'OBD preview must fit the viewport');
+      await page.screenshot({ path: `browser-artifacts/obd-preview-${lang}-${width}.png`, fullPage: true });
+      const alternateLang = lang === 'en' ? 'ja' : 'en';
+      await page.locator(`header a[hreflang="${alternateLang}"]`).click();
+      assert.equal(await page.locator('html').getAttribute('lang'), alternateLang);
     }
-    const prompt = await page.locator('#sample-prompt').inputValue();
-    for (const value of ['P0420', '98 km', '2,210 rpm', '740 rpm']) assert.ok(prompt.includes(value));
-    assert.ok(await page.locator('#sample-prompt').getAttribute('readonly') !== null);
-    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'OBD preview must fit the viewport');
-    await page.screenshot({ path: `browser-artifacts/obd-preview-${width}.png`, fullPage: true });
+    // The page remains useful when JavaScript is disabled.
+    const noScript = await browser.newContext({ javaScriptEnabled: false });
+    try {
+      const staticPage = await noScript.newPage();
+      await staticPage.goto(base + preview);
+      await staticPage.locator('summary').first().click();
+      assert.equal(await staticPage.locator('details .body').first().isVisible(), true);
+      assert.ok((await staticPage.locator('#sample-prompt').inputValue()).includes('P0420'));
+      assert.equal(await staticPage.locator('#copy-prompt').isVisible(), false);
+    } finally { await noScript.close(); }
   }
   assert.deepEqual(errors, []);
-  console.log('OK: both languages, three demos, copy/fallback, download, privacy, scope exclusions, reset, and mobile overflow.');
+  console.log('OK: bilingual builders and OBD previews; copy/fallback, downloads, privacy, language switching, no-JS use, and mobile layout.');
 } finally { await browser.close(); server.close(); }

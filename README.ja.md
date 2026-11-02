@@ -88,7 +88,7 @@
 - 💬 会話例の日本語版 — [P0420の診断](./examples/obd2-p0420-diagnosis.ja.md) / [中古車チェック](./examples/used-car-inspection.ja.md) / [キャッチアップ整備計画](./examples/maintenance-catchup-plan.ja.md)
 - 🗃️ [既知問題データベース(日本語ガイド)](./data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法と[日本語テンプレート](./data/known-issues/TEMPLATE.ja.md)。軽自動車・国内専売車のエントリを特に募集中
 
-[車なしで試すOBD-II MCPデモ](./docs/try-obd2-mcp.ja.md) — 実行コマンド、模擬データの取得結果、確認できること・できないこと。
+[ブラウザで模擬OBD-IIデータを体験](https://shoka-jp.github.io/automotive-ai-skills/tools/obd2-preview.ja.html) — インストール・登録・車は不要。カードを開き、普段使うAIへの質問文をコピーできます。[MCPデモを自分で実行する手順](./docs/try-obd2-mcp.ja.md)には、コマンド・取得結果・検証範囲を掲載しています。
 
 ## インストール
 
