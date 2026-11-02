@@ -758,9 +758,9 @@
           "title": "Toyota Aqua NHP10/NHP10H — brake actuator service campaign",
           "path": "data/known-issues/toyota-aqua-nhp10-brake-actuator.html",
           "scope": "- **Vehicles:** Japan-market Aqua DAA/6AA-NHP10 and DAA/6AA-NHP10H in Toyota's 2025-06-20 service campaign.\n- **Engines/components:** Electrically controlled brake actuator, booster and booster pump.\n- **Production window:** NHP10 listed subranges span 2011-11-07 to 2021-06-04; NHP10H subranges span 2017-05-10 to 2021-05-31. Use the exact row, not these outer bounds, for individual checks.\n- **Markets:** Japan. Do not apply these ranges to export-market Prius c or the later MXPK Aqua.",
-          "issue": "Frequent brake operation can wear the actuator's hydraulic-control valves earlier than expected. Several warning lights may remain on; continued use can lead to a warning buzzer and reduced braking assistance. This is a **service campaign**, not a recall notice or automatic authorization to replace every listed vehicle's parts.",
+          "issue": "Frequent brake operation can wear the actuator's hydraulic-control valves earlier than expected. Several warning lights may remain on; continued use can lead to a warning buzzer and reduced braking assistance. This is a service campaign, not a recall notice or automatic authorization to replace every listed vehicle's parts.",
           "checks": [
-            "Keep **service campaign** distinct from recall and warranty extension.",
+            "Keep service campaign distinct from recall and warranty extension.",
             "An asterisk (*) in Toyota's completion-status field is not proof of repair completion; request the actual inspection and repair records.",
             "Ask whether the relevant warning lights have stayed on and what was diagnosed. No warning today is not a repair receipt.",
             "Confirm the exact type designation, production date and current campaign conditions privately with Toyota. Do not post a full chassis number in a public prompt."
@@ -770,9 +770,9 @@
           "title": "トヨタ アクア NHP10/NHP10H — ブレーキアクチュエータのサービスキャンペーン",
           "path": "data/known-issues/toyota-aqua-nhp10-brake-actuator.ja.html",
           "scope": "- **車種:** 2025年6月20日開始のトヨタのサービスキャンペーンに掲載された国内仕様のDAA/6AA-NHP10、DAA/6AA-NHP10H。\n- **エンジン/部位:** 電動式ブレーキアクチュエータ、ブースタ、ブースタポンプ。\n- **生産時期:** 掲載区間の外側の範囲はNHP10が2011年11月7日〜2021年6月4日、NHP10Hが2017年5月10日〜2021年5月31日です。連続した対象範囲ではなく、個別の行で照合します。\n- **仕向け:** 日本。輸出仕様のPrius cや後継のMXPK系アクアに流用しません。",
-          "issue": "ブレーキ操作の頻度によって油圧制御用バルブが想定より早く摩耗し、複数の警告灯が点灯したままになることがあります。使用を続けると警告音や制動補助の低下に至るおそれがあります。これは**サービスキャンペーン**であり、リコールの届出や全掲載車の無条件交換を意味しません。",
+          "issue": "ブレーキ操作の頻度によって油圧制御用バルブが想定より早く摩耗し、複数の警告灯が点灯したままになることがあります。使用を続けると警告音や制動補助の低下に至るおそれがあります。これはサービスキャンペーンであり、リコールの届出や全掲載車の無条件交換を意味しません。",
           "checks": [
-            "**サービスキャンペーン**とリコール・保証延長を区別する。",
+            "サービスキャンペーンとリコール・保証延長を区別する。",
             "実施状況の「*」表示は修理完了の証明ではない。実際の点検・修理記録を求める。",
             "該当する警告灯の点灯継続歴と診断内容を確認する。現在消灯していることと修理実施は別。",
             "正確な型式・製作日・現在の条件をトヨタへ個別確認する。公開する質問に車台番号全体を記載しない。"
@@ -798,7 +798,7 @@
           "scope": "- **Vehicles:** Prius DAA-ZVW50, DAA-ZVW51 and DAA-ZVW55 in recall 3905.\n- **Engines/components:** Parking brake cable retention at the operating lever.\n- **Production window:** Listed chassis subranges within 2015-10-26 to 2016-10-03. These are production dates, not purchase or registration dates.\n- **Markets:** Japan. This entry does not cover ZVW30, ZVW52 PHV, or later Prius generations.",
           "issue": "Vibration can detach the inadequately retained parking brake cable from its lever, leaving the parking brake inoperative. Toyota's remedy adds a retaining clip. This is separate from hydraulic brake actuator campaigns or other Prius recalls.",
           "checks": [
-            "Ask specifically for the recall **3905 parking-cable remedy**, not just a generic \"brake recall done\" statement.",
+            "Ask specifically for the recall 3905 parking-cable remedy, not just a generic \"brake recall done\" statement.",
             "Compare the exact production date and chassis row with Toyota's lookup; a listed range can include vehicles outside the recall.",
             "Separate the parking-cable record from actuator, software, or other campaign records.",
             "Do not treat a 2017 registration as proof of 2017 production, or missing coverage here as proof of no recalls."
@@ -810,7 +810,7 @@
           "scope": "- **車種:** リコール3905に掲載されたDAA-ZVW50、DAA-ZVW51、DAA-ZVW55のプリウス。\n- **エンジン/部位:** 駐車ブレーキの作動レバーに対するケーブルの固定。\n- **生産時期:** 2015年10月26日〜2016年10月3日の間の指定車台番号範囲。購入日・初度登録日ではありません。\n- **仕向け:** 日本。この資料はZVW30、ZVW52のPHV、後継世代を対象としません。",
           "issue": "固定が不適切なケーブルが振動で作動レバーから外れ、駐車ブレーキが作動できなくなるおそれがあります。対策は固定用クリップの追加です。油圧ブレーキアクチュエータの対策や他のプリウスのリコールとは別に確認します。",
           "checks": [
-            "「ブレーキのリコール済み」だけでなく、**3905の駐車ケーブル対策**の記録を求める。",
+            "「ブレーキのリコール済み」だけでなく、3905の駐車ケーブル対策の記録を求める。",
             "正確な製作日と車台番号の行を公式照会で確認する。範囲内に対象外の車両も含まれる。",
             "ケーブルの対策記録と、アクチュエータ・ソフト更新・他の対策の記録を分ける。",
             "2017年の初度登録から2017年製と決めない。この資料の範囲外をリコールなしの根拠にしない。"
@@ -836,7 +836,7 @@
           "scope": "- **Vehicles:** Fit DBA-GK3/GK4/GK5/GK6 and DAA-GP5/GP6 rows in recall 5423, including the hybrid variants.\n- **Engines/components:** Low-pressure fuel pump impeller; not the i-DCD transmission.\n- **Production window:** The Fit rows contain separate subranges within 2017-06-20 to 2019-09-10. All six codes have listed production in 2017–2019, but their exact dates and chassis ranges differ.\n- **Markets:** Japan. Do not reuse N-BOX ranges, or extend this entry to GE/GR Fit or overseas Jazz.",
           "issue": "A deformed impeller can stop fuel delivery and stall the engine. The 2024-06-14 correction requires checking the pump identification mark and replacing applicable pumps: some vehicles in the published range already have countermeasure parts. Hybrid status or a transmission repair does not determine fuel-pump status.",
           "checks": [
-            "Request the **5423 fuel-pump identification result** and, where applicable, the replacement record.",
+            "Request the 5423 fuel-pump identification result and, where applicable, the replacement record.",
             "Distinguish \"countermeasure part identified,\" \"replacement completed,\" and \"not checked.\" A chassis-range match alone proves none of these.",
             "Keep i-DCD clutch, transmission and software records separate from the fuel-pump remedy, especially on GP5/GP6 hybrids.",
             "Use the exact Fit chassis row and current dealer information; old parts-supply announcements do not establish today's appointment or completion date."
@@ -848,7 +848,7 @@
           "scope": "- **車種:** 届出5423のフィットDBA-GK3/GK4/GK5/GK6、DAA-GP5/GP6。ハイブリッド仕様も含みます。\n- **エンジン/部位:** 低圧燃料ポンプのインペラ。i-DCDの変速機とは別です。\n- **生産時期:** フィットの掲載区間全体は2017年6月20日〜2019年9月10日の間です。6型式とも2017〜2019年の掲載がありますが、型式ごとに正確な日付・車台番号範囲が異なります。\n- **仕向け:** 日本。N-BOXの車台番号範囲を流用せず、GE/GR系フィットや海外のJazzに拡大適用しません。",
           "issue": "インペラの変形で燃料供給が止まり、エンストに至るおそれがあります。2024年6月14日の訂正は、範囲内にも対策品装着車があるため識別マークを確認し、該当品を交換する内容です。ハイブリッドであることや変速機の修理歴だけで燃料ポンプの状態を判断しません。",
           "checks": [
-            "**5423の燃料ポンプ識別結果**と、該当する場合の交換記録を求める。",
+            "5423の燃料ポンプ識別結果と、該当する場合の交換記録を求める。",
             "「対策品と識別」「交換実施済み」「未点検」を区別する。車台番号範囲内というだけではどれも証明できない。",
             "特にGP5/GP6では、i-DCDのクラッチ・変速機・ソフト更新の記録と燃料ポンプの対策を混同しない。",
             "フィットの正確な行と現在の販売店の案内を使う。古い部品供給案内から現在の予約日・完了日を決めない。"

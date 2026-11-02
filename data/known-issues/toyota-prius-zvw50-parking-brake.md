@@ -33,7 +33,7 @@ The listed production scope does not establish a failure rate for an individual 
 
 ## Buyer checklist
 
-- Ask specifically for the recall **3905 parking-cable remedy**, not just a generic "brake recall done" statement.
+- Ask specifically for the recall 3905 parking-cable remedy, not just a generic "brake recall done" statement.
 - Compare the exact production date and chassis row with Toyota's lookup; a listed range can include vehicles outside the recall.
 - Separate the parking-cable record from actuator, software, or other campaign records.
 - Do not treat a 2017 registration as proof of 2017 production, or missing coverage here as proof of no recalls.

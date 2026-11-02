@@ -33,7 +33,7 @@ Neither the campaign population nor the vehicle's mileage establishes its failur
 
 ## Buyer checklist
 
-- Request the **5423 fuel-pump identification result** and, where applicable, the replacement record.
+- Request the 5423 fuel-pump identification result and, where applicable, the replacement record.
 - Distinguish "countermeasure part identified," "replacement completed," and "not checked." A chassis-range match alone proves none of these.
 - Keep i-DCD clutch, transmission and software records separate from the fuel-pump remedy, especially on GP5/GP6 hybrids.
 - Use the exact Fit chassis row and current dealer information; old parts-supply announcements do not establish today's appointment or completion date.

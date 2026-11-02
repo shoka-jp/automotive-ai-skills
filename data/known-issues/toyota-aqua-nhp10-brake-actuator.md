@@ -11,7 +11,7 @@
 
 ## The issue
 
-Frequent brake operation can wear the actuator's hydraulic-control valves earlier than expected. Several warning lights may remain on; continued use can lead to a warning buzzer and reduced braking assistance. This is a **service campaign**, not a recall notice or automatic authorization to replace every listed vehicle's parts.
+Frequent brake operation can wear the actuator's hydraulic-control valves earlier than expected. Several warning lights may remain on; continued use can lead to a warning buzzer and reduced braking assistance. This is a service campaign, not a recall notice or automatic authorization to replace every listed vehicle's parts.
 
 ## Symptoms an owner can detect
 
@@ -33,7 +33,7 @@ The notice does not establish an individual failure probability. Listed vehicles
 
 ## Buyer checklist
 
-- Keep **service campaign** distinct from recall and warranty extension.
+- Keep service campaign distinct from recall and warranty extension.
 - An asterisk (*) in Toyota's completion-status field is not proof of repair completion; request the actual inspection and repair records.
 - Ask whether the relevant warning lights have stayed on and what was diagnosed. No warning today is not a repair receipt.
 - Confirm the exact type designation, production date and current campaign conditions privately with Toyota. Do not post a full chassis number in a public prompt.
