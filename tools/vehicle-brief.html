@@ -74,14 +74,22 @@ locale: en_US
           <div class="result-topline"><span id="result-task"></span><span id="reference-count"></span></div>
           <h2 id="result-title"></h2>
           <div class="result-actions">
-            <button id="copy" class="brief-button primary" type="button">Copy AI prompt</button>
+            <button id="copy-checklist" class="brief-button primary" type="button">Copy checklist</button>
+            <button id="copy" class="brief-button" type="button">Copy AI prompt</button>
             <button id="download" class="brief-button" type="button">Save Markdown</button>
             <button id="share" class="brief-button" type="button">Share preset</button>
             <button id="print" class="brief-button" type="button">Print</button>
           </div>
           <input id="share-value" readonly hidden aria-label="Preset link (no personal details)">
           <p id="selection-status" class="selection-note"></p>
+          <section class="workflow-checklist" aria-labelledby="workflow-title">
+            <h3 id="workflow-title">Questions for this visit</h3>
+            <p>Take these to a viewing or workshop, with no AI needed. They are questions to discuss, not inspection findings or a safety assessment.</p>
+            <ol id="workflow-checks" class="check-list"></ol>
+            <a id="workflow-link">Read the full workflow →</a>
+          </section>
           <div id="references"></div>
+          <details id="checklist-details"><summary>Read the checklist to copy or print</summary><label for="checklist-output" class="small">Vehicle checklist</label><textarea id="checklist-output" readonly spellcheck="false"></textarea></details>
           <details id="prompt-details"><summary>Read or edit the copied prompt in your AI</summary><label for="output" class="small">Generated prompt</label><textarea id="output" readonly spellcheck="false"></textarea></details>
           <pre id="print-output"></pre>
           <div class="after-use"><p>Useful for your next viewing or workshop visit?</p>

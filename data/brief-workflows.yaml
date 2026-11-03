@@ -9,6 +9,17 @@ workflows:
     en: Prepare a pre-purchase question list, documents to request, and items for an independent inspection. Separate
       verified facts, seller statements, and unknowns.
     ja: 購入前の質問、取り寄せる記録、第三者の点検で確認する事項を作成してください。確認済みの事実、売主の申告、不明な点を分けてください。
+  checks:
+    en:
+    - Which service, repair and ownership records can the seller show for this exact vehicle?
+    - Which claims about mileage, accident history and condition have supporting records, and which remain unknown?
+    - Can an independent professional inspect the vehicle before purchase, and document any findings and unresolved items?
+    - What is included in the written total price, warranty and sale conditions? Which charges or terms still need clarification?
+    ja:
+    - この車両の整備・修理・所有履歴について、売主が提示できる記録はありますか？
+    - 走行距離・事故歴・状態の説明のうち、記録で裏付けられる点と、未確認の点はどれですか？
+    - 購入前に第三者の専門家へ点検を依頼し、指摘事項と未確認事項を記録できますか？
+    - 書面の支払総額・保証・売買条件には何が含まれ、確認が必要な費用や条件はどれですか？
 - id: symptom
   skill: vehicle-troubleshooting
   label:
@@ -18,6 +29,17 @@ workflows:
     en: Organize the observed symptom, ask focused follow-up questions, and explain which evidence would distinguish
       possible causes. Do not diagnose a failed part from a model match alone.
     ja: 観察した症状を整理し、追加質問と原因の切り分けに必要な根拠を示してください。車種が一致しただけで故障部品を断定しないでください。
+  checks:
+    en:
+    - What did you observe, when did it start, and is it constant or intermittent? Keep observations separate from guesses about the cause.
+    - Under which conditions has it already occurred, such as temperature, speed or braking? Do not recreate a potentially unsafe symptom.
+    - What recent repairs, warning messages or scanner readings can you document, including when they were recorded?
+    - What inspection or measurement would confirm the cause before replacing parts? Ask a qualified professional about safety and the next step.
+    ja:
+    - 何を観察し、いつから、常時または時々起きていますか？原因の推測と、実際に見聞きしたことを分けてください。
+    - 温度・速度・制動時など、これまでどの条件で発生しましたか？危険が考えられる症状を再現するための運転はしないでください。
+    - 直近の修理・警告表示・診断機の値について、記録した日時とともに提示できる情報はありますか？
+    - 部品交換の前に、原因を確かめる点検や測定は何ですか？安全性と次の対応は専門家に確認してください。
 - id: recall
   skill: vehicle-recall-checker
   label:
@@ -27,6 +49,17 @@ workflows:
     en: Identify official lookup sources and questions about applicability and completion. Separate interim actions,
       final repairs, and unknown status. Distinguish a warranty extension from a recall.
     ja: 公式照会先と、個別の対象・実施状況についての質問を整理してください。暫定措置、最終対策、未確認を分け、保証延長とリコールを区別してください。
+  checks:
+    en:
+    - What is the vehicle's original market, exact variant and production date? Which official manufacturer lookup covers it?
+    - Has the owner checked this vehicle directly with the manufacturer using the VIN or chassis number privately? Record the source and check date, not the full identifier here.
+    - Is the notice a recall, service campaign or warranty extension? Does the record describe an interim measure or the final remedy?
+    - What vehicle-specific official result or repair record supports completion? Keep missing, conflicting or unavailable results marked as unverified.
+    ja:
+    - 元の仕向け・正確な仕様・製作日は何ですか？どのメーカー公式照会先がこの車両を扱いますか？
+    - 所有者がVIN・車台番号を公式照会先へ直接入力して確認しましたか？ここには番号全文を記入せず、照会先と確認日を記録してください。
+    - 届出はリコール・サービスキャンペーン・保証延長のどれですか？記録は暫定措置と最終対策のどちらを示しますか？
+    - この車両の対策完了を裏付ける公式照会結果や作業記録はありますか？欠落・矛盾・照会不可は未確認として残してください。
 - id: maintenance
   skill: vehicle-maintenance-planner
   label:
@@ -36,6 +69,17 @@ workflows:
     en: Build a maintenance planning worksheet from actual records, use, mileage, and the exact manufacturer schedule.
       Ask for missing information rather than inventing service intervals or capacities.
     ja: 整備記録、使い方、走行距離、その車両のメーカー指定をもとに整備計画の確認表を作成してください。不足情報を質問し、交換周期や容量を作らないでください。
+  checks:
+    en:
+    - Which manufacturer maintenance schedule matches the exact engine, transmission and original market?
+    - What are the current mileage and the date, mileage and work listed on each available service record?
+    - How is the vehicle used, including trip length, towing and climate? Does the manufacturer define special maintenance conditions for that use?
+    - Which service items have missing records? Ask the workshop what should be inspected or scheduled before assuming work was completed or inventing intervals.
+    ja:
+    - 正確なエンジン・変速機・仕向けに合うメーカー整備表はどれですか？
+    - 現在の走行距離と、提示できる各整備記録の実施日・走行距離・作業内容は何ですか？
+    - 走行距離の短い移動・けん引・気候など、どのように使っていますか？メーカーが定める特別な使用条件に該当しますか？
+    - 記録のない整備項目はどれですか？実施済みと決めつけたり交換周期を作ったりせず、点検や予定が必要な項目を整備工場に確認してください。
 - id: estimate
   skill: repair-estimate-reviewer
   label:
@@ -45,6 +89,17 @@ workflows:
     en: List the estimate details needed to compare scope, parts, labor, diagnostic evidence, and totals. Do not
       invent a local fair price. Ask which work is authorized and distinguish recommendations from completed work.
     ja: 作業範囲、部品、工賃、診断根拠、合計を比較するために必要な見積もり項目を整理してください。相場を捏造せず、承諾範囲と、提案・実施済み作業を区別してください。
+  checks:
+    en:
+    - What inspection finding or measurement supports each proposed repair? Which items are maintenance recommendations rather than diagnosed faults?
+    - Are parts, quantities, unit prices, labor, other charges and tax treatment stated clearly enough to check the total?
+    - Do alternative estimates cover the same work, parts condition, required follow-up work and warranty? Ask about possible shared labor instead of assuming a duplicate charge.
+    - Which work has been authorized, which is only proposed, and which is completed? Ask the workshop to clarify unresolved scope and safety questions before deciding.
+    ja:
+    - 各修理提案を裏付ける点検結果や測定値は何ですか？故障診断ではなく整備の推奨である項目はどれですか？
+    - 部品・数量・単価・工賃・諸費用・税の扱いは、合計を確認できる程度に明記されていますか？
+    - 別の見積もりと作業範囲・部品の状態・必要な付随作業・保証は同じですか？共通する工賃は二重請求と断定せず、工場に確認してください。
+    - 承諾済み・提案のみ・実施済みの作業はどれですか？判断の前に、未解決の作業範囲と安全上の疑問を工場に確認してください。
 - id: sell
   skill: used-car-listing-assistant
   label:
@@ -54,3 +109,14 @@ workflows:
     en: Draft a listing outline from documented specifications and condition. Separate evidence-backed claims, reported
       history, and unknowns; identify disclosures and price components to verify for the market.
     ja: 裏付けのある仕様と状態から販売説明の下書きを作成してください。根拠のある事実、申告された履歴、不明点を分け、仕向けに応じて確認すべき開示事項と価格内訳を整理してください。
+  checks:
+    en:
+    - Which documents support the advertised specification, mileage and equipment? Separate documented facts from reported history and unknowns.
+    - Which known defects, repairs and unresolved condition questions need to be disclosed? Do not infer accident history from photos alone.
+    - What are the vehicle price, required charges and genuinely optional items? Is any part of the payable total still unknown?
+    - Does each claim match its evidence and the current local listing requirements? Remove private owner details from public material before publishing separately.
+    ja:
+    - 掲載する仕様・走行距離・装備を裏付ける資料はありますか？記録で確認できる事実・申告された履歴・不明点を分けてください。
+    - 開示すべき既知の不具合・修理・未確認の状態は何ですか？写真だけで事故歴を判断しないでください。
+    - 車両価格・必要な費用・任意の項目はそれぞれ何ですか？支払総額に未確定の費用は残っていますか？
+    - 説明は根拠と現地の最新の掲載条件に合っていますか？公開資料から所有者の個人情報を除き、掲載は別途確認して行ってください。

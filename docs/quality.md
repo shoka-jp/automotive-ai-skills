@@ -13,6 +13,7 @@ The [Vehicle Brief Builder](../tools/vehicle-brief.html) assembles questions and
 - Exact vehicle aliases, model-code differences, production-year bounds and original-market scope. A match is always a **reference candidate**, never proof of eligibility or completion.
 - Recall versus service-campaign versus warranty-extension versus specification/correction labels; source dates older than 180 days get a recheck notice. A fresh date still does not replace current official lookup.
 - Browser/CLI output, bilingual workflows, and preset links that exclude personal notes, history, year and model code.
+- Purpose-specific questions for all six goals, including vehicles without model references. The copy/print checklist retains reference limits and sources, and does not require an AI service.
 - Real-browser operation in English and Japanese: samples, clipboard and manual-copy fallback, Markdown download, field changes, source exclusions, clearing and mobile overflow.
 - A generated data bundle that must match the reviewed source files, plus existing repository, site metadata and link checks.
 

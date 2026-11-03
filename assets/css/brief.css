@@ -27,7 +27,7 @@
 .field { margin-bottom: 18px; }
 .field label { display: block; margin-bottom: 7px; font-size: 13px; font-weight: 650; }
 .field label .optional { font-size: 11px; color: var(--grease); font-weight: normal; }
-.field input, .field select, .field textarea, #output, #share-value { width: 100%; padding: 10px 11px; font: 14px/1.5 var(--body); border: 1px solid var(--rule); border-radius: 5px; background: var(--paper); color: var(--ink); }
+.field input, .field select, .field textarea, #output, #checklist-output, #share-value { width: 100%; padding: 10px 11px; font: 14px/1.5 var(--body); border: 1px solid var(--rule); border-radius: 5px; background: var(--paper); color: var(--ink); }
 .field select { min-height: 44px; }
 .field textarea { resize: vertical; min-height: 88px; }
 .field small { display: block; margin-top: 5px; color: var(--grease); font-size: 11px; }
@@ -61,7 +61,13 @@
 details { font-size: 13px; } summary { cursor: pointer; color: var(--blue); font-weight: 600; padding: 8px 0; }
 .scope-text { white-space: pre-line; color: var(--ink-soft); font-size: 12px; }
 .source-list { overflow-wrap: anywhere; }
-#output { font-family: var(--mono); font-size: 12px; min-height: 280px; resize: vertical; }
+#output, #checklist-output { font-family: var(--mono); font-size: 12px; min-height: 280px; resize: vertical; }
+.workflow-checklist { margin: 20px 0; padding: 18px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); }
+.workflow-checklist h3 { margin: 0 0 8px; font-size: 17px; }
+.workflow-checklist > p { margin: 0 0 12px; font-size: 12px; color: var(--ink-soft); }
+.workflow-checklist .check-list { font-size: 14px; line-height: 1.7; }
+.workflow-checklist li { padding: 6px 0; }
+.workflow-checklist > a { font-size: 12px; }
 #share-value { margin: 0 0 16px; font-size: 11px; }
 #status { margin: 16px 0; color: var(--blue); font-size: 12px; min-height: 20px; }
 .after-use { margin-top: 24px; padding: 18px; background: var(--paper); border: 1px dashed var(--rule); border-radius: 8px; }
@@ -79,7 +85,7 @@ details { font-size: 13px; } summary { cursor: pointer; color: var(--blue); font
 @media print {
   :root { --paper: #fff; --ink: #000; } body { background: white; color: black; }
   .brief-nav, .brief-hero, .sample-bar, #brief-form, .panel-heading, .result-actions,
-  #prompt-details, #share-value, .after-use, .brief-footer, #status, #empty, #references,
+  #prompt-details, #checklist-details, .workflow-checklist, #share-value, .after-use, .brief-footer, #status, #empty, #references,
   .selection-note, .result-topline, #result-title { display: none !important; }
   .brief-shell, .brief-grid, .brief-panel, .output-body { display: block; padding: 0; margin: 0; border: 0; }
   #print-output { display: block; white-space: pre-wrap; overflow-wrap: anywhere; font: 10pt/1.5 sans-serif; }

@@ -57,6 +57,10 @@ def build():
         for lang in ('en', 'ja'):
             name = 'README.ja.md' if lang == 'ja' else 'README.md'
             assert (ROOT / 'skills' / workflow['skill'] / name).is_file()
+            checks = workflow.get('checks', {}).get(lang)
+            assert isinstance(checks, list) and checks, f"{workflow['id']}/{lang}: needs checklist questions"
+            assert all(isinstance(check, str) and check.strip() for check in checks)
+        assert len(workflow['checks']['en']) == len(workflow['checks']['ja']), workflow['id']
     return {'schema_version': 1, 'library_entry_count': len(rows), 'profiles': profiles,
             'workflows': workflows, 'entries': entries}
 

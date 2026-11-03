@@ -11,6 +11,11 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Bilingual questions for all six vehicle-brief goals, visible even without a
+  matching model reference. Visitors can copy or print a human-readable
+  checklist for a viewing or workshop without using an AI service; reference
+  scope, sources and unknowns remain attached.
+
 - Aqua NHP10/NHP10H, Prius ZVW50/ZVW51/ZVW55, and Fit GK/GP buyer-check
   profiles with three bilingual, primary-source-backed references: 11 profiles,
   10 reviewed references and 20 library entries in total.
