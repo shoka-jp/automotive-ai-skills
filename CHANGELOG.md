@@ -88,6 +88,9 @@ invalidates existing links or skill usage patterns.
 
 ### Fixed
 
+- Vehicle brief pages, modules, data and styles now share a deployment version
+  in asset URLs, preventing new controls from loading cached older code/data.
+
 - Corrected the RK Step WGN transmission article: launch FF torque-converter
   CVT versus 4WD 5AT, followed by the June 2012 4WD CVT revision. Withdrew
   unsupported start-clutch, blanket fluid, prevalence, and repair-price claims
