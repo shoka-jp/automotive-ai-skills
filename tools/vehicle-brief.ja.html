@@ -16,7 +16,7 @@ locale: ja_JP
   <link rel="alternate" hreflang="ja" href="{{ '/tools/vehicle-brief.ja.html' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}?v={{ site.github.build_revision | default: 'checklists-20261103' }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
 </head>
 <body>
@@ -111,6 +111,6 @@ locale: ja_JP
     <p>Sho Kamakuraが開発 · MITオープンソース。資料の一致は、診断結果・個別適用・安全性の証明ではありません。</p>
   </footer>
 </div>
-<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}?v={{ site.github.build_revision | default: 'checklists-20261103' }}"></script>
 </body>
 </html>

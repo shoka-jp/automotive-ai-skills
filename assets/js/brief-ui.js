@@ -1,4 +1,12 @@
-import { makeBrief, messages, readPreset, shareURL } from './brief-core.js';
+// Keep the module and data on the same deployment as the containing page.
+// Otherwise a returning visitor can combine new HTML with cached old assets.
+const version = new URL(import.meta.url).searchParams.get('v');
+const assetURL = path => {
+  const url = new URL(path, import.meta.url);
+  if (version) url.searchParams.set('v', version);
+  return url.href;
+};
+const { makeBrief, messages, readPreset, shareURL } = await import(assetURL('./brief-core.js'));
 
 const lang = document.documentElement.lang === 'ja' ? 'ja' : 'en';
 const ja = lang === 'ja';
@@ -159,7 +167,7 @@ for (const button of document.querySelectorAll('[data-demo]')) {
 }
 
 try {
-  const response = await fetch(new URL('../data/vehicle-brief.json', import.meta.url));
+  const response = await fetch(assetURL('../data/vehicle-brief.json'));
   if (!response.ok) throw new Error('Data unavailable');
   data = await response.json();
   for (const p of data.profiles) $('vehicle').add(new Option(p.label[lang], p.id));

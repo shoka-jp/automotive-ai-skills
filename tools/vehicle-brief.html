@@ -17,7 +17,7 @@ locale: en_US
   <link rel="alternate" hreflang="ja" href="{{ '/tools/vehicle-brief.ja.html' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/tools/vehicle-brief.html' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/brief.css' | relative_url }}?v={{ site.github.build_revision | default: 'checklists-20261103' }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
 </head>
 <body>
@@ -112,6 +112,6 @@ locale: en_US
     <p>Built by Sho Kamakura · MIT open source. Reference selection is not a diagnosis, eligibility result, or safety certificate.</p>
   </footer>
 </div>
-<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/brief-ui.js' | relative_url }}?v={{ site.github.build_revision | default: 'checklists-20261103' }}"></script>
 </body>
 </html>

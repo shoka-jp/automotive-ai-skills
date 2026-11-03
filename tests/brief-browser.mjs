@@ -23,13 +23,32 @@ const context = await browser.newContext({ viewport: { width: 1365, height: 1000
 const page = await context.newPage();
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
+const versionedAssets = new Set(['brief-ui.js', 'brief-core.js', 'vehicle-brief.json', 'brief.css']);
+const loadedVersions = new Map();
+// Simulate old unversioned responses still being cached after a deployment.
+await page.route('**/assets/**', async route => {
+  const url = new URL(route.request().url());
+  const name = url.pathname.split('/').pop();
+  if (versionedAssets.has(name)) {
+    const version = url.searchParams.get('v');
+    if (!version) {
+      await route.fulfill({ status: 410, contentType: 'text/plain', body: 'Stale unversioned asset' });
+      return;
+    }
+    loadedVersions.set(name, version);
+  }
+  await route.continue();
+});
 try {
   for (const lang of ['en', 'ja']) {
+    loadedVersions.clear();
     await page.goto(base + `tools/vehicle-brief${lang === 'ja' ? '.ja' : ''}.html`);
     await page.locator('[data-demo=nbox]').waitFor({ state: 'visible' });
     await page.waitForFunction(() => !document.querySelector('[data-demo=nbox]').disabled);
     await page.click('[data-demo=nbox]');
     assert.deepEqual(errors, [], 'The sample should render without a browser exception');
+    assert.deepEqual(new Set(loadedVersions.keys()), versionedAssets);
+    assert.equal(new Set(loadedVersions.values()).size, 1, 'UI, core, data and styles must share the deployment version');
     assert.ok((await page.locator('#output').inputValue()).includes('5423'));
     assert.equal(await page.locator('.reference-card').count(), 1);
     assert.equal(await page.locator('#workflow-checks li').count(), 4);
