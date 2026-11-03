@@ -73,14 +73,22 @@ locale: ja_JP
           <div class="result-topline"><span id="result-task"></span><span id="reference-count"></span></div>
           <h2 id="result-title"></h2>
           <div class="result-actions">
-            <button id="copy" class="brief-button primary" type="button">AI質問文をコピー</button>
+            <button id="copy-checklist" class="brief-button primary" type="button">確認事項をコピー</button>
+            <button id="copy" class="brief-button" type="button">AI質問文をコピー</button>
             <button id="download" class="brief-button" type="button">Markdown保存</button>
             <button id="share" class="brief-button" type="button">車種・目的を共有</button>
             <button id="print" class="brief-button" type="button">印刷</button>
           </div>
           <input id="share-value" readonly hidden aria-label="共有リンク（個人の入力は含みません）">
           <p id="selection-status" class="selection-note"></p>
+          <section class="workflow-checklist" aria-labelledby="workflow-title">
+            <h3 id="workflow-title">今回の確認事項</h3>
+            <p>AIを使わず、そのまま現車確認や整備相談に持参できます。相談時に使う質問であり、点検結果や安全性の判定ではありません。</p>
+            <ol id="workflow-checks" class="check-list"></ol>
+            <a id="workflow-link">詳しい確認手順を読む →</a>
+          </section>
           <div id="references"></div>
+          <details id="checklist-details"><summary>コピー・印刷する確認事項の全文</summary><label for="checklist-output" class="small">車両確認チェックリスト</label><textarea id="checklist-output" readonly spellcheck="false"></textarea></details>
           <details id="prompt-details"><summary>AIへ渡す質問文の全文を確認</summary><label for="output" class="small">作成した質問文</label><textarea id="output" readonly spellcheck="false"></textarea></details>
           <pre id="print-output"></pre>
           <div class="after-use"><p>次の現車確認や整備相談に役立ちましたか？</p>

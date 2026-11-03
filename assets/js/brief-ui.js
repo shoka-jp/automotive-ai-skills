@@ -72,7 +72,10 @@ function generate() {
   try {
     current = makeBrief(data, input());
     $('output').value = current.text;
-    $('print-output').textContent = current.text;
+    $('checklist-output').value = current.worksheetText;
+    $('print-output').textContent = current.worksheetText;
+    $('workflow-checks').replaceChildren(...current.workflow.checks[lang].map(check => element('li', check)));
+    $('workflow-link').href = `../skills/${current.workflow.skill}/${ja ? 'README.ja.html' : ''}`;
     $('result-title').textContent = current.profile?.label[lang] ?? t('Your vehicle brief', '車両確認メモ');
     $('result-task').textContent = current.workflow.label[lang];
     $('selection-status').textContent = messages[lang][current.status];
@@ -81,7 +84,7 @@ function generate() {
     $('result').hidden = false;
     $('empty').hidden = true;
     $('share-value').hidden = true;
-    status.textContent = t('Brief ready. Read the references, then copy into your chosen AI.', '確認メモを作成しました。内容を確認して、使いたいAIへコピーできます。');
+    status.textContent = t('Checklist ready. Use it at your visit or print it. An AI prompt is also available.', '確認メモを作成しました。そのまま相談や印刷に使えます。AIへの質問文もコピーできます。');
   } catch (error) {
     status.textContent = error.message;
   }
@@ -90,6 +93,17 @@ function generate() {
 form.addEventListener('submit', event => { event.preventDefault(); generate(); });
 form.addEventListener('input', stale);
 $('vehicle').addEventListener('change', () => { variants(); stale(); });
+$('copy-checklist').addEventListener('click', async () => {
+  if (!current) return;
+  try {
+    await navigator.clipboard.writeText(current.worksheetText);
+    status.textContent = t('Checklist copied. Review personal details before sharing.', '確認事項をコピーしました。共有前に個人情報が含まれていないか確認してください。');
+  } catch {
+    $('checklist-details').open = true;
+    $('checklist-output').focus(); $('checklist-output').select();
+    status.textContent = t('Clipboard unavailable. The checklist is selected; copy it manually.', '自動コピーが使えないため確認事項を選択しました。手動でコピーしてください。');
+  }
+});
 $('copy').addEventListener('click', async () => {
   if (!current) return;
   try {
@@ -123,6 +137,7 @@ $('clear-inputs').addEventListener('click', () => {
   form.reset(); variants(); current = null;
   $('result').hidden = true; $('empty').hidden = false;
   $('output').value = ''; $('print-output').textContent = ''; $('references').replaceChildren();
+  $('checklist-output').value = ''; $('workflow-checks').replaceChildren();
   $('share-value').value = ''; $('share-value').hidden = true;
   status.textContent = t('Cleared. Nothing was saved to browser storage.', '入力を消去しました。ブラウザーの保存領域には記録していません。');
 });

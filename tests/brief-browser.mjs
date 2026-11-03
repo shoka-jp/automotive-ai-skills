@@ -32,6 +32,17 @@ try {
     assert.deepEqual(errors, [], 'The sample should render without a browser exception');
     assert.ok((await page.locator('#output').inputValue()).includes('5423'));
     assert.equal(await page.locator('.reference-card').count(), 1);
+    assert.equal(await page.locator('#workflow-checks li').count(), 4);
+    await page.click('#copy-checklist');
+    const checklist = await page.locator('#checklist-output').inputValue();
+    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), checklist);
+    assert.ok(checklist.includes('5423'));
+    assert.ok(!checklist.includes(lang === 'ja' ? '## AIへの依頼' : '## Instructions for the assistant'));
+    await page.emulateMedia({ media: 'print' });
+    assert.equal(await page.locator('#print-output').isVisible(), true);
+    assert.equal(await page.locator('#print-output').textContent(), checklist);
+    assert.equal(await page.locator('.workflow-checklist').isVisible(), false, 'Print should not duplicate the checklist');
+    await page.emulateMedia({ media: 'screen' });
     await page.click('#copy');
     assert.ok((await page.evaluate(() => navigator.clipboard.readText())).includes('5423'));
     const download = page.waitForEvent('download');
@@ -59,6 +70,23 @@ try {
     await page.fill('#vehicleName', 'Custom car');
     await page.click('#generate');
     assert.ok((await page.locator('#output').inputValue()).includes('Custom car'));
+    // A missing model profile must still give visible, goal-specific questions.
+    const questionSets = new Set();
+    for (const task of ['buy', 'symptom', 'recall', 'maintenance', 'estimate', 'sell']) {
+      await page.selectOption('#task', task);
+      assert.equal(await page.locator('#result').isVisible(), false);
+      await page.click('#generate');
+      assert.equal(await page.locator('.reference-card').count(), 0);
+      assert.equal(await page.locator('#workflow-checks').isVisible(), true);
+      assert.equal(await page.locator('#workflow-checks li').count(), 4);
+      questionSets.add(await page.locator('#workflow-checks').textContent());
+      await page.click('#copy-checklist');
+      const plain = await page.evaluate(() => navigator.clipboard.readText());
+      assert.ok(plain.includes('Custom car'));
+      assert.ok(plain.includes(lang === 'ja' ? '確認済みの車種別資料は一致しませんでした' : 'No reviewed model profile matched'));
+      assert.ok(!(await page.locator('#workflow-link').getAttribute('href')).includes('undefined'));
+    }
+    assert.equal(questionSets.size, 6);
     await page.click('[data-demo=serena]');
     assert.ok((await page.locator('#output').inputValue()).includes('5268'));
     await page.fill('#year', '2014');
@@ -95,11 +123,18 @@ try {
     await page.screenshot({ path: `browser-artifacts/builder-${lang}-mobile.png`, fullPage: true });
     await page.setViewportSize({ width: 1365, height: 1000 });
     await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { value: undefined, configurable: true }));
+    await page.click('#copy-checklist');
+    assert.equal(await page.locator('#checklist-details').getAttribute('open'), '');
+    assert.equal(await page.evaluate(() => document.activeElement.id), 'checklist-output');
+    const copiedLength = (await page.locator('#checklist-output').inputValue()).length;
+    assert.deepEqual(await page.locator('#checklist-output').evaluate(el => [el.selectionStart, el.selectionEnd]), [0, copiedLength]);
     await page.click('#copy');
     assert.equal(await page.locator('#prompt-details').getAttribute('open'), '');
     assert.equal(await page.evaluate(() => document.activeElement.id), 'output');
     await page.click('#clear-inputs');
     assert.equal(await page.locator('#output').inputValue(), '');
+    assert.equal(await page.locator('#checklist-output').inputValue(), '');
+    assert.equal(await page.locator('#print-output').textContent(), '');
     assert.equal(await page.locator('#result').isVisible(), false);
   }
   for (const lang of ['en', 'ja']) {

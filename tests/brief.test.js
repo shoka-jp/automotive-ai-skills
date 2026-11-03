@@ -87,6 +87,35 @@ test('every purpose produces its own request in both languages', () => {
     assert.ok(r.text.includes(lang === 'ja' ? '確認済み／申告のみ／不明' : 'verified facts, reports, and unknowns'));
   }
 });
+test('all six goals provide a human checklist with or without model references', () => {
+  for (const w of data.workflows) for (const lang of ['en', 'ja']) {
+    for (const vehicle of ['nbox', 'other']) {
+      const r = makeBrief(data, { ...inputs, vehicle, task: w.id, lang }, options);
+      assert.ok(w.checks[lang].length > 0, w.id + '/' + lang);
+      for (const check of w.checks[lang]) {
+        assert.ok(r.worksheetText.includes(check));
+        assert.ok(r.text.includes(check));
+      }
+      assert.ok(r.worksheetText.includes(w.skill));
+      assert.ok(r.worksheetText.includes(lang === 'ja' ? '点検結果や安全性の判定ではありません' : 'not inspection findings or a safety assessment'));
+      assert.ok(!r.worksheetText.includes(w.request[lang]), 'A take-away checklist should not contain AI instructions');
+      assert.ok(r.worksheetText.includes(vehicle === 'nbox' ? '5423' : lang === 'ja' ? '一致しませんでした' : 'No reviewed model profile matched'));
+    }
+  }
+});
+test('human checklists preserve reference exclusions, sources and review dates', () => {
+  for (const lang of ['en', 'ja']) {
+    const matched = makeBrief(data, { ...inputs, lang }, options);
+    const entry = matched.references[0];
+    for (const value of [...entry.source_urls, entry.last_verified]) assert.ok(matched.worksheetText.includes(value));
+    for (const change of [{ market: 'unknown' }, { market: 'other' }, { year: '2025' }, { code: 'JF1' }]) {
+      const result = makeBrief(data, { ...inputs, ...change, lang }, options);
+      assert.equal(result.references.length, 0);
+      assert.ok(result.worksheetText.includes(result.workflow.checks[lang][0]));
+      assert.doesNotMatch(result.worksheetText, /5423/);
+    }
+  }
+});
 test('aging sources are flagged without inventing a new verification date', () => {
   const r = makeBrief(data, inputs, { today: '2027-10-30' });
   assert.match(r.text, /More than 180 days/);
