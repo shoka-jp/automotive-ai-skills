@@ -57,6 +57,11 @@ try {
     assert.equal(await page.evaluate(() => navigator.clipboard.readText()), checklist);
     assert.ok(checklist.includes('5423'));
     assert.ok(!checklist.includes(lang === 'ja' ? '## AIへの依頼' : '## Instructions for the assistant'));
+    const checklistDownload = page.waitForEvent('download');
+    await page.click('#download-checklist');
+    const checklistFile = await checklistDownload;
+    assert.equal(checklistFile.suggestedFilename(), `vehicle-checklist-nbox-${lang}.txt`);
+    assert.equal(await readFile(await checklistFile.path(), 'utf8'), checklist);
     await page.emulateMedia({ media: 'print' });
     assert.equal(await page.locator('#print-output').isVisible(), true);
     assert.equal(await page.locator('#print-output').textContent(), checklist);
@@ -68,7 +73,9 @@ try {
     await page.click('#download');
     const file = await download;
     assert.match(file.suggestedFilename(), /vehicle-brief-nbox-/);
-    assert.ok((await readFile(await file.path(), 'utf8')).includes('5423'));
+    const aiFile = await readFile(await file.path(), 'utf8');
+    assert.ok(aiFile.includes('5423'));
+    assert.ok(aiFile.includes(lang === 'ja' ? '## AIへの依頼' : '## Instructions for the assistant'));
     await page.fill('#context', 'PRIVATE CUSTOMER NOTE');
     await page.fill('#concern', '<img src=x onerror="window.injected=true">');
     assert.equal(await page.locator('#result').isVisible(), false);

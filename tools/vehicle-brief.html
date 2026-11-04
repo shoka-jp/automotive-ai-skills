@@ -60,7 +60,7 @@ locale: en_US
           <div class="field"><label for="concern">What needs checking? <span class="optional">optional</span></label><textarea id="concern" name="concern" maxlength="2000" rows="3" placeholder="e.g. The seller says all recalls are done, but I have no completion record."></textarea></div>
           <button id="generate" class="brief-button primary full" type="submit" disabled>Build my brief →</button>
           <button id="clear-inputs" class="reset-button" type="button">Clear inputs</button>
-          <p class="privacy-note">Do not enter VIN/chassis numbers, names or contact details. This tool does not send or save form input. Copying into an external AI is your choice.</p>
+          <p class="privacy-note">Do not enter VIN/chassis numbers, names or contact details. This page does not automatically send or save form input. Choosing Save creates a file on your device. Copying into an external AI is your choice.</p>
         </div>
       </form>
       <section class="brief-panel" aria-labelledby="output-title">
@@ -76,7 +76,8 @@ locale: en_US
           <div class="result-actions">
             <button id="copy-checklist" class="brief-button primary" type="button">Copy checklist</button>
             <button id="copy" class="brief-button" type="button">Copy AI prompt</button>
-            <button id="download" class="brief-button" type="button">Save Markdown</button>
+            <button id="download-checklist" class="brief-button" type="button">Save checklist (text)</button>
+            <button id="download" class="brief-button" type="button">Save AI prompt (Markdown)</button>
             <button id="share" class="brief-button" type="button">Share preset</button>
             <button id="print" class="brief-button" type="button">Print</button>
           </div>
