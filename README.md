@@ -25,9 +25,9 @@ New vehicle checks: [Toyota Aqua NHP10/NHP10H](https://shoka-jp.github.io/automo
 
 1. Choose a vehicle and goal: buying, symptoms, recall records, maintenance, estimates or selling.
 2. Read the relevant questions and references, filtered by model code, production year and original market.
-3. Copy the prompt into your preferred AI, save Markdown, or print the brief.
+3. Copy or save the checklist as a text file for a viewing or workshop. You can also copy or save a separate prompt for your preferred AI.
 
-**No account, API key or adapter.** Inputs are not sent or saved; shared links contain only the preset vehicle and goal. The builder does not run an AI diagnosis or an official eligibility lookup.
+**No account, API key or adapter.** Inputs are not sent or automatically saved; choosing Save creates a file on your device. Shared links contain only the preset vehicle and goal. The builder does not run an AI diagnosis or an official eligibility lookup.
 
 Ten source-reviewed entries support eleven Japan-market profiles. Other vehicles can use the general workflow; the full library has 20 entries. [Quality and limits](./docs/quality.md) · [Request a vehicle](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 

@@ -123,14 +123,22 @@ $('copy').addEventListener('click', async () => {
     status.textContent = t('Clipboard unavailable. The text is selected; copy it manually.', '自動コピーが使えないため本文を選択しました。手動でコピーしてください。');
   }
 });
-$('download').addEventListener('click', () => {
-  if (!current) return;
-  const url = URL.createObjectURL(new Blob([current.text], { type: 'text/markdown;charset=utf-8' }));
+function downloadText(content, name, type) {
+  const url = URL.createObjectURL(new Blob([content], { type }));
   const a = link('', url);
-  a.download = `vehicle-brief-${current.profile?.id ?? 'custom'}-${lang}.md`;
+  a.download = name;
   document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-  status.textContent = t('Markdown file prepared for download.', 'Markdownファイルをダウンロードできます。');
+}
+$('download-checklist').addEventListener('click', () => {
+  if (!current) return;
+  downloadText(current.worksheetText, `vehicle-checklist-${current.profile?.id ?? 'custom'}-${lang}.txt`, 'text/plain;charset=utf-8');
+  status.textContent = t('Checklist download started. Review the saved file before sharing.', '確認メモの保存を開始しました。共有前に保存した内容を確認してください。');
+});
+$('download').addEventListener('click', () => {
+  if (!current) return;
+  downloadText(current.text, `vehicle-brief-${current.profile?.id ?? 'custom'}-${lang}.md`, 'text/markdown;charset=utf-8');
+  status.textContent = t('AI prompt download started. Review the saved file before sharing.', 'AI質問文の保存を開始しました。共有前に保存した内容を確認してください。');
 });
 $('share').addEventListener('click', async () => {
   const url = shareURL(data, input());
