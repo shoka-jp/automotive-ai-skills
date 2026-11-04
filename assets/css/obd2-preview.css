@@ -11,4 +11,6 @@ section{margin:36px 0}.next{display:flex;gap:12px;flex-wrap:wrap}.button{display
 footer{padding:24px 0;line-height:1.7;font-size:.95rem}
 header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 button.button{border:0;font:inherit;font-weight:700;cursor:pointer} button:disabled{opacity:.6;cursor:wait}
-[hidden]{display:none!important} .copy-controls{margin-top:12px} #copy-status{min-height:1.7em;line-height:1.7}
+[hidden]{display:none!important} .copy-controls{margin-top:12px} #copy-status,#handover-status{min-height:1.7em;line-height:1.7}
+.handover{background:#fff;border:1px solid #cddcda;border-radius:16px;padding:clamp(18px,4vw,28px);line-height:1.7}
+.handover h2{margin-top:0}.handover textarea{display:block;width:100%;min-height:19rem;margin-top:12px;padding:16px;border:1px solid #91aaa5;border-radius:12px;font:inherit;line-height:1.7;color:#172b3c;background:#f8fbfa;resize:vertical}

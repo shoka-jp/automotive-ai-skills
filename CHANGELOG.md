@@ -11,6 +11,8 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Add an editable, copyable simulated workshop handover note to the bilingual browser OBD preview.
+
 - Bilingual questions for all six vehicle-brief goals, visible even without a
   matching model reference. Visitors can copy or print a human-readable
   checklist for a viewing or workshop without using an AI service; reference
