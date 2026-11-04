@@ -174,6 +174,16 @@ try {
       const requests = [];
       const captureRequest = request => requests.push(request.url());
       page.on('request', captureRequest);
+      const storageBefore = await page.evaluate(() => [JSON.stringify(localStorage), JSON.stringify(sessionStorage)]);
+      const note = await page.locator('#sample-handover').inputValue();
+      for (const value of ['P0420', '98 km', '2,210 rpm', '740 rpm']) assert.ok(note.includes(value));
+      assert.ok(note.includes(lang === 'ja' ? '模擬サンプル' : 'SIMULATED EXAMPLE'));
+      const editedNote = note + '\nTest observation';
+      await page.locator('#sample-handover').fill(editedNote);
+      await page.click('#copy-handover');
+      await page.waitForFunction(() => !document.querySelector('#copy-handover').disabled);
+      assert.equal(await page.evaluate(() => navigator.clipboard.readText()), editedNote);
+      assert.equal(await page.locator('#handover-status').textContent(), await page.locator('#copy-handover').getAttribute('data-success'));
       await page.click('#copy-prompt');
       await page.waitForFunction(() => !document.querySelector('#copy-prompt').disabled);
       assert.equal(await page.evaluate(() => navigator.clipboard.readText()), prompt);
@@ -188,6 +198,12 @@ try {
       assert.equal(await page.locator('#copy-status').textContent(), await page.locator('#copy-prompt').getAttribute('data-fallback'));
       assert.equal(await page.evaluate(() => document.activeElement.id), 'sample-prompt');
       assert.deepEqual(await page.locator('#sample-prompt').evaluate(el => [el.selectionStart, el.selectionEnd]), [0, prompt.length]);
+      await page.click('#copy-handover');
+      await page.waitForFunction(() => !document.querySelector('#copy-handover').disabled);
+      assert.equal(await page.locator('#handover-status').textContent(), await page.locator('#copy-handover').getAttribute('data-fallback'));
+      assert.equal(await page.evaluate(() => document.activeElement.id), 'sample-handover');
+      assert.deepEqual(await page.locator('#sample-handover').evaluate(el => [el.selectionStart, el.selectionEnd]), [0, editedNote.length]);
+      assert.deepEqual(await page.evaluate(() => [JSON.stringify(localStorage), JSON.stringify(sessionStorage)]), storageBefore);
       assert.deepEqual(requests, [], 'Copying must not submit the sample to any service');
       page.off('request', captureRequest);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'OBD preview must fit the viewport');
@@ -205,6 +221,10 @@ try {
       assert.equal(await staticPage.locator('details .body').first().isVisible(), true);
       assert.ok((await staticPage.locator('#sample-prompt').inputValue()).includes('P0420'));
       assert.equal(await staticPage.locator('#copy-prompt').isVisible(), false);
+      assert.ok((await staticPage.locator('#sample-handover').inputValue()).includes('P0420'));
+      await staticPage.locator('#sample-handover').fill('Editable without JavaScript');
+      assert.equal(await staticPage.locator('#sample-handover').inputValue(), 'Editable without JavaScript');
+      assert.equal(await staticPage.locator('#copy-handover').isVisible(), false);
     } finally { await noScript.close(); }
   }
   assert.deepEqual(errors, []);

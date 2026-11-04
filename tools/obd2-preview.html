@@ -1,7 +1,7 @@
 ---
 layout: null
 title: Explore sample OBD-II car data without installing anything
-description: Open sample trouble-code, freeze-frame and current-reading cards, then copy a question for your preferred AI. No car, account or installation required.
+description: Explore simulated trouble codes and readings, then edit a workshop note. No car, account or installation required.
 lang: en
 locale: en_US
 ---
@@ -11,11 +11,11 @@ locale: en_US
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {% include seo.html %}
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}?v={{ site.github.build_revision | default: '20261104-handover' }}">
 <link rel="alternate" hreflang="en" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
 <link rel="alternate" hreflang="ja" href="{{ '/tools/obd2-preview.ja.html' | absolute_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
-<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}?v={{ site.github.build_revision | default: '20261104-handover' }}" defer></script>
 </head>
 <body>
 <header><a href="{{ '/' | relative_url }}">← Automotive AI Skills</a><a href="{{ '/tools/obd2-preview.ja.html' | relative_url }}" lang="ja" hreflang="ja">日本語</a></header>
@@ -28,6 +28,20 @@ locale: en_US
 <details><summary>When it was recorded <strong>98 km/h</strong>The vehicle was moving</summary><div class="body"><p>Engine speed was 2,210 rpm and coolant temperature was 88°C. This snapshot from when the code was recorded is called a freeze frame.</p></div></details>
 <details><summary>Current sample reading <strong>0 km/h</strong>The vehicle is stationary</summary><div class="body"><p>Engine speed is 740 rpm and coolant temperature is 89°C. Current readings can differ from the conditions recorded with the code.</p></div></details>
 </div></section>
+<section class="handover" aria-labelledby="handover-heading"><h2 id="handover-heading">A sample note for a mechanic</h2>
+<p><strong>This is a simulated example from a fictional vehicle.</strong> To use it for a real vehicle, replace every item, including the opening sample label, with the actual information and review it before sharing.</p>
+<p>You can edit this field. This page does not send or save what you type. Check whether the recipient needs identifying details such as a VIN or your name before including them.</p>
+<label for="sample-handover"><strong>Workshop note to edit and copy</strong></label>
+<textarea id="sample-handover" rows="12">[SIMULATED EXAMPLE — NOT A REAL VEHICLE RECORD]
+Vehicle, year and mileage: unknown
+Concern: warning light shown in this example
+Stored code: P0420 (simulated)
+When recorded: 98 km/h, 2,210 rpm, coolant 88°C
+Current sample: 0 km/h, 740 rpm, coolant 89°C
+Unknown: actual vehicle condition, inspection results and cause
+Question: What should be checked next based on these records?
+Please do not determine a cause or replacement part from the code alone.</textarea>
+<div class="copy-controls"><button class="button" id="copy-handover" type="button" hidden data-success="Workshop note copied. Review it before sharing." data-fallback="Automatic copying is unavailable. The note is selected; use your device's Copy command.">Copy workshop note</button><p id="handover-status" role="status" aria-live="polite"></p></div></section>
 <section aria-labelledby="ask-ai"><h2 id="ask-ai">Ask your AI about this example</h2><p>Copy the text below and paste it into the AI you normally use. Nothing is sent automatically from this page.</p><label for="sample-prompt"><strong>Question to copy (simulated data)</strong></label><textarea id="sample-prompt" readonly rows="12" style="display:block;width:100%;min-height:18rem;margin-top:12px;padding:16px;border:1px solid #91aaa5;border-radius:12px;font:inherit;line-height:1.7;color:#172b3c;background:white">This is simulated data from a fictional vehicle. The stored trouble code is P0420. When the code was recorded, speed was 98 km/h, engine speed was 2,210 rpm and coolant temperature was 88°C. The current sample shows the vehicle stationary, with engine speed at 740 rpm and coolant temperature at 89°C.
 
 Separate what these readings show from what remains unknown. Suggest three questions to ask a mechanic. Do not claim a confirmed cause or recommend replacing a part from this code alone.</textarea><div class="copy-controls"><button class="button" id="copy-prompt" type="button" hidden data-success="Copied. Paste the question into your preferred AI." data-fallback="Automatic copying is unavailable. The question is selected; use your device's Copy command.">Copy question</button><p id="copy-status" role="status" aria-live="polite"></p></div><p>Responses vary by AI. If you use a real vehicle's details with an external service, leave out VINs and personal information.</p></section>

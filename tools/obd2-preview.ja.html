@@ -1,7 +1,7 @@
 ---
 layout: null
 title: 車なしで体験するOBD-IIデータ
-description: インストール不要で、車の模擬故障コードと記録時・現在のデータを見比べる体験。
+description: インストール不要で、模擬故障コードと記録時・現在のデータを見比べ、整備相談メモを編集できる体験。
 lang: ja
 locale: ja_JP
 ---
@@ -11,11 +11,11 @@ locale: ja_JP
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {% include seo.html %}
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/automotive-ai-skills-logo.svg' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/obd2-preview.css' | relative_url }}?v={{ site.github.build_revision | default: '20261104-handover' }}">
 <link rel="alternate" hreflang="en" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
 <link rel="alternate" hreflang="ja" href="{{ '/tools/obd2-preview.ja.html' | absolute_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ '/tools/obd2-preview.html' | absolute_url }}">
-<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/obd2-preview.js' | relative_url }}?v={{ site.github.build_revision | default: '20261104-handover' }}" defer></script>
 </head>
 <body>
 <header><a href="{{ '/README.ja.html' | relative_url }}">← Automotive AI Skills</a><a href="{{ '/tools/obd2-preview.html' | relative_url }}" lang="en" hreflang="en">English</a></header>
@@ -28,6 +28,20 @@ locale: ja_JP
 <details><summary>記録された瞬間 <strong>98 km/h</strong>走行中の状態</summary><div class="body"><p>回転数は2,210 rpm、水温は88°C。故障コードが記録されたときの状態を「フリーズフレーム」と呼びます。</p></div></details>
 <details><summary>現在の状態 <strong>0 km/h</strong>停車中の状態</summary><div class="body"><p>回転数は740 rpm、水温は89°C。現在の読み取り値と、記録時の状態は違うことがあります。</p></div></details>
 </div></section>
+<section class="handover" aria-labelledby="handover-heading"><h2 id="handover-heading">整備相談メモの見本</h2>
+<p><strong>架空の車の模擬サンプルです。</strong> 実車の相談に使う場合は、先頭の「模擬サンプル」を含む全項目を実際の情報に書き換え、内容を確認してください。</p>
+<p>この欄は編集できます。入力内容はこのページから送信・保存されません。車台番号や氏名などは、共有先に必要か確認してください。</p>
+<label for="sample-handover"><strong>編集してコピーできる相談メモ</strong></label>
+<textarea id="sample-handover" rows="12">【模擬サンプル・実車の記録ではありません】
+車種・年式・走行距離：未確認
+相談内容：警告灯が点灯した想定
+保存されたコード：P0420（模擬）
+記録時：98 km/h、2,210 rpm、水温88°C
+現在のサンプル：0 km/h、740 rpm、水温89°C
+未確認：実車の状態、点検結果、原因
+相談したいこと：この記録から、次にどの確認が必要でしょうか？
+※コードだけで原因や交換部品を確定しないでください。</textarea>
+<div class="copy-controls"><button class="button" id="copy-handover" type="button" hidden data-success="相談メモをコピーしました。共有前に内容を確認してください。" data-fallback="自動コピーできないため、メモを選択しました。端末のコピー操作でコピーしてください。">相談メモをコピー</button><p id="handover-status" role="status" aria-live="polite"></p></div></section>
 <section aria-labelledby="ask-ai"><h2 id="ask-ai">この例をAIに聞いてみる</h2><p>下の文章を選択してコピーし、普段使っているAIに貼り付けてください。このページから自動で送信されることはありません。</p><label for="sample-prompt"><strong>コピーする質問文（模擬データ）</strong></label><textarea id="sample-prompt" readonly rows="12" style="display:block;width:100%;min-height:18rem;margin-top:12px;padding:16px;border:1px solid #91aaa5;border-radius:12px;font:inherit;line-height:1.7;color:#172b3c;background:white">これは架空の車の模擬データです。保存された故障コードはP0420です。コードが記録されたときは時速98 km、エンジン回転数2,210 rpm、水温88°Cでした。現在は停車中で、回転数740 rpm、水温89°Cです。
 
 この情報から分かる事実と、まだ分からないことを分けて、整備士に相談するときの質問を3つ教えてください。原因や交換部品を断定しないでください。</textarea><div class="copy-controls"><button class="button" id="copy-prompt" type="button" hidden data-success="コピーしました。普段使っているAIに貼り付けてください。" data-fallback="自動コピーできないため、質問文を選択しました。端末のコピー操作でコピーしてください。">質問文をコピー</button><p id="copy-status" role="status" aria-live="polite"></p></div><p>出力はAIによって異なります。実際の車の情報を外部サービスに入力する場合は、車台番号や個人情報を含めないでください。</p></section>
