@@ -48,10 +48,11 @@ try {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.click('[data-demo=nbox]');
     assert.equal(await page.evaluate(() => document.activeElement.id), 'result-title');
-    assert.ok(await page.locator('#result-title').evaluate(el => {
-      const rect = el.getBoundingClientRect();
+    // site.css uses smooth scrolling, so focus can move before scrolling finishes.
+    await page.waitForFunction(() => {
+      const rect = document.querySelector('#result-title').getBoundingClientRect();
       return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    }), 'The result heading must be visible after choosing a sample on mobile');
+    }, null, { timeout: 5000 });
     await page.setViewportSize({ width: 1365, height: 1000 });
     assert.deepEqual(errors, [], 'The sample should render without a browser exception');
     assert.deepEqual(new Set(loadedVersions.keys()), versionedAssets);
