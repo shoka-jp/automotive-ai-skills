@@ -93,6 +93,9 @@ function generate() {
     $('empty').hidden = true;
     $('share-value').hidden = true;
     status.textContent = t('Checklist ready. Use it at your visit or print it. An AI prompt is also available.', '確認メモを作成しました。そのまま相談や印刷に使えます。AIへの質問文もコピーできます。');
+    // On narrow screens the result sits below the long form. Move both the
+    // viewport and keyboard/screen-reader focus to the newly created result.
+    $('result-title').focus();
   } catch (error) {
     status.textContent = error.message;
   }
