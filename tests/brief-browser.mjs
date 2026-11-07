@@ -45,7 +45,15 @@ try {
     await page.goto(base + `tools/vehicle-brief${lang === 'ja' ? '.ja' : ''}.html`);
     await page.locator('[data-demo=nbox]').waitFor({ state: 'visible' });
     await page.waitForFunction(() => !document.querySelector('[data-demo=nbox]').disabled);
+    await page.setViewportSize({ width: 390, height: 844 });
     await page.click('[data-demo=nbox]');
+    assert.equal(await page.evaluate(() => document.activeElement.id), 'result-title');
+    // site.css uses smooth scrolling, so focus can move before scrolling finishes.
+    await page.waitForFunction(() => {
+      const rect = document.querySelector('#result-title').getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }, null, { timeout: 5000 });
+    await page.setViewportSize({ width: 1365, height: 1000 });
     assert.deepEqual(errors, [], 'The sample should render without a browser exception');
     assert.deepEqual(new Set(loadedVersions.keys()), versionedAssets);
     assert.equal(new Set(loadedVersions.values()).size, 1, 'UI, core, data and styles must share the deployment version');
@@ -82,6 +90,7 @@ try {
     const requested = [];
     page.on('request', request => requested.push(request.url()));
     await page.click('#generate');
+    assert.equal(await page.evaluate(() => document.activeElement.id), 'result-title', 'Building a brief should focus the result');
     await page.click('#share');
     const shared = await page.locator('#share-value').inputValue();
     assert.ok(!shared.includes('PRIVATE') && !shared.includes('2019') && !shared.includes('img'));
