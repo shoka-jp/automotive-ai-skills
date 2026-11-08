@@ -46,30 +46,30 @@ jobs:
   links-internal:
     name: Internal links
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       # Offline mode verifies in-repo relative links only. Markdown files
       # only: layouts/index.html contain Liquid variables lychee cannot
       # resolve and would report as false positives.
-      - uses: lycheeverse/lychee-action@v2
+      - uses: ./.github/actions/check-links
         with:
           args: --offline --no-progress --include-fragments "**/*.md"
-          fail: true
 
   links-external:
     name: External links (non-blocking)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       # External URLs are checked but never block: forums and vendor pages
       # rate-limit and flake. Review the step summary when it goes red.
-      - uses: lycheeverse/lychee-action@v2
+      - uses: ./.github/actions/check-links
         with:
           # NHTSA blocks automated CI requests with 403; verify this URL manually.
           # Only this exact recall lookup URL is excluded. Other URLs remain checked.
-          args: --no-progress --scheme https --scheme http --exclude '^https://www[.]nhtsa[.]gov/recalls/?$' "**/*.md"
-          fail: true
+          args: --no-progress --max-concurrency 8 --max-retries 5 --retry-wait-time 2 --scheme https --scheme http --exclude '^https://www[.]nhtsa[.]gov/recalls/?$' "**/*.md"
 
 
   brief:
