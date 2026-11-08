@@ -98,6 +98,7 @@ node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang j
 - 📗 [日本のユーザー向けガイド](./docs/ja/japan-guide.md) — 米国向け記述の読み替え表、軽自動車・国内中古車市場での使い方、用語対訳
 - ✅ [車検前セルフチェックリスト](./docs/ja/shaken-checklist.md) — 車検（継続検査）前の点検項目と、AIスキルとの組み合わせ方
 - 💬 会話例の日本語版 — [P0420の診断](./examples/obd2-p0420-diagnosis.ja.md) / [中古車チェック](./examples/used-car-inspection.ja.md) / [キャッチアップ整備計画](./examples/maintenance-catchup-plan.ja.md)
+- 📝 受付・販売の実践会話例 — [再現しない症状の受付](./examples/service-intake-intermittent.ja.md) / [診断料充当を含む見積比較](./examples/repair-estimate-scope-credit.ja.md) / [追加情報に応じた販売文の修正](./examples/used-car-listing-evidence.ja.md)。いずれも架空の教材です。
 - 🗃️ [既知問題データベース(日本語ガイド)](./data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法と[日本語テンプレート](./data/known-issues/TEMPLATE.ja.md)。軽自動車・国内専売車のエントリを特に募集中
 
 [ブラウザで模擬OBD-IIデータを体験](https://shoka-jp.github.io/automotive-ai-skills/tools/obd2-preview.ja.html) — インストール・登録・車は不要。カードを開き、普段使うAIへの質問文をコピーできます。[MCPデモを自分で実行する手順](./docs/try-obd2-mcp.ja.md)には、コマンド・取得結果・検証範囲を掲載しています。

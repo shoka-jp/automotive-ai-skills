@@ -1,8 +1,8 @@
 schema_version: 1
 name: used-car-listing-assistant
 title: Used Car Listing Assistant
-summary: Draft used-vehicle listings from documented specifications, condition disclosures, and an explicit
-  price breakdown without unsupported claims.
+summary: Draft and revise used-vehicle listings from documented facts, visible defects, mileage evidence,
+  and explicit price conditions without unsupported claims.
 audience: Independent dealers, sales staff, and private sellers
 tags:
 - used-car
