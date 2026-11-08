@@ -115,6 +115,15 @@ try {
     assert.equal(await page.evaluate(() => navigator.clipboard.readText()), fullPrompt);
     await page.uncheck('#omit-notes');
     assert.equal(await page.locator('#checklist-output').inputValue(), fullChecklist, 'Turning omission off restores the checklist');
+    await page.check('#omit-notes');
+    await page.fill('#context', 'NEW PRIVATE HISTORY');
+    assert.equal(await page.locator('#result').isVisible(), false);
+    await page.click('#generate');
+    assert.equal(await page.locator('#omit-notes').isChecked(), true);
+    assert.ok(!(await page.locator('#checklist-output').inputValue()).includes('NEW PRIVATE HISTORY'));
+    assert.ok((await page.locator('#output').inputValue()).includes('NEW PRIVATE HISTORY'));
+    await page.uncheck('#omit-notes');
+    assert.ok((await page.locator('#checklist-output').inputValue()).includes('NEW PRIVATE HISTORY'));
     await page.click('#share');
     const shared = await page.locator('#share-value').inputValue();
     assert.ok(!shared.includes('PRIVATE') && !shared.includes('2019') && !shared.includes('img'));
@@ -190,7 +199,9 @@ try {
     await page.click('#copy');
     assert.equal(await page.locator('#prompt-details').getAttribute('open'), '');
     assert.equal(await page.evaluate(() => document.activeElement.id), 'output');
+    await page.check('#omit-notes');
     await page.click('#clear-inputs');
+    assert.equal(await page.locator('#omit-notes').isChecked(), false);
     assert.equal(await page.locator('#output').inputValue(), '');
     assert.equal(await page.locator('#checklist-output').inputValue(), '');
     assert.equal(await page.locator('#print-output').textContent(), '');
