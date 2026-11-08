@@ -1,0 +1,49 @@
+name: Temporary link retry probe
+on:
+  pull_request:
+jobs:
+  retry-and-fail-closed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simulate one transient download failure
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/curl-probe"
+          cat > "$RUNNER_TEMP/curl-probe/curl" <<'SH'
+          #!/usr/bin/env bash
+          set -eu
+          count_file="$RUNNER_TEMP/lychee-curl-count"
+          count=0
+          if [ -f "$count_file" ]; then count=$(cat "$count_file"); fi
+          count=$((count + 1))
+          printf '%s\n' "$count" > "$count_file"
+          if [ "$count" -eq 1 ]; then
+            echo 'Simulated transient lychee download failure' >&2
+            exit 22
+          fi
+          exec /usr/bin/curl "$@"
+          SH
+          chmod +x "$RUNNER_TEMP/curl-probe/curl"
+          echo "$RUNNER_TEMP/curl-probe" >> "$GITHUB_PATH"
+      - name: Verify a transient setup failure is retried
+        uses: ./.github/actions/check-links
+        with:
+          args: --offline --no-progress README.md
+      - name: Confirm another download was attempted
+        shell: bash
+        run: test "$(cat "$RUNNER_TEMP/lychee-curl-count")" -ge 2
+      - name: Create a broken-link fixture
+        shell: bash
+        run: printf '[broken](missing-ci-probe-target.md)\n' > ci-link-probe.md
+      - name: Check the broken fixture
+        id: broken
+        continue-on-error: true
+        uses: ./.github/actions/check-links
+        with:
+          args: --offline --no-progress ci-link-probe.md
+      - name: Confirm a broken link fails the action
+        shell: bash
+        env:
+          CHECK_OUTCOME: ${{ steps.broken.outcome }}
+        run: test "$CHECK_OUTCOME" = failure
