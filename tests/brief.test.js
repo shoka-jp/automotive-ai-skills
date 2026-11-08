@@ -159,6 +159,24 @@ test('a shared link contains only approved vehicle and task identifiers', () => 
   const custom = shareURL(data, { vehicle: secret, task: secret });
   assert.equal(new URL(custom).search, '');
 });
+test('every preset shares only its vehicle and task in both languages', () => {
+  const privateInputs = {
+    year: '2088',
+    code: 'FICTIONAL-MODEL-CODE',
+    market: 'FICTIONAL-MARKET',
+    vehicleName: 'FICTIONAL-VEHICLE-NAME',
+    context: 'FICTIONAL-HISTORY-AND-CUSTOMER',
+    concern: 'FICTIONAL-PRIVATE-CONCERN',
+  };
+  for (const profile of data.profiles) for (const workflow of data.workflows) for (const lang of ['en', 'ja']) {
+    const url = new URL(shareURL(data, { ...privateInputs, vehicle: profile.id, task: workflow.id, lang }));
+    const label = `${profile.id}/${workflow.id}/${lang}`;
+    assert.equal(url.pathname, `/automotive-ai-skills/tools/vehicle-brief${lang === 'ja' ? '.ja' : ''}.html`, label);
+    assert.deepEqual([...url.searchParams.keys()].sort(), ['task', 'vehicle'], label);
+    assert.deepEqual(readPreset(data, url.search), { vehicle: profile.id, task: workflow.id }, label);
+    for (const value of Object.values(privateInputs)) assert.ok(!decodeURIComponent(url.href).includes(value), `${label}: leaked ${value}`);
+  }
+});
 test('shared links do not restore arbitrary URL input or unsafe task IDs', () => {
   assert.deepEqual(readPreset(data, '?vehicle=nbox&task=buy&concern=secret&year=2019'), { vehicle: 'nbox', task: 'buy' });
   assert.deepEqual(readPreset(data, '?vehicle=<script>&task=../../bad'), { vehicle: '', task: 'buy' });
