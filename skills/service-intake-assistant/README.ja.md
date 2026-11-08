@@ -1,6 +1,6 @@
 # Service Intake Assistant（整備受付アシスタント）
 
-[English](./README.md) | **日本語**
+[English](./README.md) | **日本語** | [Español](./README.es.md)
 
 運転者の説明を整理し、診断結果を作り上げずに、整備受付票と整備士への申し送りを作成します。
 

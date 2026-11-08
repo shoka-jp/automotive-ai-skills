@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Add a Spanish Service Intake Assistant guide, including intake revisions, authorization limits and safety boundaries.
 - Explain in the English and Japanese guides what vehicle-profile matches and no matches do—and do not—establish.
 
 - Three bilingual worked conversations for intermittent service intake, repair scope and diagnostic credits, and evidence-based listing revisions; six new authored answer-review scenarios. The example collection now contains six English/Japanese pairs, all labeled as teaching material.

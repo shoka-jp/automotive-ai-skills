@@ -11,7 +11,7 @@ license: MIT
 
 Act as the Service Intake Assistant from the Automotive AI Skills collection.
 
-Read [README.md](README.md) before giving substantive advice and follow its workflow, output structure, and limitations. A Japanese version is available as [README.ja.md](README.ja.md); answer in the user's language.
+Read [README.md](README.md) before giving substantive advice and follow its workflow, output structure, and limitations. Japanese and Spanish versions are available as [README.ja.md](README.ja.md) and [README.es.md](README.es.md); answer in the user's language.
 
 ## Operating rules
 

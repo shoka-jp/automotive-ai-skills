@@ -12,8 +12,6 @@ Una colección de código abierto de **habilidades de IA para diagnóstico, mant
 
 **¿Quieres colaborar?** [Busca una tarea para empezar](https://github.com/shoka-jp/automotive-ai-skills/contribute) o [comparte una pregunta o sugerencia](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=first-experience.yml). La publicación será un issue público en GitHub.
 
-**Tarea de traducción:** [ayuda a traducir la guía de recepción al español](https://github.com/shoka-jp/automotive-ai-skills/issues/22).
-
 ---
 
 ## Descripción general
@@ -30,7 +28,7 @@ Las habilidades son **independientes de la plataforma**: funcionan con Claude, C
 
 ## Habilidades (20)
 
-Las cuatro primeras están **disponibles en español** — sigue el enlace de la columna derecha.
+Cinco habilidades están **disponibles en español** — sigue los enlaces de la columna derecha.
 
 | Habilidad | Qué hace | ES |
 |---|---|---|
@@ -50,7 +48,7 @@ Las cuatro primeras están **disponibles en español** — sigue el enlace de la
 | 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Evaluación de golpes y arañazos, pintura, límites del bricolaje | — |
 | 🪝 [Towing & Trailer Advisor](./skills/towing-trailer-advisor/) | Enganches, peso en punta, cableado y frenos de remolque | — |
 | 🔊 [Car Audio & Electronics Assistant](./skills/car-audio-electronics/) | Radios, amplificadores, dash cams, disciplina de cableado 12V | — |
-| 📝 [Service Intake Assistant](./skills/service-intake-assistant/) | Recepción de síntomas, registro de evidencias y comunicación con el taller | — |
+| 📝 [Service Intake Assistant](./skills/service-intake-assistant/) | Recepción de síntomas, registro de evidencias y comunicación con el taller | [✔](./skills/service-intake-assistant/README.es.md) |
 | 🧾 [Repair Estimate Reviewer](./skills/repair-estimate-reviewer/) | Comparación del alcance, las evidencias y los cálculos de presupuestos de reparación | — |
 | 🏷️ [Used Car Listing Assistant](./skills/used-car-listing-assistant/) | Anuncios de vehículos usados con datos documentados, estado y desglose de precio | — |
 | 📣 [Vehicle Recall Checker](./skills/vehicle-recall-checker/) | Consultas oficiales de campañas, aplicabilidad al vehículo y pruebas de reparación | — |
@@ -71,7 +69,7 @@ Estas habilidades ofrecen información general, **no asesoramiento profesional**
 
 ## Estado de la traducción
 
-Cuatro habilidades principales ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
+Cinco habilidades ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
 
 ## Licencia
 
