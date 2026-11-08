@@ -8,36 +8,37 @@ body:
       value: |
         Accuracy reports are the most valuable contribution to this project. Thank you!
         **Safety-critical issues** (content that could cause injury if followed) are prioritized above all other work.
-        日本語での報告も歓迎します。
+        Issues are public; remove VINs, license plates, credentials and personal information from text, images and logs.
+        日本語での報告も歓迎します。Issueは公開されるため、車台番号・ナンバー・認証情報・個人情報は画像やログからも取り除いてください。
   - type: input
     id: location
     attributes:
-      label: File and section
-      description: "Which file and section contains the problem?"
+      label: File and section / ファイル・箇所
+      description: "Which file and section contains the problem? / 問題のあるファイルと箇所を教えてください。"
       placeholder: "skills/obd2-diagnostic-assistant/README.md — Capabilities"
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: What is incorrect or dangerous?
-      description: "Quote the problematic text and explain what's wrong with it."
+      label: What is incorrect or dangerous? / 誤りや危険な点
+      description: "Quote the text and explain the concern. / 該当する文章と気になる理由を記載してください。"
     validations:
       required: true
   - type: textarea
     id: correction
     attributes:
-      label: Suggested correction
-      description: "If you know the correct information, share it — sources or reasoning appreciated."
+      label: Suggested correction / 修正案
+      description: "Optional: sources or reasoning are helpful. / 任意：出典や理由があれば記載してください。"
     validations:
       required: false
   - type: dropdown
     id: severity
     attributes:
-      label: Severity
+      label: Severity / 重要度
       options:
-        - "Safety-critical — could cause injury or vehicle damage if followed"
-        - "Misleading — wastes money or time"
-        - "Minor — typo, outdated detail, unclear wording"
+        - "Safety-critical — could cause injury or vehicle damage / けがや車両損傷につながる可能性"
+        - "Misleading — wastes money or time / 誤解を招き、費用や時間を損なう可能性"
+        - "Minor — typo, outdated detail, unclear wording / 誤字・古い情報・分かりにくい表現"
     validations:
       required: true
