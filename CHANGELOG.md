@@ -78,6 +78,8 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Make beginner-friendly contribution tasks and bilingual participation guidance easier to find.
+
 - Six relevant skills and agent routing now load reviewed model references
   before model-specific claims, with explicit missing-resource/no-match handling.
 
