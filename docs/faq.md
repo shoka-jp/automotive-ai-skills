@@ -31,6 +31,14 @@ The [example conversations](../examples/) are teaching scenarios. Their dialogue
 
 ## Trust and accuracy
 
+### Does a matching vehicle profile prove recall eligibility or completion?
+
+No. A match selects a candidate reference, not a result for an individual vehicle. The exact variant and original market matter; check eligibility through the appropriate official lookup and confirm completion against the vehicle's records. See [quality and limits](./quality.md) and [reference routing](./model-reference-routing.md).
+
+### Does no profile match mean there are no recalls or faults?
+
+No. It means the selector has no matching reviewed profile; it does not establish that a vehicle is fault-free or has no recalls. Check the exact variant and original market, then use the relevant official lookup and service records. See [quality and limits](./quality.md) and [reference routing](./model-reference-routing.md).
+
 ### Can I trust the torque specs / capacities the AI gives me?
 
 **No — treat them as starting estimates only.** Language models recall plausible values, which is exactly what makes wrong ones dangerous. Every skill instructs you to verify specifications against factory documentation, and that instruction is the load-bearing part. See the [safety disclaimer](./safety-disclaimer.md).
