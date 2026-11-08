@@ -12,6 +12,7 @@ invalidates existing links or skill usage patterns.
 ### Added
 
 - Add a Spanish Service Intake Assistant guide, including intake revisions, authorization limits and safety boundaries.
+- Explain in the English and Japanese guides what vehicle-profile matches and no matches do—and do not—establish.
 
 - Three bilingual worked conversations for intermittent service intake, repair scope and diagnostic credits, and evidence-based listing revisions; six new authored answer-review scenarios. The example collection now contains six English/Japanese pairs, all labeled as teaching material.
 
@@ -107,6 +108,8 @@ invalidates existing links or skill usage patterns.
   FAQ translation coverage now matches the repository.
 
 ### Fixed
+
+- Keep variant matching consistent when model-code aliases contain full-width characters or spaces, and do not attach references when separately supplied codes conflict; preserve both conflicting inputs for review.
 
 - Vehicle brief pages, modules, data and styles now share a deployment version
   in asset URLs, preventing new controls from loading cached older code/data.
