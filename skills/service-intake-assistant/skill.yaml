@@ -12,6 +12,7 @@ tags:
 languages:
   en: README.md
   ja: README.ja.md
+  es: README.es.md
 related:
 - vehicle-troubleshooting
 - repair-estimate-reviewer

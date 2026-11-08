@@ -1,6 +1,6 @@
 # Service Intake Assistant
 
-**English** | [日本語](./README.ja.md)
+**English** | [日本語](./README.ja.md) | [Español](./README.es.md)
 
 Turn a driver's observations into a clear service intake note and technician handoff without inventing a diagnosis.
 
