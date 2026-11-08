@@ -1,0 +1,35 @@
+name: "Website or software bug / サイト・ソフトの不具合"
+description: "Report behavior that differs from expectations / 期待と異なる動作を報告"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Issues are public: remove VINs, license plates, credentials, names, contact details and private material from text, screenshots and logs.
+        不具合報告を歓迎します。Issueは公開されます。車台番号・ナンバー・認証情報・個人情報などは、画像やログも含めて取り除いてください。
+  - type: textarea
+    id: actual
+    attributes:
+      label: "What happened? / 実際に起きたこと"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What did you expect? / 期待した動作"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / 再現手順"
+      description: "List what you tried. If it is intermittent, say what is known. / 試した順に記載し、時々起きる場合は分かる範囲で教えてください。"
+      placeholder: "1. Open ...\n2. Choose ...\n3. See ..."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment and sanitized details / 環境・公開可能な補足"
+      description: "Optional: page URL, browser, OS and version. Remove private URL parameters and personal information. / 任意：ページ、ブラウザー、OSや版。非公開のURL情報・個人情報は削除してください。"
+    validations:
+      required: false
