@@ -11,7 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
-- Add a bilingual first-use feedback form and make contribution links visible on the site and OBD preview.
+- Add a multilingual first-use feedback form and make contribution links visible on the site and OBD preview.
 
 - Save the vehicle checklist as a text file for offline use, separately from the AI prompt.
 

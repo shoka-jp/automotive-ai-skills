@@ -1,5 +1,5 @@
-name: "First-use feedback / はじめての感想"
-description: "Share a question or a confusing step / 分かりにくかった点や質問を共有"
+name: "Feedback / 感想 / Comentarios"
+description: "Questions or ideas / 質問・感想 / Preguntas o ideas"
 body:
   - type: markdown
     attributes:
@@ -7,28 +7,30 @@ body:
         Thanks for trying the project! A short question, suggestion or confusing step helps; no code or car is needed.
         **This issue will be public.** Remove VINs, license plates, credentials, names, contact details and other private information, including from screenshots and logs.
         試して分かりにくかった点や質問を歓迎します。**Issueは公開されます。** 車台番号、ナンバープレート、認証情報、氏名・連絡先などは画像やログからも取り除いてください。
+        ¡Gracias por probar el proyecto! Puedes escribir una pregunta o sugerencia sin saber programar ni tener un coche.
+        **Este issue será público.** No incluyas VIN, matrículas, credenciales, nombres, datos de contacto ni otra información privada, tampoco en capturas o registros.
   - type: dropdown
     id: area
     attributes:
-      label: "Where were you? / どこで気になりましたか？"
+      label: "Area / 場所 / Área"
       options:
-        - "Demo / デモ"
-        - "Documentation / 説明"
-        - "Other / その他"
+        - "Demo / デモ / Demostración"
+        - "Documentation / 説明 / Documentación"
+        - "Other / その他 / Otro"
     validations:
       required: false
   - type: textarea
     id: feedback
     attributes:
-      label: "What did you try, and what was unclear? / 試したことと、分かりにくかった点"
-      description: "A short description is fine. / 一言からで大丈夫です。"
-      placeholder: "For example: I tried the mock demo and could not find the next step. / 例：模擬デモの次に何をすればよいか迷いました。"
+      label: "What was unclear? / 分かりにくかった点 / ¿Qué fue confuso?"
+      description: "A short description is fine. / 一言からで大丈夫です。 / Una frase basta."
+      placeholder: "For example: I could not find the next step in the demo. / 例：デモの次の手順が分からなかった。 / Ejemplo: no encontré el siguiente paso de la demostración."
     validations:
       required: true
   - type: textarea
     id: suggestion
     attributes:
-      label: "What would help? / どうなると使いやすいですか？"
-      description: "Optional; a question without a proposed solution is welcome. / 任意です。解決案がなくても歓迎します。"
+      label: "What would help? / どうなると使いやすいですか？ / ¿Qué ayudaría?"
+      description: "Optional; questions without a solution are welcome. / 任意です。解決案がなくても歓迎します。 / Opcional; también aceptamos preguntas sin solución."
     validations:
       required: false
