@@ -11,6 +11,8 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Export human-readable vehicle checklists from the offline CLI with `--format checklist`, and optionally replace history and concern in either output format with explicit omission markers using `--omit-notes`.
+
 - Document the issue-to-PR workflow and add structured issue and PR templates.
 
 - Add a multilingual first-use feedback form and make contribution links visible on the site and OBD preview.

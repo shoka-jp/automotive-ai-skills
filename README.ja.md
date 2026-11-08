@@ -30,6 +30,14 @@
 
 **登録・APIキー・診断機は不要。** 入力内容は自動で送信・保存されません。保存を選ぶと端末にファイルが作成されます。共有リンクには車種と目的だけを含めます。AI診断や公式の個別照会は実行しません。
 
+Node.js 22以降と本リポジトリがあれば、コマンドから同じ確認メモをオフラインで作成できます。
+
+```sh
+node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang ja --format checklist --omit-notes > checklist.txt
+```
+
+`--omit-notes` は履歴・相談内容を省略した旨の表示に置き換えます。車種や型式などは残ります。出力形式を指定しない場合は従来どおりAI質問文です。[CLIの使い方とオプション](./docs/vehicle-brief-cli.ja.md)。
+
 メーカー等の出典を確認した10件を日本向け11車種から参照できます。他の車にも共通手順を利用でき、資料全体は20件です。[品質と限界](./docs/quality.ja.md) · [車種をリクエスト](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 
 役立ったら、GitHubの **Star** で保存・応援していただけると嬉しいです。確認できた事例や訂正も歓迎します。
