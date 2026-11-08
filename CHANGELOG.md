@@ -106,6 +106,8 @@ invalidates existing links or skill usage patterns.
 
 ### Fixed
 
+- Keep variant matching consistent when model-code aliases contain full-width characters or spaces, and do not attach references when separately supplied codes conflict; preserve both conflicting inputs for review.
+
 - Vehicle brief pages, modules, data and styles now share a deployment version
   in asset URLs, preventing new controls from loading cached older code/data.
 

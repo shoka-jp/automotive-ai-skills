@@ -15,8 +15,11 @@ export function resolveProfile(data, value) {
 
 const clean = (value, limit = 2000) => String(value ?? '').replace(/[\u0000-\u0008\u000B-\u001F\u007F]/g, '').slice(0, limit).trim();
 const normalizeCode = value => clean(value, 24).normalize('NFKC').toUpperCase().replace(/^(DBA|6BA|LDA|DAA|6AA)-/, '');
-const selectedCode = (profile, input) => normalizeCode(input.code) ||
-  (profile?.variants.find(v => v.code === normalizeCode(input.vehicle))?.code ?? '');
+// Resolve exact variant aliases using the same normalization as profile lookup.
+const variantCode = (profile, value) => profile?.variants.find(v => normalize(v.code) === normalize(normalizeCode(value)))?.code ?? '';
+const vehicleCode = (profile, input) => variantCode(profile, input.vehicle);
+const selectedCode = (profile, input) => (variantCode(profile, input.code) || normalizeCode(input.code)) ||
+  vehicleCode(profile, input);
 
 export function selectReferences(data, input) {
   const profile = resolveProfile(data, input.vehicle);
@@ -26,6 +29,11 @@ export function selectReferences(data, input) {
     return { status: 'invalid-year', profile, references: [] };
   }
   if (!profile) return { status: 'no-profile', profile: null, references: [] };
+  const vehicleVariant = vehicleCode(profile, input);
+  const explicitCode = variantCode(profile, input.code) || normalizeCode(input.code);
+  if (vehicleVariant && explicitCode && vehicleVariant !== explicitCode) {
+    return { status: 'conflicting-codes', profile, references: [] };
+  }
   if (input.market !== profile.market) {
     return { status: input.market === 'unknown' || !input.market ? 'unknown-market' : 'other-market', profile, references: [] };
   }
@@ -44,6 +52,7 @@ export const messages = {
     'no-profile': 'No reviewed model profile matched. Use the general workflow; no match is not evidence that the vehicle is fault-free or has no recalls.',
     'unknown-market': 'Market is unknown. Japan-market notices have not been attached; confirm the original market first.',
     'other-market': 'These reviewed profiles cover Japan. Use the manufacturer or regulator for the original market; Japanese coverage has not been applied.',
+    'conflicting-codes': 'The model codes conflict. Confirm the exact variant before selecting model-specific references; no reference was attached.',
     'code-mismatch': 'The model code does not match this profile. Confirm the generation and code before attaching model-specific references.',
     'outside-years': 'The supplied production year is outside this profile’s published reference window. No reference was attached; this does not clear the vehicle of other issues or recalls.',
     'invalid-year': 'Enter a four-digit production year from 1900 to 2100, or leave it blank. Do not substitute registration or model year without saying so.',
@@ -54,6 +63,7 @@ export const messages = {
     'no-profile': '確認済みの車種別資料は一致しませんでした。共通の確認手順を使います。一致なしは、故障やリコールがないことを意味しません。',
     'unknown-market': '仕向けが不明のため、日本向けの届出を添付していません。元の市場を先に確認してください。',
     'other-market': '確認済みの車種別資料は日本向けです。元の市場のメーカー・行政に照会し、日本向けの範囲を流用しないでください。',
+    'conflicting-codes': '入力された型式が食い違っています。正確な型式を確認するまで車種別資料を添付していません。',
     'code-mismatch': '型式がこの車種の資料と一致しません。世代と型式を確認してから車種別資料を選んでください。',
     'outside-years': '入力された製造年は、この資料の掲載範囲外です。資料は添付していませんが、他の不具合やリコールがないとは判断できません。',
     'invalid-year': '製造年は1900〜2100の西暦4桁、または空欄にしてください。初度登録年やモデル年を説明なしに置き換えないでください。',
@@ -76,6 +86,7 @@ export function makeBrief(data, input, options = {}) {
     '', `${ja ? '目的' : 'Goal'}: ${workflow.label[lang]}`, `${ja ? '作成日' : 'Prepared'}: ${today}`,
     '', ja ? '## 車両情報（利用者の入力・未検証）' : '## Vehicle context (user supplied, unverified)',
     `${ja ? '車種' : 'Vehicle'}: ${vehicle}`,
+    ...(result.status === 'conflicting-codes' ? [`${ja ? '車種欄に入力した型式' : 'Model code entered as vehicle'}: ${clean(input.vehicle, 120)}`] : []),
     `${ja ? '型式' : 'Model code'}: ${selectedCode(result.profile, input) || unknown}`,
     `${ja ? '製造年（初度登録年とは別）' : 'Production year (not registration year)'}: ${clean(input.year, 4) || unknown}`,
     `${ja ? '仕向け' : 'Market'}: ${market}`,
