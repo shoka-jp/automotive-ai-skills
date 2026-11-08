@@ -2,6 +2,16 @@
 
 Thank you for considering a contribution! This project improves through the collective knowledge of mechanics, engineers, enthusiasts, and everyday owners. This guide explains how to contribute effectively.
 
+## Find a first task
+
+Browse [open good first issues](https://github.com/shoka-jp/automotive-ai-skills/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22); each describes the goal and how to check the result. Leave a note on an issue before starting so others can avoid duplicating the work. Questions, reports and pull requests are welcome in English or Japanese. You can contribute documentation or tests without a car or an AI account; check each issue for its requirements.
+
+## 日本語
+
+[初めての方向けIssue](https://github.com/shoka-jp/automotive-ai-skills/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)から、目的と確認方法を見て選べます。作業の重複を避けるため、着手前にIssueへ一言コメントしてください。質問・報告・PRは日本語でも歓迎します。車やAIアカウントを使わずにできるドキュメントやテストの課題もあります。詳しくは各Issueをご確認ください。
+
+リポジトリをフォークしてブランチを作り、小さく変更してからPRを開いてください。変更理由と確認結果をPRに記載し、英日両方の作成が難しければ未翻訳の箇所もお知らせください。大きな変更は先にIssueで相談してください。
+
 ## Ways to Contribute
 
 - **Fix inaccuracies** — automotive misinformation can be expensive or dangerous; corrections are the most valuable contribution
