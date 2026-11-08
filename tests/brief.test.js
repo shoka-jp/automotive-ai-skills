@@ -35,8 +35,38 @@ test('a later FC26 is not confused with a later NC26', () => {
   const common = { market: 'Japan', year: '2014' };
   assert.equal(selectReferences(data, { ...common, vehicle: 'serena', code: 'FC26' }).status, 'outside-years');
   assert.equal(selectReferences(data, { ...common, vehicle: 'FC26' }).status, 'outside-years');
+  assert.equal(selectReferences(data, { ...common, vehicle: 'ＤＢＡ－ＦＣ ２６' }).status, 'outside-years');
   assert.equal(selectReferences(data, { ...common, vehicle: 'NC26' }).status, 'candidate');
   assert.equal(selectReferences(data, { ...common, vehicle: 'serena', code: 'HC26' }).status, 'code-mismatch');
+});
+test('conflicting exact codes cannot select another variant’s reference', () => {
+  for (const lang of ['en', 'ja']) {
+    const result = makeBrief(data, {
+      vehicle: 'DBA-FC26', code: 'NC26', market: 'Japan', year: '2014', task: 'recall', lang,
+    }, options);
+    assert.equal(result.status, 'conflicting-codes');
+    assert.deepEqual(result.references, []);
+    assert.match(result.text, /DBA-FC26/);
+    assert.match(result.text, /NC26/);
+    assert.doesNotMatch(result.text, /5268/);
+    assert.match(result.text, lang === 'ja' ? /型式が食い違っています/ : /model codes conflict/);
+    assert.match(result.worksheetText, lang === 'ja' ? /型式が食い違っています/ : /model codes conflict/);
+  }
+  const common = { market: 'Japan', year: '2011' };
+  assert.equal(selectReferences(data, { ...common, vehicle: 'DBA-FC26', code: 'FC26' }).status, 'candidate');
+  assert.equal(selectReferences(data, { ...common, vehicle: 'ＦＣ ２６', code: 'ＤＢＡ－ＦＣ２６' }).status, 'candidate');
+  assert.equal(selectReferences(data, { ...common, vehicle: 'ＦＣ ２６', code: 'NC26' }).status, 'conflicting-codes');
+  assert.equal(selectReferences(data, { ...common, vehicle: 'serena', code: 'NC26' }).status, 'candidate');
+  for (const market of ['unknown', 'other']) {
+    const result = makeBrief(data, { vehicle: 'FC26', code: 'NC26', market, lang: 'ja' }, options);
+    assert.equal(result.status, 'conflicting-codes');
+    assert.match(result.text, /FC26/);
+    assert.match(result.text, /NC26/);
+    assert.deepEqual(result.references, []);
+  }
+  const cli = execFileSync(process.execPath, ['scripts/vehicle_brief.mjs', '--vehicle', 'FC26', '--code', 'NC26', '--year', '2014', '--market', 'Japan', '--lang', 'ja'], { encoding: 'utf8' });
+  assert.match(cli, /型式が食い違っています/);
+  assert.doesNotMatch(cli, /5268/);
 });
 test('market must be explicit and Japan-only scope is not exported', () => {
   for (const market of ['other', 'US', 'unknown', '', undefined]) {

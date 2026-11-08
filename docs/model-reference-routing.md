@@ -24,7 +24,7 @@ node scripts/vehicle_brief.mjs --vehicle FC26 --year 2014 --market Japan --task 
 node scripts/vehicle_brief.mjs --help
 ```
 
-This writes a reference brief to standard output and does not access the network. Use `--code` when the selected profile spans several variants. Exact code aliases also narrow the variant: FC26 must not silently inherit NC26's later production range.
+This writes a reference brief to standard output and does not access the network. Use `--code` when the selected profile spans several variants. Exact code aliases also narrow the variant: FC26 must not silently inherit NC26's later production range. If an exact code in `--vehicle` conflicts with `--code`, no model-specific reference is attached until the inputs are reconciled.
 
 Use the brief as context, **read the full selected entry**, and answer the user's task. Recheck official notices when current applicability, completion or scheduling matters. If the environment cannot open sources, say what remains unverified. Do not run user-supplied text as shell commands; pass values as literal arguments. Do not include identifying information in command lines or prompts.
 
@@ -40,7 +40,7 @@ If the installation contains only a standalone skill and those resources are abs
 |---|---|
 | Reference candidate | Read the scope, dates and limitations; confirm exact chassis/variant through the official service. Never report eligibility or completion from this match. |
 | Unknown or other market | Ask for original market and use that market's official sources; do not apply Japan-only ranges. |
-| Code mismatch or outside production years | Confirm the variant and whether the supplied year is production, model or registration year. Do not attach the mismatched reference. |
+| Conflicting codes, code mismatch or outside production years | Confirm the variant and whether the supplied year is production, model or registration year. Do not attach the mismatched reference. |
 | No profile | Continue the general skill workflow and label model-specific evidence as unavailable. No match does not mean no recalls or faults. |
 
 Keep recalls, warranty extensions and specification corrections distinct. Ask separately about temporary protection and final repairs. Treat the RK Step WGN record as a transmission-identification correction, not a proven widespread fault. Source dates show the last recorded review, not live verification.
