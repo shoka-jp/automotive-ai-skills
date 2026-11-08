@@ -10,6 +10,10 @@ Una colección de código abierto de **habilidades de IA para diagnóstico, mant
 
 [English](./README.md) | [日本語](./README.ja.md) | **Español**
 
+**¿Quieres colaborar?** [Busca una tarea para empezar](https://github.com/shoka-jp/automotive-ai-skills/contribute) o [comparte una pregunta o sugerencia](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=first-experience.yml). La publicación será un issue público en GitHub.
+
+**Tarea de traducción:** [ayuda a traducir la guía de recepción al español](https://github.com/shoka-jp/automotive-ai-skills/issues/22).
+
 ---
 
 ## Descripción general

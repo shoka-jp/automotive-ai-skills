@@ -10,7 +10,7 @@
 
 [English](./README.md) | **日本語** | [Español](./README.es.md)
 
-**開発に参加する：** [初めての方向けIssue](https://github.com/shoka-jp/automotive-ai-skills/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)から選べます。[貢献ガイド](./CONTRIBUTING.md)もご覧ください。ドキュメント修正・テスト・質問を日本語でも歓迎します。
+**開発に参加する：** [初めての方向けIssue](https://github.com/shoka-jp/automotive-ai-skills/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)から選べます。[貢献ガイド](./CONTRIBUTING.md)もご覧ください。ドキュメント修正・テスト・質問を日本語でも歓迎します。[感想・質問を送る](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=first-experience.yml)（GitHub上で公開されます）。
 
 📖 **Webサイト版:** [shoka-jp.github.io/automotive-ai-skills](https://shoka-jp.github.io/automotive-ai-skills/)
 
