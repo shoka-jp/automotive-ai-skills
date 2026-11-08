@@ -1,8 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: "❓ Question / Usage help"
-    url: https://github.com/shoka-jp/automotive-ai-skills/discussions
-    about: "Questions about using the skills are best asked in Discussions (if enabled) or a blank issue. 使い方の質問はこちら。"
   - name: "🔒 Private security / abuse report"
     url: https://github.com/shoka-jp/automotive-ai-skills/security/advisories/new
     about: "For sensitive matters that should not be public. See SECURITY.md."
