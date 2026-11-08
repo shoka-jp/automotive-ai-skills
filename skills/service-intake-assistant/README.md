@@ -18,6 +18,8 @@ This skill organizes the conversation before diagnosis: what happened, under whi
 - Record existing scan results, photos, and recordings with their source and date; distinguish “not checked” from “normal.”
 - Separate diagnostic authorization, spending limits, and requested updates from approval to replace parts.
 - Produce a customer confirmation summary and a list of the next three useful questions.
+- Revise an intake without losing the original complaint, its source, or later corrections; distinguish “not reproduced” from “not checked.”
+- Carry the diagnostic spending limit, tax basis, amount already used if known, and contact-before-extra-work condition into the next handoff.
 
 ## Example Prompts
 
@@ -53,6 +55,23 @@ a neutral update request without promising a repair cost or completion time.
 4. **Label evidence.** Use “customer reported,” “documented observation,” “hypothesis,” and “not checked.” A trouble code is a recorded clue, not proof that a component needs replacement.
 5. **Return a structured note.** Include vehicle/context; customer concern; conditions/timeline; evidence with source/date; safety concerns; unknowns; and requested next assessment. Add diagnostic authorization and budget only if explicitly provided; otherwise mark them pending.
 6. **Confirm the handoff.** Ask the customer to correct the summary and have the receiving professional decide tests and roadworthiness. Keep any outgoing message as a draft unless sending it is requested.
+
+### Updating an open concern
+
+When later accounts differ, retain the original wording and append the correction with its source/date. Do not silently choose one account as fact. Record the technician's observation conditions separately: “not reproduced during today's check” does not mean the complaint was disproved. If new information raises an urgent safety concern, return to step 2 before continuing the normal handoff.
+
+Use this compact handoff on each revision:
+
+| Field | What to preserve |
+|---|---|
+| Concern and revision | Original words; latest clarification; source/date for each |
+| Evidence and scope | Customer report; documented observation and conditions; hypotheses; not reproduced; not checked |
+| Safety | Reported warning signs, unanswered safety questions, and any professional assessment; no invented roadworthiness clearance |
+| Authorization | Diagnosis versus repairs; amount/currency; tax basis; approval source/date; contact condition. Unknown terms stay pending. |
+| Remaining allowance | Confirmed charges and available balance, only if supplied; a spending ceiling is not an unused balance |
+| Next action | Receiving role, missing evidence, and what needs approval before proceeding |
+
+For example: “The customer now says cooling usually works; today's observation did not reproduce the concern. Diagnosis only is approved up to ¥6,600 including tax; actual spend is unconfirmed.” See the [worked intermittent-concern case](../../examples/service-intake-intermittent.md) for the complete conversation.
 
 ## Limitations
 

@@ -18,6 +18,8 @@ This skill supports sellers after vehicle information has been gathered. Build a
 - Prepare a photo checklist showing both features and known damage.
 - Check price arithmetic, mandatory charges, optional items, and the conditions attached to the quoted total.
 - Produce a publication checklist with unresolved claims and required human review.
+- Distinguish a photographed odometer display from verified mileage history and a known-price subtotal from a confirmed payable total.
+- Revise all affected listing sections when new records or reported defects change the evidence, retaining the source and date.
 
 ## Example Prompts
 
@@ -58,6 +60,19 @@ For model-specific checks, follow [reference routing](../../docs/model-reference
 4. **Check the total.** Show vehicle price and stated required charges separately from genuinely optional items. Use stated tax treatment without double-counting. If a required charge is unknown, the final payable total remains unconfirmed. For Japan, verify current AFTC guidance and its applicability; do not assume one market's rules apply elsewhere.
 5. **Draft the listing.** Return a factual title, short description, specification/condition table, visible known-defect disclosures, price breakdown, photo checklist, and buyer FAQ. Avoid unsupported superlatives, urgency, certification, or warranty promises.
 6. **Review before publishing.** Cross-check every claim against its source and the current local/platform requirements. Remove private owner details and unnecessary document identifiers from public material. Preserve required public disclosures. Publishing remains a separate action requiring the seller's instruction.
+
+### Revising claims when evidence changes
+
+Use a claim ledger with **claim → source/date → evidence status → supported wording → unresolved check**. A source-backed statement is limited to the source's scope: a dashboard photo is a displayed reading, two invoices are two recorded jobs, and a previous owner's recall statement is a report. None establishes verified lifetime mileage, full service history, or official campaign completion. Avoid “being checked” if no check has actually begun; say “not yet verified.”
+
+On a new defect or correction:
+
+1. Append the new report or document with its date; preserve conflicting earlier statements as superseded or unresolved instead of choosing the more attractive claim.
+2. Update the title, description, condition table, buyer FAQ, and any existing copies that the changed claim affects. Keep known defects in the buyer-facing draft, with reported versus inspected status visible.
+3. Recalculate price only from the revised, stated required charges. Keep optional items separate. If a mandatory charge is missing, label the arithmetic as a known-component subtotal in the internal worksheet, not a final public total.
+4. Return the revised draft plus a seller checklist naming missing evidence and publication blockers. When a platform requires a definite history/condition value that is unknown, obtain the evidence or leave publication pending; never fill it with “none.”
+
+For example, change “full history; all recalls complete” to the exact invoices available and “individual recall status not yet verified.” A newly reported intermittent A/C concern must also appear in the condition text and FAQ, not only the internal checklist. See the [worked listing revision](../../examples/used-car-listing-evidence.md) for the ledger, price correction, draft, and handoffs.
 
 ## Limitations
 

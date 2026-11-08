@@ -2,7 +2,7 @@ schema_version: 1
 name: service-intake-assistant
 title: Service Intake Assistant
 summary: Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions, and
-  a technician handoff.
+  a technician handoff with revision history and authorization limits.
 audience: Service advisors, shops, fleet coordinators, and owners
 tags:
 - service-advisor

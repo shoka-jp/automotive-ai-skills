@@ -202,6 +202,9 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [Diagnosing a P0420 without wasting money](./examples/obd2-p0420-diagnosis.md)
 - [Inspecting a used car end-to-end](./examples/used-car-inspection.md)
 - [Building a catch-up maintenance plan](./examples/maintenance-catchup-plan.md)
+- [Updating an intake for an intermittent concern](./examples/service-intake-intermittent.md)
+- [Comparing repair scope and a diagnostic credit](./examples/repair-estimate-scope-credit.md)
+- [Revising a listing when evidence changes](./examples/used-car-listing-evidence.md)
 
 ## Roadmap
 
