@@ -46,6 +46,7 @@ jobs:
   links-internal:
     name: Internal links
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       # Offline mode verifies in-repo relative links only. Markdown files
@@ -58,6 +59,7 @@ jobs:
   links-external:
     name: External links (non-blocking)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
