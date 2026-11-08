@@ -12,6 +12,7 @@
 - [日本語README](../../README.ja.md) — リポジトリ全体の日本語での紹介
 - [スキル一覧](../../skills/README.md)(英語)— 全20スキル。各スキルフォルダに日本語版 `README.ja.md` があります
 - [既知問題データベース(日本語ガイド)](../../data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法
+- 実践会話例 — [整備受付の更新](../../examples/service-intake-intermittent.ja.md)、[診断料充当と見積比較](../../examples/repair-estimate-scope-credit.ja.md)、[販売文の修正](../../examples/used-car-listing-evidence.ja.md)。架空の入力から出力・追加確認までを追えます。
 - [英語ドキュメント](../README.md) — Getting Started、FAQ、安全免責事項など
 
 ## ブラウザーで試す

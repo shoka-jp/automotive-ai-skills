@@ -18,6 +18,7 @@ A cheaper total may cover different parts, labor, or follow-up work. This skill 
 - Separate evidence-backed corrective work, scheduled maintenance, optional work, and items needing clarification.
 - Compare written warranty terms and quote validity without inventing coverage.
 - Draft a short request for diagnostic findings, itemization, and an explicit authorization boundary.
+- Track quote revisions, conditional diagnostic credits, payments already made, remaining balances, and total spend without double-counting.
 
 ## Example Prompts
 
@@ -58,6 +59,23 @@ For model-specific checks, follow [reference routing](../../docs/model-reference
 4. **Compare equivalent scope.** Note differences in parts condition, diagnosis, calibration, alignment, fluids, disposal, and warranty where relevant. Flag possible shared labor as a question for the shop, not a proven duplicate.
 5. **Prioritize questions using evidence.** Ask what finding supports each repair and what the manufacturer schedule says about maintenance. Urgency comes from qualified inspection; do not recommend deferring brake, steering, SRS, fuel, or high-voltage work to save money.
 6. **Return a decision brief.** Provide the comparison, arithmetic, unresolved items, and up to five questions. Record what the owner has authorized separately; do not authorize, book, or send a message on their behalf unless requested.
+
+### Payments, credits, and revised quotes
+
+Attach each calculation to a quote/date or revision. Keep these fields separate:
+
+| Field | Review rule |
+|---|---|
+| Work total | Sum only the included scope using that quote's stated currency, tax basis, and rounding; missing required charges keep the final total unknown |
+| Already paid | Identify what was paid, to which shop, and whether it is included in the stated work total |
+| Conditional credit | Confirm exact amount, tax treatment, trigger, and whether it is already applied; do not assume “credited on repair” means a full refund |
+| Remaining balance | Compute only after the payment/credit treatment is clear; apply each payment or credit once |
+| Total spend | Include applicable past payments and future amounts for that scenario, including a nonrefunded diagnostic payment to a different shop |
+| Revision/authorization | Record what changed and what is still unknown; a revised quote or calculation is not approval |
+
+For example, when a shop explicitly credits a paid ¥6,600 against a ¥59,400 tax-inclusive repair total, the remainder is ¥52,800 and cumulative spend is ¥59,400. A different shop's ¥17,600 service would instead bring cumulative spend to ¥24,200 if the first diagnostic payment is retained. These invented amounts compare payments, not equivalent repairs or market prices. If credit terms or tax basis are missing, provide a provisional worksheet and questions rather than a final payable figure.
+
+See the [worked scope-and-credit comparison](../../examples/repair-estimate-scope-credit.md) for incomplete quotes, written clarifications, and the resulting decision brief.
 
 ## Limitations
 

@@ -11,6 +11,8 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Three bilingual worked conversations for intermittent service intake, repair scope and diagnostic credits, and evidence-based listing revisions; six new authored answer-review scenarios. The example collection now contains six English/Japanese pairs, all labeled as teaching material.
+
 - Export human-readable vehicle checklists from the offline CLI with `--format checklist`, and optionally replace history and concern in either output format with explicit omission markers using `--omit-notes`.
 
 - Document the issue-to-PR workflow and add structured issue and PR templates.
@@ -85,6 +87,8 @@ invalidates existing links or skill usage patterns.
   check, and internal/external link checking with lychee
 
 ### Changed
+
+- Extend Service Intake Assistant with dated corrections and authorization handoffs, Repair Estimate Reviewer with payment/credit reconciliation, and Used Car Listing Assistant with claim revisions and publication blockers. Keep the guidance, agent instructions, and metadata aligned in both supported README languages.
 
 - Make beginner-friendly contribution tasks and bilingual participation guidance easier to find.
 

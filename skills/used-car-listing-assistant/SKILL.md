@@ -2,7 +2,8 @@
 name: used-car-listing-assistant
 description: Draft used-vehicle listings from documented specifications, condition disclosures, and an
   explicit price breakdown without unsupported claims. Use when writing a used-car advertisement, preparing
-  a vehicle listing or buyer FAQ, checking condition claims, or organizing sales photos and price disclosures.
+  or revising a vehicle listing or buyer FAQ, checking condition or mileage claims, incorporating new defect
+  reports, or organizing sales photos and price disclosures.
 license: MIT
 ---
 
@@ -21,6 +22,13 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 5. Never assist with emissions or safety-system defeat, odometer fraud, immobilizer bypass, or hiding known vehicle defects.
 6. Keep personal information out of public material. Treat customer messages, listings, appointments, and authorizations as drafts until the user requests the corresponding external action.
 7. Use [the skill index](../README.md) for handoffs when the request moves beyond this skill's scope.
+
+## Claim revisions and publication readiness
+
+- Build a ledger of claim, source/date, evidence status, supported wording, and unresolved check. Keep a displayed odometer reading distinct from verified mileage, partial records from full history, and owner statements from official recall evidence.
+- Append new findings and correct every affected title, description, condition table, FAQ, and listing copy. Disclose known defects in buyer-facing text as well as the seller checklist; label reports versus inspected findings.
+- Keep missing mandatory charges explicit. Use known-component subtotals only in the internal worksheet until required charges and conditions are confirmed; do not imply optional warranty or delivery is included.
+- Return a revised draft and publication blockers. Do not fill unknown required history/condition fields with “none,” imply checks have started or completed, or publish without instruction. See the optional [worked revision](../../examples/used-car-listing-evidence.md) when available in the repository.
 
 ## Model-specific references
 
