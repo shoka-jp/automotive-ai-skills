@@ -30,6 +30,14 @@
 
 **登録・APIキー・診断機は不要。** 入力内容は自動で送信・保存されません。保存を選ぶと端末にファイルが作成されます。共有リンクには車種と目的だけを含めます。AI診断や公式の個別照会は実行しません。
 
+Node.js 22以降と本リポジトリがあれば、コマンドから同じ確認メモをオフラインで作成できます。
+
+```sh
+node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang ja --format checklist --omit-notes > checklist.txt
+```
+
+`--omit-notes` は履歴・相談内容を省略した旨の表示に置き換えます。車種や型式などは残ります。出力形式を指定しない場合は従来どおりAI質問文です。[CLIの使い方とオプション](./docs/vehicle-brief-cli.ja.md)。
+
 メーカー等の出典を確認した10件を日本向け11車種から参照できます。他の車にも共通手順を利用でき、資料全体は20件です。[品質と限界](./docs/quality.ja.md) · [車種をリクエスト](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 
 役立ったら、GitHubの **Star** で保存・応援していただけると嬉しいです。確認できた事例や訂正も歓迎します。
@@ -90,6 +98,7 @@
 - 📗 [日本のユーザー向けガイド](./docs/ja/japan-guide.md) — 米国向け記述の読み替え表、軽自動車・国内中古車市場での使い方、用語対訳
 - ✅ [車検前セルフチェックリスト](./docs/ja/shaken-checklist.md) — 車検（継続検査）前の点検項目と、AIスキルとの組み合わせ方
 - 💬 会話例の日本語版 — [P0420の診断](./examples/obd2-p0420-diagnosis.ja.md) / [中古車チェック](./examples/used-car-inspection.ja.md) / [キャッチアップ整備計画](./examples/maintenance-catchup-plan.ja.md)
+- 📝 受付・販売の実践会話例 — [再現しない症状の受付](./examples/service-intake-intermittent.ja.md) / [診断料充当を含む見積比較](./examples/repair-estimate-scope-credit.ja.md) / [追加情報に応じた販売文の修正](./examples/used-car-listing-evidence.ja.md)。いずれも架空の教材です。
 - 🗃️ [既知問題データベース(日本語ガイド)](./data/known-issues/README.ja.md) — 車種別の既知問題の投稿方法と[日本語テンプレート](./data/known-issues/TEMPLATE.ja.md)。軽自動車・国内専売車のエントリを特に募集中
 
 [ブラウザで模擬OBD-IIデータを体験](https://shoka-jp.github.io/automotive-ai-skills/tools/obd2-preview.ja.html) — インストール・登録・車は不要。カードを開き、普段使うAIへの質問文をコピーできます。[MCPデモを自分で実行する手順](./docs/try-obd2-mcp.ja.md)には、コマンド・取得結果・検証範囲を掲載しています。

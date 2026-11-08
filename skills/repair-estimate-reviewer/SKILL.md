@@ -2,7 +2,8 @@
 name: repair-estimate-reviewer
 description: Compare repair estimates by scope, diagnostic evidence, parts, labor, arithmetic, and questions
   to resolve before authorization. Use when comparing repair quotes, checking an itemized workshop estimate,
-  questioning labor overlap, or preparing questions before approving work.
+  reconciling diagnostic credits or revised quotes, questioning labor overlap, or preparing questions before
+  approving work.
 license: MIT
 ---
 
@@ -21,6 +22,13 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 5. Never assist with emissions or safety-system defeat, odometer fraud, immobilizer bypass, or hiding known vehicle defects.
 6. Keep personal information out of public material. Treat customer messages, listings, appointments, and authorizations as drafts until the user requests the corresponding external action.
 7. Use [the skill index](../README.md) for handoffs when the request moves beyond this skill's scope.
+
+## Payments and quote revisions
+
+- Label each quote and revision. Preserve unknown tax, required charges, diagnosis, parts condition, warranty, and exclusions instead of borrowing terms from another quote.
+- Separate already paid, conditional credit, remaining balance, and cumulative spend for each scenario. Confirm the credit amount, tax treatment, trigger, and whether it is already reflected; apply it once.
+- Include nonrefunded diagnosis paid to another shop when comparing cumulative spend. Do not confuse a lower balance with a lower whole-job cost or equivalent repair scope.
+- Return unresolved evidence and at most five shop questions. Preserve the existing authorization boundary; an updated calculation does not approve work. See the optional [worked comparison](../../examples/repair-estimate-scope-credit.md) when available in the repository.
 
 ## Model-specific references
 

@@ -15,6 +15,7 @@ const form = $('brief-form');
 const status = $('status');
 let data;
 let current;
+let checklistWithoutNotes;
 const t = (en, jp) => ja ? jp : en;
 const element = (tag, text, className) => {
   const node = document.createElement(tag);
@@ -30,6 +31,17 @@ const link = (label, href) => {
 };
 
 function input() { return { ...Object.fromEntries(new FormData(form)), lang }; }
+
+function selectedChecklist() {
+  return $('omit-notes').checked ? checklistWithoutNotes : current.worksheetText;
+}
+
+function updateChecklist() {
+  if (!current) return;
+  const text = selectedChecklist();
+  $('checklist-output').value = text;
+  $('print-output').textContent = text;
+}
 
 function variants() {
   const profile = data.profiles.find(p => p.id === $('vehicle').value);
@@ -78,10 +90,14 @@ function referenceCards(result) {
 function generate() {
   if (!form.reportValidity()) return;
   try {
-    current = makeBrief(data, input());
+    const values = input();
+    const today = new Date().toISOString().slice(0, 10);
+    const brief = makeBrief(data, values, { today });
+    const omitted = t('[Omitted for sharing]', '【共有用に省略】');
+    checklistWithoutNotes = makeBrief(data, { ...values, context: omitted, concern: omitted }, { today }).worksheetText;
+    current = brief;
     $('output').value = current.text;
-    $('checklist-output').value = current.worksheetText;
-    $('print-output').textContent = current.worksheetText;
+    updateChecklist();
     $('workflow-checks').replaceChildren(...current.workflow.checks[lang].map(check => element('li', check)));
     $('workflow-link').href = `../skills/${current.workflow.skill}/${ja ? 'README.ja.html' : ''}`;
     $('result-title').textContent = current.profile?.label[lang] ?? t('Your vehicle brief', '車両確認メモ');
@@ -104,10 +120,11 @@ function generate() {
 form.addEventListener('submit', event => { event.preventDefault(); generate(); });
 form.addEventListener('input', stale);
 $('vehicle').addEventListener('change', () => { variants(); stale(); });
+$('omit-notes').addEventListener('change', updateChecklist);
 $('copy-checklist').addEventListener('click', async () => {
   if (!current) return;
   try {
-    await navigator.clipboard.writeText(current.worksheetText);
+    await navigator.clipboard.writeText(selectedChecklist());
     status.textContent = t('Checklist copied. Review personal details before sharing.', '確認事項をコピーしました。共有前に個人情報が含まれていないか確認してください。');
   } catch {
     $('checklist-details').open = true;
@@ -135,7 +152,7 @@ function downloadText(content, name, type) {
 }
 $('download-checklist').addEventListener('click', () => {
   if (!current) return;
-  downloadText(current.worksheetText, `vehicle-checklist-${current.profile?.id ?? 'custom'}-${lang}.txt`, 'text/plain;charset=utf-8');
+  downloadText(selectedChecklist(), `vehicle-checklist-${current.profile?.id ?? 'custom'}-${lang}.txt`, 'text/plain;charset=utf-8');
   status.textContent = t('Checklist download started. Review the saved file before sharing.', '確認メモの保存を開始しました。共有前に保存した内容を確認してください。');
 });
 $('download').addEventListener('click', () => {
@@ -153,7 +170,8 @@ $('share').addEventListener('click', async () => {
 });
 $('print').addEventListener('click', () => window.print());
 $('clear-inputs').addEventListener('click', () => {
-  form.reset(); variants(); current = null;
+  form.reset(); variants(); current = null; checklistWithoutNotes = undefined;
+  $('omit-notes').checked = false;
   $('result').hidden = true; $('empty').hidden = false;
   $('output').value = ''; $('print-output').textContent = ''; $('references').replaceChildren();
   $('checklist-output').value = ''; $('workflow-checks').replaceChildren();

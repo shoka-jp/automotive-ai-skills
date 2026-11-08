@@ -1,0 +1,49 @@
+name: Check links with setup retries
+description: Retry lychee setup failures while preserving failed link checks.
+inputs:
+  args:
+    description: Arguments passed to lychee.
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Check links
+      id: first
+      continue-on-error: true
+      uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+      with:
+        args: ${{ inputs.args }}
+        fail: true
+        lycheeVersion: v0.24.2
+    # A setup failure has no lychee exit code. A completed link check that
+    # fails, including an empty scan, must still fail without being hidden.
+    - name: Wait before retrying setup
+      if: ${{ steps.first.outcome == 'failure' && steps.first.outputs.exit_code == '' }}
+      shell: bash
+      run: sleep 5
+    - name: Retry link checker setup
+      id: second
+      if: ${{ steps.first.outcome == 'failure' && steps.first.outputs.exit_code == '' }}
+      continue-on-error: true
+      uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+      with:
+        args: ${{ inputs.args }}
+        fail: true
+        lycheeVersion: v0.24.2
+    - name: Wait before final setup retry
+      if: ${{ steps.second.outcome == 'failure' && steps.second.outputs.exit_code == '' }}
+      shell: bash
+      run: sleep 10
+    - name: Final link checker setup retry
+      if: ${{ steps.second.outcome == 'failure' && steps.second.outputs.exit_code == '' }}
+      uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+      with:
+        args: ${{ inputs.args }}
+        fail: true
+        lycheeVersion: v0.24.2
+    - name: Preserve link-check failures
+      if: ${{ (steps.first.outcome == 'failure' && steps.first.outputs.exit_code != '') || (steps.second.outcome == 'failure' && steps.second.outputs.exit_code != '') }}
+      shell: bash
+      run: |
+        echo '::error::The link check failed; see the report above.'
+        exit 1

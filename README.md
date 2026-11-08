@@ -31,6 +31,14 @@ New vehicle checks: [Toyota Aqua NHP10/NHP10H](https://shoka-jp.github.io/automo
 
 **No account, API key or adapter.** Inputs are not sent or automatically saved; choosing Save creates a file on your device. Shared links contain only the preset vehicle and goal. The builder does not run an AI diagnosis or an official eligibility lookup.
 
+Prefer a terminal? With Node.js 22 or later and this repository, generate the same human checklist offline:
+
+```sh
+node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --format checklist --omit-notes > checklist.txt
+```
+
+`--omit-notes` replaces history and concern with explicit omission markers; vehicle details remain. The default output is still an AI prompt. [CLI options and examples](./docs/vehicle-brief-cli.md).
+
 Ten source-reviewed entries support eleven Japan-market profiles. Other vehicles can use the general workflow; the full library has 20 entries. [Quality and limits](./docs/quality.md) · [Request a vehicle](https://github.com/shoka-jp/automotive-ai-skills/issues/new?template=vehicle-request.yml)
 
 If this helps your next viewing or workshop visit, **Star** the repository to find it again and support its development. Documented findings and corrections are welcome.
@@ -194,6 +202,9 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [Diagnosing a P0420 without wasting money](./examples/obd2-p0420-diagnosis.md)
 - [Inspecting a used car end-to-end](./examples/used-car-inspection.md)
 - [Building a catch-up maintenance plan](./examples/maintenance-catchup-plan.md)
+- [Updating an intake for an intermittent concern](./examples/service-intake-intermittent.md)
+- [Comparing repair scope and a diagnostic credit](./examples/repair-estimate-scope-credit.md)
+- [Revising a listing when evidence changes](./examples/used-car-listing-evidence.md)
 
 ## Roadmap
 

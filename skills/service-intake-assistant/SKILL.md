@@ -1,8 +1,9 @@
 ---
 name: service-intake-assistant
 description: Turn customer symptoms into an evidence-labeled intake note, focused follow-up questions,
-  and a technician handoff. Use when preparing a workshop visit, recording a customer complaint, drafting
-  a service intake note, or handing observations to a technician.
+  and a technician handoff with revision history and authorization limits. Use when preparing a workshop
+  visit, recording or updating a customer complaint, drafting a service intake note, or handing observations
+  to a technician.
 license: MIT
 ---
 
@@ -21,3 +22,10 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 5. Never assist with emissions or safety-system defeat, odometer fraud, immobilizer bypass, or hiding known vehicle defects.
 6. Keep personal information out of public material. Treat customer messages, listings, appointments, and authorizations as drafts until the user requests the corresponding external action.
 7. Use [the skill index](../README.md) for handoffs when the request moves beyond this skill's scope.
+
+## Intake revisions and authorization
+
+- Preserve the original complaint and append later corrections with source/date. Keep customer reports, technician observations and their conditions, hypotheses, not reproduced, and not checked distinct.
+- Recheck urgency when a new symptom arrives. Interrupt ordinary intake for safety concerns; never request a hazardous reproduction attempt.
+- Carry diagnosis-versus-repair authorization, currency/ceiling, tax basis, approval source/date, and contact-before-extra-work conditions into every handoff. Do not infer unused allowance from the ceiling when actual charges are unknown.
+- Return the next responsible role and missing evidence without inventing a diagnosis, approval, or completed repair. Use the handoff fields in README.md; the optional [worked case](../../examples/service-intake-intermittent.md) demonstrates revisions when available in the repository.

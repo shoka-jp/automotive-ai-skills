@@ -1,4 +1,4 @@
-name: "💡 New Skill Proposal"
+name: "💡 New Skill Proposal / 新しいスキルの提案"
 description: "Propose a new automotive AI skill. 新しいスキルの提案(日本語でOKです)"
 title: "[skill]: "
 labels: ["enhancement", "new-skill"]
@@ -6,37 +6,37 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before proposing, please check the [roadmap](../blob/main/README.md#roadmap) and
-        the [Skill Authoring Guide](../blob/main/docs/skill-authoring-guide.md).
-        Proposals are discussed here first, before anyone invests writing effort.
+        Before proposing, please check the [roadmap](https://github.com/shoka-jp/automotive-ai-skills/blob/main/README.md#roadmap) and
+        the [Skill Authoring Guide](https://github.com/shoka-jp/automotive-ai-skills/blob/main/docs/skill-authoring-guide.md).
+        Proposals are discussed here first, before anyone invests writing effort. 日本語での提案も歓迎します。
   - type: input
     id: name
     attributes:
-      label: Skill name
+      label: Skill name / スキル名
       placeholder: "Diesel Specialist"
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
-      label: Scope and audience
-      description: "What does it cover, and for whom? How is it distinct from existing skills?"
+      label: Scope and audience / 対象範囲・利用者
+      description: "What does it cover, for whom, and how is it distinct? / 何を誰に提供し、既存スキルとどう違いますか？"
     validations:
       required: true
   - type: textarea
     id: examples
     attributes:
-      label: Example prompts it should handle
-      description: "2-3 realistic prompts a user would ask this skill."
+      label: Example prompts / 想定する質問例
+      description: "Optional: 2–3 example questions. / 任意：質問例があれば2〜3件。"
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: author
     attributes:
-      label: Are you willing to write it?
+      label: Would you like to help write it? / 執筆への参加
       options:
-        - "Yes, I'd write it following the authoring guide"
-        - "I can provide domain expertise, but not the writing"
-        - "Proposal only"
+        - "Yes, following the authoring guide / ガイドに沿って執筆する"
+        - "I can provide domain knowledge / 知識面で協力できる"
+        - "Proposal only / 提案のみ"
     validations:
-      required: true
+      required: false
