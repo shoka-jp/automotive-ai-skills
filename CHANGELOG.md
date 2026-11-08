@@ -17,6 +17,8 @@ invalidates existing links or skill usage patterns.
 
 - Save the vehicle checklist as a text file for offline use, separately from the AI prompt.
 
+- Optionally omit history and the concern from copied, saved and printed vehicle checklists; clearly mark the omissions and retain the original AI prompt.
+
 - Add an editable, copyable simulated workshop handover note to the bilingual browser OBD preview.
 
 - Bilingual questions for all six vehicle-brief goals, visible even without a
