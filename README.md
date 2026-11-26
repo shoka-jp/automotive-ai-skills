@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
+[![CI](https://github.com/shoka-jp/automotive-ai-skills/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shoka-jp/automotive-ai-skills/actions/workflows/ci.yml)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/shoka-jp/automotive-ai-skills/graphs/commit-activity)
 
 An open-source collection of **AI skills for automotive diagnostics, maintenance, repair, customization, and vehicle ownership** — for beginners and experienced mechanics alike.

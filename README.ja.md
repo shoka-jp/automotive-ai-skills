@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
+[![CI](https://github.com/shoka-jp/automotive-ai-skills/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shoka-jp/automotive-ai-skills/actions/workflows/ci.yml)
 
 **自動車の診断・整備・修理・カスタマイズ・車両所有**に関するAIスキルのオープンソースコレクションです。初心者からプロの整備士まで幅広く活用できます。
 
