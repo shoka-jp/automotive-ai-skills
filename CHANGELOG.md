@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Point the car-free obd2-mcp demo command (EN/JA) to the v0.5.0 release package.
 - Turn on weekly Dependabot version updates for the GitHub Actions used by CI and the composite link-check action, at least 7 days after a release; update PRs wait for the maintainer.
 - Point the obd2-mcp guidance (READMEs, the car-free demo pages and the site) to its v0.4.0 install paths: the Claude Desktop extension and the no-Git release-package demo, with the source build as an alternative.
 - Describe obd2-mcp in `llms.txt` with the same v0.4.0 paths: the Claude Desktop extension, `npx`, and the no-Git demo command.
