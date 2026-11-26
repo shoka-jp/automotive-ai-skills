@@ -1,0 +1,24 @@
+# Dependabot version updates for the GitHub Actions used by CI and the site
+# build. The repository has no npm or pip dependency manifests to track.
+# Update PRs change CI, so they wait for the maintainer's review.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directories:
+      - /
+      - /.github/actions/check-links
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Asia/Tokyo
+    cooldown:
+      default-days: 7
+    labels:
+      - dependencies
+      - "autopilot: needs review"
+    commit-message:
+      prefix: ci
+    groups:
+      github-actions:
+        patterns: ["*"]
