@@ -15,6 +15,8 @@ Checks:
      not older than the latest CHANGELOG release
   6. the skills tables in skills/README.md and README.md list exactly the
      skill folders that exist
+  7. every skill card on the landing page (index.html) shows ES in its
+     language label iff the skill has README.es.md
 
 Exit code 0 = all checks pass; 1 = at least one failure (each printed).
 """
@@ -147,11 +149,39 @@ def check_skill_tables() -> None:
              f"extra={sorted(readme_links - folders)}")
 
 
+LANDING_CARD = re.compile(
+    r"href=\"\{\{ '/skills/([a-z0-9-]+)/' \| relative_url \}\}\"[\s\S]*?"
+    r"<span class=\"langs\">([^<]*)</span>"
+)
+
+
+def check_landing_languages() -> None:
+    folders = {p.name for p in skill_dirs()}
+    landing = (ROOT / "index.html").read_text(encoding="utf-8")
+    seen: set[str] = set()
+    for name, langs in LANDING_CARD.findall(landing):
+        seen.add(name)
+        if name not in folders:
+            continue
+        shows_es = "ES" in {part.strip() for part in langs.split("·")}
+        has_es = (ROOT / "skills" / name / "README.es.md").is_file()
+        if has_es and not shows_es:
+            fail(f"index.html: skill card '{name}' has README.es.md but its "
+                 f"language label is '{langs.strip()}' (add ES)")
+        if shows_es and not has_es:
+            fail(f"index.html: skill card '{name}' shows ES but "
+                 f"skills/{name}/README.es.md does not exist")
+    missing = folders - seen
+    if missing:
+        fail(f"index.html: no skill card with a language label for {sorted(missing)}")
+
+
 def main() -> int:
     check_known_issues_index()
     check_skill_folders()
     check_versions()
     check_skill_tables()
+    check_landing_languages()
     if ERRORS:
         print(f"FAIL: {len(ERRORS)} problem(s) found\n")
         for err in ERRORS:
