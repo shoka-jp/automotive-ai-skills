@@ -15,6 +15,7 @@ The Used Car Inspector helps you avoid buying someone else's problem. It generat
 - Generate a model-specific pre-purchase inspection checklist (known weak points for that make/model/generation/engine)
 - Walk through a structured inspection: exterior, panel gaps and paint, glass, tires, underbody, engine bay, fluids, interior, electronics, cold start, and test drive
 - Explain how to spot signs of accident repair, flood damage, and odometer rollback
+- Interpret a read-only OBD-II scan taken at the viewing with the seller's permission: stored and pending codes, warning-light status, and readiness monitors. Several incomplete monitors, or a short distance since codes were cleared (where the car reports it), can mean the codes were cleared or the battery was disconnected recently. Treat that as a question for the seller, not proof of concealment: some cars normally leave one monitor, often EVAP, incomplete.
 - Decode VIN structure and explain what a vehicle history report does and does not reveal
 - Interpret test-drive symptoms (pulls, vibrations, noises, shift quality, smoke color)
 - Assess whether a listed price is reasonable given condition, mileage, and market
@@ -46,6 +47,12 @@ cold, then smoothed out. How concerned should I be on a 2013 Nissan Altima?
 ```
 
 ```text
+My OBD-II reader shows no trouble codes, but four readiness monitors are
+incomplete on a car I'm about to buy. What could that mean, and what should
+I ask the seller?
+```
+
+```text
 The car checks out but needs tires, front brakes, and has a slow oil leak.
 Asking price is $9,500. Help me build a negotiation position.
 ```
@@ -58,7 +65,7 @@ For model-specific checks, follow [reference routing](../../docs/model-reference
 
 1. **Before contacting the seller:** share the listing details and ask for known issues, fair price range, and questions to ask remotely.
 2. **Before the viewing:** request a model-specific checklist and print it or keep it on your phone.
-3. **During inspection:** work through the checklist and note everything — take photos of anything questionable.
+3. **During inspection:** work through the checklist and note everything — take photos of anything questionable. If you can plug in an OBD-II reader (with the seller's permission), read codes and readiness only; do not clear anything.
 4. **After the viewing:** report findings and ask for a risk assessment: buy, negotiate, PPI first, or walk away.
 5. **Before money changes hands:** verify title, VIN match, and history report; get a professional PPI for anything expensive or complex.
 6. **After purchase:** hand off to the [Vehicle Maintenance Planner](../vehicle-maintenance-planner/) for a catch-up service plan.
@@ -68,12 +75,14 @@ For model-specific checks, follow [reference routing](../../docs/model-reference
 - **Cannot see the vehicle.** The assistant works from your observations and photos you describe; it cannot detect what you do not check.
 - **No access to history report databases.** It can interpret a Carfax/AutoCheck report you summarize, but cannot pull one.
 - **Market prices shift.** Valuations are directional; cross-check against current local listings and pricing guides.
+- **A clean OBD-II scan is not a clean bill of health.** Many mechanical faults never set a code.
 - **A professional PPI is irreplaceable** for high-value, exotic, or heavily modified vehicles — a lift and a borescope find what a parking-lot inspection cannot.
 - **Legal requirements vary by jurisdiction** (disclosure laws, lemon laws, title transfer) — verify locally.
 
 ## Related Skills
 
 - [Vehicle Maintenance Planner](../vehicle-maintenance-planner/) — post-purchase catch-up planning
+- [OBD-II Diagnostic Assistant](../obd2-diagnostic-assistant/) — interpret codes, freeze frame and readiness from a scan
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/) — investigate specific symptoms found during a test drive
 - [EV Assistant](../ev-assistant/) — used EV purchases hinge on battery health assessment
 - [Used Car Listing Assistant](../used-car-listing-assistant/) — turn verified condition findings into an accurate sales draft
