@@ -16,8 +16,8 @@ jobs:
     name: Repo consistency
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install pyyaml
@@ -27,7 +27,7 @@ jobs:
     name: Jekyll build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # Same builder GitHub Pages uses; validates the site builds, no deploy.
       - uses: actions/jekyll-build-pages@v1
       - name: Validate rendered metadata and links
@@ -35,7 +35,7 @@ jobs:
         run: python3 scripts/validate_site.py _site 2>&1 | tee site-validation.log
       - name: Save rendered site and validation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: rendered-site
           path: |
@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # Offline mode verifies in-repo relative links only. Markdown files
       # only: layouts/index.html contain Liquid variables lychee cannot
       # resolve and would report as false positives.
@@ -62,7 +62,7 @@ jobs:
     timeout-minutes: 15
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # External URLs are checked but never block: forums and vendor pages
       # rate-limit and flake. Review the step summary when it goes red.
       - uses: ./.github/actions/check-links
@@ -76,12 +76,12 @@ jobs:
     name: Vehicle brief contracts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install pyyaml
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
       - run: python scripts/build_brief_data.py --check
@@ -93,11 +93,11 @@ jobs:
     # Match the OS supported by the pinned Playwright release.
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: rendered-site
           path: browser-build
@@ -106,7 +106,7 @@ jobs:
       - run: node tests/brief-browser.mjs browser-build/_site
       - name: Save browser screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: vehicle-brief-screenshots
           path: browser-artifacts
