@@ -114,6 +114,8 @@ invalidates existing links or skill usage patterns.
 
 ### Fixed
 
+- Show ES on the Service Intake Assistant card on the landing page, and make `scripts/validate_repo.py` fail when a card's language label disagrees with the skill's `README.es.md`.
+
 - Keep variant matching consistent when model-code aliases contain full-width characters or spaces, and do not attach references when separately supplied codes conflict; preserve both conflicting inputs for review.
 
 - Vehicle brief pages, modules, data and styles now share a deployment version
