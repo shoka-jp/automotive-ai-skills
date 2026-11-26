@@ -1,6 +1,6 @@
 ---
 title: Try an OBD-II MCP server without a car
-description: Build obd2-mcp from source and read simulated P0420, freeze-frame and live sensor data. Reproducible commands, observed output and troubleshooting.
+description: Run obd2-mcp's demo without Git, or build it from source, and read simulated P0420, freeze-frame and live sensor data. Reproducible commands, observed output and troubleshooting.
 lang: en
 locale: en_US
 ---
@@ -10,13 +10,19 @@ locale: en_US
 
 [日本語](./try-obd2-mcp.ja.md)
 
-**Run a real MCP client against a simulated vehicle.** The companion [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) server includes a demo that prints tool responses. You need Git, Node.js and npm; no car, ELM327 adapter or AI subscription is required.
+**Run a real MCP client against a simulated vehicle.** The companion [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) server includes a demo that prints tool responses. You need Node.js and npm (Git only for the source build); no car, ELM327 adapter or AI subscription is required.
 
 Automotive AI Skills supplies prompt frameworks. obd2-mcp supplies data-reading tools. This demo exercises the tools; it does not generate an AI diagnosis.
 
 ## Run the demo
 
-Use Node.js 22 or 24, the versions covered by the linked CI run. Build from source with these commands:
+Use Node.js 22 or 24. Run the released package directly, without Git or a build:
+
+```bash
+npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.4.0/obd2-mcp-0.4.0.tgz -- obd2-mcp --demo
+```
+
+Add `--summary` for a short summary, or `--summary --lang ja` for Japanese. To build from source instead:
 
 ```bash
 git clone https://github.com/shoka-jp/obd2-mcp.git
@@ -50,13 +56,13 @@ Freeze frame records conditions when a fault was stored. Live data describes the
 
 ## If the demo fails
 
-1. Run `node --version` and `npm --version` and confirm you are in the cloned `obd2-mcp` folder.
-2. If `dist/index.js` is missing, complete `npm ci` and `npm run build` first.
+1. Run `node --version` and `npm --version` and confirm Node.js 22 or 24. For the source build, also confirm you are in the cloned `obd2-mcp` folder.
+2. For the source build, if `dist/index.js` is missing, complete `npm ci` and `npm run build` first.
 3. If an install or build fails, keep the first error and your OS and Node.js version. [Report a reproducible issue](https://github.com/shoka-jp/obd2-mcp/issues/new?template=bug_report.md), removing credentials and vehicle identifiers.
 
 ## Use the data with an assistant
 
-Read the [MCP client setup guide](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md). Once a client is connected in mock mode, combine it with the [OBD-II Diagnostic Assistant](../skills/obd2-diagnostic-assistant/):
+Install the Claude Desktop extension from the [latest release](https://github.com/shoka-jp/obd2-mcp/releases/latest), or read the [MCP client setup guide](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md). Once a client is connected in mock mode, combine it with the [OBD-II Diagnostic Assistant](../skills/obd2-diagnostic-assistant/):
 
 > Read the mock vehicle's codes, freeze frame and live data. Separate observations from hypotheses and list what still needs verification. Do not clear codes.
 

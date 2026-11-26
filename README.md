@@ -120,7 +120,7 @@ All 20 skills install as native skills (`SKILL.md` in each skill folder) and tri
 
 These skills are the *knowledge* layer. The companion [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) MCP server is the *tool* layer — it lets the AI read real trouble codes, live data, and freeze frames from your car through a cheap ELM327 adapter (a mock vehicle is included, so no hardware is needed to try it):
 
-[Build from source and try the mock vehicle](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md)
+**Claude Desktop:** download the `.mcpb` file from the [latest obd2-mcp release](https://github.com/shoka-jp/obd2-mcp/releases/latest) and open it. **Other MCP clients:** [choose how to start](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start) — register the release package with `npx` (no Git) or build from source. Its `check_engine_light` guided prompt pairs well with the [OBD-II Diagnostic Assistant](./skills/obd2-diagnostic-assistant/).
 
 ### Everything else
 

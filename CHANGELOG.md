@@ -9,6 +9,10 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Changed
+
+- Point the obd2-mcp guidance (READMEs, the car-free demo pages and the site) to its v0.4.0 install paths: the Claude Desktop extension and the no-Git release-package demo, with the source build as an alternative.
+
 ### Added
 
 - Add a Spanish Service Intake Assistant guide, including intake revisions, authorization limits and safety boundaries.
