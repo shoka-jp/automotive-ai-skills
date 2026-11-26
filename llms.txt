@@ -34,7 +34,7 @@ Key facts:
 
 ## Guides
 
-- [Hardware-free MCP demo](https://shoka-jp.github.io/automotive-ai-skills/docs/try-obd2-mcp.html): source-build commands, captured simulated output, test provenance and limitations; no AI subscription required
+- [Hardware-free MCP demo](https://shoka-jp.github.io/automotive-ai-skills/docs/try-obd2-mcp.html): one release-package command (no Git or build; source build also covered), captured simulated output, test provenance and limitations; no AI subscription required
 - [MCPデモ（日本語）](https://shoka-jp.github.io/automotive-ai-skills/docs/try-obd2-mcp.ja.html): 車なしで故障コードとセンサー値を読む
 
 - [Getting Started](https://shoka-jp.github.io/automotive-ai-skills/docs/getting-started.html): five-minute walkthrough from finding the repo to a productive session
@@ -55,7 +55,7 @@ Key facts:
 - [Japanese README (日本語)](https://shoka-jp.github.io/automotive-ai-skills/README.ja.html)
 - [Spanish README (Español)](https://shoka-jp.github.io/automotive-ai-skills/README.es.html)
 - [GitHub repository](https://github.com/shoka-jp/automotive-ai-skills)
-- [obd2-mcp](https://github.com/shoka-jp/obd2-mcp): companion MCP server that reads real vehicles (DTCs, live data, freeze frame, VIN) via ELM327 adapters; mock vehicle included
+- [obd2-mcp](https://github.com/shoka-jp/obd2-mcp): companion MCP server that reads real vehicles (DTCs, live data, freeze frame, VIN) via ELM327 adapters; mock vehicle included; installs in Claude Desktop as a one-file extension (.mcpb) or runs with npx
 
 ## Interactive entry point
 
