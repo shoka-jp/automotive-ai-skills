@@ -15,6 +15,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Add the obd2-mcp companion section (Claude Desktop extension, no-Git `npx` path) to the Spanish README.
 - Add a Spanish Service Intake Assistant guide, including intake revisions, authorization limits and safety boundaries.
 - Explain in the English and Japanese guides what vehicle-profile matches and no matches do—and do not—establish.
 

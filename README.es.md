@@ -64,6 +64,14 @@ Cinco habilidades están **disponibles en español** — sigue los enlaces de la
 
 Para un asistente dedicado, pega el README de una habilidad en las instrucciones de un Proyecto de Claude o un GPT personalizado — ver [`integrations/`](./integrations/).
 
+## Leer tu coche real: obd2-mcp 🔌
+
+Estas habilidades son la capa de *conocimiento*. El proyecto hermano [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) es la capa de *herramientas*: un servidor MCP que permite a la IA leer códigos de falla, datos en vivo y freeze frame de tu coche mediante un adaptador ELM327 económico. Incluye un vehículo simulado, así que puedes probarlo sin hardware.
+
+**Claude Desktop:** descarga el archivo `.mcpb` de la [última versión de obd2-mcp](https://github.com/shoka-jp/obd2-mcp/releases/latest) y ábrelo. **Otros clientes MCP:** [elige cómo empezar](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start): registra el paquete publicado con `npx` (sin Git) o compílalo desde el código fuente. Su prompt guiado `check_engine_light` combina bien con el [Asistente de diagnóstico OBD-II](./skills/obd2-diagnostic-assistant/README.es.md).
+
+La documentación de obd2-mcp está en inglés y japonés.
+
 ## Aviso de seguridad
 
 Estas habilidades ofrecen información general, **no asesoramiento profesional**. Verifica siempre pares de apriete, capacidades y holguras contra el manual de fábrica. Frenos, dirección, airbags (SRS), sistemas de combustible y sistemas de alto voltaje de VE son territorio profesional en caso de duda. Consulta el [aviso completo](./docs/safety-disclaimer.md) (en inglés).
