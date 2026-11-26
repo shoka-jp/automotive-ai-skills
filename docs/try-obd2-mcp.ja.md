@@ -1,6 +1,6 @@
 ---
 title: 車なしで試すOBD-II MCPサーバー
-description: obd2-mcpをソースからビルドし、模擬車両のP0420・フリーズフレーム・ライブデータを取得する手順。実行結果と検証範囲、つまずいたときの確認事項を紹介します。
+description: obd2-mcpのデモをGitなしで実行（またはソースからビルド）し、模擬車両のP0420・フリーズフレーム・ライブデータを取得する手順。実行結果と検証範囲、つまずいたときの確認事項を紹介します。
 lang: ja
 locale: ja_JP
 ---
@@ -10,13 +10,19 @@ locale: ja_JP
 
 [English](./try-obd2-mcp.md)
 
-**実際のMCPクライアントを動かし、模擬車両のデータを読みます。** 姉妹プロジェクトの[obd2-mcp](https://github.com/shoka-jp/obd2-mcp)には、ツールの応答を表示するデモが付属しています。Git・Node.js・npmがあれば実行でき、実車・ELM327アダプタ・AIの有料契約は不要です。
+**実際のMCPクライアントを動かし、模擬車両のデータを読みます。** 姉妹プロジェクトの[obd2-mcp](https://github.com/shoka-jp/obd2-mcp)には、ツールの応答を表示するデモが付属しています。Node.js・npmがあれば実行でき（Gitはソースからビルドする場合のみ必要）、実車・ELM327アダプタ・AIの有料契約は不要です。
 
 Automotive AI Skillsは調査の進め方を記述したプロンプト集、obd2-mcpはデータを読むツールです。このデモで確認するのはツールの応答で、AIによる診断文は生成しません。
 
 ## 実行する
 
-下記のCIで検証したNode.js 22または24を使い、ソースからビルドします。
+Node.js 22または24を使い、Gitやビルドなしでリリースパッケージを直接実行します。
+
+```bash
+npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.4.0/obd2-mcp-0.4.0.tgz -- obd2-mcp --demo
+```
+
+`--summary` を付けると要約、`--summary --lang ja` で日本語の要約を表示します。ソースからビルドする場合は次のとおりです。
 
 ```bash
 git clone https://github.com/shoka-jp/obd2-mcp.git
@@ -50,13 +56,13 @@ node examples/mock-demo.mjs
 
 ## うまく動かないとき
 
-1. `node --version`と`npm --version`で環境を確認し、クローンした`obd2-mcp`フォルダで実行しているか確認します。
-2. `dist/index.js`がない場合は、先に`npm ci`と`npm run build`を完了させます。
+1. `node --version`と`npm --version`で、Node.js 22または24であることを確認します。ソースからビルドした場合は、クローンした`obd2-mcp`フォルダで実行しているかも確認します。
+2. ソースからビルドした場合、`dist/index.js`がなければ、先に`npm ci`と`npm run build`を完了させます。
 3. インストールやビルドに失敗した場合は、最初のエラー・OS・Node.jsのバージョンを記録し、[再現手順をIssueで共有](https://github.com/shoka-jp/obd2-mcp/issues/new?template=bug_report.md)してください。認証情報や車台番号は取り除いてください。
 
 ## AIと組み合わせる
 
-[MCPクライアントの設定手順](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md)に沿ってモックモードで接続し、[OBD-II診断アシスタント](../skills/obd2-diagnostic-assistant/README.ja.md)と組み合わせます。
+[最新リリース](https://github.com/shoka-jp/obd2-mcp/releases/latest)からClaude Desktop拡張機能を導入するか、[MCPクライアントの設定手順](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/try-mock.md)に沿ってモックモードで接続し、[OBD-II診断アシスタント](../skills/obd2-diagnostic-assistant/README.ja.md)と組み合わせます。
 
 > モック車両の故障コード・フリーズフレーム・ライブデータを読み、観測した事実と仮説を分けて、不足している確認事項を整理して。コードは消去しないで。
 
