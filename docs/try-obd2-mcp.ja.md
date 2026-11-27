@@ -19,7 +19,7 @@ Automotive AI Skillsは調査の進め方を記述したプロンプト集、obd
 Node.js 22または24を使い、Gitやビルドなしでリリースパッケージを直接実行します。
 
 ```bash
-npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.6.0/obd2-mcp-0.6.0.tgz -- obd2-mcp --demo
+npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.6.1/obd2-mcp-0.6.1.tgz -- obd2-mcp --demo
 ```
 
 `--summary` を付けると要約、`--summary --lang ja` で日本語の要約を表示します。`--scenario cleared` を付けると、中古車の確認で問題になる「最近コードを消した車」を表示します。ソースからビルドする場合は次のとおりです。

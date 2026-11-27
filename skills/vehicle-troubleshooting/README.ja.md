@@ -1,6 +1,6 @@
 # Vehicle Troubleshooting(症状別トラブルシューティング)
 
-[English](./README.md) | **日本語**
+[English](./README.md) | **日本語** | [Español](./README.es.md)
 
 異音・振動・におい・液漏れ・警告灯・走行時の違和感など、**症状を起点に**原因を絞り込むAIスキルです。部品を買う前に、鑑別診断の手法で可能性を狭めます。
 

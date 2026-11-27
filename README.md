@@ -226,7 +226,7 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
 - [x] Towing & Trailer Advisor skill (hitches, tongue weight, wiring, sway)
 - [x] Car Audio & Electronics Assistant skill (head units, 12V discipline, CAN awareness)
-- [x] Spanish skill translations started — 6 skills available (Mechanic, OBD-II, Maintenance Planner, Used Car Inspector, EV Assistant, Service Intake); **remaining 14 welcome from contributors**
+- [x] Spanish skill translations started — 7 skills available (Mechanic, OBD-II, Maintenance Planner, Used Car Inspector, Vehicle Troubleshooting, EV Assistant, Service Intake); **remaining 13 welcome from contributors**
 - [x] Structured known-issues data format — [`data/known-issues/index.yaml`](./data/known-issues/index.yaml)
 - [ ] Complete Spanish coverage of all skills
 - [ ] Motorhome/RV habitation systems skill (water, gas, leisure batteries, solar)

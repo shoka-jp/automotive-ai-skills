@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Point the car-free obd2-mcp demo command (EN/JA) to v0.6.1, and mention in Used Car Inspector (EN/JA/ES) that obd2-mcp v0.6.1 also reads warm-ups and distance since codes were cleared.
 - READMEs (EN/JA/ES) and the obd2-mcp try guide (EN/JA): explain that with obd2-mcp v0.6.0 you connect a real car by asking Claude, and link obd2-mcp's adapter choosing guide (Bluetooth LE-only adapters do not work on a computer).
 - Point Used Car Inspector (EN/JA/ES) and the READMEs to obd2-mcp v0.6.0's `used_car_check` prompt and permanent trouble codes, and the car-free demo command to v0.6.0 (with `--scenario cleared`).
 - Point the car-free obd2-mcp demo command (EN/JA) to the v0.5.0 release package.
@@ -20,6 +21,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Add a Spanish Vehicle Troubleshooting guide (`skills/vehicle-troubleshooting/README.es.md`) preserving safety boundaries and model-reference routing links.
 - Add a Spanish EV Assistant guide (`skills/ev-assistant/README.es.md`) preserving high-voltage safety boundaries, charging guidance, and limitations.
 - Used Car Inspector (EN/JA/ES): interpret a read-only OBD-II scan at the viewing, read but never clear codes, treat incomplete readiness monitors as a question for the seller, and note that a clean scan is not a clean bill of health.
 - Add the obd2-mcp companion section (Claude Desktop extension, no-Git `npx` path) to the Spanish README.

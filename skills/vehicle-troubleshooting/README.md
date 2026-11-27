@@ -1,6 +1,6 @@
 # Vehicle Troubleshooting
 
-**English** | [日本語](./README.ja.md)
+**English** | [日本語](./README.ja.md) | [Español](./README.es.md)
 
 An AI skill for symptom-first diagnosis — noises, vibrations, smells, leaks, warning lights, and drivability problems — using structured differential diagnosis to narrow causes before any parts are bought.
 
