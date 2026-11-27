@@ -1,6 +1,6 @@
 # EV Assistant(EVアシスタント)
 
-[English](./README.md) | **日本語**
+[English](./README.md) | **日本語** | [Español](./README.es.md)
 
 電気自動車のオーナーシップ全般を支援するAIスキルです。充電戦略、バッテリー健全性、航続距離の管理、EV特有の整備、自宅充電の設備計画、新車・中古EVの購入ガイダンスをカバーします。
 

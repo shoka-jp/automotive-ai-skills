@@ -20,6 +20,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Add a Spanish EV Assistant guide (`skills/ev-assistant/README.es.md`) preserving high-voltage safety boundaries, charging guidance, and limitations.
 - Used Car Inspector (EN/JA/ES): interpret a read-only OBD-II scan at the viewing, read but never clear codes, treat incomplete readiness monitors as a question for the seller, and note that a clean scan is not a clean bill of health.
 - Add the obd2-mcp companion section (Claude Desktop extension, no-Git `npx` path) to the Spanish README.
 - Add a Spanish Service Intake Assistant guide, including intake revisions, authorization limits and safety boundaries.
