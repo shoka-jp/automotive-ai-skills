@@ -129,6 +129,8 @@ node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang j
 
 **Claude Desktop：** [obd2-mcpの最新リリース](https://github.com/shoka-jp/obd2-mcp/releases/latest)から `.mcpb` ファイルをダウンロードして開くだけで導入できます。**その他のMCPクライアント：** [始め方を選ぶ](https://github.com/shoka-jp/obd2-mcp/blob/main/README.ja.md#始め方を選ぶ) — `npx` でリリースパッケージを登録（Git不要）するか、ソースからビルドします。ガイド付きプロンプト `check_engine_light` は[OBD-II診断アシスタント](./skills/obd2-diagnostic-assistant/README.ja.md)と、`used_car_check` は[Used Car Inspector](./skills/used-car-inspector/README.ja.md)と組み合わせて使えます（[使い方](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/used-car-check.md#日本語)）。
 
+**実車で使うとき：** アダプタを挿してイグニッションをONにし、Claudeに「つないで」と頼むだけです。ポート名は不要です。Bluetooth LE専用など、パソコンでは使えないアダプタもあるため、先に[アダプタの選び方](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/adapters.md#日本語)を確認してください。
+
 ### その他
 
 ```bash

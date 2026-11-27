@@ -70,6 +70,8 @@ Estas habilidades son la capa de *conocimiento*. El proyecto hermano [**obd2-mcp
 
 **Claude Desktop:** descarga el archivo `.mcpb` de la [última versión de obd2-mcp](https://github.com/shoka-jp/obd2-mcp/releases/latest) y ábrelo. **Otros clientes MCP:** [elige cómo empezar](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start): registra el paquete publicado con `npx` (sin Git) o compílalo desde el código fuente. Su prompt guiado `check_engine_light` combina bien con el [Asistente de diagnóstico OBD-II](./skills/obd2-diagnostic-assistant/README.es.md), y `used_car_check` con el [Inspector de coches usados](./skills/used-car-inspector/README.es.md).
 
+**Con un coche real:** conecta el adaptador, pon el contacto y pide a Claude que se conecte; no hace falta saber el nombre del puerto. No todos los adaptadores funcionan en un ordenador (los que solo usan Bluetooth LE no), así que consulta antes [qué tipo comprar](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/adapters.md) (en inglés y japonés).
+
 La documentación de obd2-mcp está en inglés y japonés.
 
 ## Aviso de seguridad

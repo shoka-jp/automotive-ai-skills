@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- READMEs (EN/JA/ES) and the obd2-mcp try guide (EN/JA): explain that with obd2-mcp v0.6.0 you connect a real car by asking Claude, and link obd2-mcp's adapter choosing guide (Bluetooth LE-only adapters do not work on a computer).
 - Point Used Car Inspector (EN/JA/ES) and the READMEs to obd2-mcp v0.6.0's `used_car_check` prompt and permanent trouble codes, and the car-free demo command to v0.6.0 (with `--scenario cleared`).
 - Point the car-free obd2-mcp demo command (EN/JA) to the v0.5.0 release package.
 - Turn on weekly Dependabot version updates for the GitHub Actions used by CI and the composite link-check action, at least 7 days after a release; update PRs wait for the maintainer.
