@@ -19,7 +19,7 @@ Automotive AI Skills supplies prompt frameworks. obd2-mcp supplies data-reading 
 Use Node.js 22 or 24. Run the released package directly, without Git or a build:
 
 ```bash
-npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.4.0/obd2-mcp-0.4.0.tgz -- obd2-mcp --demo
+npm exec --yes --package=https://github.com/shoka-jp/obd2-mcp/releases/download/v0.5.0/obd2-mcp-0.5.0.tgz -- obd2-mcp --demo
 ```
 
 Add `--summary` for a short summary, or `--summary --lang ja` for Japanese. To build from source instead:
