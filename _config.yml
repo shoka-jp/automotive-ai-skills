@@ -359,7 +359,7 @@ defaults:
       path: README.es.md
     values:
       title: Habilidades de IA para diagnóstico y mantenimiento de vehículos
-      description: 20 guías de trabajo con IA para diagnóstico, mantenimiento y compra de vehículos. Cuatro
+      description: 20 guías de trabajo con IA para diagnóstico, mantenimiento y compra de vehículos. Siete
         habilidades en español, ejemplos y límites de uso. Código abierto, licencia MIT.
       lang: es
       locale: es_ES

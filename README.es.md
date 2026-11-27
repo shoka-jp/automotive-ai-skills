@@ -29,7 +29,7 @@ Las habilidades son **independientes de la plataforma**: funcionan con Claude, C
 
 ## Habilidades (20)
 
-Seis habilidades están **disponibles en español** — sigue los enlaces de la columna derecha.
+Siete habilidades están **disponibles en español** — sigue los enlaces de la columna derecha.
 
 | Habilidad | Qué hace | ES |
 |---|---|---|
@@ -80,7 +80,7 @@ Estas habilidades ofrecen información general, **no asesoramiento profesional**
 
 ## Estado de la traducción
 
-Seis habilidades ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
+Siete habilidades ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
 
 ## Licencia
 
