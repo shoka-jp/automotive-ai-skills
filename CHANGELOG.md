@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Point the car-free obd2-mcp demo command (EN/JA) to v0.8.0, and mention its after-repair check and report comparison in the OBD-II Diagnostic Assistant and the test-drive comparison in Used Car Inspector (EN/JA/ES).
 - Update the Spanish translation counts to seven skills (README.es.md, its page description, the FAQ and the Japanese roadmap).
 - Spanish README: add the "Apoya el proyecto" (support the project) section that the English and Japanese READMEs already have.
 - OBD-II Diagnostic Assistant (EN/JA/ES): new section on reading your own car with obd2-mcp v0.7.0 (`check_engine_light`, `inspection_check`, `watch_live_data`).
