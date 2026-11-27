@@ -68,7 +68,7 @@ Para un asistente dedicado, pega el README de una habilidad en las instrucciones
 
 Estas habilidades son la capa de *conocimiento*. El proyecto hermano [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) es la capa de *herramientas*: un servidor MCP que permite a la IA leer códigos de falla, datos en vivo y freeze frame de tu coche mediante un adaptador ELM327 económico. Incluye un vehículo simulado, así que puedes probarlo sin hardware.
 
-**Claude Desktop:** descarga el archivo `.mcpb` de la [última versión de obd2-mcp](https://github.com/shoka-jp/obd2-mcp/releases/latest) y ábrelo. **Otros clientes MCP:** [elige cómo empezar](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start): registra el paquete publicado con `npx` (sin Git) o compílalo desde el código fuente. Su prompt guiado `check_engine_light` combina bien con el [Asistente de diagnóstico OBD-II](./skills/obd2-diagnostic-assistant/README.es.md).
+**Claude Desktop:** descarga el archivo `.mcpb` de la [última versión de obd2-mcp](https://github.com/shoka-jp/obd2-mcp/releases/latest) y ábrelo. **Otros clientes MCP:** [elige cómo empezar](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start): registra el paquete publicado con `npx` (sin Git) o compílalo desde el código fuente. Su prompt guiado `check_engine_light` combina bien con el [Asistente de diagnóstico OBD-II](./skills/obd2-diagnostic-assistant/README.es.md), y `used_car_check` con el [Inspector de coches usados](./skills/used-car-inspector/README.es.md).
 
 La documentación de obd2-mcp está en inglés y japonés.
 

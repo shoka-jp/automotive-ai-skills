@@ -65,7 +65,7 @@ For model-specific checks, follow [reference routing](../../docs/model-reference
 
 1. **Before contacting the seller:** share the listing details and ask for known issues, fair price range, and questions to ask remotely.
 2. **Before the viewing:** request a model-specific checklist and print it or keep it on your phone.
-3. **During inspection:** work through the checklist and note everything — take photos of anything questionable. If you can plug in an OBD-II reader (with the seller's permission), read codes and readiness only; do not clear anything.
+3. **During inspection:** work through the checklist and note everything — take photos of anything questionable. If you can plug in an OBD-II reader (with the seller's permission), read codes and readiness only; do not clear anything. With [obd2-mcp](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/used-car-check.md) v0.6.0 or later, its `used_car_check` prompt guides this scan and also reads permanent trouble codes, which survive a code clear or a battery disconnect until the car confirms the repair.
 4. **After the viewing:** report findings and ask for a risk assessment: buy, negotiate, PPI first, or walk away.
 5. **Before money changes hands:** verify title, VIN match, and history report; get a professional PPI for anything expensive or complex.
 6. **After purchase:** hand off to the [Vehicle Maintenance Planner](../vehicle-maintenance-planner/) for a catch-up service plan.
