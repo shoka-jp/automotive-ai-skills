@@ -66,7 +66,7 @@ Install the Claude Desktop extension from the [latest release](https://github.co
 
 > Read the mock vehicle's codes, freeze frame and live data. Separate observations from hypotheses and list what still needs verification. Do not clear codes.
 
-For real work, follow the [safety and verification limits](./safety-disclaimer.md).
+For real work, follow the [safety and verification limits](./safety-disclaimer.md). To read a real car, plug in the adapter, turn the ignition on and ask Claude to connect; check [which adapter kind works on a computer](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/adapters.md) before buying one.
 
 ## Help improve the projects
 

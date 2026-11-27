@@ -122,6 +122,8 @@ These skills are the *knowledge* layer. The companion [**obd2-mcp**](https://git
 
 **Claude Desktop:** download the `.mcpb` file from the [latest obd2-mcp release](https://github.com/shoka-jp/obd2-mcp/releases/latest) and open it. **Other MCP clients:** [choose how to start](https://github.com/shoka-jp/obd2-mcp#choose-how-to-start) — register the release package with `npx` (no Git) or build from source. Its `check_engine_light` guided prompt pairs well with the [OBD-II Diagnostic Assistant](./skills/obd2-diagnostic-assistant/), and its `used_car_check` prompt with the [Used Car Inspector](./skills/used-car-inspector/) ([walkthrough](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/used-car-check.md)).
 
+**With a real car:** plug in the adapter, turn the ignition on and ask Claude to connect; no port name is needed. Not every adapter works on a computer (Bluetooth LE-only models do not), so check [which kind to buy](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/adapters.md) first.
+
 ### Everything else
 
 ```bash
