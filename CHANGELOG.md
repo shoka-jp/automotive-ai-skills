@@ -11,6 +11,7 @@ invalidates existing links or skill usage patterns.
 
 ### Changed
 
+- Point Used Car Inspector (EN/JA/ES) and the READMEs to obd2-mcp v0.6.0's `used_car_check` prompt and permanent trouble codes, and the car-free demo command to v0.6.0 (with `--scenario cleared`).
 - Point the car-free obd2-mcp demo command (EN/JA) to the v0.5.0 release package.
 - Turn on weekly Dependabot version updates for the GitHub Actions used by CI and the composite link-check action, at least 7 days after a release; update PRs wait for the maintainer.
 - Point the obd2-mcp guidance (READMEs, the car-free demo pages and the site) to its v0.4.0 install paths: the Claude Desktop extension and the no-Git release-package demo, with the source build as an alternative.

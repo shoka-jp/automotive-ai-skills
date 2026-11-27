@@ -127,7 +127,7 @@ node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang j
 
 このスキル集は「知識」レイヤーです。姉妹プロジェクトの [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) は「道具」レイヤー — 安価なELM327アダプタ経由で、AIが実車の故障コード・ライブデータ・フリーズフレームを直接読めるMCPサーバーです(モック車両同梱なのでハードウェアなしでも試せます):
 
-**Claude Desktop：** [obd2-mcpの最新リリース](https://github.com/shoka-jp/obd2-mcp/releases/latest)から `.mcpb` ファイルをダウンロードして開くだけで導入できます。**その他のMCPクライアント：** [始め方を選ぶ](https://github.com/shoka-jp/obd2-mcp/blob/main/README.ja.md#始め方を選ぶ) — `npx` でリリースパッケージを登録（Git不要）するか、ソースからビルドします。ガイド付きプロンプト `check_engine_light` は[OBD-II診断アシスタント](./skills/obd2-diagnostic-assistant/README.ja.md)と組み合わせて使えます。
+**Claude Desktop：** [obd2-mcpの最新リリース](https://github.com/shoka-jp/obd2-mcp/releases/latest)から `.mcpb` ファイルをダウンロードして開くだけで導入できます。**その他のMCPクライアント：** [始め方を選ぶ](https://github.com/shoka-jp/obd2-mcp/blob/main/README.ja.md#始め方を選ぶ) — `npx` でリリースパッケージを登録（Git不要）するか、ソースからビルドします。ガイド付きプロンプト `check_engine_light` は[OBD-II診断アシスタント](./skills/obd2-diagnostic-assistant/README.ja.md)と、`used_car_check` は[Used Car Inspector](./skills/used-car-inspector/README.ja.md)と組み合わせて使えます（[使い方](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/used-car-check.md#日本語)）。
 
 ### その他
 

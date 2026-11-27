@@ -61,7 +61,7 @@ una fuga leve de aceite. Piden 9.500 €. Ayúdame a armar la negociación.
 
 1. **Antes de contactar:** comparte el anuncio y pide problemas conocidos, rango de precio justo y preguntas para hacer a distancia.
 2. **Antes de la visita:** pide la lista de inspección específica del modelo y llévala impresa o en el móvil.
-3. **Durante la inspección:** sigue la lista y anota todo; fotografía lo dudoso. Si puedes conectar un lector OBD-II (con permiso del vendedor), lee solo códigos y monitores; no borres nada.
+3. **Durante la inspección:** sigue la lista y anota todo; fotografía lo dudoso. Si puedes conectar un lector OBD-II (con permiso del vendedor), lee solo códigos y monitores; no borres nada. Con [obd2-mcp](https://github.com/shoka-jp/obd2-mcp/blob/main/docs/used-car-check.md) v0.6.0 o posterior, el prompt `used_car_check` guía este escaneo y también lee los códigos permanentes, que sobreviven al borrado de códigos o a desconectar la batería hasta que el coche confirma la reparación (guía en inglés y japonés).
 4. **Después de la visita:** informa los hallazgos y pide una evaluación: comprar, negociar, PPI primero o retirarse.
 5. **Antes de pagar:** verifica documentación y VIN; haz una PPI profesional en todo lo caro o complejo.
 6. **Después de comprar:** pasa al [Planificador de Mantenimiento](../vehicle-maintenance-planner/README.es.md) para el plan de puesta al día.
