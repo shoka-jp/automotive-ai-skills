@@ -156,6 +156,14 @@ defaults:
       lang: en
       locale: en_US
   - scope:
+      path: skills/ev-assistant/README.es.md
+    values:
+      description: Una habilidad de IA para tener un vehículo eléctrico — estrategia de carga, salud de
+        la batería, autonomía, mantenimiento propio de un VE, instalación de carga en casa y compra de VE
+        nuevos y usados.
+      lang: es
+      locale: es_ES
+  - scope:
       path: skills/ev-assistant/README.ja.md
     values:
       description: 電気自動車のオーナーシップ全般を支援するAIスキルです。充電戦略、バッテリー健全性、航続距離の管理、EV特有の整備、自宅充電の設備計画、新車・中古EVの購入ガイダンスをカバーします。
@@ -318,6 +326,14 @@ defaults:
         specific vehicle, mileage, climate, and driving pattern.
       lang: en
       locale: en_US
+  - scope:
+      path: skills/vehicle-troubleshooting/README.es.md
+    values:
+      description: Una habilidad de IA para el diagnóstico por síntomas — ruidos, vibraciones, olores,
+        fugas, luces de advertencia y problemas de conducción — que acota las causas antes de comprar
+        repuestos.
+      lang: es
+      locale: es_ES
   - scope:
       path: skills/vehicle-troubleshooting/README.ja.md
     values:
