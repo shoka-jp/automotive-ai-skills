@@ -66,6 +66,10 @@ completo el ciclo de conducción en un Toyota Camry 2018?
 - **La interpretación depende de la calidad de los datos:** los clones ELM327 baratos pueden reportar valores lentos o imprecisos.
 - **Los vehículos anteriores a OBD-II** (antes de 1996 en EE. UU., ~2001 en la UE para gasolina) requieren otros enfoques.
 
+## Lee tu propio coche con obd2-mcp
+
+Con [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 o posterior) y un adaptador ELM327, Claude puede leer los códigos, el freeze frame y los datos en vivo directamente, sin que tengas que pegarlos. Su prompt `check_engine_light` sigue el flujo de trabajo anterior, `inspection_check` revisa la preparación antes de una inspección de emisiones y `watch_live_data` muestra cómo cambian valores como la temperatura del refrigerante con el coche estacionado. Sin coche, prueba el [vehículo simulado](../../docs/try-obd2-mcp.md) (guía en inglés y japonés).
+
 ## Habilidades relacionadas
 
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/) — cuando no hay código, solo un síntoma (inglés/japonés)

@@ -66,6 +66,10 @@ How do I complete the drive cycle for a 2018 Toyota Camry?
 - **Live-data interpretation depends on data quality.** Cheap ELM327 clones can report slow or inaccurate values.
 - **Pre-1996 (US) / pre-2001 (EU petrol) vehicles** generally predate OBD-II and need different approaches.
 
+## Read your own car with obd2-mcp
+
+With [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 or later) and an ELM327 adapter, Claude can read the codes, freeze frame and live data directly instead of you pasting them. Its `check_engine_light` prompt follows the workflow above, `inspection_check` checks readiness before an emissions inspection, and `watch_live_data` shows how values such as coolant temperature change while the car is parked. Without a car, try the [simulated vehicle](../../docs/try-obd2-mcp.md).
+
 ## Related Skills
 
 - [Vehicle Troubleshooting](../vehicle-troubleshooting/) — when there is no code, only a symptom
