@@ -12,6 +12,7 @@ invalidates existing links or skill usage patterns.
 ### Changed
 
 - Update the Spanish translation counts to seven skills (README.es.md, its page description, the FAQ and the Japanese roadmap).
+- Spanish README: add the "Apoya el proyecto" (support the project) section that the English and Japanese READMEs already have.
 - OBD-II Diagnostic Assistant (EN/JA/ES): new section on reading your own car with obd2-mcp v0.7.0 (`check_engine_light`, `inspection_check`, `watch_live_data`).
 - Point the car-free obd2-mcp demo command (EN/JA) to v0.7.0 (previously v0.6.1, then v0.6.2), and mention in Used Car Inspector (EN/JA/ES) that obd2-mcp v0.6.1 also reads warm-ups and distance since codes were cleared.
 - READMEs (EN/JA/ES) and the obd2-mcp try guide (EN/JA): explain that with obd2-mcp v0.6.0 you connect a real car by asking Claude, and link obd2-mcp's adapter choosing guide (Bluetooth LE-only adapters do not work on a computer).

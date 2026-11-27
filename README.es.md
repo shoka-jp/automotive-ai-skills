@@ -82,6 +82,15 @@ Estas habilidades ofrecen información general, **no asesoramiento profesional**
 
 Siete habilidades ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
 
+## Apoya el proyecto
+
+Si estas habilidades te ayudan con tu coche o tu taller:
+
+- [Sigue a shoka-jp](https://github.com/shoka-jp) para ver otros proyectos de IA para automoción.
+- Marca este repositorio con una estrella para guardarlo, o comparte una habilidad con quien la necesite.
+- Ayuda a mejorar los ejemplos, corregir errores o traducir habilidades con la [guía de contribución](./CONTRIBUTING.md) (en inglés).
+- [Patrocina al mantenedor](https://github.com/sponsors/shoka-jp) para apoyar este trabajo de código abierto.
+
 ## Licencia
 
 [MIT](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE) © 2026 Sho Kamakura
