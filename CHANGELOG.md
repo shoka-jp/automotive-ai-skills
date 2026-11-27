@@ -12,7 +12,7 @@ invalidates existing links or skill usage patterns.
 ### Changed
 
 - Update the Spanish translation counts to seven skills (README.es.md, its page description, the FAQ and the Japanese roadmap).
-- Point the car-free obd2-mcp demo command (EN/JA) to v0.6.1, and mention in Used Car Inspector (EN/JA/ES) that obd2-mcp v0.6.1 also reads warm-ups and distance since codes were cleared.
+- Point the car-free obd2-mcp demo command (EN/JA) to v0.6.2 (previously v0.6.1), and mention in Used Car Inspector (EN/JA/ES) that obd2-mcp v0.6.1 also reads warm-ups and distance since codes were cleared.
 - READMEs (EN/JA/ES) and the obd2-mcp try guide (EN/JA): explain that with obd2-mcp v0.6.0 you connect a real car by asking Claude, and link obd2-mcp's adapter choosing guide (Bluetooth LE-only adapters do not work on a computer).
 - Point Used Car Inspector (EN/JA/ES) and the READMEs to obd2-mcp v0.6.0's `used_car_check` prompt and permanent trouble codes, and the car-free demo command to v0.6.0 (with `--scenario cleared`).
 - Point the car-free obd2-mcp demo command (EN/JA) to the v0.5.0 release package.
