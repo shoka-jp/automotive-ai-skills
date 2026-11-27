@@ -68,7 +68,7 @@ completo el ciclo de conducción en un Toyota Camry 2018?
 
 ## Lee tu propio coche con obd2-mcp
 
-Con [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 o posterior) y un adaptador ELM327, Claude puede leer los códigos, el freeze frame y los datos en vivo directamente, sin que tengas que pegarlos. Su prompt `check_engine_light` sigue el flujo de trabajo anterior, `inspection_check` revisa la preparación antes de una inspección de emisiones y `watch_live_data` muestra cómo cambian valores como la temperatura del refrigerante con el coche estacionado. Sin coche, prueba el [vehículo simulado](../../docs/try-obd2-mcp.md) (guía en inglés y japonés).
+Con [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 o posterior) y un adaptador ELM327, Claude puede leer los códigos, el freeze frame y los datos en vivo directamente, sin que tengas que pegarlos. Su prompt `check_engine_light` sigue el flujo de trabajo anterior, `inspection_check` revisa la preparación antes de una inspección de emisiones y `watch_live_data` muestra cómo cambian valores como la temperatura del refrigerante con el coche estacionado. Desde v0.8.0, `after_repair_check` comprueba si una avería ha vuelto a aparecer tras una reparación, y `compare_diagnostic_reports` muestra qué cambió entre dos lecturas (por ejemplo, antes y después de la reparación). Sin coche, prueba el [vehículo simulado](../../docs/try-obd2-mcp.md) (guía en inglés y japonés).
 
 ## Habilidades relacionadas
 

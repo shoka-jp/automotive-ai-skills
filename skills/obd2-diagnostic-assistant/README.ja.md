@@ -68,7 +68,7 @@ P0300(ランダム失火)のフリーズフレームデータです:[データ�
 
 ## obd2-mcpで自分の車を読む
 
-[obd2-mcp](https://github.com/shoka-jp/obd2-mcp/blob/main/README.ja.md)（v0.7.0以降）とELM327アダプタがあれば、故障コード・フリーズフレーム・ライブデータを貼り付けなくても、Claudeが直接読み取れます。`check_engine_light` プロンプトは上のワークフローに沿って進み、`inspection_check` は排出ガス検査前のレディネスを確認し、`watch_live_data` は停車中に水温などの値がどう変わるかを示します。車がなくても[模擬車両](../../docs/try-obd2-mcp.ja.md)で試せます。
+[obd2-mcp](https://github.com/shoka-jp/obd2-mcp/blob/main/README.ja.md)（v0.7.0以降）とELM327アダプタがあれば、故障コード・フリーズフレーム・ライブデータを貼り付けなくても、Claudeが直接読み取れます。`check_engine_light` プロンプトは上のワークフローに沿って進み、`inspection_check` は排出ガス検査前のレディネスを確認し、`watch_live_data` は停車中に水温などの値がどう変わるかを示します。v0.8.0からは、`after_repair_check` で修理後に故障が再び検出されていないかを確認でき、`compare_diagnostic_reports` で2回の読み取り（修理の前後など）の違いを確認できます。車がなくても[模擬車両](../../docs/try-obd2-mcp.ja.md)で試せます。
 
 ## 関連スキル
 

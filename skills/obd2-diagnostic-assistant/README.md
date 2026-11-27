@@ -68,7 +68,7 @@ How do I complete the drive cycle for a 2018 Toyota Camry?
 
 ## Read your own car with obd2-mcp
 
-With [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 or later) and an ELM327 adapter, Claude can read the codes, freeze frame and live data directly instead of you pasting them. Its `check_engine_light` prompt follows the workflow above, `inspection_check` checks readiness before an emissions inspection, and `watch_live_data` shows how values such as coolant temperature change while the car is parked. Without a car, try the [simulated vehicle](../../docs/try-obd2-mcp.md).
+With [obd2-mcp](https://github.com/shoka-jp/obd2-mcp) (v0.7.0 or later) and an ELM327 adapter, Claude can read the codes, freeze frame and live data directly instead of you pasting them. Its `check_engine_light` prompt follows the workflow above, `inspection_check` checks readiness before an emissions inspection, and `watch_live_data` shows how values such as coolant temperature change while the car is parked. From v0.8.0, `after_repair_check` checks whether a fault has come back after a repair, and `compare_diagnostic_reports` shows what changed between two readings (for example before and after the repair). Without a car, try the [simulated vehicle](../../docs/try-obd2-mcp.md).
 
 ## Related Skills
 
