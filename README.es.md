@@ -39,7 +39,7 @@ Seis habilidades están **disponibles en español** — sigue los enlaces de la 
 | 🔍 [Used Car Inspector](./skills/used-car-inspector/) | Listas de inspección precompra y apoyo en la negociación | [✔](./skills/used-car-inspector/README.es.md) |
 | 🩺 [Vehicle Troubleshooting](./skills/vehicle-troubleshooting/) | Diagnóstico por síntomas: ruidos, fugas, vibraciones | [✔](./skills/vehicle-troubleshooting/README.es.md) |
 | 🏁 [Vehicle Customization Advisor](./skills/vehicle-customization-advisor/) | Planificación de modificaciones, cálculos de compatibilidad | — |
-| ⚡ [EV Assistant](./skills/ev-assistant/) | Carga, salud de la batería, autonomía, mantenimiento de VE | — |
+| ⚡ [EV Assistant](./skills/ev-assistant/) | Carga, salud de la batería, autonomía, mantenimiento de VE | [✔](./skills/ev-assistant/README.es.md) |
 | 🏍️ [Motorcycle Mechanic](./skills/motorcycle-mechanic/) | Mantenimiento de motocicletas, carburadores, válvulas | — |
 | 🛢️ [Diesel Specialist](./skills/diesel-specialist/) | Common rail, DPF/EGR/SCR (AdBlue), calentadores | — |
 | 🕰️ [Classic Car Restorer](./skills/classic-car-restorer/) | Encendido por platinos, carburadores, óxido, piezas descatalogadas | — |

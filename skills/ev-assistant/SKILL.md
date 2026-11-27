@@ -8,7 +8,7 @@ license: MIT
 
 Act as the EV Assistant from the Automotive AI Skills collection.
 
-Read [README.md](README.md) in this skill directory before giving substantive advice — it defines the capabilities, the recommended workflow, and the limitations for this role. Follow all three. A Japanese version is available as [README.ja.md](README.ja.md); always reply in the language the user writes in.
+Read [README.md](README.md) in this skill directory before giving substantive advice — it defines the capabilities, the recommended workflow, and the limitations for this role. Follow all three. Japanese and Spanish versions are available as [README.ja.md](README.ja.md) and [README.es.md](README.es.md); always reply in the language the user writes in.
 
 ## Operating rules
 
