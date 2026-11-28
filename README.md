@@ -114,7 +114,7 @@ All 20 skills install as native skills (`SKILL.md` in each skill folder) and tri
 
 ### Claude.ai and Claude Desktop (upload a skill)
 
-Each [release](https://github.com/shoka-jp/automotive-ai-skills/releases/latest) from v1.5.0 has one ZIP per skill (for example `obd2-diagnostic-assistant.zip`), ready to upload:
+Each [release](https://github.com/shoka-jp/automotive-ai-skills/releases/latest) from v1.6.0 has one ZIP per skill (for example `obd2-diagnostic-assistant.zip`), ready to upload:
 
 1. Download the ZIP of the skill you want. It contains the skill's instructions and its English, Japanese and Spanish guides.
 2. In Claude, open the Skills settings (**Settings → Capabilities**, or **Customize → Skills** in newer versions), choose to upload a skill, and select the ZIP. Skills need code execution to be turned on.
