@@ -127,11 +127,22 @@ v1.6.0以降の各[リリース](https://github.com/shoka-jp/automotive-ai-skill
 2. Claudeでスキルの設定(**設定 → 機能**、新しいバージョンでは **カスタマイズ → スキル**)を開き、スキルのアップロードを選んでZIPを指定します。スキルを使うにはコード実行をオンにしておく必要があります。
 3. 車について質問すると、合う場面でClaudeがスキルを使います。ほかのスキルも同じ手順で追加できます。
 
+どれから入れるか迷ったら、まず次の5つがおすすめです：`vehicle-troubleshooting`(不調の原因を探す)、`obd2-diagnostic-assistant`(警告灯・故障コード)、`vehicle-maintenance-planner`(必要な整備の計画)、`used-car-inspector`(中古車の購入)、`mechanic-assistant`(修理作業)。
+
 ZIPを自分で作る場合は `python scripts/package_skills.py`(Python 3とPyYAML)を実行すると `dist/claude-ai/` に出力されます。Claude.aiでは説明文が200文字までのため、必要なスキルでは `skill.yaml` の短い `claude_ai_description` を使います。
 
-### OpenAI Codex
+### Codex・Cursor・GitHub Copilot・Gemini CLIなどのエージェント
 
-このリポジトリのクローン内で`codex`を起動すると`AGENTS.md`が自動で読み込まれます。グローバル設定やスキルごとのスラッシュコマンド化は[Codexガイド](./integrations/codex.md)(英語)を参照。
+スキルはオープンな[Agent Skills](https://agentskills.io)形式に沿っているため、多くのコーディングエージェントで読み込めます。次の1行で、パソコンにあるエージェントにまとめて導入できます(Node.jsが必要)。
+
+```bash
+npx skills add shoka-jp/automotive-ai-skills
+```
+
+[skills CLI](https://github.com/vercel-labs/skills)が導入先のエージェントとスキルを尋ねます。今のプロジェクトではなくユーザー全体に入れるには `-g`、1つだけ入れるには `--skill obd2-diagnostic-assistant` を付けます。各スキルのフォルダは単体で完結しているので(`SKILL.md` とREADME)、1つだけでも使えます。
+
+- **OpenAI Codex：** 上のコマンド(`-a codex`)を使うか、スキルのフォルダを `~/.agents/skills/` にコピーします。クローン内で `codex` を起動すると `AGENTS.md` も読み込まれます。詳しくは[Codexガイド](./integrations/codex.md)(英語)。
+- **Gemini CLI：** `gemini skills install https://github.com/shoka-jp/automotive-ai-skills.git --path skills`
 
 ### 実車を読む: obd2-mcp 🔌
 

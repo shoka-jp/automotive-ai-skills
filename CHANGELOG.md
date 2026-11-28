@@ -9,6 +9,15 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Added
+
+- Install the skills in Codex, Cursor, GitHub Copilot, Gemini CLI and other Agent Skills tools with one command, `npx skills add shoka-jp/automotive-ai-skills`, or with `gemini skills install … --path skills` (READMEs in EN/JA/ES, the integrations list and `llms.txt`). The Codex guide now starts with native skills in `~/.agents/skills`.
+- Claude.ai: the READMEs (EN/JA) suggest five skills to upload first.
+
+### Changed
+
+- Every `SKILL.md` points to the online skill list when it is installed on its own without the collection's index, so handoffs to other skills still work.
+
 ## [1.6.0] - 2026-11-28
 
 Use the skills in Claude.ai and Claude Desktop by uploading one ZIP per skill, read your own car with obd2-mcp v0.8.0, and more of the collection in Spanish.

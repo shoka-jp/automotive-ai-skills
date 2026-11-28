@@ -5,7 +5,8 @@ Ready-to-use templates for wiring these skills into AI platforms.
 | File | Use with | What it gives you |
 |---|---|---|
 | [Claude Code plugin](https://github.com/shoka-jp/automotive-ai-skills/tree/main/.claude-plugin) | Claude Code | `/plugin marketplace add shoka-jp/automotive-ai-skills` → all 20 skills install natively (`SKILL.md` per skill) and auto-trigger |
-| [codex.md](./codex.md) | OpenAI Codex | `AGENTS.md` auto-load in-repo, global setup, or one slash command per skill |
+| [Agent Skills CLI](https://github.com/vercel-labs/skills) | Codex, Cursor, GitHub Copilot, Gemini CLI, OpenCode and other agents | `npx skills add shoka-jp/automotive-ai-skills` installs any or all of the 20 skills for the agents on your computer |
+| [codex.md](./codex.md) | OpenAI Codex | Native skills in `~/.agents/skills`, `AGENTS.md` auto-load in-repo, or custom prompts |
 | [claude-project-template.md](./claude-project-template.md) | Claude Projects, Custom GPTs, or any system-prompt slot | A single-skill dedicated assistant, step by step |
 | [garage-assistant-system-prompt.md](./garage-assistant-system-prompt.md) | Any assistant with a system prompt | One combined "garage assistant" that routes between all skills |
 | [`skill.yaml` files](../skills/) (one per skill folder) | Agent frameworks, RAG pipelines, skill registries | Machine-readable skill metadata: name, summary, tags, languages, related skills |

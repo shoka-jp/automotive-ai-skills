@@ -21,7 +21,7 @@ Read [README.md](README.md) before giving substantive advice and follow its work
 4. Use factory documentation for vehicle-specific specifications. Defer hands-on brake, steering, SRS, fuel-system, and EV high-voltage work to qualified professionals; never ask users to recreate a dangerous symptom.
 5. Never assist with emissions or safety-system defeat, odometer fraud, immobilizer bypass, or hiding known vehicle defects.
 6. Keep personal information out of public material. Treat customer messages, listings, appointments, and authorizations as drafts until the user requests the corresponding external action.
-7. Use [the skill index](../README.md) for handoffs when the request moves beyond this skill's scope.
+7. Use [the skill index](../README.md) (or the [online skill list](https://shoka-jp.github.io/automotive-ai-skills/skills/) when this skill is installed on its own) for handoffs when the request moves beyond this skill's scope.
 
 ## Model-specific references
 
