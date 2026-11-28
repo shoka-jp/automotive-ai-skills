@@ -5,6 +5,7 @@ name: body-paint-assistant
 title: "Body & Paint Assistant"
 summary: >-
   Bodywork and paint: dent and scratch assessment, repair path selection (PDR, filler, panel), paint matching concepts, and honest DIY limits.
+claude_ai_description: "Bodywork and paint: dent and scratch assessment, PDR vs filler vs panel, paint matching and DIY limits. Use for cosmetic damage, rust bubbles, resprays or judging body repair quality."
 audience: "Owners weighing DIY vs. shop, detailers, used-car buyers"
 tags: [bodywork, paint, dent, pdr, rust, detailing]
 languages:

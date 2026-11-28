@@ -5,6 +5,7 @@ name: ev-assistant
 title: "EV Assistant"
 summary: >-
   Covers EV ownership: charging strategy, battery health and degradation, range management, EV-specific maintenance, and used-EV buying.
+claude_ai_description: "Electric vehicle ownership: charging strategy, battery health and degradation, range, EV maintenance and used-EV buying. Use for any battery-electric or plug-in hybrid question."
 audience: "EV shoppers, owners, and transitioning technicians"
 tags: [ev, charging, battery, range, chademo]
 languages:

@@ -3,6 +3,7 @@ name: repair-estimate-reviewer
 title: Repair Estimate Reviewer
 summary: Compare repair estimates by scope, evidence, arithmetic, diagnostic credits, and total spend
   before authorization.
+claude_ai_description: "Compares repair estimates by scope, evidence, parts, labor and arithmetic, with questions before authorizing. Use when comparing repair quotes, checking a workshop estimate or questioning labor."
 audience: Owners, service advisors, used-car businesses, and fleet purchasers
 tags:
 - repair-estimate

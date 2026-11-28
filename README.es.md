@@ -64,6 +64,8 @@ Siete habilidades están **disponibles en español** — sigue los enlaces de la
 
 Para un asistente dedicado, pega el README de una habilidad en las instrucciones de un Proyecto de Claude o un GPT personalizado — ver [`integrations/`](./integrations/).
 
+**Claude.ai y Claude Desktop:** cada [versión publicada](https://github.com/shoka-jp/automotive-ai-skills/releases/latest) desde la v1.5.0 incluye un ZIP por habilidad (por ejemplo `obd2-diagnostic-assistant.zip`) con sus instrucciones y sus guías en inglés, japonés y español. Descárgalo y súbelo en la configuración de Skills de Claude (**Settings → Capabilities**, o **Customize → Skills** en versiones recientes); las Skills necesitan la ejecución de código activada. También puedes generar todos los ZIP con `python scripts/package_skills.py`.
+
 ## Leer tu coche real: obd2-mcp 🔌
 
 Estas habilidades son la capa de *conocimiento*. El proyecto hermano [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) es la capa de *herramientas*: un servidor MCP que permite a la IA leer códigos de falla, datos en vivo y freeze frame de tu coche mediante un adaptador ELM327 económico. Incluye un vehículo simulado, así que puedes probarlo sin hardware.

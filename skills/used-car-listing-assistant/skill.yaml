@@ -3,6 +3,7 @@ name: used-car-listing-assistant
 title: Used Car Listing Assistant
 summary: Draft and revise used-vehicle listings from documented facts, visible defects, mileage evidence,
   and explicit price conditions without unsupported claims.
+claude_ai_description: "Drafts used-car listings from documented specs, condition disclosures and a clear price breakdown, without unsupported claims. Use when writing or revising a used-car ad or buyer FAQ."
 audience: Independent dealers, sales staff, and private sellers
 tags:
 - used-car

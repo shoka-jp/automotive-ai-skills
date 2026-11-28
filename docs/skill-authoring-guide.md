@@ -36,6 +36,7 @@ name: your-skill-name        # must match the folder name
 title: "Your Skill Name"
 summary: >-
   One or two sentences; used for routing and skill registries.
+claude_ai_description: "At most 200 characters: what it does and when to use it."  # only if SKILL.md's description is longer
 audience: "Who this is for"
 tags: [lowercase, kebab-case, searchable, terms]
 languages:                   # relative paths to each language's entry file
@@ -46,6 +47,8 @@ safety_notes: "Verify all safety-critical specifications against factory documen
 ```
 
 The YAML carries metadata only — the README remains the source of truth for skill content. Keep `summary` and `tags` in sync when the README's scope changes.
+
+Claude.ai accepts skill descriptions of at most 200 characters, while Claude Code allows 1024. If the `description` in `SKILL.md` is longer than 200 characters, add `claude_ai_description` with a shorter version that keeps the "Use when …" triggers; `scripts/package_skills.py` puts it in the ZIP for Claude.ai, and `scripts/validate_repo.py` fails when it is missing or too long.
 
 ## Required README structure
 

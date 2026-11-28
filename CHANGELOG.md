@@ -25,6 +25,7 @@ invalidates existing links or skill usage patterns.
 
 ### Added
 
+- Claude.ai and Claude Desktop: `scripts/package_skills.py` packages each skill as a ZIP ready to upload (`<skill>/SKILL.md` with its English, Japanese and Spanish READMEs), reproducibly. Claude.ai limits descriptions to 200 characters, so each `skill.yaml` now has a `claude_ai_description` that the packaged `SKILL.md` uses when the original is longer; `validate_repo.py` checks that every skill can be packaged. The READMEs (EN/JA/ES) and the skill authoring guide explain how to upload.
 - Add a Spanish Vehicle Troubleshooting guide (`skills/vehicle-troubleshooting/README.es.md`) preserving safety boundaries and model-reference routing links.
 - Add a Spanish EV Assistant guide (`skills/ev-assistant/README.es.md`) preserving high-voltage safety boundaries, charging guidance, and limitations.
 - Used Car Inspector (EN/JA/ES): interpret a read-only OBD-II scan at the viewing, read but never clear codes, treat incomplete readiness monitors as a question for the seller, and note that a clean scan is not a clean bill of health.

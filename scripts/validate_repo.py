@@ -17,6 +17,9 @@ Checks:
      skill folders that exist
   7. every skill card on the landing page (index.html) shows ES in its
      language label iff the skill has README.es.md
+  8. every skill can be packaged for Claude.ai (scripts/package_skills.py):
+     a valid name and a description of at most 200 characters, from
+     SKILL.md or skill.yaml `claude_ai_description`
 
 Exit code 0 = all checks pass; 1 = at least one failure (each printed).
 """
@@ -176,12 +179,41 @@ def check_landing_languages() -> None:
         fail(f"index.html: no skill card with a language label for {sorted(missing)}")
 
 
+def check_claude_ai_packaging() -> None:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import package_skills  # noqa: E402  (a sibling script, not an installed module)
+
+    problems = package_skills.check()
+    for problem in problems:
+        fail(f"Claude.ai packaging: {problem}")
+    if problems:
+        return
+    # Build every ZIP into a temporary folder and read it back as Claude would.
+    import tempfile
+    import zipfile
+
+    with tempfile.TemporaryDirectory() as tmp:
+        for folder in package_skills.skill_dirs():
+            archive = zipfile.ZipFile(package_skills.build(folder, Path(tmp)))
+            names = archive.namelist()
+            if not names or any(not n.startswith(f"{folder.name}/") or n.count("/") != 1 for n in names):
+                fail(f"Claude.ai packaging: {folder.name}.zip must hold only the folder {folder.name}/ and its files")
+                continue
+            text = archive.read(f"{folder.name}/SKILL.md").decode("utf-8")
+            meta = yaml.safe_load(text.split("---\n")[1])
+            if meta.get("name") != folder.name or len(meta.get("description", "")) > package_skills.MAX_DESCRIPTION:
+                fail(f"Claude.ai packaging: {folder.name}.zip has a SKILL.md Claude.ai would refuse")
+            if f"{folder.name}/README.md" not in names:
+                fail(f"Claude.ai packaging: {folder.name}.zip lacks README.md, which SKILL.md asks Claude to read")
+
+
 def main() -> int:
     check_known_issues_index()
     check_skill_folders()
     check_versions()
     check_skill_tables()
     check_landing_languages()
+    check_claude_ai_packaging()
     if ERRORS:
         print(f"FAIL: {len(ERRORS)} problem(s) found\n")
         for err in ERRORS:

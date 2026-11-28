@@ -5,6 +5,7 @@ name: used-car-inspector
 title: "Used Car Inspector"
 summary: >-
   Guides pre-purchase evaluation: model-specific checklists, red-flag detection, test-drive interpretation, and negotiation support.
+claude_ai_description: "Guides used-car evaluation before purchase: model-specific checklists, red flags, test-drive interpretation and negotiation. Use when buying, inspecting or negotiating a used vehicle."
 audience: "Used car buyers at any experience level"
 tags: [used-car, inspection, checklist, negotiation, vin]
 languages:

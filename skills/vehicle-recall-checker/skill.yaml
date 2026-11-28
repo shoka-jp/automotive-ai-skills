@@ -3,6 +3,7 @@ name: vehicle-recall-checker
 title: Vehicle Recall Checker
 summary: Guide official recall lookups, separate model-level notices from vehicle applicability, and document
   completion evidence or unknown status.
+claude_ai_description: "Guides official recall lookups, separates model notices from a vehicle's applicability, and records completion evidence. Use when checking a recall notice, a VIN lookup or whether a recall was done."
 audience: Owners, used-car buyers and sellers, service advisors, and fleets
 tags:
 - recall

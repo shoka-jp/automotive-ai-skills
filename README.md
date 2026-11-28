@@ -112,6 +112,16 @@ The repository is a Claude Code plugin marketplace. Inside Claude Code:
 
 All 20 skills install as native skills (`SKILL.md` in each skill folder) and trigger automatically when you ask automotive questions.
 
+### Claude.ai and Claude Desktop (upload a skill)
+
+Each [release](https://github.com/shoka-jp/automotive-ai-skills/releases/latest) from v1.5.0 has one ZIP per skill (for example `obd2-diagnostic-assistant.zip`), ready to upload:
+
+1. Download the ZIP of the skill you want. It contains the skill's instructions and its English, Japanese and Spanish guides.
+2. In Claude, open the Skills settings (**Settings → Capabilities**, or **Customize → Skills** in newer versions), choose to upload a skill, and select the ZIP. Skills need code execution to be turned on.
+3. Ask an automotive question; Claude uses the skill when it fits. Upload more skills the same way.
+
+To build every ZIP yourself: `python scripts/package_skills.py` (Python 3 with PyYAML) writes them to `dist/claude-ai/`. Claude.ai allows descriptions of at most 200 characters, so the packaged `SKILL.md` uses the shorter `claude_ai_description` from `skill.yaml` where needed.
+
 ### OpenAI Codex
 
 `AGENTS.md` is picked up automatically when you run `codex` inside a clone of this repo. For global setup or per-skill slash commands, see the [Codex guide](./integrations/codex.md).
