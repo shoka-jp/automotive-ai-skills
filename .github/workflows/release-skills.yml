@@ -1,0 +1,45 @@
+# Attach one ZIP per skill, ready to upload to Claude.ai and Claude Desktop,
+# plus SHA256SUMS, to each published GitHub release.
+name: Release skill ZIPs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing release tag to attach the ZIPs to, for example v1.6.0"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  attach:
+    name: Build and attach skill ZIPs
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/validate_repo.py
+      - name: Build the ZIPs
+        run: |
+          python scripts/package_skills.py dist/claude-ai
+          cd dist/claude-ai
+          sha256sum -- *.zip > SHA256SUMS
+          cat SHA256SUMS
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$TAG" dist/claude-ai/*.zip dist/claude-ai/SHA256SUMS --clobber --repo "$GITHUB_REPOSITORY"
