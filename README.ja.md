@@ -121,7 +121,7 @@ node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang j
 
 ### Claude.ai・Claude Desktop(スキルをアップロード)
 
-v1.5.0以降の各[リリース](https://github.com/shoka-jp/automotive-ai-skills/releases/latest)には、スキルごとのZIP(例：`obd2-diagnostic-assistant.zip`)を添付しています。
+v1.6.0以降の各[リリース](https://github.com/shoka-jp/automotive-ai-skills/releases/latest)には、スキルごとのZIP(例：`obd2-diagnostic-assistant.zip`)を添付しています。
 
 1. 使いたいスキルのZIPをダウンロードします。スキルの指示と、英語・日本語・スペイン語のガイドが入っています。
 2. Claudeでスキルの設定(**設定 → 機能**、新しいバージョンでは **カスタマイズ → スキル**)を開き、スキルのアップロードを選んでZIPを指定します。スキルを使うにはコード実行をオンにしておく必要があります。

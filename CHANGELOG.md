@@ -9,6 +9,10 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-11-28
+
+Use the skills in Claude.ai and Claude Desktop by uploading one ZIP per skill, read your own car with obd2-mcp v0.8.0, and more of the collection in Spanish.
+
 ### Changed
 
 - Point the car-free obd2-mcp demo command (EN/JA) to v0.8.0, and mention its after-repair check and report comparison in the OBD-II Diagnostic Assistant and the test-drive comparison in Used Car Inspector (EN/JA/ES).
@@ -274,7 +278,8 @@ invalidates existing links or skill usage patterns.
   self-check checklist and a Japan market guide with terminology glossary
 - MIT license
 
-[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.4.0...v1.6.0
 [1.4.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.1.0...v1.2.0
