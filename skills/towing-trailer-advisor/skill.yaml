@@ -5,6 +5,7 @@ name: towing-trailer-advisor
 title: "Towing & Trailer Advisor"
 summary: >-
   Safe towing: hitch selection and ratings, tongue weight and loading, trailer wiring and brake controllers, sway prevention, and trailer maintenance.
+claude_ai_description: "Safe towing: hitch ratings, tongue weight and loading, trailer wiring and brake controllers, sway prevention and trailer maintenance. Use for anything involving towing, hitches or trailers."
 audience: "First-time towers, boat and camper owners"
 tags: [towing, trailer, hitch, tongue-weight, brake-controller, sway]
 languages:

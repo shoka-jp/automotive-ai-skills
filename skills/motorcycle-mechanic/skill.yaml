@@ -5,6 +5,7 @@ name: motorcycle-mechanic
 title: "Motorcycle Mechanic"
 summary: >-
   Two-wheeled maintenance, diagnosis, and repair: chains, carbs and EFI, valve clearances, suspension setup, and seasonal storage.
+claude_ai_description: "Motorcycle maintenance and repair: chains and sprockets, carburetors and EFI, valve clearances, suspension setup and storage. Use for any motorcycle, scooter or other two-wheeler question."
 audience: "Riders who wrench, from first chain adjustment to full engine service"
 tags: [motorcycle, chain, carburetor, valves, suspension]
 languages:

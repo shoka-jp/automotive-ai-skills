@@ -5,6 +5,7 @@ name: tire-wheel-advisor
 title: "Tire & Wheel Advisor"
 summary: >-
   Dedicated tire and wheel guidance: sizing math, fitment, seasonal strategy, wear-pattern diagnosis, and TPMS behavior.
+claude_ai_description: "Tires and wheels: sizing and fitment math, load and speed ratings, seasonal strategy, wear patterns and TPMS. Use for tire buying, wheel upgrades, winter changeovers, or wear and vibration."
 audience: "Anyone buying tires or wheels, seasonal-swap households"
 tags: [tires, wheels, fitment, tpms, winter-tires]
 languages:

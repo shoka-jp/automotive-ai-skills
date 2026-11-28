@@ -119,6 +119,16 @@ node scripts/vehicle_brief.mjs --vehicle JF3 --market Japan --year 2019 --lang j
 
 全20スキルがネイティブスキル(各フォルダの`SKILL.md`)としてインストールされ、車の質問をすると自動で発動します。
 
+### Claude.ai・Claude Desktop(スキルをアップロード)
+
+v1.5.0以降の各[リリース](https://github.com/shoka-jp/automotive-ai-skills/releases/latest)には、スキルごとのZIP(例：`obd2-diagnostic-assistant.zip`)を添付しています。
+
+1. 使いたいスキルのZIPをダウンロードします。スキルの指示と、英語・日本語・スペイン語のガイドが入っています。
+2. Claudeでスキルの設定(**設定 → 機能**、新しいバージョンでは **カスタマイズ → スキル**)を開き、スキルのアップロードを選んでZIPを指定します。スキルを使うにはコード実行をオンにしておく必要があります。
+3. 車について質問すると、合う場面でClaudeがスキルを使います。ほかのスキルも同じ手順で追加できます。
+
+ZIPを自分で作る場合は `python scripts/package_skills.py`(Python 3とPyYAML)を実行すると `dist/claude-ai/` に出力されます。Claude.aiでは説明文が200文字までのため、必要なスキルでは `skill.yaml` の短い `claude_ai_description` を使います。
+
 ### OpenAI Codex
 
 このリポジトリのクローン内で`codex`を起動すると`AGENTS.md`が自動で読み込まれます。グローバル設定やスキルごとのスラッシュコマンド化は[Codexガイド](./integrations/codex.md)(英語)を参照。

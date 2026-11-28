@@ -5,6 +5,7 @@ name: obd2-diagnostic-assistant
 title: "OBD-II Diagnostic Assistant"
 summary: >-
   Interprets diagnostic trouble codes, freeze frame, and live sensor data, turning scanner output into a prioritized test plan.
+claude_ai_description: "Turns OBD-II trouble codes, freeze frame and live data into a prioritized test plan. Use when a check-engine light is on, a scanner shows codes like P0420 or P0171, or fuel trims are shared."
 audience: "Anyone with a code reader, professional technicians"
 tags: [obd2, dtc, diagnostics, fuel-trim, emissions]
 languages:

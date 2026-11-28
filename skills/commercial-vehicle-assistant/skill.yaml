@@ -5,6 +5,7 @@ name: commercial-vehicle-assistant
 title: "Commercial Vehicle & Truck Assistant"
 summary: >-
   Trucks, vans, and commercial vehicles: air brakes, pre-trip inspections, load securing, weight compliance awareness, and working-vehicle maintenance.
+claude_ai_description: "Trucks, vans and commercial vehicles: air brakes, pre-trip inspections, load securing and weight compliance. Use for work vehicles, delivery fleets, or anything with air brakes or heavy loads."
 audience: "Owner-operators, small transport businesses, tradespeople, drivers"
 tags: [truck, commercial, air-brakes, load-securing, pre-trip]
 languages:

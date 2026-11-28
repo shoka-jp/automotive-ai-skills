@@ -5,6 +5,7 @@ name: diesel-specialist
 title: "Diesel Specialist"
 summary: >-
   Diesel-specific diagnosis and maintenance: common rail fuel systems, DPF/EGR/SCR aftertreatment, glow plugs, and turbochargers.
+claude_ai_description: "Diesel diagnosis and maintenance: common rail, DPF/EGR/SCR (AdBlue), glow plugs and turbos. Use for diesel engines, DPF or AdBlue warnings, cold-start problems or diesel buying decisions."
 audience: "Diesel owners, transitioning technicians, fleet operators"
 tags: [diesel, dpf, egr, scr, adblue, common-rail]
 languages:

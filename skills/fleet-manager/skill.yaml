@@ -5,6 +5,7 @@ name: fleet-manager
 title: "Fleet Manager"
 summary: >-
   Multi-vehicle management: staggered maintenance scheduling, cost-per-km tracking, downtime planning, and repair-vs-replace analysis.
+claude_ai_description: "Multi-vehicle management: staggered maintenance, cost-per-km tracking, downtime planning and repair-vs-replace analysis. Use when someone manages several vehicles, a fleet or a multi-car household."
 audience: "Small business fleets, tradespeople, multi-car households"
 tags: [fleet, scheduling, tco, downtime, records]
 languages:

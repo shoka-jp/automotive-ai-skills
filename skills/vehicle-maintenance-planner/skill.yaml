@@ -5,6 +5,7 @@ name: vehicle-maintenance-planner
 title: "Vehicle Maintenance Planner"
 summary: >-
   Builds preventive maintenance schedules tailored to vehicle, mileage, climate, and driving pattern, including catch-up plans for unknown history.
+claude_ai_description: "Builds maintenance schedules for the vehicle, mileage, climate and driving, with catch-up plans for unknown history. Use when asking what service is due, or after buying a car without records."
 audience: "All vehicle owners, fleet managers"
 tags: [maintenance, schedule, fluids, severe-service, budgeting]
 languages:

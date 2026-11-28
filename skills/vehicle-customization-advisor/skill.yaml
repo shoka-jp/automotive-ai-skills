@@ -5,6 +5,7 @@ name: vehicle-customization-advisor
 title: "Vehicle Customization Advisor"
 summary: >-
   Plans modifications with attention to build goals, compatibility, correct sequencing, honest budgets, and legality flags.
+claude_ai_description: "Plans vehicle modifications: build goals, part compatibility and fitment math, install order, budgets and legality flags. Use when the user wants to modify, lower, lift, tune or upgrade a vehicle."
 audience: "Enthusiasts from first mod to full project builds"
 tags: [modification, fitment, suspension, wheels, legality]
 languages:

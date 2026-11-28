@@ -5,6 +5,7 @@ name: vehicle-troubleshooting
 title: "Vehicle Troubleshooting"
 summary: >-
   Symptom-first differential diagnosis for noises, vibrations, smells, leaks, warning lights, and drivability problems.
+claude_ai_description: "Symptom-first diagnosis for noises, vibrations, smells, leaks, warning lights and drivability problems. Use when something is wrong with a vehicle but there is no trouble code or known cause yet."
 audience: "All drivers, technicians wanting a structured second opinion"
 tags: [symptoms, noise, vibration, leaks, diagnosis]
 languages:

@@ -5,6 +5,7 @@ name: mechanic-assistant
 title: "Mechanic Assistant"
 summary: >-
   Supports repair jobs end to end: procedures, torque spec guidance, tool selection, system explanations, and post-repair verification.
+claude_ai_description: "Guides car repair jobs: procedures, torque spec guidance, tools, system explanations and post-repair checks. Use when the user knows or suspects what to fix and wants help doing the repair."
 audience: "Professional technicians, apprentices, experienced DIYers"
 tags: [repair, procedures, tools, torque, systems]
 languages:

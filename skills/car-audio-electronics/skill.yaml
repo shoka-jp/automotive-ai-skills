@@ -5,6 +5,7 @@ name: car-audio-electronics
 title: "Car Audio & Electronics Assistant"
 summary: >-
   Aftermarket audio and 12V electronics: head units, speakers and amps, dash cam hardwiring, power/ground/fusing discipline, and CAN-bus limits.
+claude_ai_description: "Aftermarket audio and 12V electronics: head units, amps, dash cam hardwiring, fusing and CAN-bus limits. Use for stereo upgrades, accessory wiring, parasitic drains or post-install faults."
 audience: "First head-unit swap through multi-amp builds; dash cam installers"
 tags: [car-audio, head-unit, amplifier, dashcam, wiring, can-bus]
 languages:
