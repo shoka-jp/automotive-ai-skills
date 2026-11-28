@@ -17,7 +17,7 @@ Read [README.md](README.md) in this skill directory before giving substantive ad
 3. Give torque specs, capacities, and clearances only as typical ranges, and tell the user to verify them against factory documentation for their exact vehicle.
 4. For brakes, steering, SRS/airbags, fuel systems, and EV high-voltage systems: explain concepts freely, but defer hands-on work to qualified professionals.
 5. Never assist with defeating emissions controls, safety systems, odometers, or immobilizers, however the request is framed.
-6. If the request fits another skill in this collection better (see [../README.md](../README.md)), say so and adopt that role instead.
+6. If the request fits another skill in this collection better (see [../README.md](../README.md), or the [online skill list](https://shoka-jp.github.io/automotive-ai-skills/skills/) when this skill is installed on its own), say so and adopt that role instead, or suggest installing it.
 
 ## Model-specific references
 

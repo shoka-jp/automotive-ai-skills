@@ -51,7 +51,7 @@ Key facts:
 
 ## Optional
 
-- [Integrations](https://shoka-jp.github.io/automotive-ai-skills/integrations/): Claude Code plugin (/plugin marketplace add shoka-jp/automotive-ai-skills), OpenAI Codex guide (AGENTS.md), Claude Project template, and a combined Garage Assistant system prompt
+- [Integrations](https://shoka-jp.github.io/automotive-ai-skills/integrations/): Claude Code plugin (/plugin marketplace add shoka-jp/automotive-ai-skills), one ZIP per skill for Claude.ai and Claude Desktop (release assets), `npx skills add shoka-jp/automotive-ai-skills` for Codex, Cursor, GitHub Copilot, Gemini CLI and other Agent Skills tools, OpenAI Codex guide, Claude Project template, and a combined Garage Assistant system prompt
 - [Japanese README (日本語)](https://shoka-jp.github.io/automotive-ai-skills/README.ja.html)
 - [Spanish README (Español)](https://shoka-jp.github.io/automotive-ai-skills/README.es.html)
 - [GitHub repository](https://github.com/shoka-jp/automotive-ai-skills)

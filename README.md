@@ -120,11 +120,22 @@ Each [release](https://github.com/shoka-jp/automotive-ai-skills/releases/latest)
 2. In Claude, open the Skills settings (**Settings → Capabilities**, or **Customize → Skills** in newer versions), choose to upload a skill, and select the ZIP. Skills need code execution to be turned on.
 3. Ask an automotive question; Claude uses the skill when it fits. Upload more skills the same way.
 
+Not sure where to start? Upload these five first: `vehicle-troubleshooting` (something is wrong), `obd2-diagnostic-assistant` (a warning light or code), `vehicle-maintenance-planner` (what service is due), `used-car-inspector` (buying a car) and `mechanic-assistant` (doing a repair).
+
 To build every ZIP yourself: `python scripts/package_skills.py` (Python 3 with PyYAML) writes them to `dist/claude-ai/`. Claude.ai allows descriptions of at most 200 characters, so the packaged `SKILL.md` uses the shorter `claude_ai_description` from `skill.yaml` where needed.
 
-### OpenAI Codex
+### Codex, Cursor, GitHub Copilot, Gemini CLI and other agents
 
-`AGENTS.md` is picked up automatically when you run `codex` inside a clone of this repo. For global setup or per-skill slash commands, see the [Codex guide](./integrations/codex.md).
+The skills follow the open [Agent Skills](https://agentskills.io) format, so most coding agents can load them. One command installs them for the agents on your computer (Node.js required):
+
+```bash
+npx skills add shoka-jp/automotive-ai-skills
+```
+
+The [skills CLI](https://github.com/vercel-labs/skills) asks which agents and skills to install; add `-g` to install for your user instead of the current project, or `--skill obd2-diagnostic-assistant` for a single skill. Each skill folder is self-contained (its `SKILL.md` and READMEs), so it also works on its own.
+
+- **OpenAI Codex:** the command above (`-a codex`), or copy skill folders to `~/.agents/skills/`. Running `codex` inside a clone also picks up `AGENTS.md`. See the [Codex guide](./integrations/codex.md).
+- **Gemini CLI:** `gemini skills install https://github.com/shoka-jp/automotive-ai-skills.git --path skills`
 
 ### Read your actual car: obd2-mcp 🔌
 
